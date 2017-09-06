@@ -8,6 +8,7 @@ public class WalkPath : MonoBehaviour {
 	public GameObject position2;
 	public float bufferDistance = 0.5f;
 	public float idleTime;
+	public float movementSpeed = 1.0f;
 
 	Rigidbody2D rb;
 	bool pathInverted;
@@ -20,8 +21,12 @@ public class WalkPath : MonoBehaviour {
 	}
 
 	void FixedUpdate() {
-		if(idle)
+		if(idle) {
+			// Remove inertia from existing velocity if idle, but smoothly
+			// Only noticeable at higher speeds
+			rb.velocity = new Vector2(rb.velocity.x * 0.8f, rb.velocity.y);
 			return;
+		}
 
 		// Pick which position to target according to the value of pathInverted
 		Vector3 targetPos = pathInverted ? position1.transform.position : position2.transform.position;
@@ -32,7 +37,7 @@ public class WalkPath : MonoBehaviour {
 			Vector3 dir = offsetX.normalized;
 
 			// Interpolate the velocity so it is smoother in case it is hit with opposing forces
-			float smoothX = Mathf.Lerp(rb.velocity.x, dir.x, 1.0f);
+			float smoothX = Mathf.Lerp(rb.velocity.x, dir.x * movementSpeed, 1.0f);
 
 			rb.velocity = new Vector2(smoothX, rb.velocity.y);
 		} else {
