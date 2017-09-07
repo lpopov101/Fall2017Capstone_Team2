@@ -108,6 +108,28 @@ NavMeshSettings:
     tileSize: 256
     accuratePlacement: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &89276698 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1251435473902654, guid: 6a7d4c8a42b99e249938f1331c621764,
+    type: 2}
+  m_PrefabInternal: {fileID: 1887932795}
+--- !u!114 &89276699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 89276698}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c3145eec5d04614eab1fb9d7e4e5392, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  position1: {fileID: 1977660305}
+  position2: {fileID: 640535856}
+  movementSpeed: 2
+  bufferDistance: 0.5
+  idleTime: 1.5
+  idleMovementReducer: 0.8
 --- !u!1 &174578923
 GameObject:
   m_ObjectHideFlags: 0
@@ -370,8 +392,7 @@ Prefab:
       propertyPath: m_RootOrder
       value: 6
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 114935416405295398, guid: 6a7d4c8a42b99e249938f1331c621764, type: 2}
+    m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6a7d4c8a42b99e249938f1331c621764, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &1848171582
@@ -511,26 +532,6 @@ Prefab:
     - target: {fileID: 1251435473902654, guid: 6a7d4c8a42b99e249938f1331c621764, type: 2}
       propertyPath: m_Name
       value: Creature1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114935416405295398, guid: 6a7d4c8a42b99e249938f1331c621764,
-        type: 2}
-      propertyPath: position1
-      value: 
-      objectReference: {fileID: 1977660305}
-    - target: {fileID: 114935416405295398, guid: 6a7d4c8a42b99e249938f1331c621764,
-        type: 2}
-      propertyPath: position2
-      value: 
-      objectReference: {fileID: 640535856}
-    - target: {fileID: 114935416405295398, guid: 6a7d4c8a42b99e249938f1331c621764,
-        type: 2}
-      propertyPath: interpolationFactor
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 114935416405295398, guid: 6a7d4c8a42b99e249938f1331c621764,
-        type: 2}
-      propertyPath: movementSpeed
-      value: 1.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6a7d4c8a42b99e249938f1331c621764, type: 2}

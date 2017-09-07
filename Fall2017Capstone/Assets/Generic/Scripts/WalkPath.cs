@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class WalkPath : MonoBehaviour {
 
-	public GameObject position1;
-	public GameObject position2;
-	public float bufferDistance = 0.5f;
-	public float idleTime;
-	public float movementSpeed = 1.0f;
+	public GameObject position1; // Target position 1
+	public GameObject position2; // Target position 2
+	public float movementSpeed = 1.0f; // How fast the creature moves
+	public float bufferDistance = 0.5f; // How close the creature has to be to the target position to trigger idle
+	public float idleTime; // The number of seconds the creature should be idle for
+	public float idleMovementReducer = 0.8f; // The multiplier applied to the x velocity when in the idle position
 
 	Rigidbody2D rb;
 	bool pathInverted;
@@ -24,7 +25,7 @@ public class WalkPath : MonoBehaviour {
 		if(idle) {
 			// Remove inertia from existing velocity if idle, but smoothly
 			// Only noticeable at higher speeds
-			rb.velocity = new Vector2(rb.velocity.x * 0.8f, rb.velocity.y);
+			rb.velocity = new Vector2(rb.velocity.x * idleMovementReducer, rb.velocity.y);
 			return;
 		}
 
