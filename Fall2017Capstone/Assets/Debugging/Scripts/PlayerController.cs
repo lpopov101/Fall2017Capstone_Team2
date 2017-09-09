@@ -8,7 +8,7 @@ public class PlayerController : MonoBehaviour {
 	GameObject cam;
 	bool isGrounded;
 	public SpriteRenderer sr;
-	float speed = 7.0F;
+	float speed = 3.5F;
 
 	// Use this for initialization
 	void Start () {
@@ -22,17 +22,17 @@ public class PlayerController : MonoBehaviour {
 		if (isGrounded && Input.GetKeyDown(KeyCode.Space))
 		{
 
-			rb.AddForce(new Vector2(0,500),ForceMode2D.Force);
+			rb.AddForce(new Vector2(0,300),ForceMode2D.Force);
 		}
 	}
 
 	void Update() {
 
 
-		if (Input.GetKeyDown(KeyCode.A))
+		if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow))
 		{
 			sr.flipX = true;
-		} else if (Input.GetKeyDown(KeyCode.D))
+		} else if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow))
 		{
 			sr.flipX = false;
 		}
