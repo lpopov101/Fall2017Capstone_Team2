@@ -1,0 +1,457 @@
+fileFormatVersion: 2
+guid: 42bdfeb5e29543c4eb5d98a18f56236b
+timeCreated: 1505005910
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: walk_sprite_0
+    21300002: walk_sprite_1
+    21300004: walk_sprite_2
+    21300006: walk_sprite_3
+    21300008: walk_sprite_4
+    21300010: walk_sprite_5
+    21300012: walk_sprite_6
+    21300014: walk_sprite_7
+    21300016: walk_sprite_8
+    21300018: walk_sprite_9
+    21300020: walk_sprite_10
+    21300022: walk_sprite_11
+    21300024: walk_sprite_12
+    21300026: walk_sprite_13
+    21300028: walk_sprite_14
+    21300030: walk_sprite_15
+    21300032: walk_sprite_16
+    21300034: walk_sprite_17
+    21300036: walk_sprite_18
+    21300038: walk_sprite_19
+    21300040: walk_sprite_20
+    21300042: walk_sprite_21
+    21300044: walk_sprite_22
+    21300046: walk_sprite_23
+    21300048: walk_sprite_24
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: walk_sprite_0
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 4189
+        width: 500
+        height: 825
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: walk_sprite_1
+      rect:
+        serializedVersion: 2
+        x: 1281
+        y: 4179
+        width: 513
+        height: 831
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: walk_sprite_2
+      rect:
+        serializedVersion: 2
+        x: 2311
+        y: 4179
+        width: 520
+        height: 822
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: walk_sprite_3
+      rect:
+        serializedVersion: 2
+        x: 3329
+        y: 4179
+        width: 540
+        height: 815
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: walk_sprite_4
+      rect:
+        serializedVersion: 2
+        x: 4349
+        y: 4181
+        width: 555
+        height: 805
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: walk_sprite_5
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 3146
+        width: 498
+        height: 834
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: walk_sprite_6
+      rect:
+        serializedVersion: 2
+        x: 1324
+        y: 3139
+        width: 440
+        height: 852
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: walk_sprite_7
+      rect:
+        serializedVersion: 2
+        x: 2364
+        y: 3149
+        width: 377
+        height: 855
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: walk_sprite_8
+      rect:
+        serializedVersion: 2
+        x: 3370
+        y: 3149
+        width: 430
+        height: 857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: walk_sprite_9
+      rect:
+        serializedVersion: 2
+        x: 4381
+        y: 3150
+        width: 468
+        height: 861
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: walk_sprite_10
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 2129
+        width: 507
+        height: 862
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: walk_sprite_11
+      rect:
+        serializedVersion: 2
+        x: 1281
+        y: 2129
+        width: 529
+        height: 852
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: walk_sprite_12
+      rect:
+        serializedVersion: 2
+        x: 2280
+        y: 2129
+        width: 554
+        height: 842
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: walk_sprite_13
+      rect:
+        serializedVersion: 2
+        x: 3269
+        y: 2136
+        width: 595
+        height: 825
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: walk_sprite_14
+      rect:
+        serializedVersion: 2
+        x: 4296
+        y: 2129
+        width: 590
+        height: 825
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: walk_sprite_15
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 1109
+        width: 587
+        height: 817
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: walk_sprite_16
+      rect:
+        serializedVersion: 2
+        x: 1236
+        y: 1119
+        width: 578
+        height: 802
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: walk_sprite_17
+      rect:
+        serializedVersion: 2
+        x: 2299
+        y: 1099
+        width: 511
+        height: 837
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: walk_sprite_18
+      rect:
+        serializedVersion: 2
+        x: 3339
+        y: 1099
+        width: 457
+        height: 852
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: walk_sprite_19
+      rect:
+        serializedVersion: 2
+        x: 4380
+        y: 1109
+        width: 399
+        height: 855
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: walk_sprite_20
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 80
+        width: 443
+        height: 851
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: walk_sprite_21
+      rect:
+        serializedVersion: 2
+        x: 1262
+        y: 84
+        width: 484
+        height: 840
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: walk_sprite_22
+      rect:
+        serializedVersion: 2
+        x: 2266
+        y: 90
+        width: 523
+        height: 831
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: walk_sprite_23
+      rect:
+        serializedVersion: 2
+        x: 3301
+        y: 89
+        width: 515
+        height: 832
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: walk_sprite_24
+      rect:
+        serializedVersion: 2
+        x: 4336
+        y: 89
+        width: 510
+        height: 831
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

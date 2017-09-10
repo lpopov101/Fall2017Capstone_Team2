@@ -1,0 +1,682 @@
+fileFormatVersion: 2
+guid: b13d9b06a5808e3488bc19d198753028
+timeCreated: 1505005972
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: idle_sprite_0
+    21300002: idle_sprite_1
+    21300004: idle_sprite_2
+    21300006: idle_sprite_3
+    21300008: idle_sprite_4
+    21300010: idle_sprite_5
+    21300012: idle_sprite_6
+    21300014: idle_sprite_7
+    21300016: idle_sprite_8
+    21300018: idle_sprite_9
+    21300020: idle_sprite_10
+    21300022: idle_sprite_11
+    21300024: idle_sprite_12
+    21300026: idle_sprite_13
+    21300028: idle_sprite_14
+    21300030: idle_sprite_15
+    21300032: idle_sprite_16
+    21300034: idle_sprite_17
+    21300036: idle_sprite_18
+    21300038: idle_sprite_19
+    21300040: idle_sprite_20
+    21300042: idle_sprite_21
+    21300044: idle_sprite_22
+    21300046: idle_sprite_23
+    21300048: idle_sprite_24
+    21300050: idle_sprite_25
+    21300052: idle_sprite_26
+    21300054: idle_sprite_27
+    21300056: idle_sprite_28
+    21300058: idle_sprite_29
+    21300060: idle_sprite_30
+    21300062: idle_sprite_31
+    21300064: idle_sprite_32
+    21300066: idle_sprite_33
+    21300068: idle_sprite_34
+    21300070: idle_sprite_35
+    21300072: idle_sprite_36
+    21300074: idle_sprite_37
+    21300076: idle_sprite_38
+    21300078: idle_sprite_39
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: idle_sprite_0
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 6207
+        width: 353
+        height: 854
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: idle_sprite_1
+      rect:
+        serializedVersion: 2
+        x: 1353
+        y: 6207
+        width: 350
+        height: 854
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: idle_sprite_2
+      rect:
+        serializedVersion: 2
+        x: 2375
+        y: 6207
+        width: 354
+        height: 854
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: idle_sprite_3
+      rect:
+        serializedVersion: 2
+        x: 3398
+        y: 6207
+        width: 357
+        height: 854
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: idle_sprite_4
+      rect:
+        serializedVersion: 2
+        x: 4423
+        y: 6207
+        width: 357
+        height: 854
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: idle_sprite_5
+      rect:
+        serializedVersion: 2
+        x: 5446
+        y: 6207
+        width: 358
+        height: 854
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: idle_sprite_6
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 5185
+        width: 360
+        height: 851
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: idle_sprite_7
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 5185
+        width: 360
+        height: 851
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: idle_sprite_8
+      rect:
+        serializedVersion: 2
+        x: 2372
+        y: 5185
+        width: 364
+        height: 851
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: idle_sprite_9
+      rect:
+        serializedVersion: 2
+        x: 3395
+        y: 5185
+        width: 366
+        height: 851
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: idle_sprite_10
+      rect:
+        serializedVersion: 2
+        x: 4420
+        y: 5185
+        width: 364
+        height: 851
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: idle_sprite_11
+      rect:
+        serializedVersion: 2
+        x: 5442
+        y: 5185
+        width: 368
+        height: 851
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: idle_sprite_12
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 4160
+        width: 370
+        height: 850
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: idle_sprite_13
+      rect:
+        serializedVersion: 2
+        x: 1346
+        y: 4160
+        width: 371
+        height: 850
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: idle_sprite_14
+      rect:
+        serializedVersion: 2
+        x: 2368
+        y: 4160
+        width: 371
+        height: 850
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: idle_sprite_15
+      rect:
+        serializedVersion: 2
+        x: 3391
+        y: 4160
+        width: 374
+        height: 850
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: idle_sprite_16
+      rect:
+        serializedVersion: 2
+        x: 4416
+        y: 4160
+        width: 375
+        height: 850
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: idle_sprite_17
+      rect:
+        serializedVersion: 2
+        x: 5439
+        y: 4160
+        width: 377
+        height: 850
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: idle_sprite_18
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 3138
+        width: 376
+        height: 847
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: idle_sprite_19
+      rect:
+        serializedVersion: 2
+        x: 1343
+        y: 3138
+        width: 378
+        height: 847
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: idle_sprite_20
+      rect:
+        serializedVersion: 2
+        x: 2368
+        y: 3138
+        width: 375
+        height: 847
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: idle_sprite_21
+      rect:
+        serializedVersion: 2
+        x: 3391
+        y: 3138
+        width: 374
+        height: 847
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: idle_sprite_22
+      rect:
+        serializedVersion: 2
+        x: 4416
+        y: 3138
+        width: 374
+        height: 847
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: idle_sprite_23
+      rect:
+        serializedVersion: 2
+        x: 5442
+        y: 3138
+        width: 371
+        height: 847
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: idle_sprite_24
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 2112
+        width: 370
+        height: 851
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: idle_sprite_25
+      rect:
+        serializedVersion: 2
+        x: 1346
+        y: 2112
+        width: 368
+        height: 851
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: idle_sprite_26
+      rect:
+        serializedVersion: 2
+        x: 2370
+        y: 2112
+        width: 369
+        height: 851
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: idle_sprite_27
+      rect:
+        serializedVersion: 2
+        x: 3394
+        y: 2112
+        width: 368
+        height: 851
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: idle_sprite_28
+      rect:
+        serializedVersion: 2
+        x: 4420
+        y: 2112
+        width: 364
+        height: 851
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: idle_sprite_29
+      rect:
+        serializedVersion: 2
+        x: 5443
+        y: 2112
+        width: 366
+        height: 851
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: idle_sprite_30
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 1088
+        width: 364
+        height: 852
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: idle_sprite_31
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 1087
+        width: 360
+        height: 854
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: idle_sprite_32
+      rect:
+        serializedVersion: 2
+        x: 2372
+        y: 1088
+        width: 362
+        height: 853
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: idle_sprite_33
+      rect:
+        serializedVersion: 2
+        x: 3398
+        y: 1087
+        width: 360
+        height: 854
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: idle_sprite_34
+      rect:
+        serializedVersion: 2
+        x: 4422
+        y: 1088
+        width: 358
+        height: 853
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: idle_sprite_35
+      rect:
+        serializedVersion: 2
+        x: 5446
+        y: 1087
+        width: 357
+        height: 854
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: idle_sprite_36
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 65
+        width: 357
+        height: 850
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: idle_sprite_37
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 65
+        width: 357
+        height: 852
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: idle_sprite_38
+      rect:
+        serializedVersion: 2
+        x: 2375
+        y: 65
+        width: 354
+        height: 853
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: idle_sprite_39
+      rect:
+        serializedVersion: 2
+        x: 3401
+        y: 65
+        width: 353
+        height: 853
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
