@@ -5,7 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class LoadLevel : MonoBehaviour {
 
-
 	public string nextLevel;
 
 	void Start () {
@@ -13,7 +12,8 @@ public class LoadLevel : MonoBehaviour {
 	}
 
 	void OnTriggerEnter2D(Collider2D coll) {
-		SceneManager.LoadScene("Shell1",LoadSceneMode.Single);
+		if(coll.gameObject.CompareTag("Player"))
+			SceneManager.LoadScene(nextLevel,LoadSceneMode.Single);
 	}
 
 }
