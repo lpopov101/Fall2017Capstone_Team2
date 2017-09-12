@@ -13,7 +13,7 @@ public class PlayerController : MonoBehaviour {
 	public bool isGrounded;
 	public bool isJump;
 	public float speed = 3.5F;
-	public float jumpSpeed = 550.0f;
+	public float jumpSpeed = 600.0f;
 	public Vector3 moveDirection = Vector3.zero;
 
 	// Use this for initialization
