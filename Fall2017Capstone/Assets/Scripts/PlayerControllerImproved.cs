@@ -25,6 +25,7 @@ public class PlayerControllerImproved : MonoBehaviour {
     private bool isSkidding;
     private bool ledgeMode;
     private float fallTime;
+	private bool facingRight;
     
 	void Start ()
     {
@@ -45,6 +46,7 @@ public class PlayerControllerImproved : MonoBehaviour {
         isSkidding = false;
         ledgeMode = false;
         fallTime = -1;
+		facingRight = true;
 	}
 
     void Update()
@@ -86,6 +88,15 @@ public class PlayerControllerImproved : MonoBehaviour {
         animator.SetBool("ledge", ledgeMode);
         animator.SetFloat("horizontalVelocity", rigidBody.velocity.x);
         animator.SetFloat("verticalVelocity", rigidBody.velocity.y);
+
+		// Calculate facingRight boolean
+		float x = Mathf.Abs(rigidBody.velocity.x);
+		if(x > 0.01f) { // Make sure the player isn't standing virtually still
+			if(facingRight && rigidBody.velocity.x < 0)
+				facingRight = false;
+			else if(!facingRight && rigidBody.velocity.x > 0)
+				facingRight = true;
+		}
     }
 
     void FixedUpdate () {
@@ -176,5 +187,7 @@ public class PlayerControllerImproved : MonoBehaviour {
         
     }
 
-
+	public bool GetFacingRight() {
+		return facingRight;
+	}
 }
