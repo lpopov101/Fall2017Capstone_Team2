@@ -34,7 +34,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1336427122999730}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -37.84, y: -17.06, z: 0}
+  m_LocalPosition: {x: -35.82, y: -17.2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -55,6 +55,10 @@ MonoBehaviour:
   handIndicatorPrefab: {fileID: 1698838081202062, guid: 8b716ea5953b44e49977c44677da7e7f,
     type: 2}
   handPrefab: {fileID: 1366023901142550, guid: 412ccbdc4f34f69489fd93d1eee465b5, type: 2}
-  attackRadius: 4
-  idleTime: 1
-  handIndicatorTime: 1.5
+  attackRadius: 8
+  idleTime: 2.5
+  handIndicatorTime: 0.5
+  handGrowthSpeed: 60
+  handShrinkSpeed: 40
+  handGrowthAmount: 8
+  handWaitTime: 1

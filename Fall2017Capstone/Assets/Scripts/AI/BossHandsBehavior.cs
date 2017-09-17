@@ -9,7 +9,12 @@ public class BossHandsBehavior : MonoBehaviour {
 	public GameObject handPrefab;
 	public float attackRadius = 1.0f;
 	public float idleTime = 1.0f;
-	public float handIndicatorTime;
+
+	public float handIndicatorTime = 1.0f;
+	public float handGrowthSpeed = 1.0f;
+	public float handShrinkSpeed = 1.0f;
+	public float handGrowthAmount = 1.0f;
+	public float handWaitTime = 1.0f;
 
 	private int attackPhase; // 0: idle, 1: preparing, 2: attacking
 	private Vector3 targetPos; // The position the creature lands on
@@ -21,32 +26,39 @@ public class BossHandsBehavior : MonoBehaviour {
 		attackPhase = 0;
 		targetPos = Vector3.zero;
 		handIndicatorObj = null;
-		groundYValue = target.transform.position.y;
+		groundYValue = transform.position.y;
 		idle = false;
 	}
 
 	void Update() {
-		if (idle) {
+		if(idle) {
 			return;
 		}
 
 		if(attackPhase == 0 && Vector2.Distance(transform.position, target.transform.position) <= attackRadius) {
 			attackPhase++;
-		}
-		if(attackPhase == 1) {
-			attackPhase++;
 			StartCoroutine(PrepareForAttack());
 		}
 		if(attackPhase == 2) {
-			Instantiate(handPrefab);
+			attackPhase = 0;
+
 			Vector3 pos = targetPos;
 			pos.y = groundYValue-0.5f;
-			handPrefab.transform.position = pos;
+
+			GameObject handObj = Instantiate(handPrefab);
+			handObj.transform.position = pos;
+			BossHandBehavior handBehavior = handObj.GetComponent<BossHandBehavior>();
+			handBehavior.growthSpeed = handGrowthSpeed;
+			handBehavior.shrinkSpeed = handShrinkSpeed;
+			handBehavior.growthAmount = handGrowthAmount;
+			handBehavior.waitTime = handWaitTime;
+
+			StartCoroutine(Idle());
 		}
 	}
 
 	IEnumerator PrepareForAttack() {
-		if (attackPhase != 1) {
+		if(attackPhase != 1) {
 			Debug.LogError ("Trying to run PrepareForAttack in the wrong attack phase");
 			yield break;
 		}
@@ -55,6 +67,7 @@ public class BossHandsBehavior : MonoBehaviour {
 		handIndicatorObj = Instantiate(handIndicatorPrefab);
 		handIndicatorObj.transform.position = targetPos;
 		yield return new WaitForSeconds(handIndicatorTime);
+		Destroy(handIndicatorObj);
 
 		attackPhase++;
 	}
