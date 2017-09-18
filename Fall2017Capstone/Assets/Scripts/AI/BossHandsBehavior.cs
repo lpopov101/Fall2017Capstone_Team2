@@ -7,6 +7,7 @@ public class BossHandsBehavior : MonoBehaviour {
 	public GameObject target;
 	public GameObject handIndicatorPrefab;
 	public GameObject handPrefab;
+	Animator anim;
 	public float attackRadius = 1.0f;
 	public float idleTime = 1.0f;
 
@@ -23,6 +24,7 @@ public class BossHandsBehavior : MonoBehaviour {
 	private bool idle;
 
 	void Start () {
+		anim = GetComponent<Animator>();
 		attackPhase = 0;
 		targetPos = Vector3.zero;
 		handIndicatorObj = null;
@@ -41,7 +43,6 @@ public class BossHandsBehavior : MonoBehaviour {
 		}
 		if(attackPhase == 2) {
 			attackPhase = 0;
-
 			Vector3 pos = targetPos;
 			pos.y = groundYValue-0.5f;
 
@@ -65,15 +66,19 @@ public class BossHandsBehavior : MonoBehaviour {
 
 		targetPos = target.transform.position;
 		handIndicatorObj = Instantiate(handIndicatorPrefab);
+		Animator animIndicator = handIndicatorObj.GetComponent<Animator>();
 		handIndicatorObj.transform.position = targetPos;
+		animIndicator.SetBool ("isStart",true);
 		yield return new WaitForSeconds(handIndicatorTime);
 		Destroy(handIndicatorObj);
+		animIndicator.SetBool ("isStart",false);
 
 		attackPhase++;
 	}
 
 	IEnumerator Idle() {
 		idle = true;
+		anim.SetBool ("isWait",true);
 		yield return new WaitForSeconds(idleTime);
 		idle = false;
 	}

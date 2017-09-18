@@ -8,6 +8,7 @@ public class BossHandBehavior : MonoBehaviour {
 	public float shrinkSpeed = 1.0f;
 	public float growthAmount = 1.0f;
 	public float waitTime = 1.0f;
+	Animator anim;
 
 	private float initialY;
 	private int attackPhase; // 0: grow, 1: stay up, 2: shrink
@@ -15,10 +16,12 @@ public class BossHandBehavior : MonoBehaviour {
 	void Start () {
 		initialY = transform.position.y;
 		attackPhase = 0;
+		anim = GetComponent<Animator>();
 	}
 
 	void Update() {
 		if(attackPhase == 0) {
+			anim.SetBool ("isAttack", true);
 			transform.Translate(Vector3.up * growthSpeed * Time.deltaTime);
 			if(transform.position.y >= initialY + growthAmount) {
 				attackPhase++;
@@ -28,6 +31,7 @@ public class BossHandBehavior : MonoBehaviour {
 			transform.Translate(Vector3.down * shrinkSpeed * Time.deltaTime);
 			if(transform.position.y < initialY) {
 				Destroy(gameObject);
+				anim.SetBool ("isAttack", false);
 			}
 		}
 	}

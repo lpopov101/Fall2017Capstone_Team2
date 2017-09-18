@@ -8,10 +8,14 @@ public class DimensionHopping : MonoBehaviour {
 
     private Rigidbody2D rigidBody;
     private bool DimensionMode;
+	public AudioSource streetAudio;
+	public AudioSource clubAudio;
+	AudioSource dimHopAudio;
 
     private void Start()
     {
         rigidBody = GetComponent<Rigidbody2D>();
+		dimHopAudio = GetComponent<AudioSource>();
         DimensionMode = true;
     }
 
@@ -19,12 +23,17 @@ public class DimensionHopping : MonoBehaviour {
     void Update () {
 		if(Input.GetButtonDown("DimensionShift"))
         {
+			dimHopAudio.Play();
             if(DimensionMode)
             {
+				streetAudio.mute = true;
+				clubAudio.mute = true;
                 transform.Translate(DimensionOffset);
             }
             else
             {
+				streetAudio.mute = false;
+				clubAudio.mute = false;
                 transform.Translate(-1*DimensionOffset);
             }
             DimensionMode = !DimensionMode;
