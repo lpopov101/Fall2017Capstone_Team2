@@ -67,7 +67,7 @@ public class BossHandsBehavior : MonoBehaviour {
 		targetPos = target.transform.position;
 		handIndicatorObj = Instantiate(handIndicatorPrefab);
 		Animator animIndicator = handIndicatorObj.GetComponent<Animator>();
-		handIndicatorObj.transform.position = targetPos;
+		handIndicatorObj.transform.position = new Vector3(targetPos.x,targetPos.y-0.8f, targetPos.z);
 		animIndicator.SetBool ("isStart",true);
 		yield return new WaitForSeconds(handIndicatorTime);
 		Destroy(handIndicatorObj);
