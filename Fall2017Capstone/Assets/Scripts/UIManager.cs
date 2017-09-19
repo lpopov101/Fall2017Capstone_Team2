@@ -2,13 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class UIManager : MonoBehaviour {
 
 	public static UIManager Instance; // Singleton that currently refreshes when a new scene is loaded
 
-	public GameObject pausedText;
-	public GameObject dialogueText;
+	public GameObject pausedOverlay;
+	//public GameObject dialogueText;
 
 	bool paused, dialoguePaused;
 	Text dialogueTextScript;
@@ -16,11 +17,11 @@ public class UIManager : MonoBehaviour {
 	void Start () {
 		Instance = this;
 
-		pausedText.SetActive(false);
-		dialogueText.SetActive(false);
+		pausedOverlay.SetActive(false);
+		//dialogueText.SetActive(false);
 
 		paused = dialoguePaused = false;
-		dialogueTextScript = dialogueText.GetComponent<Text>();
+		//dialogueTextScript = dialogueText.GetComponent<Text>();
 	}
 
 	void Update () {
@@ -47,13 +48,15 @@ public class UIManager : MonoBehaviour {
 	public void Pause() {
 		paused = true;
 		UpdateTimeScale();
-		pausedText.SetActive(true);
+		AudioListener.pause = true;
+		pausedOverlay.SetActive(true);
 	}
 
 	public void Unpause() {
 		paused = false;
 		UpdateTimeScale();
-		pausedText.SetActive(false);
+		AudioListener.pause = false;
+		pausedOverlay.SetActive(false);
 	}
 
 
@@ -64,13 +67,13 @@ public class UIManager : MonoBehaviour {
 	public void DialoguePause() {
 		dialoguePaused = true;
 		UpdateTimeScale();
-		dialogueText.SetActive(true);
+		//dialogueText.SetActive(true);
 	}
 
 	public void DialogueUnpause() {
 		dialoguePaused = false;
 		UpdateTimeScale();
-		dialogueText.SetActive(false);
+		//dialogueText.SetActive(false);
 	}
 
 	/*
@@ -99,5 +102,10 @@ public class UIManager : MonoBehaviour {
 			Time.timeScale = 0;
 		else
 			Time.timeScale = 1;
+	}
+
+	public void TitleScreen() {
+		Unpause();
+		SceneManager.LoadScene ("TitleScreen",LoadSceneMode.Single);
 	}
 }
