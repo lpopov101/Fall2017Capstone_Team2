@@ -7,9 +7,9 @@ public class BossHandsBehavior : MonoBehaviour {
 	public GameObject target;
 	public GameObject handIndicatorPrefab;
 	public GameObject handPrefab;
-	Animator anim;
 	public float attackRadius = 1.0f;
 	public float idleTime = 1.0f;
+	public float idleTimeRandomizer = 1.0f;
 
 	public float handIndicatorTime = 1.0f;
 	public float handGrowthSpeed = 1.0f;
@@ -24,7 +24,6 @@ public class BossHandsBehavior : MonoBehaviour {
 	private bool idle;
 
 	void Start () {
-		anim = GetComponent<Animator>();
 		attackPhase = 0;
 		targetPos = Vector3.zero;
 		handIndicatorObj = null;
@@ -64,22 +63,26 @@ public class BossHandsBehavior : MonoBehaviour {
 			yield break;
 		}
 
-		targetPos = target.transform.position;
+		targetPos = PredictTargetPosition();
 		handIndicatorObj = Instantiate(handIndicatorPrefab);
-		Animator animIndicator = handIndicatorObj.GetComponent<Animator>();
-		handIndicatorObj.transform.position = new Vector3(targetPos.x,targetPos.y-0.8f, targetPos.z);
-		animIndicator.SetBool ("isStart",true);
+		handIndicatorObj.transform.position = new Vector3(targetPos.x,groundYValue-0.05f, handIndicatorObj.transform.position.z);
 		yield return new WaitForSeconds(handIndicatorTime);
 		Destroy(handIndicatorObj);
-		animIndicator.SetBool ("isStart",false);
 
 		attackPhase++;
 	}
 
 	IEnumerator Idle() {
 		idle = true;
-		anim.SetBool ("isWait",true);
-		yield return new WaitForSeconds(idleTime);
+		yield return new WaitForSeconds(idleTime + Random.Range(-idleTimeRandomizer, idleTimeRandomizer));
 		idle = false;
+	}
+
+	Vector3 PredictTargetPosition() {
+		Vector3 pos = target.transform.position;
+		Rigidbody2D rb = target.GetComponent<Rigidbody2D>();
+
+		pos.x += rb.velocity.x * Random.Range(0.3f, 0.5f);
+		return pos;
 	}
 }

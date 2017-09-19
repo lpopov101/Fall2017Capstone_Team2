@@ -10,6 +10,7 @@ public class WalkPath : MonoBehaviour {
 	public float bufferDistance = 0.5f; // How close the creature has to be to the target position to trigger idle
 	public float idleTime; // The number of seconds the creature should be idle for
 	public float idleMovementReducer = 0.8f; // The multiplier applied to the x velocity when in the idle position
+	public bool flipUsingAnimator = false;
 
 	private Rigidbody2D rigidBody;
 	private Animator animator;
@@ -53,9 +54,12 @@ public class WalkPath : MonoBehaviour {
 		idle = true;
 		yield return new WaitForSeconds(idleTime);
 		pathInverted = !pathInverted;
-		if(animator) {
-			// Update animator direction boolean if it exists
+		if(flipUsingAnimator) {
 			animator.SetBool("walkingRight", !pathInverted);
+		} else {
+			float scaleX = Mathf.Abs(transform.localScale.x);
+			scaleX *= !pathInverted ? 1 : -1;
+			transform.localScale = new Vector3(scaleX, transform.localScale.y, 1);
 		}
 		idle = false;
 	}
