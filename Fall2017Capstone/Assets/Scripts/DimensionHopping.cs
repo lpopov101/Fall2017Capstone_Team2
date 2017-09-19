@@ -26,12 +26,14 @@ public class DimensionHopping : MonoBehaviour {
 			dimHopAudio.Play();
             if(DimensionMode)
             {
+				RenderSettings.ambientLight = Color.blue;
 				streetAudio.mute = true;
 				clubAudio.mute = true;
                 transform.Translate(DimensionOffset);
             }
             else
             {
+				RenderSettings.ambientLight = Color.white;
 				streetAudio.mute = false;
 				clubAudio.mute = false;
                 transform.Translate(-1*DimensionOffset);

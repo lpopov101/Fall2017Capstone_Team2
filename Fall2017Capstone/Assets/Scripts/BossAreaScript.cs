@@ -7,10 +7,10 @@ public class BossAreaScript : MonoBehaviour {
 	public AudioSource audioReality;
 	public AudioSource streetAudio;
 	public AudioSource bgm;
+	public AudioSource enterArea;
 
 	// Use this for initialization
 	void Start () {
-		
 	}
 	
 	// Update is called once per frame
@@ -23,6 +23,7 @@ public class BossAreaScript : MonoBehaviour {
 			audioReality.mute = true;
 			streetAudio.mute = true;
 			bgm.mute = true;
+			enterArea.Play ();
 		}
 	}
 

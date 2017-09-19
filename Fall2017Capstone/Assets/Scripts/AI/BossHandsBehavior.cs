@@ -68,7 +68,6 @@ public class BossHandsBehavior : MonoBehaviour {
 		handIndicatorObj.transform.position = new Vector3(targetPos.x,groundYValue-0.05f, handIndicatorObj.transform.position.z);
 		yield return new WaitForSeconds(handIndicatorTime);
 		Destroy(handIndicatorObj);
-
 		attackPhase++;
 	}
 
