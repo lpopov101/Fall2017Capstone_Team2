@@ -5,8 +5,11 @@ using UnityEngine;
 public class CameraScript : MonoBehaviour {
 
 	public Transform target;
+	public Vector2 cameraOffset;
 
 	void Update() {
-		transform.position = new Vector3 (target.position.x, target.position.y, -10);
+		float x = target.position.x + cameraOffset.x;
+		float y = target.position.y + cameraOffset.y;
+		transform.position = new Vector3 (x, y, -10);
 	}
 }

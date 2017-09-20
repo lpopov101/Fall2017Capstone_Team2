@@ -12,6 +12,7 @@ public class BossHandBehavior : MonoBehaviour {
 	private float initialY;
 	private int attackPhase; // 0: grow, 1: stay up, 2: shrink
 	private Animator anim;
+	private BossHandsBehavior bossBehavior;
 
 	void Start () {
 		initialY = transform.position.y;
@@ -42,6 +43,12 @@ public class BossHandBehavior : MonoBehaviour {
 		}
 
 		yield return new WaitForSeconds(waitTime);
+		if(bossBehavior)
+			bossBehavior.GetHandIndicator().GetComponent<BossHandIndicatorBehavior>().StartFading();
 		attackPhase++;
+	}
+
+	public void SetBossBehavior(BossHandsBehavior boss) {
+		bossBehavior = boss;
 	}
 }
