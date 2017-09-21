@@ -3366,7 +3366,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 323588916}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.85, y: -7.28, z: 0}
+  m_LocalPosition: {x: 10, y: -1007.28, z: 0}
   m_LocalScale: {x: 0.2, y: 0.2, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -7005,6 +7005,11 @@ Prefab:
         type: 2}
       propertyPath: attackRadius
       value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 114128297151741966, guid: bf2950572ed245441bb46bbf408857bb,
+        type: 2}
+      propertyPath: handIndicatorTime
+      value: 0.3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bf2950572ed245441bb46bbf408857bb, type: 2}
@@ -19160,11 +19165,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4956917749498592, guid: c9abbe07283cf6e4a894d45867dd73a4, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -49.68
+      value: -46.1
       objectReference: {fileID: 0}
     - target: {fileID: 4956917749498592, guid: c9abbe07283cf6e4a894d45867dd73a4, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -13.62
+      value: -11.86
       objectReference: {fileID: 0}
     - target: {fileID: 4956917749498592, guid: c9abbe07283cf6e4a894d45867dd73a4, type: 2}
       propertyPath: m_LocalPosition.z
