@@ -5,30 +5,33 @@ using UnityEngine.UI;
 
 public class MemoryScript : MonoBehaviour {
 
+	public Camera camera;
+	//public float textShowTimeSeconds = 5.0f;
+	public MovieTexture movie;
+
+	AudioSource shutter;
 	SpriteRenderer sr;
-	public Text memoryText;
-	public float textShowTimeSeconds = 5.0f;
+	//Text memoryText;
 
 	void Start () {
 		sr = GetComponent<SpriteRenderer>();
+		shutter = GetComponent<AudioSource>();
 	}
 
 	void OnTriggerEnter2D(Collider2D coll) {
 		if (coll.gameObject.CompareTag ("Player")) {
-			// Set the interactNPC field
-			//Debug.Log("Toucuhed");
 			sr.enabled = false;
-			//memoryText.text = "Hey, sweetheart. It’s time to wake up, okay?";
-			StartCoroutine(DisplayText());
-			//memoryText.text = "";
+			movie.Play();
+
 		}
 	}
 
-	IEnumerator DisplayText () {
-		memoryText.text = "Hey, sweetheart. It’s time to wake up, okay?";
-		yield return new WaitForSeconds (textShowTimeSeconds);
-		memoryText.text = "";
+	void OnGUI() {
+		if (movie != null && movie.isPlaying) {
+			GUI.DrawTexture (new Rect (0, 0, Screen.width, Screen.height), movie, ScaleMode.ScaleToFit, false, 0);
+		}
 	}
+
 
 	void OnTriggerExit2D(Collider2D coll) {
 	}

@@ -11,12 +11,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/IntroText.unity
     guid: 61aeda12c092c2f43855cfe1284378c9
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Shell1.unity
     guid: d0a0843d16afcdf44b3f939e14de831e
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Shell2.unity
     guid: 8b22c3ba527f7ab44987786f206e1e77
   - enabled: 1
     path: Assets/Scenes/TheEnd.unity
     guid: d244ae205ee5adb4c8dcc7e16aab24a3
+  - enabled: 1
+    path: Assets/Scenes/NewShell1.unity
+    guid: 8bfb7aeaee669954686daef767c9b3ae

@@ -428,7 +428,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba3fad8064d5e054da3598a7f87d494c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextLevel: Shell1
+  nextLevel: NewShell1
   text: {fileID: 977448954}
 --- !u!1 &977448952
 GameObject:
