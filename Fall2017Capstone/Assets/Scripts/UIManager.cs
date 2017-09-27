@@ -12,7 +12,7 @@ public class UIManager : MonoBehaviour {
 	//public GameObject dialogueText;
 
 	bool paused, dialoguePaused;
-	Text dialogueTextScript;
+	//Text dialogueTextScript;
 
 	void Start () {
 		Instance = this;
@@ -82,7 +82,7 @@ public class UIManager : MonoBehaviour {
 	public void DisplayDialogue(string s) {
 		if(!dialoguePaused)
 			DialoguePause();
-		dialogueTextScript.text = s;
+		//dialogueTextScript.text = s;
 	}
 
 

@@ -89,6 +89,7 @@ GameObject:
   - component: {fileID: 114100168825068852}
   - component: {fileID: 82918663972556878}
   - component: {fileID: 114278591348600428}
+  - component: {fileID: 114007977338940302}
   m_Layer: 0
   m_Name: Gatorp
   m_TagString: Player
@@ -183,7 +184,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1715291861094252}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -49.78, y: -13.2, z: 0}
+  m_LocalPosition: {x: -75.4, y: -10.6, z: 0}
   m_LocalScale: {x: 0.14, y: 0.14, z: 1}
   m_Children:
   - {fileID: 4918055902081620}
@@ -242,7 +243,7 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_Size: {x: 3.53, y: 8.54}
+  m_Size: {x: 3.53, y: 8.33}
   m_Direction: 0
 --- !u!82 &82918663972556878
 AudioSource:
@@ -341,6 +342,19 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114007977338940302
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1715291861094252}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81eeb1fdcf45bed49a4d8cdd7053025a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gotDodge: 0
+  dodgeForce: 500
 --- !u!114 &114093170454257394
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -394,6 +408,7 @@ MonoBehaviour:
   acceleration: 20
   speedLimit: 10
   friction: 5
+  slopeAngleLimit: 50
   gravity: -30
   sprintAnimationSpeedCutoff: 9
   skidAnimationSpeedCutoff: 7
@@ -443,7 +458,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: b13d9b06a5808e3488bc19d198753028, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

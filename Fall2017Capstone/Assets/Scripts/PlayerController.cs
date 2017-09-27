@@ -7,7 +7,6 @@ public class PlayerController : MonoBehaviour {
 	Rigidbody2D rb;
 	GameObject cam;
 	Animator anim;
-	BoxCollider2D bc;
 
 	public SpriteRenderer sr;
 	public bool isGrounded;
@@ -21,7 +20,6 @@ public class PlayerController : MonoBehaviour {
 		rb = GetComponent<Rigidbody2D>();
 		cam = Camera.main.gameObject;
 		anim = GetComponent<Animator>();
-		bc = GetComponent<BoxCollider2D>();
 	}
 
 	void Movement() {

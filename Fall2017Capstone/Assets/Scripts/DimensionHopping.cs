@@ -6,7 +6,7 @@ public class DimensionHopping : MonoBehaviour {
 
     public Vector3 DimensionOffset;
 
-    private Rigidbody2D rigidBody;
+    //private Rigidbody2D rigidBody;
     private bool DimensionMode;
 	public AudioSource streetAudio;
 	public AudioSource clubAudio;
@@ -14,7 +14,7 @@ public class DimensionHopping : MonoBehaviour {
 
     private void Start()
     {
-        rigidBody = GetComponent<Rigidbody2D>();
+        //rigidBody = GetComponent<Rigidbody2D>();
 		dimHopAudio = GetComponent<AudioSource>();
         DimensionMode = true;
     }
