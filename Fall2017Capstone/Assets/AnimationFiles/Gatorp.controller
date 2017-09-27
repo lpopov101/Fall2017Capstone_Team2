@@ -68,6 +68,12 @@ AnimatorController:
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 0}
+  - m_Name: jumpTime
+    m_Type: 1
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 0}
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer
@@ -118,12 +124,12 @@ AnimatorStateTransition:
   - m_ConditionMode: 1
     m_ConditionEvent: grounded
     m_EventTreshold: 0
-  - m_ConditionMode: 4
-    m_ConditionEvent: verticalVelocity
-    m_EventTreshold: 0
   - m_ConditionMode: 2
     m_ConditionEvent: ledge
     m_EventTreshold: 0
+  - m_ConditionMode: 3
+    m_ConditionEvent: jumpTime
+    m_EventTreshold: 0.1
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1102103566948897328}
   m_Solo: 0
@@ -295,12 +301,12 @@ AnimatorStateTransition:
   - m_ConditionMode: 1
     m_ConditionEvent: grounded
     m_EventTreshold: 0
-  - m_ConditionMode: 4
-    m_ConditionEvent: verticalVelocity
-    m_EventTreshold: 0
   - m_ConditionMode: 2
     m_ConditionEvent: ledge
     m_EventTreshold: 0
+  - m_ConditionMode: 3
+    m_ConditionEvent: jumpTime
+    m_EventTreshold: 0.1
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1102332504562793678}
   m_Solo: 0
@@ -441,7 +447,7 @@ AnimatorStateTransition:
   m_Conditions:
   - m_ConditionMode: 4
     m_ConditionEvent: horizontalVelocity
-    m_EventTreshold: -0.01
+    m_EventTreshold: -0.05
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1102507187666628454}
   m_Solo: 0
@@ -588,7 +594,7 @@ AnimatorStateTransition:
   m_Conditions:
   - m_ConditionMode: 4
     m_ConditionEvent: horizontalVelocity
-    m_EventTreshold: 0.05
+    m_EventTreshold: 0.08
   - m_ConditionMode: 2
     m_ConditionEvent: jump
     m_EventTreshold: 0
@@ -615,7 +621,7 @@ AnimatorStateTransition:
   m_Conditions:
   - m_ConditionMode: 3
     m_ConditionEvent: horizontalVelocity
-    m_EventTreshold: 0.05
+    m_EventTreshold: 0.08
   - m_ConditionMode: 2
     m_ConditionEvent: jump
     m_EventTreshold: 0
@@ -846,7 +852,7 @@ AnimatorStateTransition:
   m_Conditions:
   - m_ConditionMode: 3
     m_ConditionEvent: horizontalVelocity
-    m_EventTreshold: 0.01
+    m_EventTreshold: 0.05
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1102148463148505208}
   m_Solo: 0
@@ -1233,7 +1239,7 @@ AnimatorStateTransition:
   m_Conditions:
   - m_ConditionMode: 4
     m_ConditionEvent: horizontalVelocity
-    m_EventTreshold: -0.05
+    m_EventTreshold: -0.08
   - m_ConditionMode: 2
     m_ConditionEvent: jump
     m_EventTreshold: 0
@@ -1440,7 +1446,7 @@ AnimatorStateTransition:
     m_EventTreshold: -0.05
   - m_ConditionMode: 3
     m_ConditionEvent: horizontalVelocity
-    m_EventTreshold: -0.05
+    m_EventTreshold: -0.08
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1102332504562793678}
   m_Solo: 0

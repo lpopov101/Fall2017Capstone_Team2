@@ -6,6 +6,9 @@ public class PlayerControllerImproved : MonoBehaviour {
     
     public float acceleration = 3.5F;
     public float speedLimit = 2.0F;
+    public float friction = 1.0F;
+    public float slopeAngleLimit = 50.0F;
+    public float gravity = -30F;
     public float sprintAnimationSpeedCutoff = 1.5F;
     public float skidAnimationSpeedCutoff = 6.0F;
     public float jumpStrength = 600.0F;
@@ -13,22 +16,26 @@ public class PlayerControllerImproved : MonoBehaviour {
     public float airControl = 1.0F;
     public float fallAnimationTriggerTime = 0.3F;
     public float ledgeGrabRange = 2.0F;
-    public float ledgeGrabYVelocityMin = -0.3F;
+    public float ledgeGrabTimeMin = 0.1F;
+    public float ledgeGrabTimeMax = 0.5F;
     public Transform ledgePoint;
-    public Transform groundPoint;
+    public Transform[] groundPoints;
     public LayerMask groundLayer;
 
     private Rigidbody2D rigidBody;
     private Animator animator;
     private bool isGrounded;
     private bool shouldJump;
+    private bool jumped;
     private bool isSkidding;
     private bool ledgeMode;
     private float fallTime;
+    private float jumpTime;
 	private bool facingRight;
     
 	void Start ()
     {
+        Physics2D.queriesStartInColliders = false;
         Mathf.Clamp(acceleration, 0, Mathf.Infinity);
         Mathf.Clamp(speedLimit, 0, Mathf.Infinity);
         Mathf.Clamp(jumpStrength, 0, Mathf.Infinity);
@@ -43,9 +50,11 @@ public class PlayerControllerImproved : MonoBehaviour {
         animator = GetComponent<Animator>();
         isGrounded = false;
         shouldJump = false;
+        jumped = false;
         isSkidding = false;
         ledgeMode = false;
         fallTime = -1;
+        jumpTime = -1;
 		facingRight = true;
 	}
 
@@ -62,6 +71,7 @@ public class PlayerControllerImproved : MonoBehaviour {
             if (Input.GetButtonDown("Jump") && isGrounded)
             {
                 shouldJump = true;
+                jumped = false;
             }
         }
         else
@@ -88,6 +98,7 @@ public class PlayerControllerImproved : MonoBehaviour {
         animator.SetBool("ledge", ledgeMode);
         animator.SetFloat("horizontalVelocity", rigidBody.velocity.x);
         animator.SetFloat("verticalVelocity", rigidBody.velocity.y);
+        animator.SetFloat("jumpTime", Time.time - jumpTime);
 
 		// Calculate facingRight boolean
 		float x = Mathf.Abs(rigidBody.velocity.x);
@@ -101,10 +112,34 @@ public class PlayerControllerImproved : MonoBehaviour {
 
     void FixedUpdate () {
         float horizontalAxis = Input.GetAxisRaw("Horizontal");
-        isGrounded = Physics2D.OverlapCircle(groundPoint.position, 0.2F, groundLayer) || ledgeMode;
+        isGrounded = ledgeMode;
+        float distanceToGround = float.MaxValue;
+        float forceAngle = 0.0F;
+        foreach (Transform t in groundPoints)
+        {
+            RaycastHit2D groundRay = Physics2D.Raycast(t.position, -Vector2.up, 10.0F, groundLayer);
+            //Debug.DrawRay(t.position, -Vector2.up * 0.05F);
+            if (groundRay.collider != null)
+            {
+                float angle = Vector2.Angle(Vector2.up, groundRay.normal);
+                if(groundRay.distance < distanceToGround)
+                {
+                    distanceToGround = groundRay.distance;
+                    forceAngle = (Vector2.Angle(Vector2.right, groundRay.normal) - 90) * Mathf.Deg2Rad;
+                }
+                if (angle <= slopeAngleLimit && groundRay.distance <= 0.05F)
+                {
+                    isGrounded = true;
+                    jumpTime = -1;
+                }
+            }
+
+        }
+
+        //Debug.Log(distanceToGround + ", " + isGrounded + ", " + forceAngle);
 
 
-        float moveForce = 0.0F; 
+        float moveForce = 0.0F;
         float jumpForce = 0.0F;
         bool isLanding = animator.GetCurrentAnimatorStateInfo(0).IsName("landing_r")
                 || animator.GetCurrentAnimatorStateInfo(0).IsName("landing_l");
@@ -112,62 +147,72 @@ public class PlayerControllerImproved : MonoBehaviour {
         {
             if(!ledgeMode)
             {
-                if (shouldJump && !isLanding)
-                {
-                    jumpForce = jumpStrength;
-                }
-                if (Mathf.Abs(rigidBody.velocity.x) < speedLimit && !isLanding)
-                {
-                    moveForce = horizontalAxis * acceleration;
-                }
-            }
-            else
-            {
-                if (Input.GetAxisRaw("Vertical") < 0)
-                {
-                    isGrounded = false;
-                    ledgeMode = false;
-                    rigidBody.simulated = true;
-                }
                 if (shouldJump)
                 {
                     jumpForce = jumpStrength;
+                    jumpTime = Time.time;
+                }
+                if (Mathf.Abs(rigidBody.velocity.x) < speedLimit)
+                {
+                    moveForce = horizontalAxis * acceleration;
+                }
+                if (horizontalAxis == 0 || Mathf.Sign(horizontalAxis) != Mathf.Sign(rigidBody.velocity.x))
+                {
+                    float horizontalVelocity = rigidBody.velocity.x;
+                    float verticalVelocity = rigidBody.velocity.y;
+                    rigidBody.velocity = new Vector2(Mathf.Lerp(horizontalVelocity, 0, friction * Time.fixedDeltaTime), Mathf.Lerp(verticalVelocity, 0, friction * Time.fixedDeltaTime));
+                }
+
+            }
+            else
+            {
+                if (Input.GetAxisRaw("Vertical") < 0 || Input.GetButton("DimensionShift"))
+                {
                     isGrounded = false;
                     ledgeMode = false;
                     rigidBody.simulated = true;
+                }
+                if (shouldJump && !jumped)
+                {
+                    jumpForce = jumpStrength;
+                    isGrounded = false;
+                    ledgeMode = false;
+                    rigidBody.simulated = true;
+                    jumped = true;
                 }
             }
         }
         else
         {
+            jumpForce = gravity;
             if (Mathf.Abs(rigidBody.velocity.x) <= airControl)
             {
                 moveForce = horizontalAxis * airAcceleration;
             }
-
-            if(Input.GetAxisRaw("Vertical") > 0 && rigidBody.velocity.y > ledgeGrabYVelocityMin)
+            float timeJumped = Time.time - jumpTime;
+            if (jumpTime != -1 && timeJumped >= ledgeGrabTimeMin && timeJumped <= ledgeGrabTimeMax)
             {
                 bool hitLedge = false;
-                Debug.DrawRay(ledgePoint.position, -Vector2.up * ledgeGrabRange, Color.green);
+                int jumpMode = 0;
+                if (animator.GetCurrentAnimatorStateInfo(0).IsName("jump_r"))
+                {
+                    jumpMode = 1;
+                }
+                else if (animator.GetCurrentAnimatorStateInfo(0).IsName("jump_l"))
+                {
+                    jumpMode = 2;
+                    ledgePoint.localPosition = new Vector3(ledgePoint.localPosition.x * -1, ledgePoint.localPosition.y, ledgePoint.localPosition.z);
+                }
+                //Debug.DrawRay(ledgePoint.position, -Vector2.up * ledgeGrabRange, Color.green);
                 RaycastHit2D ledgeRayCast = Physics2D.Raycast(ledgePoint.position, -Vector2.up, ledgeGrabRange, groundLayer);
-                if (ledgeRayCast.collider != null)
+                if (ledgeRayCast.collider != null && ledgeRayCast.distance >= 0.01)
                 {
-                    if (animator.GetCurrentAnimatorStateInfo(0).IsName("jump_r"))
-                    {
-                        hitLedge = true;
-                    }
+                    hitLedge = true;
                 }
-                ledgePoint.localPosition = new Vector3(ledgePoint.localPosition.x * -1, ledgePoint.localPosition.y, ledgePoint.localPosition.z);
-                ledgeRayCast = Physics2D.Raycast(ledgePoint.position, -Vector2.up, ledgeGrabRange, groundLayer);
-                Debug.DrawRay(ledgePoint.position, -Vector2.up * ledgeGrabRange, Color.green);
-                if (ledgeRayCast.collider != null)
+                if(jumpMode == 2)
                 {
-                    if (animator.GetCurrentAnimatorStateInfo(0).IsName("jump_l"))
-                    {
-                        hitLedge = true;
-                    }
+                    ledgePoint.localPosition = new Vector3(ledgePoint.localPosition.x * -1, ledgePoint.localPosition.y, ledgePoint.localPosition.z);
                 }
-                ledgePoint.localPosition = new Vector3(ledgePoint.localPosition.x * -1, ledgePoint.localPosition.y, ledgePoint.localPosition.z);
                 if (hitLedge)
                 {
                     rigidBody.MovePosition(ledgeRayCast.point - rigidBody.position);
@@ -175,17 +220,28 @@ public class PlayerControllerImproved : MonoBehaviour {
                     rigidBody.velocity = Vector2.zero;
                     isGrounded = true;
                     ledgeMode = true;
+                    jumpTime = -1;
                 }
             }
             
 
         }
-        shouldJump = false;
+        if(animator.GetCurrentAnimatorStateInfo(0).IsName("jump_r") || animator.GetCurrentAnimatorStateInfo(0).IsName("jump_l"))
+        {
+            shouldJump = false;
+        }
         isSkidding = moveForce * rigidBody.velocity.x < 0 && Mathf.Abs(rigidBody.velocity.x) >= skidAnimationSpeedCutoff;
-        Vector2 force = new Vector2(moveForce, jumpForce);
-        rigidBody.AddForce(force);
-        
+        Vector2 force = new Vector2((Mathf.Cos(forceAngle)*moveForce), (Mathf.Sin(forceAngle) * moveForce));
+        force += Vector2.up * jumpForce;
+        //Debug.DrawRay(transform.position, force);
+        rigidBody.velocity += force * Time.fixedDeltaTime;
+        if (isLanding)
+        {
+            rigidBody.velocity = Vector2.zero;
+        }
+
     }
+
 
 	public bool GetFacingRight() {
 		return facingRight;

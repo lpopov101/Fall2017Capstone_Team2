@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class BossAreaScript : MonoBehaviour {
-
 	public AudioSource audioReality;
 	public AudioSource streetAudio;
 	public AudioSource bgm;
@@ -26,7 +25,7 @@ public class BossAreaScript : MonoBehaviour {
 	}
 
 	void Update () {
-		
+
 	}
 
 	void OnTriggerEnter2D(Collider2D coll) {
@@ -42,7 +41,7 @@ public class BossAreaScript : MonoBehaviour {
 	}
 
 	void OnTriggerExit2D(Collider2D coll) {
-		if(coll.gameObject.CompareTag("Player") && coll.gameObject.transform.position.y < -500) {
+		if(coll.gameObject.CompareTag("Player")) {
 			cam.orthographicSize = initialCameraSize;
 			cameraScript.cameraOffset = initialCameraOffset;
 		}

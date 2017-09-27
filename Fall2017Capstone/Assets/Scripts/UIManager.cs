@@ -98,13 +98,10 @@ public class UIManager : MonoBehaviour {
 	 * Pauses the time scale if any of the 'pause' booleans are true. Otherwise, unpauses the time scale.
 	 */
 	public void UpdateTimeScale() {
-		if (IsGameplayPaused ()) {
-			Debug.Log ("Pausing");
+		if(IsGameplayPaused())
 			Time.timeScale = 0;
-		} else {
-			Debug.Log ("Not");
+		else
 			Time.timeScale = 1;
-		}
 	}
 
 	public void TitleScreen() {

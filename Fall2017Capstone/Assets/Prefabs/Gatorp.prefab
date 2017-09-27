@@ -11,6 +11,21 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 1715291861094252}
   m_IsPrefabParent: 1
+--- !u!1 &1094046966665202
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4611275857450792}
+  m_Layer: 0
+  m_Name: Ground Point
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1517872083873526
 GameObject:
   m_ObjectHideFlags: 0
@@ -37,7 +52,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4148723394811678}
   m_Layer: 0
-  m_Name: Ground Point
+  m_Name: Ground Point (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -72,11 +87,26 @@ GameObject:
   - component: {fileID: 212951907075057780}
   - component: {fileID: 114471237484368088}
   - component: {fileID: 114100168825068852}
-  - component: {fileID: 82944225575023518}
-  - component: {fileID: 114241516806911478}
+  - component: {fileID: 82918663972556878}
+  - component: {fileID: 114278591348600428}
   m_Layer: 0
   m_Name: Gatorp
   m_TagString: Player
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1774546066040472
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4772083485109242}
+  m_Layer: 0
+  m_Name: Ground Point (2)
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -88,11 +118,37 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1542085485595408}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.04, y: -4.18, z: 0}
+  m_LocalPosition: {x: 0.75, y: -4, z: 0}
+  m_LocalScale: {x: 5.882357, y: 5.882357, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4956917749498592}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4611275857450792
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1094046966665202}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: -4, z: 0}
   m_LocalScale: {x: 5.882353, y: 5.882353, z: 1}
   m_Children: []
   m_Father: {fileID: 4956917749498592}
   m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4772083485109242
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1774546066040472}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.75, y: -4, z: 0}
+  m_LocalScale: {x: 5.882357, y: 5.882357, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4956917749498592}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4845194250197890
 Transform:
@@ -101,7 +157,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1612575623729328}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.68, y: 3.9, z: 0}
+  m_LocalPosition: {x: 2.4, y: 4.67, z: 0}
   m_LocalScale: {x: 5.882353, y: 5.882353, z: 1}
   m_Children: []
   m_Father: {fileID: 4956917749498592}
@@ -127,12 +183,14 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1715291861094252}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -70.16, y: -10.33, z: 0}
-  m_LocalScale: {x: 0.16, y: 0.16, z: 1}
+  m_LocalPosition: {x: -49.78, y: -13.2, z: 0}
+  m_LocalScale: {x: 0.14, y: 0.14, z: 1}
   m_Children:
   - {fileID: 4918055902081620}
   - {fileID: 4845194250197890}
+  - {fileID: 4611275857450792}
   - {fileID: 4148723394811678}
+  - {fileID: 4772083485109242}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -150,7 +208,7 @@ Rigidbody2D:
   m_Mass: 0.8
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 6200000, guid: 6d03af4acef518b4180eafb3ab455fc3, type: 2}
   m_Interpolate: 1
   m_SleepingMode: 1
@@ -179,14 +237,14 @@ CapsuleCollider2D:
   m_GameObject: {fileID: 1715291861094252}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 6d03af4acef518b4180eafb3ab455fc3, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 3.53, y: 8.54}
   m_Direction: 0
---- !u!82 &82944225575023518
+--- !u!82 &82918663972556878
 AudioSource:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -197,7 +255,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 8c7643d5ae8435746b4ad31c69d19e98, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.577
+  m_Volume: 0.679
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -310,7 +368,7 @@ MonoBehaviour:
   DimensionOffset: {x: 0, y: -1000, z: 0}
   streetAudio: {fileID: 0}
   clubAudio: {fileID: 0}
---- !u!114 &114241516806911478
+--- !u!114 &114278591348600428
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -334,17 +392,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   acceleration: 20
-  speedLimit: 8
-  sprintAnimationSpeedCutoff: 7
+  speedLimit: 10
+  friction: 5
+  gravity: -30
+  sprintAnimationSpeedCutoff: 9
   skidAnimationSpeedCutoff: 7
   jumpStrength: 450
   airAcceleration: 10
   airControl: 5
   fallAnimationTriggerTime: 0.45
-  ledgeGrabRange: 0.3
-  ledgeGrabYVelocityMin: -5
+  ledgeGrabRange: 0.2
+  ledgeGrabTimeMin: 0.1
+  ledgeGrabTimeMax: 0.5
   ledgePoint: {fileID: 4845194250197890}
-  groundPoint: {fileID: 4148723394811678}
+  groundPoints:
+  - {fileID: 4611275857450792}
+  - {fileID: 4148723394811678}
+  - {fileID: 4772083485109242}
   groundLayer:
     serializedVersion: 2
     m_Bits: 512
@@ -379,8 +443,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
-  m_Sprite: {fileID: 21300042, guid: 5b491c233a62c304b964a05677b388ee, type: 3}
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: b13d9b06a5808e3488bc19d198753028, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

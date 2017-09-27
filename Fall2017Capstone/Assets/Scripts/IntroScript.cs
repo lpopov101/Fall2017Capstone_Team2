@@ -20,7 +20,7 @@ public class IntroScript : MonoBehaviour {
 		if (Input.GetButtonDown("Interact")) {
 			Debug.Log ("Loading");
 			text.color = Color.red;
-			text.text = "Waking up now...";
+			text.text = "Loading...";
 			SceneManager.LoadScene(nextLevel,LoadSceneMode.Single);
 		}
 			

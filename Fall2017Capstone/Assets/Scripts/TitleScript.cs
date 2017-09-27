@@ -6,11 +6,22 @@ using UnityEngine.SceneManagement;
 
 public class TitleScript : MonoBehaviour {
 
+
+	// Use this for initialization
+	void Start () {
+		
+	}
+	
+	// Update is called once per frame
+	void Update () {
+		
+	}
+
+
 	public void ButtonNextLevel(string scene) {
 		SceneManager.LoadScene (scene,LoadSceneMode.Single);
 	}
 
-	public void ButtonQuit() {
-		Application.Quit();
-	}
+
+
 }
