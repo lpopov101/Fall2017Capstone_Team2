@@ -5,24 +5,29 @@ using UnityEngine.UI;
 
 public class MemoryScript : MonoBehaviour {
 
-	public Camera camera;
+	//public Camera camera;
 	//public float textShowTimeSeconds = 5.0f;
 	public MovieTexture movie;
+	public AudioClip shutterClip;
 
-	AudioSource shutter;
+	AudioSource audioSource;
 	SpriteRenderer sr;
 	//Text memoryText;
 
 	void Start () {
 		sr = GetComponent<SpriteRenderer>();
-		shutter = GetComponent<AudioSource>();
+		audioSource = GetComponent<AudioSource>();
+		audioSource.clip = movie.audioClip;
 	}
 
 	void OnTriggerEnter2D(Collider2D coll) {
-		if (coll.gameObject.CompareTag ("Player")) {
+		if (coll.gameObject.CompareTag ("Player") && sr.enabled) {
 			sr.enabled = false;
+
+			audioSource.Play();
 			movie.Play();
 
+			StartCoroutine(ShutterAfterMovie(movie.duration));
 		}
 	}
 
@@ -32,7 +37,13 @@ public class MemoryScript : MonoBehaviour {
 		}
 	}
 
-
 	void OnTriggerExit2D(Collider2D coll) {
+	}
+
+	IEnumerator ShutterAfterMovie(float duration) {
+		yield return new WaitForSeconds(duration);
+
+		audioSource.clip = shutterClip;
+		audioSource.Play();
 	}
 }

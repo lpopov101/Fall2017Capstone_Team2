@@ -8,12 +8,23 @@ public class BossAreaScript : MonoBehaviour {
 	public AudioSource streetAudio;
 	public AudioSource bgm;
 	public AudioSource enterArea;
+	public float cameraSize;
+	public Vector2 cameraOffset;
 
-	// Use this for initialization
+	private Camera cam;
+	private CameraScript cameraScript;
+	private float initialCameraSize;
+	private Vector2 initialCameraOffset;
+
 	void Start () {
+		GameObject camObj = GameObject.FindGameObjectWithTag("MainCamera");
+		cam = camObj.GetComponent<Camera>();
+		cameraScript = camObj.GetComponent<CameraScript>();
+
+		initialCameraSize = cam.orthographicSize;
+		initialCameraOffset = cameraScript.cameraOffset;
 	}
-	
-	// Update is called once per frame
+
 	void Update () {
 		
 	}
@@ -24,6 +35,16 @@ public class BossAreaScript : MonoBehaviour {
 			streetAudio.mute = true;
 			bgm.mute = true;
 			enterArea.Play ();
+
+			cam.orthographicSize = cameraSize;
+			cameraScript.cameraOffset = cameraOffset;
+		}
+	}
+
+	void OnTriggerExit2D(Collider2D coll) {
+		if(coll.gameObject.CompareTag("Player") && coll.gameObject.transform.position.y < -500) {
+			cam.orthographicSize = initialCameraSize;
+			cameraScript.cameraOffset = initialCameraOffset;
 		}
 	}
 

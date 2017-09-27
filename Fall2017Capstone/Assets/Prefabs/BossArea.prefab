@@ -68,8 +68,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1054348514385916}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 67.4, y: -9.7, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 6.4, y: -9.5, z: 0}
+  m_LocalScale: {x: 0.80406255, y: 1, z: 1}
   m_Children:
   - {fileID: 4469243442171506}
   - {fileID: 4841619482352708}
@@ -247,6 +247,8 @@ MonoBehaviour:
   streetAudio: {fileID: 0}
   bgm: {fileID: 0}
   enterArea: {fileID: 82001786233983898}
+  cameraSize: 12
+  cameraOffset: {x: 0, y: 5}
 --- !u!114 &114629808944936450
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -262,3 +264,5 @@ MonoBehaviour:
   streetAudio: {fileID: 0}
   bgm: {fileID: 0}
   enterArea: {fileID: 82001786233983898}
+  cameraSize: 12
+  cameraOffset: {x: 0, y: 5}
