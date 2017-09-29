@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CameraScript : MonoBehaviour {
 
-	public float lerpSpeed;
+	public float smoothTime; // The smaller, the faster
 	public Transform target;
 	public Vector2 defaultCameraOffset;
 
@@ -15,23 +15,28 @@ public class CameraScript : MonoBehaviour {
 	private Vector2 initialCameraOffset;
 	private float targetCameraSize;
 	private Vector2 targetCameraOffset;
+	private float cameraSizeVelocity;
+	private Vector2 cameraOffsetVelocity;
 
 	void Start() {
 		cam = GetComponent<Camera>();
 
+		cameraOffset.x = target.position.x + defaultCameraOffset.x;
+		cameraOffset.y = target.position.y + defaultCameraOffset.y;
+
 		initialCameraSize = targetCameraSize = cam.orthographicSize;
-		initialCameraOffset = targetCameraOffset = cameraOffset = defaultCameraOffset;
+		initialCameraOffset = targetCameraOffset = defaultCameraOffset;
 	}
 
 	void LateUpdate() {
 		// Interpolate the camera size
-		cam.orthographicSize = Mathf.Lerp(cam.orthographicSize, targetCameraSize, lerpSpeed*Time.deltaTime);
+		cam.orthographicSize = Mathf.SmoothDamp(cam.orthographicSize, targetCameraSize, ref cameraSizeVelocity, smoothTime);
 
 		// Interpolate the camera offset
 		float targetX = target.position.x + targetCameraOffset.x;
 		float targetY = target.position.y + targetCameraOffset.y;
-		cameraOffset.x = Mathf.Lerp(cameraOffset.x, targetX, lerpSpeed*Time.deltaTime);
-		cameraOffset.y = Mathf.Lerp(cameraOffset.y, targetY, lerpSpeed*Time.deltaTime);
+		cameraOffset.x = Mathf.SmoothDamp(cameraOffset.x, targetX, ref cameraOffsetVelocity.x, smoothTime);
+		cameraOffset.y = Mathf.SmoothDamp(cameraOffset.y, targetY, ref cameraOffsetVelocity.y, smoothTime);
 		transform.position = new Vector3 (cameraOffset.x, cameraOffset.y, -10);
 
 		// Old code

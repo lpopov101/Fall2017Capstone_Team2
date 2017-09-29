@@ -56,12 +56,12 @@ MonoBehaviour:
     type: 2}
   handPrefab: {fileID: 1366023901142550, guid: 412ccbdc4f34f69489fd93d1eee465b5, type: 2}
   attackRadius: 40
-  idleTime: 2
-  idleTimeRandomizer: 0.8
+  idleTime: 1.8
+  idleTimeRandomizer: 0.6
   handIndicatorTime: 0.4
   handGrowthSpeed: 75
   handShrinkSpeed: 65
   handGrowthAmount: 17
   handWaitTime: 0.3
-  targetPredictRandomizerMin: 0.2
+  targetPredictRandomizerMin: 0.3
   targetPredictRandomizerMax: 0.6

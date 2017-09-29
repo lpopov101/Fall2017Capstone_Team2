@@ -209,7 +209,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9b30a05594105e46aaf39c96c5ee026, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lerpSpeed: 8
+  smoothTime: 0.14
   target: {fileID: 361484046}
   defaultCameraOffset: {x: 0, y: 2}
 --- !u!1 &43968416
@@ -9255,21 +9255,6 @@ Prefab:
       propertyPath: target
       value: 
       objectReference: {fileID: 361484037}
-    - target: {fileID: 114128297151741966, guid: bf2950572ed245441bb46bbf408857bb,
-        type: 2}
-      propertyPath: targetPredictRandomizerMin
-      value: 0.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 114128297151741966, guid: bf2950572ed245441bb46bbf408857bb,
-        type: 2}
-      propertyPath: idleTimeRandomizer
-      value: 0.6
-      objectReference: {fileID: 0}
-    - target: {fileID: 114128297151741966, guid: bf2950572ed245441bb46bbf408857bb,
-        type: 2}
-      propertyPath: idleTime
-      value: 1.8
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bf2950572ed245441bb46bbf408857bb, type: 2}
   m_IsPrefabParent: 0
