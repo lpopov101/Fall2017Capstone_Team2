@@ -3,25 +3,21 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class BossAreaScript : MonoBehaviour {
+	
 	public AudioSource audioReality;
 	public AudioSource streetAudio;
 	public AudioSource bgm;
 	public AudioSource enterArea;
+
 	public float cameraSize;
 	public Vector2 cameraOffset;
 
-	private Camera cam;
 	private CameraScript cameraScript;
 	private float initialCameraSize;
 	private Vector2 initialCameraOffset;
 
 	void Start () {
-		GameObject camObj = GameObject.FindGameObjectWithTag("MainCamera");
-		cam = camObj.GetComponent<Camera>();
-		cameraScript = camObj.GetComponent<CameraScript>();
-
-		initialCameraSize = cam.orthographicSize;
-		initialCameraOffset = cameraScript.cameraOffset;
+		cameraScript = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<CameraScript>();
 	}
 
 	void Update () {
@@ -35,15 +31,13 @@ public class BossAreaScript : MonoBehaviour {
 			bgm.mute = true;
 			enterArea.Play ();
 
-			cam.orthographicSize = cameraSize;
-			cameraScript.cameraOffset = cameraOffset;
+			cameraScript.SetCameraViewport(cameraSize, cameraOffset);
 		}
 	}
 
 	void OnTriggerExit2D(Collider2D coll) {
 		if(coll.gameObject.CompareTag("Player")) {
-			cam.orthographicSize = initialCameraSize;
-			cameraScript.cameraOffset = initialCameraOffset;
+			cameraScript.ResetCameraViewport();
 		}
 	}
 

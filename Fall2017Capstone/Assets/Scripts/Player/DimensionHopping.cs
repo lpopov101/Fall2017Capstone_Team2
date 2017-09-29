@@ -5,21 +5,21 @@ using UnityEngine;
 public class DimensionHopping : MonoBehaviour {
 
     public Vector3 DimensionOffset;
-
-    //private Rigidbody2D rigidBody;
-    private bool DimensionMode;
+	
 	public AudioSource streetAudio;
 	public AudioSource clubAudio;
-	AudioSource dimHopAudio;
 
-    private void Start()
+	private AudioSource dimHopAudio;
+	private CameraScript cameraScript;
+	private bool DimensionMode;
+
+    void Start()
     {
-        //rigidBody = GetComponent<Rigidbody2D>();
 		dimHopAudio = GetComponent<AudioSource>();
+		cameraScript = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<CameraScript>();
         DimensionMode = true;
     }
 
-    // Update is called once per frame
     void Update () {
 		if(Input.GetButtonDown("DimensionShift"))
         {
@@ -28,12 +28,14 @@ public class DimensionHopping : MonoBehaviour {
             {
 				streetAudio.mute = true;
 				clubAudio.mute = true;
+				cameraScript.DimensionHopCamera(DimensionOffset);
                 transform.Translate(DimensionOffset);
             }
             else
             {
 				streetAudio.mute = false;
 				clubAudio.mute = false;
+				cameraScript.DimensionHopCamera(-1*DimensionOffset);
                 transform.Translate(-1*DimensionOffset);
             }
             DimensionMode = !DimensionMode;

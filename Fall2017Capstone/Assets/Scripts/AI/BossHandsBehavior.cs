@@ -7,15 +7,18 @@ public class BossHandsBehavior : MonoBehaviour {
 	public GameObject target;
 	public GameObject handIndicatorPrefab;
 	public GameObject handPrefab;
-	public float attackRadius = 1.0f;
-	public float idleTime = 1.0f;
-	public float idleTimeRandomizer = 1.0f;
+	public float attackRadius;
+	public float idleTime;
+	public float idleTimeRandomizer;
 
-	public float handIndicatorTime = 1.0f;
-	public float handGrowthSpeed = 1.0f;
-	public float handShrinkSpeed = 1.0f;
-	public float handGrowthAmount = 1.0f;
-	public float handWaitTime = 1.0f;
+	public float handIndicatorTime;
+	public float handGrowthSpeed;
+	public float handShrinkSpeed;
+	public float handGrowthAmount;
+	public float handWaitTime;
+
+	public float targetPredictRandomizerMin;
+	public float targetPredictRandomizerMax;
 
 	private int attackPhase; // 0: idle, 1: preparing, 2: attacking
 	private Vector3 targetPos; // The position the creature lands on
@@ -52,6 +55,7 @@ public class BossHandsBehavior : MonoBehaviour {
 			handBehavior.shrinkSpeed = handShrinkSpeed;
 			handBehavior.growthAmount = handGrowthAmount;
 			handBehavior.waitTime = handWaitTime;
+			handBehavior.SetBossBehavior(this);
 
 			StartCoroutine(Idle());
 		}
@@ -65,10 +69,8 @@ public class BossHandsBehavior : MonoBehaviour {
 
 		targetPos = PredictTargetPosition();
 		handIndicatorObj = Instantiate(handIndicatorPrefab);
-		handIndicatorObj.transform.position = new Vector3(targetPos.x,groundYValue-0.05f, handIndicatorObj.transform.position.z);
+		handIndicatorObj.transform.position = new Vector3(targetPos.x,groundYValue-0.0f, handIndicatorObj.transform.position.z);
 		yield return new WaitForSeconds(handIndicatorTime);
-		Destroy(handIndicatorObj);
-
 		attackPhase++;
 	}
 
@@ -82,7 +84,11 @@ public class BossHandsBehavior : MonoBehaviour {
 		Vector3 pos = target.transform.position;
 		Rigidbody2D rb = target.GetComponent<Rigidbody2D>();
 
-		pos.x += rb.velocity.x * Random.Range(0.3f, 0.5f);
+		pos.x += rb.velocity.x * Random.Range(targetPredictRandomizerMin, targetPredictRandomizerMax);
 		return pos;
+	}
+
+	public GameObject GetHandIndicator() {
+		return handIndicatorObj;
 	}
 }

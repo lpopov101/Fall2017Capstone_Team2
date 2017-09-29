@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+// DEPRECATED: Use PlayerControllerImproved from now on
 public class PlayerController : MonoBehaviour {
 
 	Rigidbody2D rb;

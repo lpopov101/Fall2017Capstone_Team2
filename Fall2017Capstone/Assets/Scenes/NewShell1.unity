@@ -209,8 +209,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9b30a05594105e46aaf39c96c5ee026, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lerpSpeed: 8
   target: {fileID: 361484046}
-  cameraOffset: {x: 0, y: 2}
+  defaultCameraOffset: {x: 0, y: 2}
 --- !u!1 &43968416
 GameObject:
   m_ObjectHideFlags: 0
@@ -2471,7 +2472,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 237431664}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 20.467417, y: 9.263363, z: 1}
+  m_LocalPosition: {x: 20.467417, y: 9.07, z: 1}
   m_LocalScale: {x: 2.5, y: 2.5, z: 1}
   m_Children: []
   m_Father: {fileID: 732280964}
@@ -4296,7 +4297,7 @@ BoxCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 3.585373, y: 0.17126775}
   m_SpriteTilingProperty:
-    border: {x: 0.02, y: 0, z: 0, w: 0}
+    border: {x: 0.02, y: 0, z: 0.01, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 8.86, y: 3.25}
     newSize: {x: 240, y: 1.7}
@@ -9251,14 +9252,24 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 114128297151741966, guid: bf2950572ed245441bb46bbf408857bb,
         type: 2}
-      propertyPath: attackRadius
-      value: 40
-      objectReference: {fileID: 0}
-    - target: {fileID: 114128297151741966, guid: bf2950572ed245441bb46bbf408857bb,
-        type: 2}
       propertyPath: target
       value: 
       objectReference: {fileID: 361484037}
+    - target: {fileID: 114128297151741966, guid: bf2950572ed245441bb46bbf408857bb,
+        type: 2}
+      propertyPath: targetPredictRandomizerMin
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114128297151741966, guid: bf2950572ed245441bb46bbf408857bb,
+        type: 2}
+      propertyPath: idleTimeRandomizer
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114128297151741966, guid: bf2950572ed245441bb46bbf408857bb,
+        type: 2}
+      propertyPath: idleTime
+      value: 1.8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bf2950572ed245441bb46bbf408857bb, type: 2}
   m_IsPrefabParent: 0
@@ -11235,8 +11246,8 @@ MonoBehaviour:
   streetAudio: {fileID: 1484003159}
   bgm: {fileID: 185463241}
   enterArea: {fileID: 188885479}
-  cameraSize: 12
-  cameraOffset: {x: 0, y: 5}
+  cameraSize: 10
+  cameraOffset: {x: 0, y: 6}
 --- !u!61 &1372238606
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -16295,7 +16306,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1916872428}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -68.23, y: -10.708, z: -1}
+  m_LocalPosition: {x: -68.03, y: -10.708, z: -1}
   m_LocalScale: {x: 0.16, y: 0.16, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -17479,11 +17490,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4956917749498592, guid: c9abbe07283cf6e4a894d45867dd73a4, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -75.4
+      value: -75.49
       objectReference: {fileID: 0}
     - target: {fileID: 4956917749498592, guid: c9abbe07283cf6e4a894d45867dd73a4, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -10.6
+      value: -10.73
       objectReference: {fileID: 0}
     - target: {fileID: 4956917749498592, guid: c9abbe07283cf6e4a894d45867dd73a4, type: 2}
       propertyPath: m_LocalPosition.z
