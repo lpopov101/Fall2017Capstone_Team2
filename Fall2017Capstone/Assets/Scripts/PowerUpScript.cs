@@ -10,6 +10,7 @@ public class PowerUpScript : MonoBehaviour {
 	public DodgeScript dodgeScript;
 	SpriteRenderer sr;
 	public Text text;
+	public ToastScript toaster;
 
 	// Use this for initialization
 	void Start () {
@@ -22,9 +23,8 @@ public class PowerUpScript : MonoBehaviour {
 	}
 
 	void OnTriggerEnter2D(Collider2D coll) {
-		
 		if (coll.gameObject.CompareTag ("Player")) {
-			StartCoroutine (DisplayText());
+			toaster.Toast ("You have picked up the ability evade. Press Left Control to use.");
 			dodgeScript.gotDodge = true;
 			sr.enabled = false;
 		}
@@ -33,7 +33,7 @@ public class PowerUpScript : MonoBehaviour {
 
 
 	IEnumerator DisplayText() {
-		text.text = "You have picked up the ability evade. Press Left Control to use.";
+		text.text = "";
 		yield return new WaitForSeconds (5.0f);
 		text.text = "";
 	}

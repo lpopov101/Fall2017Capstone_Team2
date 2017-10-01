@@ -15,9 +15,11 @@ public class BossAreaScript : MonoBehaviour {
 	private CameraScript cameraScript;
 	private float initialCameraSize;
 	private Vector2 initialCameraOffset;
+	private bool isEntered;
 
 	void Start () {
 		cameraScript = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<CameraScript>();
+		isEntered = false;
 	}
 
 	void Update () {
@@ -26,11 +28,13 @@ public class BossAreaScript : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D coll) {
 		if (coll.gameObject.CompareTag ("Player")) {
-			audioReality.mute = true;
-			streetAudio.mute = true;
-			bgm.mute = true;
-			enterArea.Play ();
-
+			if (!isEntered) {
+				isEntered = true;
+				audioReality.mute = true;
+				streetAudio.mute = true;
+				bgm.mute = true;
+				enterArea.Play ();
+			}
 			cameraScript.SetCameraViewport(cameraSize, cameraOffset);
 		}
 	}
