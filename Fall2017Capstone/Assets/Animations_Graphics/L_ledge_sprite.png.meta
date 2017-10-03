@@ -1,0 +1,517 @@
+fileFormatVersion: 2
+guid: 9466b8ad94cfd9247a5cce2ce65e17e1
+timeCreated: 1505080891
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: L_ledge_sprite_0
+    21300002: L_ledge_sprite_1
+    21300004: L_ledge_sprite_2
+    21300006: L_ledge_sprite_3
+    21300008: L_ledge_sprite_4
+    21300010: L_ledge_sprite_5
+    21300012: L_ledge_sprite_6
+    21300014: L_ledge_sprite_7
+    21300016: L_ledge_sprite_8
+    21300018: L_ledge_sprite_9
+    21300020: L_ledge_sprite_10
+    21300022: L_ledge_sprite_11
+    21300024: L_ledge_sprite_12
+    21300026: L_ledge_sprite_13
+    21300028: L_ledge_sprite_14
+    21300030: L_ledge_sprite_15
+    21300032: L_ledge_sprite_16
+    21300034: L_ledge_sprite_17
+    21300036: L_ledge_sprite_18
+    21300038: L_ledge_sprite_19
+    21300040: L_ledge_sprite_20
+    21300042: L_ledge_sprite_21
+    21300044: L_ledge_sprite_22
+    21300046: L_ledge_sprite_23
+    21300048: L_ledge_sprite_24
+    21300050: L_ledge_sprite_25
+    21300052: L_ledge_sprite_26
+    21300054: L_ledge_sprite_27
+    21300056: L_ledge_sprite_28
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: L_ledge_sprite_0
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 5246
+        width: 453
+        height: 857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: L_ledge_sprite_1
+      rect:
+        serializedVersion: 2
+        x: 1396
+        y: 5195
+        width: 502
+        height: 893
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: L_ledge_sprite_2
+      rect:
+        serializedVersion: 2
+        x: 2365
+        y: 5171
+        width: 540
+        height: 905
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: L_ledge_sprite_3
+      rect:
+        serializedVersion: 2
+        x: 3358
+        y: 5165
+        width: 528
+        height: 905
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: L_ledge_sprite_4
+      rect:
+        serializedVersion: 2
+        x: 4366
+        y: 5174
+        width: 494
+        height: 896
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: L_ledge_sprite_5
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 4154
+        width: 489
+        height: 893
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: L_ledge_sprite_6
+      rect:
+        serializedVersion: 2
+        x: 1276
+        y: 4163
+        width: 477
+        height: 887
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: L_ledge_sprite_7
+      rect:
+        serializedVersion: 2
+        x: 2293
+        y: 4169
+        width: 468
+        height: 884
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: L_ledge_sprite_8
+      rect:
+        serializedVersion: 2
+        x: 3310
+        y: 4175
+        width: 468
+        height: 878
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: L_ledge_sprite_9
+      rect:
+        serializedVersion: 2
+        x: 4342
+        y: 4169
+        width: 474
+        height: 884
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: L_ledge_sprite_10
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 3140
+        width: 492
+        height: 890
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: L_ledge_sprite_11
+      rect:
+        serializedVersion: 2
+        x: 1291
+        y: 3134
+        width: 501
+        height: 896
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: L_ledge_sprite_12
+      rect:
+        serializedVersion: 2
+        x: 2332
+        y: 3119
+        width: 507
+        height: 911
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: L_ledge_sprite_13
+      rect:
+        serializedVersion: 2
+        x: 3370
+        y: 3116
+        width: 527
+        height: 914
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: L_ledge_sprite_14
+      rect:
+        serializedVersion: 2
+        x: 4408
+        y: 3116
+        width: 543
+        height: 914
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: L_ledge_sprite_15
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 2081
+        width: 534
+        height: 926
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: L_ledge_sprite_16
+      rect:
+        serializedVersion: 2
+        x: 1387
+        y: 2073
+        width: 519
+        height: 934
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: L_ledge_sprite_17
+      rect:
+        serializedVersion: 2
+        x: 2404
+        y: 2075
+        width: 510
+        height: 932
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: L_ledge_sprite_18
+      rect:
+        serializedVersion: 2
+        x: 3418
+        y: 2081
+        width: 501
+        height: 926
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: L_ledge_sprite_19
+      rect:
+        serializedVersion: 2
+        x: 4435
+        y: 2084
+        width: 488
+        height: 923
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: L_ledge_sprite_20
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 1058
+        width: 470
+        height: 923
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: L_ledge_sprite_21
+      rect:
+        serializedVersion: 2
+        x: 1366
+        y: 1058
+        width: 446
+        height: 923
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: L_ledge_sprite_22
+      rect:
+        serializedVersion: 2
+        x: 2392
+        y: 1052
+        width: 423
+        height: 929
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: L_ledge_sprite_23
+      rect:
+        serializedVersion: 2
+        x: 3418
+        y: 1052
+        width: 405
+        height: 929
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: L_ledge_sprite_24
+      rect:
+        serializedVersion: 2
+        x: 4441
+        y: 1052
+        width: 402
+        height: 929
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: L_ledge_sprite_25
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 29
+        width: 396
+        height: 929
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: L_ledge_sprite_26
+      rect:
+        serializedVersion: 2
+        x: 1369
+        y: 29
+        width: 393
+        height: 929
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: L_ledge_sprite_27
+      rect:
+        serializedVersion: 2
+        x: 2394
+        y: 29
+        width: 391
+        height: 929
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: L_ledge_sprite_28
+      rect:
+        serializedVersion: 2
+        x: 3418
+        y: 29
+        width: 393
+        height: 929
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

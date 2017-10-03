@@ -1,0 +1,667 @@
+fileFormatVersion: 2
+guid: 152bfece471f5424ab8789ed71baf25f
+timeCreated: 1505008607
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: jump_sprite_0
+    21300002: jump_sprite_1
+    21300004: jump_sprite_2
+    21300006: jump_sprite_3
+    21300008: jump_sprite_4
+    21300010: jump_sprite_5
+    21300012: jump_sprite_6
+    21300014: jump_sprite_7
+    21300016: jump_sprite_8
+    21300018: jump_sprite_9
+    21300020: jump_sprite_10
+    21300022: jump_sprite_11
+    21300024: jump_sprite_12
+    21300026: jump_sprite_13
+    21300028: jump_sprite_14
+    21300030: jump_sprite_15
+    21300032: jump_sprite_16
+    21300034: jump_sprite_17
+    21300036: jump_sprite_18
+    21300038: jump_sprite_19
+    21300040: jump_sprite_20
+    21300042: jump_sprite_21
+    21300044: jump_sprite_22
+    21300046: jump_sprite_23
+    21300048: jump_sprite_24
+    21300050: jump_sprite_25
+    21300052: jump_sprite_26
+    21300054: jump_sprite_27
+    21300056: jump_sprite_28
+    21300058: jump_sprite_29
+    21300060: jump_sprite_30
+    21300062: jump_sprite_31
+    21300064: jump_sprite_32
+    21300066: jump_sprite_33
+    21300068: jump_sprite_34
+    21300070: jump_sprite_35
+    21300072: jump_sprite_36
+    21300074: jump_sprite_37
+    21300076: jump_sprite_38
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: jump_sprite_0
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 6225
+        width: 343
+        height: 857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: jump_sprite_1
+      rect:
+        serializedVersion: 2
+        x: 1360
+        y: 6232
+        width: 375
+        height: 850
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: jump_sprite_2
+      rect:
+        serializedVersion: 2
+        x: 2393
+        y: 6235
+        width: 399
+        height: 844
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: jump_sprite_3
+      rect:
+        serializedVersion: 2
+        x: 3422
+        y: 6242
+        width: 427
+        height: 826
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: jump_sprite_4
+      rect:
+        serializedVersion: 2
+        x: 4430
+        y: 6253
+        width: 445
+        height: 805
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: jump_sprite_5
+      rect:
+        serializedVersion: 2
+        x: 5436
+        y: 6263
+        width: 489
+        height: 781
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: jump_sprite_6
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 5255
+        width: 518
+        height: 753
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: jump_sprite_7
+      rect:
+        serializedVersion: 2
+        x: 1326
+        y: 5266
+        width: 510
+        height: 749
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: jump_sprite_8
+      rect:
+        serializedVersion: 2
+        x: 2351
+        y: 5280
+        width: 497
+        height: 738
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: jump_sprite_9
+      rect:
+        serializedVersion: 2
+        x: 3380
+        y: 5287
+        width: 482
+        height: 738
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: jump_sprite_10
+      rect:
+        serializedVersion: 2
+        x: 4420
+        y: 5269
+        width: 442
+        height: 774
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: jump_sprite_11
+      rect:
+        serializedVersion: 2
+        x: 5463
+        y: 5252
+        width: 399
+        height: 812
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: jump_sprite_12
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 4191
+        width: 420
+        height: 864
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: jump_sprite_13
+      rect:
+        serializedVersion: 2
+        x: 1339
+        y: 4139
+        width: 480
+        height: 920
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: jump_sprite_14
+      rect:
+        serializedVersion: 2
+        x: 2351
+        y: 4139
+        width: 485
+        height: 924
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: jump_sprite_15
+      rect:
+        serializedVersion: 2
+        x: 3363
+        y: 4146
+        width: 455
+        height: 917
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: jump_sprite_16
+      rect:
+        serializedVersion: 2
+        x: 4395
+        y: 4153
+        width: 424
+        height: 906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: jump_sprite_17
+      rect:
+        serializedVersion: 2
+        x: 5435
+        y: 4156
+        width: 392
+        height: 903
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: jump_sprite_18
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 3139
+        width: 406
+        height: 908
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: jump_sprite_19
+      rect:
+        serializedVersion: 2
+        x: 1262
+        y: 3148
+        width: 469
+        height: 924
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: jump_sprite_20
+      rect:
+        serializedVersion: 2
+        x: 2267
+        y: 3159
+        width: 542
+        height: 910
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: jump_sprite_21
+      rect:
+        serializedVersion: 2
+        x: 3272
+        y: 3169
+        width: 605
+        height: 882
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: jump_sprite_22
+      rect:
+        serializedVersion: 2
+        x: 4289
+        y: 3180
+        width: 626
+        height: 843
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: jump_sprite_23
+      rect:
+        serializedVersion: 2
+        x: 5309
+        y: 3194
+        width: 637
+        height: 825
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: jump_sprite_24
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 2186
+        width: 665
+        height: 801
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: jump_sprite_25
+      rect:
+        serializedVersion: 2
+        x: 1203
+        y: 2203
+        width: 693
+        height: 774
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: jump_sprite_26
+      rect:
+        serializedVersion: 2
+        x: 2222
+        y: 2214
+        width: 706
+        height: 749
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: jump_sprite_27
+      rect:
+        serializedVersion: 2
+        x: 3219
+        y: 2207
+        width: 725
+        height: 745
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: jump_sprite_28
+      rect:
+        serializedVersion: 2
+        x: 4280
+        y: 2196
+        width: 672
+        height: 740
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: jump_sprite_29
+      rect:
+        serializedVersion: 2
+        x: 5365
+        y: 2182
+        width: 588
+        height: 735
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: jump_sprite_30
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 1143
+        width: 535
+        height: 770
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: jump_sprite_31
+      rect:
+        serializedVersion: 2
+        x: 1332
+        y: 1129
+        width: 476
+        height: 804
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: jump_sprite_32
+      rect:
+        serializedVersion: 2
+        x: 2383
+        y: 1118
+        width: 430
+        height: 830
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: jump_sprite_33
+      rect:
+        serializedVersion: 2
+        x: 3408
+        y: 1111
+        width: 399
+        height: 847
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: jump_sprite_34
+      rect:
+        serializedVersion: 2
+        x: 4427
+        y: 1108
+        width: 374
+        height: 857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: jump_sprite_35
+      rect:
+        serializedVersion: 2
+        x: 5449
+        y: 1104
+        width: 343
+        height: 861
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: jump_sprite_36
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 82
+        width: 368
+        height: 861
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: jump_sprite_37
+      rect:
+        serializedVersion: 2
+        x: 1322
+        y: 82
+        width: 395
+        height: 861
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: jump_sprite_38
+      rect:
+        serializedVersion: 2
+        x: 2347
+        y: 82
+        width: 392
+        height: 861
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

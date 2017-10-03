@@ -11,6 +11,8 @@ public class PowerUpScript : MonoBehaviour {
 	SpriteRenderer sr;
 	public Text text;
 	public ToastScript toaster;
+	public Light light;
+
 
 	// Use this for initialization
 	void Start () {
@@ -23,10 +25,11 @@ public class PowerUpScript : MonoBehaviour {
 	}
 
 	void OnTriggerEnter2D(Collider2D coll) {
-		if (coll.gameObject.CompareTag ("Player")) {
-			toaster.Toast ("You have picked up the ability evade. Press Left Control to use.");
+		if (coll.gameObject.CompareTag ("Player") && sr.enabled) {
+			toaster.Toast ("You have picked up the ability evade. Press Left Control to use.", 5.0f);
 			dodgeScript.gotDodge = true;
 			sr.enabled = false;
+			light.enabled = false;
 		}
 
 	}

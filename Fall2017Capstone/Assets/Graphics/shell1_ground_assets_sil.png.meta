@@ -1,0 +1,503 @@
+fileFormatVersion: 2
+guid: df27731364df0f742a4048429bcc9b48
+timeCreated: 1507002161
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: shell1_ground_assets_sil_0
+    21300002: shell1_ground_assets_sil_1
+    21300004: shell1_ground_assets_sil_2
+    21300006: shell1_ground_assets_sil_3
+    21300008: shell1_ground_assets_sil_4
+    21300010: shell1_ground_assets_sil_5
+    21300012: shell1_ground_assets_sil_6
+    21300014: shell1_ground_assets_sil_7
+    21300016: shell1_ground_assets_sil_8
+    21300018: shell1_ground_assets_sil_9
+    21300020: shell1_ground_assets_sil_10
+    21300022: shell1_ground_assets_sil_11
+    21300024: shell1_ground_assets_sil_12
+    21300026: shell1_ground_assets_sil_13
+    21300028: shell1_ground_assets_sil_14
+    21300030: shell1_ground_assets_sil_15
+    21300032: shell1_ground_assets_sil_16
+    21300034: shell1_ground_assets_sil_17
+    21300036: shell1_ground_assets_sil_18
+    21300038: shell1_ground_assets_sil_19
+    21300040: shell1_ground_assets_sil_20
+    21300042: shell1_ground_assets_sil_21
+    21300044: shell1_ground_assets_sil_22
+    21300046: shell1_ground_assets_sil_23
+    21300048: shell1_ground_assets_sil_24
+    21300050: shell1_ground_assets_sil_25
+    21300052: shell1_ground_assets_sil_26
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 8192
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: iPhone
+    maxTextureSize: 8192
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Android
+    maxTextureSize: 8192
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: shell1_ground_assets_sil_0
+      rect:
+        serializedVersion: 2
+        x: 3268
+        y: 8453
+        width: 3271
+        height: 2276
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: shell1_ground_assets_sil_1
+      rect:
+        serializedVersion: 2
+        x: 10167
+        y: 8842
+        width: 952
+        height: 1047
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: shell1_ground_assets_sil_2
+      rect:
+        serializedVersion: 2
+        x: 12588
+        y: 9869
+        width: 8
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: shell1_ground_assets_sil_3
+      rect:
+        serializedVersion: 2
+        x: 611
+        y: 8512
+        width: 717
+        height: 1140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: shell1_ground_assets_sil_4
+      rect:
+        serializedVersion: 2
+        x: 1652
+        y: 8477
+        width: 952
+        height: 1365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: shell1_ground_assets_sil_5
+      rect:
+        serializedVersion: 2
+        x: 8190
+        y: 8463
+        width: 1170
+        height: 1272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: shell1_ground_assets_sil_6
+      rect:
+        serializedVersion: 2
+        x: 11587
+        y: 9190
+        width: 985
+        height: 667
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: shell1_ground_assets_sil_7
+      rect:
+        serializedVersion: 2
+        x: 1700
+        y: 8477
+        width: 14
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: shell1_ground_assets_sil_8
+      rect:
+        serializedVersion: 2
+        x: 1738
+        y: 8477
+        width: 6
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: shell1_ground_assets_sil_9
+      rect:
+        serializedVersion: 2
+        x: 1754
+        y: 8477
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: shell1_ground_assets_sil_10
+      rect:
+        serializedVersion: 2
+        x: 1761
+        y: 8477
+        width: 7
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: shell1_ground_assets_sil_11
+      rect:
+        serializedVersion: 2
+        x: 6997
+        y: 8463
+        width: 480
+        height: 717
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: shell1_ground_assets_sil_12
+      rect:
+        serializedVersion: 2
+        x: 8458
+        y: 8429
+        width: 303
+        height: 303
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: shell1_ground_assets_sil_13
+      rect:
+        serializedVersion: 2
+        x: 7714
+        y: 7910
+        width: 24
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: shell1_ground_assets_sil_14
+      rect:
+        serializedVersion: 2
+        x: 9861
+        y: 7910
+        width: 20
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: shell1_ground_assets_sil_15
+      rect:
+        serializedVersion: 2
+        x: 11444
+        y: 7909
+        width: 25
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: shell1_ground_assets_sil_16
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 3782
+        width: 6251
+        height: 3316
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: shell1_ground_assets_sil_17
+      rect:
+        serializedVersion: 2
+        x: 7091
+        y: 3829
+        width: 1470
+        height: 4050
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: shell1_ground_assets_sil_18
+      rect:
+        serializedVersion: 2
+        x: 9239
+        y: 3829
+        width: 2853
+        height: 4050
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: shell1_ground_assets_sil_19
+      rect:
+        serializedVersion: 2
+        x: 12424
+        y: 3677
+        width: 3295
+        height: 1628
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: shell1_ground_assets_sil_20
+      rect:
+        serializedVersion: 2
+        x: 706
+        y: 471
+        width: 6107
+        height: 2937
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: shell1_ground_assets_sil_21
+      rect:
+        serializedVersion: 2
+        x: 7003
+        y: 471
+        width: 3823
+        height: 2967
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: shell1_ground_assets_sil_22
+      rect:
+        serializedVersion: 2
+        x: 11113
+        y: 2188
+        width: 2722
+        height: 1039
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: shell1_ground_assets_sil_23
+      rect:
+        serializedVersion: 2
+        x: 14202
+        y: 2225
+        width: 1306
+        height: 1057
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: shell1_ground_assets_sil_24
+      rect:
+        serializedVersion: 2
+        x: 14320
+        y: 2219
+        width: 23
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: shell1_ground_assets_sil_25
+      rect:
+        serializedVersion: 2
+        x: 11403
+        y: 627
+        width: 1351
+        height: 1033
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: shell1_ground_assets_sil_26
+      rect:
+        serializedVersion: 2
+        x: 13185
+        y: 644
+        width: 1177
+        height: 1006
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

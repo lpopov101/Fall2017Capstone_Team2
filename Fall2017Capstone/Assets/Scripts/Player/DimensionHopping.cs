@@ -40,6 +40,7 @@ public class DimensionHopping : MonoBehaviour {
 			clubAudio.mute = true;
 			cameraScript.DimensionHopCamera(DimensionOffset);
 			transform.Translate(DimensionOffset);
+			RenderSettings.ambientLight = new Color (0.3f,0.6f,0.9f);
 		}
 		else
 		{
@@ -47,16 +48,17 @@ public class DimensionHopping : MonoBehaviour {
 			clubAudio.mute = false;
 			cameraScript.DimensionHopCamera(-1*DimensionOffset);
 			transform.Translate(-1*DimensionOffset);
+			RenderSettings.ambientLight = new Color (0.6f,0.6f,0.6f);
 		}
 		DimensionMode = !DimensionMode;
 	}
 
 	void OnTriggerEnter2D(Collider2D coll) {
-		Debug.Log (coll.gameObject.tag);
-		if (coll.gameObject.CompareTag ("ForceSwitchTrigger") && !HardToggleDimension) {
+		//Debug.Log (coll.gameObject.tag);
+		if (coll.gameObject.CompareTag ("ToastTrigger") && !HardToggleDimension) {
 			HardToggleDimension = true;
 			if (DimensionMode) {
-				toast.Toast ("Something is not right. I can't seem to switch back...");
+				toast.Toast ("Something is not right. I can't seem to switch back...",4.0f);
 				ChangeDimension ();
 			}
 		}

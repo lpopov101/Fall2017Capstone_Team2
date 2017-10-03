@@ -17,13 +17,16 @@ public class ToastScript : MonoBehaviour {
 		
 	}
 
-	public void Toast(string text) {
-		StartCoroutine(DisplayText(text));
+	public void Toast(string text,float time) {
+		StartCoroutine(DisplayText(text,time));
 	}
 
-	IEnumerator DisplayText(string text) {
+	IEnumerator DisplayText(string text, float time) {
 		Toaster.text = text;
-		yield return new WaitForSeconds (5.0f);
+		Toaster.CrossFadeAlpha(0.0f, time, false);
+		yield return new WaitForSeconds(time);
 		Toaster.text = "";
+		Toaster.CrossFadeAlpha(1.0f, 0.1f, false);
 	}
+
 }

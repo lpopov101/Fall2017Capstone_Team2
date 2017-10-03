@@ -9,6 +9,8 @@ public class MemoryScript : MonoBehaviour {
 	//public float textShowTimeSeconds = 5.0f;
 	public MovieTexture movie;
 	public AudioClip shutterClip;
+	public Light light;
+	public ToastScript toast;
 
 	AudioSource audioSource;
 	SpriteRenderer sr;
@@ -16,18 +18,18 @@ public class MemoryScript : MonoBehaviour {
 
 	void Start () {
 		sr = GetComponent<SpriteRenderer>();
+		sr.enabled = true;
 		audioSource = GetComponent<AudioSource>();
 		audioSource.clip = movie.audioClip;
 	}
 
 	void OnTriggerEnter2D(Collider2D coll) {
-		if (coll.gameObject.CompareTag ("Player") && sr.enabled) {
-			sr.enabled = false;
-
+		if (coll.gameObject.CompareTag ("PlayerInteract") && sr.enabled) {
 			audioSource.Play();
 			movie.Play();
-
 			StartCoroutine(ShutterAfterMovie(movie.duration));
+			sr.enabled = false;
+			light.enabled = false;
 		}
 	}
 
@@ -45,5 +47,6 @@ public class MemoryScript : MonoBehaviour {
 
 		audioSource.clip = shutterClip;
 		audioSource.Play();
+		toast.Toast ("Memory Fragment collected",4.0f);
 	}
 }

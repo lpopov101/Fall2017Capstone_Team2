@@ -1,0 +1,578 @@
+fileFormatVersion: 2
+guid: c27495c8ec340d44486d74d95286fa86
+timeCreated: 1507002654
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: building_assets_sil_0
+    21300002: building_assets_sil_1
+    21300004: building_assets_sil_2
+    21300006: building_assets_sil_3
+    21300008: building_assets_sil_4
+    21300010: building_assets_sil_5
+    21300012: building_assets_sil_6
+    21300014: building_assets_sil_7
+    21300016: building_assets_sil_8
+    21300018: building_assets_sil_9
+    21300020: building_assets_sil_10
+    21300022: building_assets_sil_11
+    21300024: building_assets_sil_12
+    21300026: building_assets_sil_13
+    21300028: building_assets_sil_14
+    21300030: building_assets_sil_15
+    21300032: building_assets_sil_16
+    21300034: building_assets_sil_17
+    21300036: building_assets_sil_18
+    21300038: building_assets_sil_19
+    21300040: building_assets_sil_20
+    21300042: building_assets_sil_21
+    21300044: building_assets_sil_22
+    21300046: building_assets_sil_23
+    21300048: building_assets_sil_24
+    21300050: building_assets_sil_25
+    21300052: building_assets_sil_26
+    21300054: building_assets_sil_27
+    21300056: building_assets_sil_28
+    21300058: building_assets_sil_29
+    21300060: building_assets_sil_30
+    21300062: building_assets_sil_31
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 8192
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: iPhone
+    maxTextureSize: 8192
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Android
+    maxTextureSize: 8192
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: building_assets_sil_0
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 8360
+        width: 1444
+        height: 3241
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: building_assets_sil_1
+      rect:
+        serializedVersion: 2
+        x: 2257
+        y: 10868
+        width: 573
+        height: 571
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: building_assets_sil_2
+      rect:
+        serializedVersion: 2
+        x: 3370
+        y: 10762
+        width: 855
+        height: 785
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: building_assets_sil_3
+      rect:
+        serializedVersion: 2
+        x: 4895
+        y: 10207
+        width: 1150
+        height: 1557
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: building_assets_sil_4
+      rect:
+        serializedVersion: 2
+        x: 6278
+        y: 10572
+        width: 997
+        height: 389
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: building_assets_sil_5
+      rect:
+        serializedVersion: 2
+        x: 8940
+        y: 8360
+        width: 1664
+        height: 3351
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: building_assets_sil_6
+      rect:
+        serializedVersion: 2
+        x: 2198
+        y: 8379
+        width: 1152
+        height: 1643
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: building_assets_sil_7
+      rect:
+        serializedVersion: 2
+        x: 3582
+        y: 8360
+        width: 997
+        height: 1849
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: building_assets_sil_8
+      rect:
+        serializedVersion: 2
+        x: 4953
+        y: 8386
+        width: 1069
+        height: 1636
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: building_assets_sil_9
+      rect:
+        serializedVersion: 2
+        x: 6455
+        y: 8360
+        width: 737
+        height: 1744
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: building_assets_sil_10
+      rect:
+        serializedVersion: 2
+        x: 7548
+        y: 9696
+        width: 620
+        height: 1022
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: building_assets_sil_11
+      rect:
+        serializedVersion: 2
+        x: 7663
+        y: 8376
+        width: 1004
+        height: 895
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: building_assets_sil_12
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 5066
+        width: 1234
+        height: 3055
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: building_assets_sil_13
+      rect:
+        serializedVersion: 2
+        x: 2092
+        y: 5066
+        width: 1210
+        height: 2772
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: building_assets_sil_14
+      rect:
+        serializedVersion: 2
+        x: 3663
+        y: 5611
+        width: 1234
+        height: 2510
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: building_assets_sil_15
+      rect:
+        serializedVersion: 2
+        x: 5425
+        y: 5066
+        width: 902
+        height: 1636
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: building_assets_sil_16
+      rect:
+        serializedVersion: 2
+        x: 6880
+        y: 5066
+        width: 785
+        height: 1824
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: building_assets_sil_17
+      rect:
+        serializedVersion: 2
+        x: 8217
+        y: 6445
+        width: 2300
+        height: 1385
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: building_assets_sil_18
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 2883
+        width: 644
+        height: 1707
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: building_assets_sil_19
+      rect:
+        serializedVersion: 2
+        x: 1747
+        y: 2880
+        width: 514
+        height: 1283
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: building_assets_sil_20
+      rect:
+        serializedVersion: 2
+        x: 2772
+        y: 2883
+        width: 644
+        height: 1707
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: building_assets_sil_21
+      rect:
+        serializedVersion: 2
+        x: 3663
+        y: 2883
+        width: 644
+        height: 1589
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: building_assets_sil_22
+      rect:
+        serializedVersion: 2
+        x: 4639
+        y: 2880
+        width: 514
+        height: 1019
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: building_assets_sil_23
+      rect:
+        serializedVersion: 2
+        x: 5468
+        y: 3308
+        width: 501
+        height: 1282
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: building_assets_sil_24
+      rect:
+        serializedVersion: 2
+        x: 6466
+        y: 3628
+        width: 857
+        height: 642
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: building_assets_sil_25
+      rect:
+        serializedVersion: 2
+        x: 7940
+        y: 2858
+        width: 1152
+        height: 3028
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: building_assets_sil_26
+      rect:
+        serializedVersion: 2
+        x: 9585
+        y: 2859
+        width: 857
+        height: 2819
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: building_assets_sil_27
+      rect:
+        serializedVersion: 2
+        x: 10637
+        y: 2858
+        width: 1152
+        height: 3028
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: building_assets_sil_28
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 836
+        width: 2512
+        height: 1799
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: building_assets_sil_29
+      rect:
+        serializedVersion: 2
+        x: 3346
+        y: 2252
+        width: 2749
+        height: 383
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: building_assets_sil_30
+      rect:
+        serializedVersion: 2
+        x: 7022
+        y: 450
+        width: 1197
+        height: 2090
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: building_assets_sil_31
+      rect:
+        serializedVersion: 2
+        x: 3536
+        y: 363
+        width: 2369
+        height: 1799
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

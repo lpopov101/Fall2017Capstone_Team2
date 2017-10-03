@@ -7,7 +7,10 @@ TagManager:
   - ground
   - NPC
   - Memory
-  - ForceSwitchTrigger
+  - ToastTrigger
+  - DimensionHint
+  - PlayerInteract
+  - FragmentHint
   layers:
   - Default
   - TransparentFX

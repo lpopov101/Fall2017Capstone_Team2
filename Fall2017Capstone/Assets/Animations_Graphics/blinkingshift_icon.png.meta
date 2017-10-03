@@ -1,0 +1,398 @@
+fileFormatVersion: 2
+guid: 60d9a9dce39aa9a4eb5d254bc7ceb9d5
+timeCreated: 1506999547
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: blinkingshift_icon_0
+    21300002: blinkingshift_icon_1
+    21300004: blinkingshift_icon_2
+    21300006: blinkingshift_icon_3
+    21300008: blinkingshift_icon_4
+    21300010: blinkingshift_icon_5
+    21300012: blinkingshift_icon_6
+    21300014: blinkingshift_icon_7
+    21300016: blinkingshift_icon_8
+    21300018: blinkingshift_icon_9
+    21300020: blinkingshift_icon_10
+    21300022: blinkingshift_icon_11
+    21300024: blinkingshift_icon_12
+    21300026: blinkingshift_icon_13
+    21300028: blinkingshift_icon_14
+    21300030: blinkingshift_icon_15
+    21300032: blinkingshift_icon_16
+    21300034: blinkingshift_icon_17
+    21300036: blinkingshift_icon_18
+    21300038: blinkingshift_icon_19
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: iPhone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Android
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: blinkingshift_icon_0
+      rect:
+        serializedVersion: 2
+        x: 1253
+        y: 17017
+        width: 1567
+        height: 3161
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: blinkingshift_icon_1
+      rect:
+        serializedVersion: 2
+        x: 5439
+        y: 17015
+        width: 1433
+        height: 3129
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: blinkingshift_icon_2
+      rect:
+        serializedVersion: 2
+        x: 9550
+        y: 17015
+        width: 1435
+        height: 3128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: blinkingshift_icon_3
+      rect:
+        serializedVersion: 2
+        x: 13706
+        y: 17015
+        width: 1329
+        height: 3128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: blinkingshift_icon_4
+      rect:
+        serializedVersion: 2
+        x: 1365
+        y: 12923
+        width: 1350
+        height: 3085
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: blinkingshift_icon_5
+      rect:
+        serializedVersion: 2
+        x: 5500
+        y: 12923
+        width: 1350
+        height: 3128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: blinkingshift_icon_6
+      rect:
+        serializedVersion: 2
+        x: 9571
+        y: 12901
+        width: 1371
+        height: 3171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: blinkingshift_icon_7
+      rect:
+        serializedVersion: 2
+        x: 13685
+        y: 12923
+        width: 1371
+        height: 3192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: blinkingshift_icon_8
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 8766
+        width: 1393
+        height: 3021
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: blinkingshift_icon_9
+      rect:
+        serializedVersion: 2
+        x: 5393
+        y: 9109
+        width: 1243
+        height: 2871
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: blinkingshift_icon_10
+      rect:
+        serializedVersion: 2
+        x: 9550
+        y: 9087
+        width: 1392
+        height: 2871
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: blinkingshift_icon_11
+      rect:
+        serializedVersion: 2
+        x: 13706
+        y: 8530
+        width: 1136
+        height: 3129
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: blinkingshift_icon_12
+      rect:
+        serializedVersion: 2
+        x: 1472
+        y: 4460
+        width: 1307
+        height: 3662
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: blinkingshift_icon_13
+      rect:
+        serializedVersion: 2
+        x: 5286
+        y: 4374
+        width: 1264
+        height: 3471
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: blinkingshift_icon_14
+      rect:
+        serializedVersion: 2
+        x: 9593
+        y: 4460
+        width: 1349
+        height: 3438
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: blinkingshift_icon_15
+      rect:
+        serializedVersion: 2
+        x: 13642
+        y: 4502
+        width: 1393
+        height: 3386
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: blinkingshift_icon_16
+      rect:
+        serializedVersion: 2
+        x: 1322
+        y: 517
+        width: 1415
+        height: 3214
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: blinkingshift_icon_17
+      rect:
+        serializedVersion: 2
+        x: 5436
+        y: 346
+        width: 1436
+        height: 3428
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: blinkingshift_icon_18
+      rect:
+        serializedVersion: 2
+        x: 9528
+        y: 367
+        width: 1436
+        height: 3364
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: blinkingshift_icon_19
+      rect:
+        serializedVersion: 2
+        x: 13685
+        y: 582
+        width: 1392
+        height: 3149
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
