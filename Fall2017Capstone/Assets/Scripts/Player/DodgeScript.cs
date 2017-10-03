@@ -8,7 +8,7 @@ public class DodgeScript : MonoBehaviour {
 
 	public bool gotDodge;
 	Rigidbody2D rigidBody;
-	public float dodgeForce = 500.0f;
+	public float dodgeForce = 200.0f;
 
 	// Use this for initialization
 	void Start () {
@@ -25,6 +25,7 @@ public class DodgeScript : MonoBehaviour {
 				Vector2 vector = new Vector2 (horizontalAxis * dodgeForce,0);
 				Debug.Log ("Applying Dodge + "+ vector);
 				rigidBody.AddForce(vector,ForceMode2D.Force);
+				//transform.position = Vector3.Lerp(transform.position.x + 10f,transform.position.y,Time.deltaTime*2.0f);
 				StartCoroutine (CoolDown());
 			}
 		}

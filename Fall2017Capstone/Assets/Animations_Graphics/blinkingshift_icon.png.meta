@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 60d9a9dce39aa9a4eb5d254bc7ceb9d5
-timeCreated: 1506999547
+timeCreated: 1507067295
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -24,6 +24,7 @@ TextureImporter:
     21300034: blinkingshift_icon_17
     21300036: blinkingshift_icon_18
     21300038: blinkingshift_icon_19
+    21300040: blinkingshift_icon_20
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -386,6 +387,20 @@ TextureImporter:
         height: 3149
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: blinkingshift_icon_20
+      rect:
+        serializedVersion: 2
+        x: 11737
+        y: 14881
+        width: 1096
+        height: 2154
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

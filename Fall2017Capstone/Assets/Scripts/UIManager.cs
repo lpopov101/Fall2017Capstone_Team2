@@ -9,6 +9,7 @@ public class UIManager : MonoBehaviour {
 	public static UIManager Instance; // Singleton that currently refreshes when a new scene is loaded
 
 	public GameObject pausedOverlay;
+	public Animator MemoryHint;
 	//public GameObject dialogueText;
 
 	bool paused, dialoguePaused;
@@ -107,5 +108,17 @@ public class UIManager : MonoBehaviour {
 	public void TitleScreen() {
 		Unpause();
 		SceneManager.LoadScene ("TitleScreen",LoadSceneMode.Single);
+	}
+
+	void OnTriggerEnter2D(Collider2D coll) {
+		if(coll.gameObject.CompareTag ("FragmentHint")) {
+			MemoryHint.SetBool ("enterHintArea",true);
+		}
+	}
+
+	void OnTriggerExit2D(Collider2D coll) {
+		if(coll.gameObject.CompareTag ("FragmentHint")) {
+			MemoryHint.SetBool ("enterHintArea",false);
+		}
 	}
 }

@@ -17,15 +17,13 @@ public class DisplayToastScript : MonoBehaviour {
 	}
 
 	void OnTriggerEnter2D(Collider2D coll) {
-		Debug.Log (coll.gameObject.tag);
+		//Debug.Log (coll.gameObject.tag);
 		if (coll.gameObject.CompareTag ("DimensionHint")) {
 			toast.Toast ("Press Shift to Dimension Hop", 7.0f);
 			GameObject DimensionHint = GameObject.FindGameObjectWithTag("DimensionHint");
 			DimensionHint.SetActive (false);
 		} else if (coll.gameObject.CompareTag ("FragmentHint")) {
 			toast.Toast ("Memory Fragment nearby in dissociated dimension.", 4.0f);
-			GameObject fragmentHint = GameObject.FindGameObjectWithTag("FragmentHint");
-			fragmentHint.SetActive (false);
 		}
 	}
 }
