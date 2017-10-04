@@ -27548,6 +27548,26 @@ Prefab:
       propertyPath: currentCheckpoint
       value: 
       objectReference: {fileID: 836449411}
+    - target: {fileID: 114762496985898646, guid: c9abbe07283cf6e4a894d45867dd73a4,
+        type: 2}
+      propertyPath: currentCheckpoint
+      value: 
+      objectReference: {fileID: 836449411}
+    - target: {fileID: 114762496985898646, guid: c9abbe07283cf6e4a894d45867dd73a4,
+        type: 2}
+      propertyPath: blackTexture
+      value: 
+      objectReference: {fileID: 2800000, guid: be7f7f2cdc38bbd4fa1c8edca96380de, type: 3}
+    - target: {fileID: 114762496985898646, guid: c9abbe07283cf6e4a894d45867dd73a4,
+        type: 2}
+      propertyPath: idleTime
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114762496985898646, guid: c9abbe07283cf6e4a894d45867dd73a4,
+        type: 2}
+      propertyPath: fadeTime
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c9abbe07283cf6e4a894d45867dd73a4, type: 2}
   m_IsPrefabParent: 0

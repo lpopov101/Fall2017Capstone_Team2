@@ -5,8 +5,8 @@ using UnityEngine.UI;
 
 public class DimensionHopping : MonoBehaviour {
 
-    public Vector3 DimensionOffset;
-	
+	public Vector3 DimensionOffset;
+
 	public AudioSource streetAudio;
 	public AudioSource clubAudio;
 	public ToastScript toast;
@@ -18,20 +18,20 @@ public class DimensionHopping : MonoBehaviour {
 
 	private bool HardToggleDimension;
 
-    void Start()
-    {
+	void Start()
+	{
 		dimHopAudio = GetComponent<AudioSource>();
 		cameraScript = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<CameraScript>();
 		playerController = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerControllerImproved>();
-        DimensionMode = true;
+		DimensionMode = true;
 		HardToggleDimension = false;
-    }
+	}
 
-    void Update () {
+	void Update () {
 		if(Input.GetButtonDown("DimensionShift") && !HardToggleDimension && !playerController.FreezeMovement())
-        {
+		{
 			ChangeDimension();
-        }
+		}
 	}
 
 	void ChangeDimension() {
@@ -58,8 +58,6 @@ public class DimensionHopping : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D coll) {
 		//Debug.Log (coll.gameObject.tag);
 		if (coll.gameObject.CompareTag ("ToastTrigger") && !HardToggleDimension) {
-			gameObject.GetComponent<DeathBehavior>().currentCheckpoint = coll.gameObject;
-
 			HardToggleDimension = true;
 			if (DimensionMode) {
 				toast.Toast ("Something is not right. I can't seem to switch back...",4.0f);

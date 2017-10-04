@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DeathBehavior : MonoBehaviour {
 
@@ -58,7 +59,9 @@ public class DeathBehavior : MonoBehaviour {
 		startFadeTime = Time.time;
 		yield return new WaitForSeconds(fadeTime);
 
-		gameObject.transform.position = currentCheckpoint.transform.position;
+		SceneManager.LoadScene("NewShell1", LoadSceneMode.Single);
+
+		/*gameObject.transform.position = currentCheckpoint.transform.position;
 		currentCheckpoint.GetComponent<CheckpointBehavior>().RespawnOnCheckpoint();
 		bool reality = currentCheckpoint.transform.position.y > -500;
 		dimensionHopScript.ResetDimension(reality);
@@ -66,6 +69,6 @@ public class DeathBehavior : MonoBehaviour {
 		gameObject.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
 		playerController.SetDead(false);
 		isDead = false;
-		fading = false;
+		fading = false;*/
 	}
 }
