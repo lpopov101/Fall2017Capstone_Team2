@@ -117,6 +117,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1172880}
   - component: {fileID: 1172879}
+  - component: {fileID: 1172881}
   m_Layer: 0
   m_Name: Real_ForceSwitchTrigger
   m_TagString: ToastTrigger
@@ -162,6 +163,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1172881
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1172878}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9c2d32bcd9ac074089d8d26c921cf38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4232011
 GameObject:
   m_ObjectHideFlags: 0
@@ -5596,63 +5608,11 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 2013184835}
   m_Script: {fileID: 11500000, guid: 81eeb1fdcf45bed49a4d8cdd7053025a, type: 3}
---- !u!81 &361484040
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 361484037}
-  m_Enabled: 1
---- !u!114 &361484042
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 361484037}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d6dd8ad5e9edad646afac8464125ab24, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  acceleration: 20
-  speedLimit: 9
-  friction: 12
-  slopeAngleLimit: 50
-  gravity: -30
-  sprintAnimationSpeedCutoff: 9
-  skidAnimationSpeedCutoff: 5
-  jumpStrength: 500
-  airAcceleration: 10
-  airControl: 5
-  fallAnimationTriggerTime: 0.45
-  ledgeGrabRange: 0.8
-  ledgeGrabTimeMin: 0.1
-  ledgeGrabTimeMax: 4
-  ledgePoint: {fileID: 1108952842}
-  groundPoints:
-  - {fileID: 811177139}
-  - {fileID: 1124962484}
-  - {fileID: 1725669026}
-  groundLayer:
-    serializedVersion: 2
-    m_Bits: 512
 --- !u!4 &361484046 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4956917749498592, guid: c9abbe07283cf6e4a894d45867dd73a4,
     type: 2}
   m_PrefabInternal: {fileID: 2013184835}
---- !u!114 &361484048
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 361484037}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 303f04cd3a563b14898981abce68ddd9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  toast: {fileID: 669052267}
 --- !u!1 &367357151
 GameObject:
   m_ObjectHideFlags: 0
@@ -7085,6 +7045,17 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
+--- !u!114 &466185202
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 466185199}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ea082520f00c2a43b6988477efead27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &476599940
 Prefab:
   m_ObjectHideFlags: 0
@@ -8399,6 +8370,7 @@ GameObject:
   m_Component:
   - component: {fileID: 566979641}
   - component: {fileID: 566979640}
+  - component: {fileID: 566979642}
   m_Layer: 0
   m_Name: Diss_ForceSwitchTrigger
   m_TagString: ToastTrigger
@@ -8444,6 +8416,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &566979642
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 566979639}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9c2d32bcd9ac074089d8d26c921cf38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &587977223
 GameObject:
   m_ObjectHideFlags: 0
@@ -10243,6 +10226,17 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
+--- !u!114 &679791203
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 679791200}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ea082520f00c2a43b6988477efead27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &683480619
 GameObject:
   m_ObjectHideFlags: 0
@@ -11452,11 +11446,6 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
---- !u!4 &811177139 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4611275857450792, guid: c9abbe07283cf6e4a894d45867dd73a4,
-    type: 2}
-  m_PrefabInternal: {fileID: 2013184835}
 --- !u!1 &828753337
 GameObject:
   m_ObjectHideFlags: 0
@@ -11717,6 +11706,46 @@ Transform:
   m_Children: []
   m_Father: {fileID: 896085462}
   m_RootOrder: 19
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &836449411
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 836449413}
+  - component: {fileID: 836449412}
+  m_Layer: 0
+  m_Name: CheckpointStart
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &836449412
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 836449411}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dee186f95ec982d49a4444357b11eeb6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &836449413
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 836449411}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -75.077, y: -10.596, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &837270015
 GameObject:
@@ -14493,11 +14522,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1108442647}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &1108952842 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4845194250197890, guid: c9abbe07283cf6e4a894d45867dd73a4,
-    type: 2}
-  m_PrefabInternal: {fileID: 2013184835}
 --- !u!1 &1116127521
 GameObject:
   m_ObjectHideFlags: 0
@@ -15115,11 +15139,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1122038350}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &1124962484 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4148723394811678, guid: c9abbe07283cf6e4a894d45867dd73a4,
-    type: 2}
-  m_PrefabInternal: {fileID: 2013184835}
 --- !u!1 &1127883381
 GameObject:
   m_ObjectHideFlags: 0
@@ -17948,7 +17967,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1372238603}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -1.6, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2013656251}
@@ -17996,7 +18015,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 95.37251, y: 1107.363}
+  m_Size: {x: 100.8, y: 1107.363}
   m_EdgeRadius: 0
 --- !u!1 &1390878367
 GameObject:
@@ -22829,11 +22848,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8358b60f028727546bcb61b7fdc4e0a0, type: 2}
   m_IsPrefabParent: 0
---- !u!4 &1725669026 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4772083485109242, guid: c9abbe07283cf6e4a894d45867dd73a4,
-    type: 2}
-  m_PrefabInternal: {fileID: 2013184835}
 --- !u!1 &1731384041
 GameObject:
   m_ObjectHideFlags: 0
@@ -25489,6 +25503,17 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
+--- !u!114 &1901935832
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1901935829}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ea082520f00c2a43b6988477efead27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1907779817
 GameObject:
   m_ObjectHideFlags: 0
@@ -27462,7 +27487,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4956917749498592, guid: c9abbe07283cf6e4a894d45867dd73a4, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -10.64
+      value: -10.708
       objectReference: {fileID: 0}
     - target: {fileID: 4956917749498592, guid: c9abbe07283cf6e4a894d45867dd73a4, type: 2}
       propertyPath: m_LocalPosition.z
@@ -27498,57 +27523,32 @@ Prefab:
       propertyPath: clubAudio
       value: 
       objectReference: {fileID: 1643855870}
-    - target: {fileID: 114278591348600428, guid: c9abbe07283cf6e4a894d45867dd73a4,
-        type: 2}
-      propertyPath: pausedOverlay
-      value: 
-      objectReference: {fileID: 1660104588}
-    - target: {fileID: 70098786306079664, guid: c9abbe07283cf6e4a894d45867dd73a4,
-        type: 2}
-      propertyPath: m_Size.y
-      value: 8.18
-      objectReference: {fileID: 0}
-    - target: {fileID: 114100168825068852, guid: c9abbe07283cf6e4a894d45867dd73a4,
-        type: 2}
-      propertyPath: text
-      value: 
-      objectReference: {fileID: 1826068973}
     - target: {fileID: 114100168825068852, guid: c9abbe07283cf6e4a894d45867dd73a4,
         type: 2}
       propertyPath: toast
       value: 
       objectReference: {fileID: 669052267}
-    - target: {fileID: 114471237484368088, guid: c9abbe07283cf6e4a894d45867dd73a4,
+    - target: {fileID: 114278591348600428, guid: c9abbe07283cf6e4a894d45867dd73a4,
         type: 2}
-      propertyPath: jumpStrength
-      value: 500
-      objectReference: {fileID: 0}
-    - target: {fileID: 114471237484368088, guid: c9abbe07283cf6e4a894d45867dd73a4,
-        type: 2}
-      propertyPath: ledgeGrabTimeMax
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 114471237484368088, guid: c9abbe07283cf6e4a894d45867dd73a4,
-        type: 2}
-      propertyPath: ledgeGrabTimeMin
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114471237484368088, guid: c9abbe07283cf6e4a894d45867dd73a4,
-        type: 2}
-      propertyPath: friction
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 1517872083873526, guid: c9abbe07283cf6e4a894d45867dd73a4, type: 2}
-      propertyPath: m_TagString
-      value: PlayerInteract
-      objectReference: {fileID: 0}
+      propertyPath: pausedOverlay
+      value: 
+      objectReference: {fileID: 1660104588}
     - target: {fileID: 114278591348600428, guid: c9abbe07283cf6e4a894d45867dd73a4,
         type: 2}
       propertyPath: MemoryHint
       value: 
       objectReference: {fileID: 443662410}
-    m_RemovedComponents:
-    - {fileID: 114471237484368088, guid: c9abbe07283cf6e4a894d45867dd73a4, type: 2}
+    - target: {fileID: 114758592950750284, guid: c9abbe07283cf6e4a894d45867dd73a4,
+        type: 2}
+      propertyPath: toast
+      value: 
+      objectReference: {fileID: 669052267}
+    - target: {fileID: 114861160423114402, guid: c9abbe07283cf6e4a894d45867dd73a4,
+        type: 2}
+      propertyPath: currentCheckpoint
+      value: 
+      objectReference: {fileID: 836449411}
+    m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c9abbe07283cf6e4a894d45867dd73a4, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &2013656250

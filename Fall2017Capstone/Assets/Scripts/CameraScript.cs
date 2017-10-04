@@ -55,6 +55,14 @@ public class CameraScript : MonoBehaviour {
 		targetCameraOffset = initialCameraOffset;
 	}
 
+	public void ResetCameraViewportComplete() {
+		cam.orthographicSize = targetCameraSize = initialCameraSize;
+		targetCameraOffset = initialCameraOffset;
+
+		cameraOffset.x = target.position.x + initialCameraOffset.x;
+		cameraOffset.y = target.position.y + initialCameraOffset.y;
+	}
+
 	// Called by DimensionHoppping to fix smooth camera issue when dimension hopping
 	public void DimensionHopCamera(Vector3 dimensionOffset) {
 		cameraOffset.x += dimensionOffset.x;

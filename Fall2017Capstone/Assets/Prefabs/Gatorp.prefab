@@ -38,7 +38,7 @@ GameObject:
   - component: {fileID: 114093170454257394}
   m_Layer: 0
   m_Name: Interact Trigger
-  m_TagString: Untagged
+  m_TagString: PlayerInteract
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -85,11 +85,14 @@ GameObject:
   - component: {fileID: 70098786306079664}
   - component: {fileID: 95871801882573126}
   - component: {fileID: 212951907075057780}
-  - component: {fileID: 114471237484368088}
   - component: {fileID: 114100168825068852}
   - component: {fileID: 82918663972556878}
   - component: {fileID: 114278591348600428}
   - component: {fileID: 114007977338940302}
+  - component: {fileID: 81934240777205004}
+  - component: {fileID: 114218429935517600}
+  - component: {fileID: 114758592950750284}
+  - component: {fileID: 114861160423114402}
   m_Layer: 0
   m_Name: Gatorp
   m_TagString: Player
@@ -184,7 +187,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1715291861094252}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -75.4, y: -10.6, z: 0}
+  m_LocalPosition: {x: -75.07, y: -10.708, z: 0}
   m_LocalScale: {x: 0.14, y: 0.14, z: 1}
   m_Children:
   - {fileID: 4918055902081620}
@@ -243,8 +246,15 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_Size: {x: 3.53, y: 8.33}
+  m_Size: {x: 3.53, y: 8.18}
   m_Direction: 0
+--- !u!81 &81934240777205004
+AudioListener:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1715291861094252}
+  m_Enabled: 1
 --- !u!82 &82918663972556878
 AudioSource:
   m_ObjectHideFlags: 1
@@ -382,6 +392,40 @@ MonoBehaviour:
   DimensionOffset: {x: 0, y: -1000, z: 0}
   streetAudio: {fileID: 0}
   clubAudio: {fileID: 0}
+  toast: {fileID: 0}
+--- !u!114 &114218429935517600
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1715291861094252}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6dd8ad5e9edad646afac8464125ab24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  acceleration: 20
+  speedLimit: 9
+  friction: 12
+  slopeAngleLimit: 50
+  gravity: -30
+  sprintAnimationSpeedCutoff: 9
+  skidAnimationSpeedCutoff: 5
+  jumpStrength: 500
+  airAcceleration: 10
+  airControl: 5
+  fallAnimationTriggerTime: 0.45
+  ledgeGrabRange: 0.8
+  ledgeGrabTimeMin: 0.1
+  ledgeGrabTimeMax: 4
+  ledgePoint: {fileID: 4845194250197890}
+  groundPoints:
+  - {fileID: 4611275857450792}
+  - {fileID: 4148723394811678}
+  - {fileID: 4772083485109242}
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 512
 --- !u!114 &114278591348600428
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -394,7 +438,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pausedOverlay: {fileID: 0}
---- !u!114 &114471237484368088
+  MemoryHint: {fileID: 0}
+--- !u!114 &114758592950750284
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -402,31 +447,25 @@ MonoBehaviour:
   m_GameObject: {fileID: 1715291861094252}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dfc1b3355c287494db066f24af305ad7, type: 3}
+  m_Script: {fileID: 11500000, guid: 303f04cd3a563b14898981abce68ddd9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  acceleration: 20
-  speedLimit: 10
-  friction: 5
-  slopeAngleLimit: 50
-  gravity: -30
-  sprintAnimationSpeedCutoff: 9
-  skidAnimationSpeedCutoff: 7
-  jumpStrength: 450
-  airAcceleration: 10
-  airControl: 5
-  fallAnimationTriggerTime: 0.45
-  ledgeGrabRange: 0.2
-  ledgeGrabTimeMin: 0.1
-  ledgeGrabTimeMax: 0.5
-  ledgePoint: {fileID: 4845194250197890}
-  groundPoints:
-  - {fileID: 4611275857450792}
-  - {fileID: 4148723394811678}
-  - {fileID: 4772083485109242}
-  groundLayer:
-    serializedVersion: 2
-    m_Bits: 512
+  toast: {fileID: 0}
+--- !u!114 &114861160423114402
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1715291861094252}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c5957baa5d2c904691ec790ec1e3c85, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentCheckpoint: {fileID: 0}
+  blackTexture: {fileID: 2800000, guid: be7f7f2cdc38bbd4fa1c8edca96380de, type: 3}
+  idleTime: 1
+  fadeTime: 1
 --- !u!212 &212951907075057780
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -11,6 +11,7 @@ TagManager:
   - DimensionHint
   - PlayerInteract
   - FragmentHint
+  - Monster
   layers:
   - Default
   - TransparentFX

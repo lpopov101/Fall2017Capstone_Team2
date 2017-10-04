@@ -28,6 +28,9 @@ public class MemoryScript : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D coll) {
 		if (coll.gameObject.CompareTag ("PlayerInteract") && sr.enabled) {
+			GameObject player = coll.gameObject.transform.parent.gameObject;
+			player.GetComponent<DeathBehavior>().currentCheckpoint = gameObject;
+
 			audioSource.Play();
 			movie.Play();
 			StartCoroutine(ShutterAfterMovie(movie.duration));

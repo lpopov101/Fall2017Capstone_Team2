@@ -26,7 +26,7 @@ GameObject:
   - component: {fileID: 114247944947607998}
   m_Layer: 8
   m_Name: Snek
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -188,7 +188,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementSpeed: 1.4
-  distanceBeforeFollowing: 3
+  distanceBeforeFollowing: 0
 --- !u!212 &212869999685984260
 SpriteRenderer:
   m_ObjectHideFlags: 1
