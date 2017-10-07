@@ -47,8 +47,7 @@ public class DeathBehavior : MonoBehaviour {
 	}
 
 	public void SetDead() {
-		// TODO: Insert death animation
-		playerController.SetDead(true);
+		playerController.KillPlayer();
 		isDead = true;
 		StartCoroutine(FadeAndRespawn());
 	}

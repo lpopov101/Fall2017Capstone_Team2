@@ -9493,7 +9493,7 @@ Prefab:
     - target: {fileID: 224141759155288940, guid: dd09d0d2ec1b18144842dd9912b4300a,
         type: 2}
       propertyPath: m_RootOrder
-      value: 13
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 224141759155288940, guid: dd09d0d2ec1b18144842dd9912b4300a,
         type: 2}
@@ -12759,7 +12759,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &962398816
 GameObject:
@@ -15399,7 +15399,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4219139729542740, guid: b6bc4e1f5ab606047b78af6f6c984a2c, type: 2}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 114541998981778616, guid: b6bc4e1f5ab606047b78af6f6c984a2c,
         type: 2}
@@ -25788,11 +25788,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1916872428}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -68.03, y: -10.708, z: -1}
+  m_LocalPosition: {x: -69.66, y: -10.708, z: -1}
   m_LocalScale: {x: 0.16, y: 0.16, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1916872432
 MonoBehaviour:
@@ -25807,7 +25807,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waitTime: 1
   movementSpeed: 2
-  distanceBeforeDestroying: 3
+  distanceBeforeDestroying: 4
 --- !u!1 &1919004753
 GameObject:
   m_ObjectHideFlags: 0
@@ -27511,7 +27511,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4956917749498592, guid: c9abbe07283cf6e4a894d45867dd73a4, type: 2}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 114100168825068852, guid: c9abbe07283cf6e4a894d45867dd73a4,
         type: 2}
@@ -27567,6 +27567,16 @@ Prefab:
         type: 2}
       propertyPath: fadeTime
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114635290891139902, guid: c9abbe07283cf6e4a894d45867dd73a4,
+        type: 2}
+      propertyPath: toast
+      value: 
+      objectReference: {fileID: 669052267}
+    - target: {fileID: 114641968725632860, guid: c9abbe07283cf6e4a894d45867dd73a4,
+        type: 2}
+      propertyPath: fallDistance
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c9abbe07283cf6e4a894d45867dd73a4, type: 2}
@@ -29156,7 +29166,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2137734716
 GameObject:
