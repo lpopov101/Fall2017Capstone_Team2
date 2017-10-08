@@ -10,25 +10,23 @@ public class DeathBehavior : MonoBehaviour {
 	public float idleTime;
 	public float fadeTime;
 
-	private DimensionHopping dimensionHopScript;
+	//private DimensionHopping dimensionHopScript;
 	private PlayerControllerImproved playerController;
-	private CameraScript cameraScript;
+	//private CameraScript cameraScript;
 	private bool isDead;
 	private bool fading;
 	private float startFadeTime;
 
-	// Use this for initialization
 	void Start () {
-		dimensionHopScript = GetComponent<DimensionHopping>();
+		//dimensionHopScript = GetComponent<DimensionHopping>();
 		playerController = GetComponent<PlayerControllerImproved>();
-		cameraScript = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<CameraScript>();
+		//cameraScript = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<CameraScript>();
 
 		isDead = false;
 		fading = false;
 		startFadeTime = 0;
 	}
-	
-	// Update is called once per frame
+
 	void Update () {
 	}
 

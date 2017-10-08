@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BossHandsBehavior : MonoBehaviour {
+public class BossHandsBehavior : MonoBehaviour, ISpike {
 
 	public GameObject target;
 	public GameObject handIndicatorPrefab;
@@ -55,7 +55,7 @@ public class BossHandsBehavior : MonoBehaviour {
 			handBehavior.shrinkSpeed = handShrinkSpeed;
 			handBehavior.growthAmount = handGrowthAmount;
 			handBehavior.waitTime = handWaitTime;
-			handBehavior.SetBossBehavior(this);
+			handBehavior.SetSpikeBase(this);
 
 			StartCoroutine(Idle());
 		}
