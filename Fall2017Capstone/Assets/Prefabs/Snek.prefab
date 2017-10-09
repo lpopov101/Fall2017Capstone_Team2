@@ -188,7 +188,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementSpeed: 1.4
-  distanceBeforeFollowing: 0
+  minFollowDistance: 0
+  maxFollowDistance: 10
 --- !u!212 &212869999685984260
 SpriteRenderer:
   m_ObjectHideFlags: 1
