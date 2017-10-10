@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 212869999685984260}
   - component: {fileID: 95860180112204406}
   - component: {fileID: 114247944947607998}
+  - component: {fileID: 82754786299014040}
   m_Layer: 8
   m_Name: Snek
   m_TagString: Monster
@@ -37,8 +38,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1067123310030348}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -19.52, y: -5.7, z: 0}
   m_LocalScale: {x: 0.24, y: 0.2, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -159,6 +160,104 @@ PolygonCollider2D:
       - {x: 2.44, y: -0.76}
       - {x: 2.24, y: -1.04}
       - {x: 2.28, y: -1.0799999}
+--- !u!82 &82754786299014040
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1067123310030348}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 69c285072860a724f82e958fc0c843da, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.212
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 166
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 10
+  Pan2D: 0
+  rolloffMode: 2
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0.18316802
+      value: 0.66389465
+      inSlope: -3.5085733
+      outSlope: -3.5085733
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 0.31530303
+      value: 0.3611145
+      inSlope: -0.9867955
+      outSlope: -0.9867955
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 0.502066
+      value: 0.1777649
+      inSlope: -0.7136777
+      outSlope: -0.7136777
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 0.7886475
+      value: 0.011108398
+      inSlope: -0.32769704
+      outSlope: -0.32769704
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0
+      inSlope: -0.10003988
+      outSlope: -0.10003988
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
 --- !u!95 &95860180112204406
 Animator:
   serializedVersion: 3
@@ -203,7 +302,7 @@ SpriteRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: b8405e72ab3a3b34aafb00145ce908c6, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

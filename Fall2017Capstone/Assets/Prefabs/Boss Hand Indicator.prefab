@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 95185803443655148}
   - component: {fileID: 212138954765391034}
   - component: {fileID: 114790655060524934}
+  - component: {fileID: 114725190422514444}
   m_Layer: 0
   m_Name: Boss Hand Indicator
   m_TagString: Untagged
@@ -59,6 +60,18 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114725190422514444
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1698838081202062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5172e8549ec53c4db0a5609094b3db8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  crackAudio: {fileID: 8300000, guid: cb1f2f205226662479d7ce0bb8498a47, type: 3}
 --- !u!114 &114790655060524934
 MonoBehaviour:
   m_ObjectHideFlags: 1
