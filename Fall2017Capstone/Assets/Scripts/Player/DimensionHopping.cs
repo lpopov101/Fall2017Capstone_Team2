@@ -36,8 +36,10 @@ public class DimensionHopping : MonoBehaviour {
 		dimHopAudio.Play();
 		if(DimensionMode)
 		{
-			streetAudio.mute = true;
-			clubAudio.mute = true;
+			if(streetAudio != null)
+				streetAudio.mute = true;
+			if(clubAudio != null)
+				clubAudio.mute = true;
 			cameraScript.DimensionHopCamera(DimensionOffset);
 			transform.Translate(DimensionOffset);
 			RenderSettings.ambientLight = new Color (0.3f,0.6f,0.9f);
@@ -45,8 +47,10 @@ public class DimensionHopping : MonoBehaviour {
         }
 		else
 		{
-			streetAudio.mute = false;
-			clubAudio.mute = false;
+			if(streetAudio != null)
+				streetAudio.mute = false;
+			if(clubAudio != null)
+				clubAudio.mute = false;
 			cameraScript.DimensionHopCamera(-1*DimensionOffset);
 			transform.Translate(-1*DimensionOffset);
 			RenderSettings.ambientLight = new Color (0.6f,0.6f,0.6f);
