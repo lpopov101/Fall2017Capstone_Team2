@@ -45,7 +45,7 @@ public class DeathBehavior : MonoBehaviour {
 	}
 
 	public void SetDead() {
-		playerController.KillPlayer();
+        playerController.gameObject.SendMessage("KillPlayer");
 		isDead = true;
 		StartCoroutine(FadeAndRespawn());
 	}

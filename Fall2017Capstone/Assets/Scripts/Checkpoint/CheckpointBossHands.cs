@@ -11,6 +11,6 @@ public class CheckpointBossHands : CheckpointBehavior {
 	}
 
 	public override void RespawnOnCheckpoint() {
-		dimensionHop.SetHardToggleDimension(false);
+		//dimensionHop.SetHardToggleDimension(false);
 	}
 }

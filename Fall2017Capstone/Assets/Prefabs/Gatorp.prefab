@@ -85,14 +85,14 @@ GameObject:
   - component: {fileID: 70098786306079664}
   - component: {fileID: 95871801882573126}
   - component: {fileID: 212951907075057780}
-  - component: {fileID: 82918663972556878}
-  - component: {fileID: 81814852014550792}
-  - component: {fileID: 114278591348600428}
-  - component: {fileID: 114635290891139902}
-  - component: {fileID: 114641968725632860}
   - component: {fileID: 114100168825068852}
+  - component: {fileID: 82918663972556878}
+  - component: {fileID: 114278591348600428}
   - component: {fileID: 114007977338940302}
-  - component: {fileID: 114762496985898646}
+  - component: {fileID: 81814852014550792}
+  - component: {fileID: 114641968725632860}
+  - component: {fileID: 114635290891139902}
+  - component: {fileID: 114336283201915106}
   m_Layer: 0
   m_Name: Gatorp
   m_TagString: Player
@@ -187,7 +187,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1715291861094252}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -40.3, y: -1.429, z: 0}
+  m_LocalPosition: {x: -76.1, y: -10.65, z: 0}
   m_LocalScale: {x: 0.14, y: 0.14, z: 1}
   m_Children:
   - {fileID: 4918055902081620}
@@ -363,9 +363,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81eeb1fdcf45bed49a4d8cdd7053025a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gotDodge: 0
   dodgeForce: 500
-  dodgeTime: 0.15
-  cooldownTime: 0.8
 --- !u!114 &114093170454257394
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -407,6 +406,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pausedOverlay: {fileID: 0}
   MemoryHint: {fileID: 0}
+--- !u!114 &114336283201915106
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1715291861094252}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c5957baa5d2c904691ec790ec1e3c85, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentCheckpoint: {fileID: 0}
+  blackTexture: {fileID: 0}
+  idleTime: 0
+  fadeTime: 0
 --- !u!114 &114635290891139902
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -430,17 +444,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6dd8ad5e9edad646afac8464125ab24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  acceleration: 20
-  speedLimit: 9
+  acceleration: 16
+  speedLimit: 5
   friction: 12
   slopeAngleLimit: 50
   gravity: -30
-  sprintAnimationSpeedCutoff: 9
-  skidAnimationSpeedCutoff: 5
+  sprintAnimationSpeedCutoff: 4
+  skidAnimationSpeedCutoff: 2
   jumpStrength: 10
-  airAcceleration: 10
-  airControl: 5
-  fallDistance: 2
+  airAcceleration: 40
+  airControl: 3
+  fallDistance: 4.5
   ledgeGrabRange: 0.8
   ledgeGrabTimeMin: 0.1
   ledgeGrabTimeMax: 4
@@ -452,23 +466,14 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 512
-  deathBounceForce: 1
+  deathBounceForce: 4
   ladderSpeed: 1
---- !u!114 &114762496985898646
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1715291861094252}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6c5957baa5d2c904691ec790ec1e3c85, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentCheckpoint: {fileID: 0}
-  blackTexture: {fileID: 2800000, guid: be7f7f2cdc38bbd4fa1c8edca96380de, type: 3}
-  idleTime: 1
-  fadeTime: 1
+  dodgeForce: 200
+  silhouettePrefab: {fileID: 0}
+  silhouetteRate: 0
+  StepAudio1: {fileID: 8300000, guid: e98445f1aa7a681488c228612e367cf4, type: 3}
+  StepAudio2: {fileID: 8300000, guid: 3629f2740eb01164b88701efe4c48627, type: 3}
+  LandAudio: {fileID: 8300000, guid: 949e072311f08ef4aa1e554e75524862, type: 3}
 --- !u!212 &212951907075057780
 SpriteRenderer:
   m_ObjectHideFlags: 1
