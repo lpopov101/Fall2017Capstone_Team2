@@ -5,21 +5,18 @@ using UnityEngine.UI;
 
 public class DodgeScript : MonoBehaviour {
 
+	public bool hasDodgeAbility;
+	public float cooldownTime;
 
-	public bool gotDodge;
-	public float dodgeForce = 200.0f;
-    
-    private Rigidbody2D rigidBody;
+	private bool gotDodge;
 
-    // Use this for initialization
     void Start () {
-		gotDodge = false;
-		rigidBody = GetComponent<Rigidbody2D>();
+		hasDodgeAbility = false;
+		gotDodge = true;
 	}
-	
-	// Update is called once per frame
+
 	void Update () {
-        if(gotDodge && Input.GetButtonDown("Dodge"))
+		if(hasDodgeAbility && gotDodge && Input.GetButtonDown("Dodge"))
         {
             gameObject.SendMessage("Dodge");
             StartCoroutine(CoolDown());
@@ -27,10 +24,10 @@ public class DodgeScript : MonoBehaviour {
 	}
 
 	IEnumerator CoolDown() {
-		Debug.Log ("CoolDown");
+		//Debug.Log ("Dodge CoolDown");
 		gotDodge = false;
-		yield return new WaitForSeconds(1.5f);
+		yield return new WaitForSeconds(cooldownTime);
 		gotDodge = true;
-		Debug.Log ("CoolDown complete");
+		//Debug.Log ("Dodge CoolDown complete");
 	}
 }

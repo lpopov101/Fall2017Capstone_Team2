@@ -13,6 +13,7 @@ public class DimensionHopping : MonoBehaviour {
 
 	private AudioSource dimHopAudio;
 	private CameraScript cameraScript;
+	private PlayerControllerImproved playerController;
 	private bool DimensionMode;
 
 	private bool HardToggleDimension;
@@ -21,12 +22,13 @@ public class DimensionHopping : MonoBehaviour {
     {
 		dimHopAudio = GetComponent<AudioSource>();
 		cameraScript = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<CameraScript>();
+		playerController = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerControllerImproved>();
         DimensionMode = true;
 		HardToggleDimension = false;
     }
 
     void Update () {
-		if(Input.GetButtonDown("DimensionShift") && !HardToggleDimension)
+		if(Input.GetButtonDown("DimensionShift") && !HardToggleDimension && !playerController.FreezeMovement())
         {
 			ChangeDimension();
         }

@@ -53,11 +53,21 @@ public class UIManager : MonoBehaviour {
 		pausedOverlay.SetActive(true);
 	}
 
+	public void PauseWithoutOverlay() {
+		paused = true;
+		UpdateTimeScale();
+	}
+
 	public void Unpause() {
 		paused = false;
 		UpdateTimeScale();
 		AudioListener.pause = false;
 		pausedOverlay.SetActive(false);
+	}
+
+	public void UnpauseWithoutOverlay() {
+		paused = false;
+		UpdateTimeScale();
 	}
 
 
