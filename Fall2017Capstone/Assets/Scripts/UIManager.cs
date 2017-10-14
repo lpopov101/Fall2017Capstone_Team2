@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class UIManager : MonoBehaviour {
 
-	public static UIManager Instance; // Singleton that currently refreshes when a new scene is loaded
+	public static UIManager Instance = null; // Singleton that currently refreshes when a new scene is loaded
 
 	public GameObject pausedOverlay;
 	public Animator MemoryHint;
@@ -15,9 +15,13 @@ public class UIManager : MonoBehaviour {
 	bool paused, dialoguePaused;
 	//Text dialogueTextScript;
 
-	void Start () {
+	void Awake() {
+		if(Instance == null)
+			Debug.Log("Creating UI Manager.");
 		Instance = this;
+	}
 
+	void Start () {
 		pausedOverlay.SetActive(false);
 		//dialogueText.SetActive(false);
 

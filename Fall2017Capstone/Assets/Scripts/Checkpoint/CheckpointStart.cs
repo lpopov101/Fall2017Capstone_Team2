@@ -4,6 +4,6 @@ using UnityEngine;
 
 public class CheckpointStart : CheckpointBehavior {
 
-	public override void RespawnOnCheckpoint() {
+	void LoadCheckpoint() {
 	}
 }

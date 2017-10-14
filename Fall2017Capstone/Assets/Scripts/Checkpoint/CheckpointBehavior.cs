@@ -14,9 +14,12 @@ public class CheckpointBehavior : MonoBehaviour {
 		
 	}
 
-	/*
-	 * Meant to be implemented in subclasses.
-	 */
-	public virtual void RespawnOnCheckpoint() {
+	public void DestroyIfExists(MonoBehaviour mono) {
+		DestroyIfExists(mono.gameObject);
+	}
+
+	public void DestroyIfExists(GameObject obj) {
+		if(obj != null)
+			Destroy(obj);
 	}
 }

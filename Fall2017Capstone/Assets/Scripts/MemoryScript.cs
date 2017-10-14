@@ -20,6 +20,7 @@ public class MemoryScript : MonoBehaviour {
 	private float startMovieTime;
 
 	void Start () {
+		Destroy(null);
 		sr = GetComponent<SpriteRenderer>();
 		sr.enabled = true;
 		audioSource = GetComponent<AudioSource>();

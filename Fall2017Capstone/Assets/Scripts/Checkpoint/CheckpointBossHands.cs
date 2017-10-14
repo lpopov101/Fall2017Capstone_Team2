@@ -4,13 +4,26 @@ using UnityEngine;
 
 public class CheckpointBossHands : CheckpointBehavior {
 
+	private GameObject player;
 	private DimensionHopping dimensionHop;
+	private DodgeScript dodgeScript;
 
-	void Start() {
-		dimensionHop = GameObject.FindGameObjectWithTag("Player").GetComponent<DimensionHopping>();
+	void Awake() {
+		player = GameObject.FindGameObjectWithTag("Player");
+		dimensionHop = player.GetComponent<DimensionHopping>();
+		dodgeScript = player.GetComponent<DodgeScript>();
 	}
 
-	public override void RespawnOnCheckpoint() {
-		//dimensionHop.SetHardToggleDimension(false);
+	void LoadCheckpoint() {
+		player.transform.position = transform.position;
+
+		CheckpointManagerShell1 manager = CheckpointManager.GetManager<CheckpointManagerShell1>();
+		DestroyIfExists(manager.gina);
+		DestroyIfExists(manager.memory1);
+		DestroyIfExists(manager.memory2);
+		DestroyIfExists(manager.memory3);
+		DestroyIfExists(manager.powerup);
+
+		dodgeScript.hasDodgeAbility = true;
 	}
 }
