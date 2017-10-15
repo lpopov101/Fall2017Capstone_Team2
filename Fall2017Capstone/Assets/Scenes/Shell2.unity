@@ -12768,9 +12768,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9b30a05594105e46aaf39c96c5ee026, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  smoothTime: 0
+  smoothTime: 0.14
   target: {fileID: 15020818}
-  defaultCameraOffset: {x: 0, y: 0}
+  defaultCameraOffset: {x: 0, y: 2}
 --- !u!1 &1406227325
 GameObject:
   m_ObjectHideFlags: 0
@@ -16183,6 +16183,21 @@ Prefab:
       propertyPath: MemoryHint
       value: 
       objectReference: {fileID: 1711407428}
+    - target: {fileID: 114336283201915106, guid: c9abbe07283cf6e4a894d45867dd73a4,
+        type: 2}
+      propertyPath: idleTime
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114336283201915106, guid: c9abbe07283cf6e4a894d45867dd73a4,
+        type: 2}
+      propertyPath: fadeTime
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114336283201915106, guid: c9abbe07283cf6e4a894d45867dd73a4,
+        type: 2}
+      propertyPath: blackTexture
+      value: 
+      objectReference: {fileID: 2800000, guid: be7f7f2cdc38bbd4fa1c8edca96380de, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c9abbe07283cf6e4a894d45867dd73a4, type: 2}
   m_IsPrefabParent: 0

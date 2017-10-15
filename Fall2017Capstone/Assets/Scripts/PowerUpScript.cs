@@ -27,6 +27,8 @@ public class PowerUpScript : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D coll) {
 		if (coll.gameObject.CompareTag ("Player") && sr.enabled) {
 			toaster.Toast ("You have picked up the ability evade. Press Left Control to use.", 5.0f);
+			PlayerPrefs.SetInt("Powerup", 1);
+			PlayerPrefs.Save();
 			dodgeScript.hasDodgeAbility = true;
 			sr.enabled = false;
 			light.enabled = false;

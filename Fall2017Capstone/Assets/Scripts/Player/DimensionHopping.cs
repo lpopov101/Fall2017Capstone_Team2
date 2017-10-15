@@ -68,7 +68,10 @@ public class DimensionHopping : MonoBehaviour {
 			if (DimensionMode) {
 				toast.Toast ("Something is not right. I can't seem to switch back...",4.0f);
 				ChangeDimension ();
-				PlayerPrefs.SetString("Current Checkpoint", coll.gameObject.name);
+				if(coll.gameObject.name != PlayerPrefs.GetString("Current Checkpoint")) {
+					PlayerPrefs.SetString("Current Checkpoint", coll.gameObject.name);
+					PlayerPrefs.Save();
+				}
 			}
 		}
 	}

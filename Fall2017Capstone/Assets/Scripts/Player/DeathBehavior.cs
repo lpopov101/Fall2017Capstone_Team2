@@ -5,22 +5,17 @@ using UnityEngine.SceneManagement;
 
 public class DeathBehavior : MonoBehaviour {
 
-	public GameObject currentCheckpoint;
 	public Texture blackTexture;
 	public float idleTime;
 	public float fadeTime;
 
-	//private DimensionHopping dimensionHopScript;
 	private PlayerControllerImproved playerController;
-	//private CameraScript cameraScript;
 	private bool isDead;
 	private bool fading;
 	private float startFadeTime;
 
 	void Start () {
-		//dimensionHopScript = GetComponent<DimensionHopping>();
 		playerController = GetComponent<PlayerControllerImproved>();
-		//cameraScript = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<CameraScript>();
 
 		isDead = false;
 		fading = false;

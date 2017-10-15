@@ -22,4 +22,13 @@ public class CheckpointBehavior : MonoBehaviour {
 		if(obj != null)
 			Destroy(obj);
 	}
+
+	public void DestroyOnCondition(MonoBehaviour mono, int i) {
+		DestroyOnCondition(mono.gameObject, i);
+	}
+
+	public void DestroyOnCondition(GameObject obj, int i) {
+		if(i != 0)
+			DestroyIfExists(obj);
+	}
 }

@@ -15,7 +15,11 @@ public class CheckpointManagerShell1 : CheckpointManager {
 
 	void Start () {
 		InitCheckpointManager();
-		//currentCheckpointName = startingCheckpoint.name;
 		PlayerPrefs.SetString("Current Checkpoint", startingCheckpoint.name);
+		/*PlayerPrefs.SetInt("Gina", 0);
+		PlayerPrefs.SetInt("Memory 1", 0);
+		PlayerPrefs.SetInt("Memory 2", 0);
+		PlayerPrefs.SetInt("Memory 3", 0);
+		PlayerPrefs.SetInt("Powerup", 0);*/
 	}
 }

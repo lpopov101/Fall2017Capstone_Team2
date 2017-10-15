@@ -28,6 +28,8 @@ public class GinaBehavior : MonoBehaviour {
 			transform.Translate(Vector3.right * movementSpeed * Time.deltaTime);
 			if(transform.position.x > initialPos.x + distanceBeforeDestroying) {
 				playerController.SetCutscenePlaying(false);
+				PlayerPrefs.SetInt("Gina", 1);
+				PlayerPrefs.Save();
 				Destroy(gameObject);
 			}
 		}

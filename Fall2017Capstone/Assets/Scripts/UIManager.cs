@@ -16,8 +16,7 @@ public class UIManager : MonoBehaviour {
 	//Text dialogueTextScript;
 
 	void Awake() {
-		if(Instance == null)
-			Debug.Log("Creating UI Manager.");
+		Debug.Log("Setting UI Manager instance.");
 		Instance = this;
 	}
 

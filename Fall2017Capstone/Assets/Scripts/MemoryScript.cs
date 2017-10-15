@@ -5,8 +5,7 @@ using UnityEngine.UI;
 
 public class MemoryScript : MonoBehaviour {
 
-	//public Camera camera;
-	//public float textShowTimeSeconds = 5.0f;
+	public string memoryName;
 	public MovieTexture movie;
 	public AudioClip shutterClip;
 	public AudioSource memorySound;
@@ -15,7 +14,6 @@ public class MemoryScript : MonoBehaviour {
 
 	AudioSource audioSource;
 	SpriteRenderer sr;
-	//Text memoryText;
 
 	private float startMovieTime;
 
@@ -38,6 +36,8 @@ public class MemoryScript : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D coll) {
 		if (coll.gameObject.CompareTag ("PlayerInteract") && sr.enabled) {
+			PlayerPrefs.SetInt(memoryName, 1);
+			PlayerPrefs.Save();
 			UIManager.Instance.PauseWithoutOverlay();
 			audioSource.Play();
 			movie.Play();
