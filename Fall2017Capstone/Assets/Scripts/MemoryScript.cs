@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class MemoryScript : MonoBehaviour {
 
 	public string memoryName;
-	public MovieTexture movie;
+	//public MovieTexture movie;
 	public AudioClip shutterClip;
 	public AudioSource memorySound;
 	public Light light;
@@ -22,16 +22,16 @@ public class MemoryScript : MonoBehaviour {
 		sr = GetComponent<SpriteRenderer>();
 		sr.enabled = true;
 		audioSource = GetComponent<AudioSource>();
-		audioSource.clip = movie.audioClip;
+		//audioSource.clip = movie.audioClip;
 		memorySound.mute = false;
 		memorySound.spatialBlend = 1f;
 		startMovieTime = -1f;
 	}
 
 	void Update() {
-		if(startMovieTime != -1f && Time.realtimeSinceStartup > startMovieTime + movie.duration) {
+		/*if(startMovieTime != -1f && Time.realtimeSinceStartup > startMovieTime + movie.duration) {
 			ShutterAfterMovie();
-		}
+		}*/
 	}
 
 	void OnTriggerEnter2D(Collider2D coll) {
@@ -40,7 +40,7 @@ public class MemoryScript : MonoBehaviour {
 			PlayerPrefs.Save();
 			UIManager.Instance.PauseWithoutOverlay();
 			audioSource.Play();
-			movie.Play();
+			//movie.Play();
 			startMovieTime = Time.realtimeSinceStartup;
 			sr.enabled = false;
 			light.enabled = false;
@@ -54,9 +54,9 @@ public class MemoryScript : MonoBehaviour {
 	}
 
 	void OnGUI() {
-		if (movie != null && movie.isPlaying) {
+		/*if (movie != null && movie.isPlaying) {
 			GUI.DrawTexture (new Rect (0, 0, Screen.width, Screen.height), movie, ScaleMode.ScaleToFit, false, 0);
-		}
+		}*/
 	}
 
 	void OnTriggerExit2D(Collider2D coll) {
@@ -65,7 +65,7 @@ public class MemoryScript : MonoBehaviour {
 	void ShutterAfterMovie() {
 		startMovieTime = -1f;
 		UIManager.Instance.UnpauseWithoutOverlay();
-		movie.Stop();
+		//movie.Stop();
 		audioSource.clip = shutterClip;
 		audioSource.Play();
 		toast.Toast ("Memory Fragment collected",4.0f);
