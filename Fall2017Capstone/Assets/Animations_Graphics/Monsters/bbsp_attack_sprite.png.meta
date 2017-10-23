@@ -1,0 +1,848 @@
+fileFormatVersion: 2
+guid: 357113d8a73e1b34e9e7dca48250203f
+timeCreated: 1508649024
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: bbsp_attack_sprite_0
+    21300002: bbsp_attack_sprite_1
+    21300004: bbsp_attack_sprite_2
+    21300006: bbsp_attack_sprite_3
+    21300008: bbsp_attack_sprite_4
+    21300010: bbsp_attack_sprite_5
+    21300012: bbsp_attack_sprite_6
+    21300014: bbsp_attack_sprite_7
+    21300016: bbsp_attack_sprite_8
+    21300018: bbsp_attack_sprite_9
+    21300020: bbsp_attack_sprite_10
+    21300022: bbsp_attack_sprite_11
+    21300024: bbsp_attack_sprite_12
+    21300026: bbsp_attack_sprite_13
+    21300028: bbsp_attack_sprite_14
+    21300030: bbsp_attack_sprite_15
+    21300032: bbsp_attack_sprite_16
+    21300034: bbsp_attack_sprite_17
+    21300036: bbsp_attack_sprite_18
+    21300038: bbsp_attack_sprite_19
+    21300040: bbsp_attack_sprite_20
+    21300042: bbsp_attack_sprite_21
+    21300044: bbsp_attack_sprite_22
+    21300046: bbsp_attack_sprite_23
+    21300048: bbsp_attack_sprite_24
+    21300050: bbsp_attack_sprite_25
+    21300052: bbsp_attack_sprite_26
+    21300054: bbsp_attack_sprite_27
+    21300056: bbsp_attack_sprite_28
+    21300058: bbsp_attack_sprite_29
+    21300060: bbsp_attack_sprite_30
+    21300062: bbsp_attack_sprite_31
+    21300064: bbsp_attack_sprite_32
+    21300066: bbsp_attack_sprite_33
+    21300068: bbsp_attack_sprite_34
+    21300070: bbsp_attack_sprite_35
+    21300072: bbsp_attack_sprite_36
+    21300074: bbsp_attack_sprite_37
+    21300076: bbsp_attack_sprite_38
+    21300078: bbsp_attack_sprite_39
+    21300080: bbsp_attack_sprite_40
+    21300082: bbsp_attack_sprite_41
+    21300084: bbsp_attack_sprite_42
+    21300086: bbsp_attack_sprite_43
+    21300088: bbsp_attack_sprite_44
+    21300090: bbsp_attack_sprite_45
+    21300092: bbsp_attack_sprite_46
+    21300094: bbsp_attack_sprite_47
+    21300096: bbsp_attack_sprite_48
+    21300098: bbsp_attack_sprite_49
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: iPhone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Android
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: bbsp_attack_sprite_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 8750
+        width: 1250
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bbsp_attack_sprite_1
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 8750
+        width: 1250
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bbsp_attack_sprite_2
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 8750
+        width: 1250
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bbsp_attack_sprite_3
+      rect:
+        serializedVersion: 2
+        x: 3750
+        y: 8750
+        width: 1250
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bbsp_attack_sprite_4
+      rect:
+        serializedVersion: 2
+        x: 5000
+        y: 8750
+        width: 1250
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bbsp_attack_sprite_5
+      rect:
+        serializedVersion: 2
+        x: 6250
+        y: 8750
+        width: 1250
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bbsp_attack_sprite_6
+      rect:
+        serializedVersion: 2
+        x: 7500
+        y: 8750
+        width: 1250
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bbsp_attack_sprite_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7500
+        width: 1250
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bbsp_attack_sprite_8
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 7500
+        width: 1250
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bbsp_attack_sprite_9
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 7500
+        width: 1250
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bbsp_attack_sprite_10
+      rect:
+        serializedVersion: 2
+        x: 3750
+        y: 7500
+        width: 1250
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bbsp_attack_sprite_11
+      rect:
+        serializedVersion: 2
+        x: 5000
+        y: 7500
+        width: 1250
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bbsp_attack_sprite_12
+      rect:
+        serializedVersion: 2
+        x: 6250
+        y: 7500
+        width: 1250
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bbsp_attack_sprite_13
+      rect:
+        serializedVersion: 2
+        x: 7500
+        y: 7500
+        width: 1250
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bbsp_attack_sprite_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6250
+        width: 1250
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bbsp_attack_sprite_15
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 6250
+        width: 1250
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bbsp_attack_sprite_16
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 6250
+        width: 1250
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bbsp_attack_sprite_17
+      rect:
+        serializedVersion: 2
+        x: 3750
+        y: 6250
+        width: 1250
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bbsp_attack_sprite_18
+      rect:
+        serializedVersion: 2
+        x: 5000
+        y: 6250
+        width: 1250
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bbsp_attack_sprite_19
+      rect:
+        serializedVersion: 2
+        x: 6250
+        y: 6250
+        width: 1250
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bbsp_attack_sprite_20
+      rect:
+        serializedVersion: 2
+        x: 7500
+        y: 6250
+        width: 1250
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bbsp_attack_sprite_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5000
+        width: 1250
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bbsp_attack_sprite_22
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 5000
+        width: 1250
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bbsp_attack_sprite_23
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 5000
+        width: 1250
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bbsp_attack_sprite_24
+      rect:
+        serializedVersion: 2
+        x: 3750
+        y: 5000
+        width: 1250
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bbsp_attack_sprite_25
+      rect:
+        serializedVersion: 2
+        x: 5000
+        y: 5000
+        width: 1250
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bbsp_attack_sprite_26
+      rect:
+        serializedVersion: 2
+        x: 6250
+        y: 5000
+        width: 1250
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bbsp_attack_sprite_27
+      rect:
+        serializedVersion: 2
+        x: 7500
+        y: 5000
+        width: 1250
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bbsp_attack_sprite_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3750
+        width: 1250
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bbsp_attack_sprite_29
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 3750
+        width: 1250
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bbsp_attack_sprite_30
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 3750
+        width: 1250
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bbsp_attack_sprite_31
+      rect:
+        serializedVersion: 2
+        x: 3750
+        y: 3750
+        width: 1250
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bbsp_attack_sprite_32
+      rect:
+        serializedVersion: 2
+        x: 5000
+        y: 3750
+        width: 1250
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bbsp_attack_sprite_33
+      rect:
+        serializedVersion: 2
+        x: 6250
+        y: 3750
+        width: 1250
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bbsp_attack_sprite_34
+      rect:
+        serializedVersion: 2
+        x: 7500
+        y: 3750
+        width: 1250
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bbsp_attack_sprite_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2500
+        width: 1250
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bbsp_attack_sprite_36
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 2500
+        width: 1250
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bbsp_attack_sprite_37
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 2500
+        width: 1250
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bbsp_attack_sprite_38
+      rect:
+        serializedVersion: 2
+        x: 3750
+        y: 2500
+        width: 1250
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bbsp_attack_sprite_39
+      rect:
+        serializedVersion: 2
+        x: 5000
+        y: 2500
+        width: 1250
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bbsp_attack_sprite_40
+      rect:
+        serializedVersion: 2
+        x: 6250
+        y: 2500
+        width: 1250
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bbsp_attack_sprite_41
+      rect:
+        serializedVersion: 2
+        x: 7500
+        y: 2500
+        width: 1250
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bbsp_attack_sprite_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1250
+        width: 1250
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bbsp_attack_sprite_43
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 1250
+        width: 1250
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bbsp_attack_sprite_44
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 1250
+        width: 1250
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bbsp_attack_sprite_45
+      rect:
+        serializedVersion: 2
+        x: 3750
+        y: 1250
+        width: 1250
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bbsp_attack_sprite_46
+      rect:
+        serializedVersion: 2
+        x: 5000
+        y: 1250
+        width: 1250
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bbsp_attack_sprite_47
+      rect:
+        serializedVersion: 2
+        x: 6250
+        y: 1250
+        width: 1250
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bbsp_attack_sprite_48
+      rect:
+        serializedVersion: 2
+        x: 7500
+        y: 1250
+        width: 1250
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: bbsp_attack_sprite_49
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1250
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

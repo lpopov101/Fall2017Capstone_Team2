@@ -40,7 +40,7 @@ public class DeathBehavior : MonoBehaviour {
 	}
 
 	public void SetDead() {
-        playerController.gameObject.SendMessage("KillPlayer");
+		playerController.gameObject.SendMessage("KillPlayer");
 		isDead = true;
 		StartCoroutine(FadeAndRespawn());
 	}
@@ -51,7 +51,8 @@ public class DeathBehavior : MonoBehaviour {
 		startFadeTime = Time.time;
 		yield return new WaitForSeconds(fadeTime);
 
-		SceneManager.LoadScene("NewShell1", LoadSceneMode.Single);
+		string currentScene = PlayerPrefs.GetString("Current Scene");
+		SceneManager.LoadScene(currentScene, LoadSceneMode.Single);
 
 		/*gameObject.transform.position = currentCheckpoint.transform.position;
 		currentCheckpoint.GetComponent<CheckpointBehavior>().RespawnOnCheckpoint();

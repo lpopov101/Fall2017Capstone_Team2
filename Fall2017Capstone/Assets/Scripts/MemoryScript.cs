@@ -101,7 +101,7 @@ public class MemoryScript : MonoBehaviour {
 	}
 
 	public static void setCount(int mem1, int mem2, int mem3) {
-		Debug.Log (mem1 + " " + mem2 + " " + mem3);
+		//Debug.Log (mem1 + " " + mem2 + " " + mem3);
 		count = mem1+ mem2+ mem3;
 	}
 

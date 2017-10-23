@@ -40,15 +40,18 @@ public class CheckpointManager : MonoBehaviour {
 		foreach(string sceneName in GameScenes) {
 			if(sceneName != toScene)
 				continue;
-			
-			if(fromScene == toScene) {
-				ReloadScene();
-			}
+
+			if(fromScene != toScene)
+				LoadSceneFirstTime();
+			LoadCurrentCheckpoint();
 		}
 	}
 
-	protected void ReloadScene() {
+	protected void LoadCurrentCheckpoint() {
 		string checkpointName = PlayerPrefs.GetString("Current Checkpoint");
 		GameObject.Find(checkpointName).SendMessage("LoadCheckpoint");
+	}
+
+	protected virtual void LoadSceneFirstTime() {
 	}
 }
