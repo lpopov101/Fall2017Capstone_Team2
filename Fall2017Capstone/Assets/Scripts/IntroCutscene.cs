@@ -7,6 +7,7 @@ public class IntroCutscene : MonoBehaviour {
 
 	public MovieTexture movie;
 	public string nextScene;
+	public ToastScript Toaster;
 
 	private AudioSource audioSource;
 
@@ -19,8 +20,11 @@ public class IntroCutscene : MonoBehaviour {
 	}
 
 	void Update () {
-		if(!movie.isPlaying)
-			SceneManager.LoadScene(nextScene, LoadSceneMode.Single);
+		if (!movie.isPlaying)
+			SceneManager.LoadScene (nextScene, LoadSceneMode.Single);
+		else if (Input.GetButtonDown ("Interact")) {
+			SceneManager.LoadScene (nextScene, LoadSceneMode.Single);
+		}
 	}
 
 	void OnGUI() {

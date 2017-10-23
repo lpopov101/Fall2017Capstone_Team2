@@ -1,0 +1,338 @@
+fileFormatVersion: 2
+guid: 818c51ff7788a2a419f8c83ee2b60c90
+timeCreated: 1508346084
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: shell1_buildings_dissociative_0
+    21300002: shell1_buildings_dissociative_1
+    21300004: shell1_buildings_dissociative_2
+    21300006: shell1_buildings_dissociative_3
+    21300008: shell1_buildings_dissociative_4
+    21300010: shell1_buildings_dissociative_5
+    21300012: shell1_buildings_dissociative_6
+    21300014: shell1_buildings_dissociative_7
+    21300016: shell1_buildings_dissociative_8
+    21300018: shell1_buildings_dissociative_9
+    21300020: shell1_buildings_dissociative_10
+    21300022: shell1_buildings_dissociative_11
+    21300024: shell1_buildings_dissociative_12
+    21300026: shell1_buildings_dissociative_13
+    21300028: shell1_buildings_dissociative_14
+    21300030: shell1_buildings_dissociative_15
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 4096
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: iPhone
+    maxTextureSize: 8192
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Android
+    maxTextureSize: 8192
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: shell1_buildings_dissociative_0
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 8708
+        width: 1661
+        height: 2566
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: shell1_buildings_dissociative_1
+      rect:
+        serializedVersion: 2
+        x: 2678
+        y: 9895
+        width: 718
+        height: 1753
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: shell1_buildings_dissociative_2
+      rect:
+        serializedVersion: 2
+        x: 3821
+        y: 9949
+        width: 652
+        height: 1512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: shell1_buildings_dissociative_3
+      rect:
+        serializedVersion: 2
+        x: 5072
+        y: 8670
+        width: 1152
+        height: 3028
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: shell1_buildings_dissociative_4
+      rect:
+        serializedVersion: 2
+        x: 6977
+        y: 8651
+        width: 1198
+        height: 2101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: shell1_buildings_dissociative_5
+      rect:
+        serializedVersion: 2
+        x: 8804
+        y: 8553
+        width: 2252
+        height: 2752
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: shell1_buildings_dissociative_6
+      rect:
+        serializedVersion: 2
+        x: 2403
+        y: 8708
+        width: 2316
+        height: 833
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: shell1_buildings_dissociative_7
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 4517
+        width: 2244
+        height: 3537
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: shell1_buildings_dissociative_8
+      rect:
+        serializedVersion: 2
+        x: 3165
+        y: 4813
+        width: 1665
+        height: 3354
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: shell1_buildings_dissociative_9
+      rect:
+        serializedVersion: 2
+        x: 5592
+        y: 6662
+        width: 959
+        height: 1053
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: shell1_buildings_dissociative_10
+      rect:
+        serializedVersion: 2
+        x: 7603
+        y: 6092
+        width: 3750
+        height: 1992
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: shell1_buildings_dissociative_11
+      rect:
+        serializedVersion: 2
+        x: 5275
+        y: 4815
+        width: 1732
+        height: 1543
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: shell1_buildings_dissociative_12
+      rect:
+        serializedVersion: 2
+        x: 8269
+        y: 4070
+        width: 2512
+        height: 1531
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: shell1_buildings_dissociative_13
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 1826
+        width: 3149
+        height: 2444
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: shell1_buildings_dissociative_14
+      rect:
+        serializedVersion: 2
+        x: 4079
+        y: 2773
+        width: 2658
+        height: 1308
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: shell1_buildings_dissociative_15
+      rect:
+        serializedVersion: 2
+        x: 7386
+        y: 625
+        width: 4145
+        height: 2717
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

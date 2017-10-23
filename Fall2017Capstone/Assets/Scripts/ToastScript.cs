@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class ToastScript : MonoBehaviour {
 
 	Text Toaster;
+	public Image ImageUI;
 
 	// Use this for initialization
 	void Start () {
@@ -15,6 +16,11 @@ public class ToastScript : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		
+	}
+
+	public void ImageToast(string imgpath, float time) {
+		Sprite img = Resources.Load<Sprite> (imgpath);
+		StartCoroutine(DisplayImage(img, time));
 	}
 
 	public void Toast(string text,float time) {
@@ -27,6 +33,19 @@ public class ToastScript : MonoBehaviour {
 		yield return new WaitForSeconds(time);
 		Toaster.text = "";
 		Toaster.CrossFadeAlpha(1.0f, 0.1f, false);
+	}
+
+	IEnumerator DisplayImage(Sprite img, float time) {
+		Debug.Log (img);
+		//Color imageColor = ImageUI.color;
+		//imageColor.a = 1.0f;
+		//ImageUI.color = imageColor;
+		ImageUI.sprite = img;
+		ImageUI.CrossFadeAlpha(1.0f, 0.0f, false);
+		ImageUI.CrossFadeAlpha(0.0f, time, false);
+		yield return new WaitForSeconds(time);
+		//Toaster.text = "";
+		//ImageUI = null;
 	}
 
 }
