@@ -12,6 +12,9 @@ TagManager:
   - PlayerInteract
   - FragmentHint
   - Monster
+  - MoveHint
+  - JumpHint
+  - memorydoor
   layers:
   - Default
   - TransparentFX

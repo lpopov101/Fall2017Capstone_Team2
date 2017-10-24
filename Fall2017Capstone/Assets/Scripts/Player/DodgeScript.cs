@@ -30,4 +30,5 @@ public class DodgeScript : MonoBehaviour {
 		gotDodge = true;
 		//Debug.Log ("Dodge CoolDown complete");
 	}
+		
 }

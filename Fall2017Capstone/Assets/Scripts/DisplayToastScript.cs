@@ -35,6 +35,19 @@ public class DisplayToastScript : MonoBehaviour {
 			GameObject JumpHint = GameObject.FindGameObjectWithTag ("JumpHint");
 			if( JumpHint != null)
 				JumpHint.SetActive (false);
+		} else if (coll.gameObject.CompareTag ("memorydoor")) {
+			string text = MemoryScript.getCount() + "/3 Memory Shards Collected. Collect all shards to advance";
+			toast.Toast (text, 7.0f);
+		}
+	}
+
+	void checkCollected() {
+		if (MemoryScript.getCount() >= 3 && gameObject.GetComponent<DodgeScript>().hasDodgeAbility) {
+			GameObject[] door = GameObject.FindGameObjectsWithTag("memorydoor");
+			foreach (GameObject obj in door) {
+				Destroy (obj);
+				toast.Toast ("Door is open", 7.0f);
+			}
 		}
 	}
 }

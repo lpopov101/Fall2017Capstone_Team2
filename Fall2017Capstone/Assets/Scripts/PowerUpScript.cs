@@ -12,6 +12,7 @@ public class PowerUpScript : MonoBehaviour {
 	public Text text;
 	public ToastScript toaster;
 	public Light light;
+	public GameObject Gatorp;
 
 
 	// Use this for initialization
@@ -32,6 +33,7 @@ public class PowerUpScript : MonoBehaviour {
 			dodgeScript.hasDodgeAbility = true;
 			sr.enabled = false;
 			light.enabled = false;
+			Gatorp.SendMessage("checkCollected");
 		}
 
 	}

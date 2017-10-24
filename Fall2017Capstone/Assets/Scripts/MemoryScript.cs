@@ -58,6 +58,7 @@ public class MemoryScript : MonoBehaviour {
 			audioSource.clip = shutterClip;
 			audioSource.Play();
 			toast.Toast (count+"/3 Memory Fragments collected",4.0f);
+			Gatorp.SendMessage ("checkCollected");
 		}
 	#endif
 
@@ -69,6 +70,7 @@ public class MemoryScript : MonoBehaviour {
 	AudioSource audioSource;
 	SpriteRenderer sr;
 	static int count = 0;
+	public GameObject Gatorp;
 
 	private float startMovieTime;
 
@@ -103,6 +105,10 @@ public class MemoryScript : MonoBehaviour {
 	public static void setCount(int mem1, int mem2, int mem3) {
 		//Debug.Log (mem1 + " " + mem2 + " " + mem3);
 		count = mem1+ mem2+ mem3;
+	}
+
+	public static int getCount() {
+		return count;
 	}
 
 
