@@ -66,7 +66,6 @@ public class DimensionHopping : MonoBehaviour {
 		if (coll.gameObject.CompareTag ("ToastTrigger") && !HardToggleDimension) {
 			HardToggleDimension = true;
 			if (DimensionMode) {
-				toast.Toast ("Something is not right. I can't seem to switch back...",4.0f);
 				ChangeDimension ();
 				if(coll.gameObject.name != PlayerPrefs.GetString("Current Checkpoint")) {
 					PlayerPrefs.SetString("Current Checkpoint", coll.gameObject.name);
