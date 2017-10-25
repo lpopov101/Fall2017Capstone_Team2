@@ -10,7 +10,7 @@ public class DimensionHopping : MonoBehaviour {
 	public AudioSource streetAudio;
 	public AudioSource clubAudio;
 	public ToastScript toast;
-
+	public int ShellLevel;
 	private AudioSource dimHopAudio;
 	private CameraScript cameraScript;
 	private PlayerControllerImproved playerController;
@@ -42,9 +42,12 @@ public class DimensionHopping : MonoBehaviour {
 				streetAudio.mute = true;
 			if(clubAudio != null)
 				clubAudio.mute = true;
+			if(ShellLevel == 1)
+				RenderSettings.ambientLight = new Color (0.3f,0.6f,0.9f);
+			if(ShellLevel == 2)
+				RenderSettings.ambientLight = new Color (0.3f,0.6f,0.3f);
 			cameraScript.DimensionHopCamera(DimensionOffset);
 			transform.Translate(DimensionOffset);
-			RenderSettings.ambientLight = new Color (0.3f,0.6f,0.9f);
             gameObject.SendMessage("DimensionShift");
         }
 		else
@@ -53,9 +56,12 @@ public class DimensionHopping : MonoBehaviour {
 				streetAudio.mute = false;
 			if(clubAudio != null)
 				clubAudio.mute = false;
+			if(ShellLevel == 1)
+				RenderSettings.ambientLight = new Color (0.6f,0.6f,0.6f);
+			if(ShellLevel == 2)
+				RenderSettings.ambientLight = new Color (0.7f,0.7f,0.7f);
 			cameraScript.DimensionHopCamera(-1*DimensionOffset);
 			transform.Translate(-1*DimensionOffset);
-			RenderSettings.ambientLight = new Color (0.6f,0.6f,0.6f);
             gameObject.SendMessage("DimensionShift");
         }
 		DimensionMode = !DimensionMode;
