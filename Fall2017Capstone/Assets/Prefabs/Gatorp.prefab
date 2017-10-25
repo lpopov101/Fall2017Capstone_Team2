@@ -93,6 +93,7 @@ GameObject:
   - component: {fileID: 114641968725632860}
   - component: {fileID: 114635290891139902}
   - component: {fileID: 114336283201915106}
+  - component: {fileID: 114890127704401782}
   m_Layer: 0
   m_Name: Gatorp
   m_TagString: Player
@@ -187,7 +188,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1715291861094252}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -76.1, y: -10.65, z: 0}
+  m_LocalPosition: {x: -75.505, y: -10.72, z: 0}
   m_LocalScale: {x: 0.14, y: 0.14, z: 1}
   m_Children:
   - {fileID: 4918055902081620}
@@ -363,8 +364,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81eeb1fdcf45bed49a4d8cdd7053025a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gotDodge: 0
-  dodgeForce: 500
+  hasDodgeAbility: 0
+  cooldownTime: 1
 --- !u!114 &114093170454257394
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -417,10 +418,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c5957baa5d2c904691ec790ec1e3c85, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentCheckpoint: {fileID: 0}
-  blackTexture: {fileID: 0}
-  idleTime: 0
-  fadeTime: 0
+  blackTexture: {fileID: 2800000, guid: be7f7f2cdc38bbd4fa1c8edca96380de, type: 3}
+  idleTime: 1
+  fadeTime: 1
 --- !u!114 &114635290891139902
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -468,12 +468,24 @@ MonoBehaviour:
     m_Bits: 512
   deathBounceForce: 4
   ladderSpeed: 1
-  dodgeForce: 200
-  silhouettePrefab: {fileID: 0}
-  silhouetteRate: 0
+  dodgeForce: 10
+  silhouettePrefab: {fileID: 1370542974151348, guid: fdfb2ddd425b94543bf132b196dbaf9c,
+    type: 2}
+  silhouetteRate: 0.1
   StepAudio1: {fileID: 8300000, guid: e98445f1aa7a681488c228612e367cf4, type: 3}
   StepAudio2: {fileID: 8300000, guid: 3629f2740eb01164b88701efe4c48627, type: 3}
   LandAudio: {fileID: 8300000, guid: 949e072311f08ef4aa1e554e75524862, type: 3}
+--- !u!114 &114890127704401782
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1715291861094252}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0bc4082f3f66410479fe86b46d1e89a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &212951907075057780
 SpriteRenderer:
   m_ObjectHideFlags: 1

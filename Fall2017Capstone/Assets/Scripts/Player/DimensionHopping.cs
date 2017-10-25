@@ -28,7 +28,7 @@ public class DimensionHopping : MonoBehaviour {
     }
 
     void Update () {
-		if(Input.GetButtonDown("DimensionShift") && !HardToggleDimension && !playerController.FreezeMovement())
+		if((Input.GetButtonDown("DimensionShift") || TouchInput.Shift) && !HardToggleDimension && !playerController.FreezeMovement())
         {
 			ChangeDimension();
         }

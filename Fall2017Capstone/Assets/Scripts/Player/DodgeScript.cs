@@ -16,7 +16,7 @@ public class DodgeScript : MonoBehaviour {
 	}
 
 	void Update () {
-		if(hasDodgeAbility && gotDodge && Input.GetButtonDown("Dodge"))
+		if(hasDodgeAbility && gotDodge && (Input.GetButtonDown("Dodge") || TouchInput.Dash))
         {
             gameObject.SendMessage("Dodge");
             StartCoroutine(CoolDown());
