@@ -290,53 +290,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad814e80578f9494abab45bcac2362ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parallaxGroups:
-  - parallaxSpeedMultiplier: -0.3
-    parallaxTransforms:
-    - {fileID: 658443179}
-    - {fileID: 2084786528}
-    - {fileID: 1634377483}
-    - {fileID: 1045185343}
-  - parallaxSpeedMultiplier: 0.09
-    parallaxTransforms:
-    - {fileID: 1643949525}
-    - {fileID: 1512191356}
-    - {fileID: 431207490}
-    - {fileID: 197763203}
-    - {fileID: 1550487876}
-    - {fileID: 1108442648}
-  - parallaxSpeedMultiplier: 0.07
-    parallaxTransforms:
-    - {fileID: 1662584923}
-    - {fileID: 519584552}
-    - {fileID: 1309530800}
-    - {fileID: 997772447}
-    - {fileID: 1062075669}
-    - {fileID: 1371603215}
-    - {fileID: 1809379873}
-    - {fileID: 1426728805}
-    - {fileID: 170376336}
-    - {fileID: 387077168}
-    - {fileID: 2067642842}
-    - {fileID: 1026404492}
-    - {fileID: 2010561630}
-    - {fileID: 1446719187}
-    - {fileID: 74042144}
-    - {fileID: 1147974685}
-    - {fileID: 1592381874}
-    - {fileID: 116730296}
-    - {fileID: 428911998}
-    - {fileID: 2128332642}
-  - parallaxSpeedMultiplier: 0.05
-    parallaxTransforms:
-    - {fileID: 834843671}
-    - {fileID: 2069406997}
-    - {fileID: 1144140758}
-    - {fileID: 1556003393}
-    - {fileID: 1192372931}
-    - {fileID: 414122023}
-    - {fileID: 2122346241}
-    - {fileID: 931000448}
+  parallaxSpeed: 0
 --- !u!108 &6092731 stripped
 Light:
   m_PrefabParentObject: {fileID: 108647093051502492, guid: 88af4c097e904e14588b7d516f3db7c4,
@@ -6890,7 +6844,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad814e80578f9494abab45bcac2362ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parallaxGroups: []
+  parallaxSpeed: 0
 --- !u!212 &658443181
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9647,7 +9601,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad814e80578f9494abab45bcac2362ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parallaxGroups: []
+  parallaxSpeed: 0
 --- !u!212 &1045185345
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11101,6 +11055,57 @@ Transform:
   m_Father: {fileID: 1868175113}
   m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1180417652
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4219139729542740, guid: b6bc4e1f5ab606047b78af6f6c984a2c, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -71.73
+      objectReference: {fileID: 0}
+    - target: {fileID: 4219139729542740, guid: b6bc4e1f5ab606047b78af6f6c984a2c, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -1010.59
+      objectReference: {fileID: 0}
+    - target: {fileID: 4219139729542740, guid: b6bc4e1f5ab606047b78af6f6c984a2c, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4219139729542740, guid: b6bc4e1f5ab606047b78af6f6c984a2c, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4219139729542740, guid: b6bc4e1f5ab606047b78af6f6c984a2c, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4219139729542740, guid: b6bc4e1f5ab606047b78af6f6c984a2c, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4219139729542740, guid: b6bc4e1f5ab606047b78af6f6c984a2c, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4219139729542740, guid: b6bc4e1f5ab606047b78af6f6c984a2c, type: 2}
+      propertyPath: m_RootOrder
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 114541998981778616, guid: b6bc4e1f5ab606047b78af6f6c984a2c,
+        type: 2}
+      propertyPath: nextLevel
+      value: Shell2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1720088504159906, guid: b6bc4e1f5ab606047b78af6f6c984a2c, type: 2}
+      propertyPath: m_Name
+      value: Exit (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: b6bc4e1f5ab606047b78af6f6c984a2c, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1192372930
 GameObject:
   m_ObjectHideFlags: 0
@@ -16090,7 +16095,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad814e80578f9494abab45bcac2362ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parallaxGroups: []
+  parallaxSpeed: 0
 --- !u!212 &1634377485
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -19094,6 +19099,75 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!1 &1964902860
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1964902864}
+  - component: {fileID: 1964902863}
+  - component: {fileID: 1964902861}
+  m_Layer: 0
+  m_Name: Sphere
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!23 &1964902861
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1964902860}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &1964902863
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1964902860}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1964902864
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1964902860}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -71.73, y: -1010.6, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 32
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1965059284
 GameObject:
   m_ObjectHideFlags: 0
@@ -20673,7 +20747,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad814e80578f9494abab45bcac2362ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parallaxGroups: []
+  parallaxSpeed: 0
 --- !u!212 &2084786530
 SpriteRenderer:
   m_ObjectHideFlags: 0

@@ -16,16 +16,23 @@ public class WalkPath : MonoBehaviour {
 	private Animator animator;
 	private bool pathInverted;
 	private bool idle;
+	private bool freezeWalking;
+	private Facing overrideFacing; // Overrides the facing direction if not NONE
+	private Facing prevFacing;
+
+	private enum Facing {NONE, RIGHT, LEFT};
 
 	void Start() {
 		rigidBody = GetComponent<Rigidbody2D>();
 		animator = GetComponent<Animator>();
 		pathInverted = false;
 		idle = false;
+		freezeWalking = false;
+		overrideFacing = prevFacing = Facing.NONE;
 	}
 
 	void FixedUpdate() {
-		if(idle) {
+		if(idle || freezeWalking) {
 			// Remove inertia from existing velocity if idle, but smoothly
 			// Only noticeable at higher speeds
 			rigidBody.velocity = new Vector2(rigidBody.velocity.x * idleMovementReducer, rigidBody.velocity.y);
@@ -54,13 +61,54 @@ public class WalkPath : MonoBehaviour {
 		idle = true;
 		yield return new WaitForSeconds(idleTime);
 		pathInverted = !pathInverted;
+		FaceDirection();
+		idle = false;
+	}
+
+	void FaceDirection() {
+		// If overriding, only continue if we're not already facing the targeted direction
+		if(overrideFacing != Facing.NONE && overrideFacing == prevFacing)
+			return;
+
+		// Pick which direction to look at
+		bool facingRight = !pathInverted;
+		if(overrideFacing == Facing.RIGHT)
+			facingRight = true;
+		else if(overrideFacing == Facing.LEFT)
+			facingRight = false;
+
+		// Flip the sprite if necessary
 		if(flipUsingAnimator) {
-			animator.SetBool("walkingRight", !pathInverted);
+			animator.SetBool("walkingRight", facingRight);
 		} else {
 			float scaleX = Mathf.Abs(transform.localScale.x);
-			scaleX *= !pathInverted ? 1 : -1;
+			scaleX *= facingRight ? 1 : -1;
 			transform.localScale = new Vector3(scaleX, transform.localScale.y, 1);
 		}
-		idle = false;
+
+		prevFacing = overrideFacing;
+	}
+
+	void OverrideFaceDirectionR() {
+		overrideFacing = Facing.RIGHT;
+		FaceDirection();
+	}
+
+	void OverrideFaceDirectionL() {
+		overrideFacing = Facing.LEFT;
+		FaceDirection();
+	}
+
+	void ResetFaceDirection() {
+		overrideFacing = Facing.NONE;
+		FaceDirection();
+	}
+
+	void StopWalking() {
+		freezeWalking = true;
+	}
+
+	void StartWalking() {
+		freezeWalking = false;
 	}
 }

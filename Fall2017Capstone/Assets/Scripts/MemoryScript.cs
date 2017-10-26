@@ -86,15 +86,15 @@ public class MemoryScript : MonoBehaviour {
 	}
 
 	void Update() {
-		/*if(startMovieTime != -1f && Time.realtimeSinceStartup > startMovieTime + movie.duration) {
+		if(startMovieTime != -1f && Time.realtimeSinceStartup > startMovieTime + movie.duration) {
 			ShutterAfterMovie();
-		}*/
+		}
 	}
 
 	void OnGUI() {
-		/*if (movie != null && movie.isPlaying) {
+		if (movie != null && movie.isPlaying) {
 			GUI.DrawTexture (new Rect (0, 0, Screen.width, Screen.height), movie, ScaleMode.ScaleToFit, false, 0);
-		}*/
+		}
 	}
 
 	void OnTriggerExit2D(Collider2D coll) {

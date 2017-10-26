@@ -10,7 +10,7 @@ public class CheckpointManagerShell2 : CheckpointManager {
 		InitCheckpointManager();
 	}
 
-	protected void LoadSceneFirstTime() {
+	protected override void LoadSceneFirstTime() {
 		PlayerPrefs.SetString("Current Checkpoint", startingCheckpoint.name);
 	}
 }
