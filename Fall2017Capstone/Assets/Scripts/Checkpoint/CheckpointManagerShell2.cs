@@ -5,6 +5,8 @@ using UnityEngine;
 public class CheckpointManagerShell2 : CheckpointManager {
 
 	public CheckpointBehavior startingCheckpoint;
+	public MemoryScript memory1, memory2, memory3;
+	//public PowerUpScript powerup;
 
 	void Start () {
 		InitCheckpointManager();

@@ -62,6 +62,7 @@ public class UIManager : MonoBehaviour {
 	}
 
 	public void Unpause() {
+		Debug.Log("Unpause");
 		paused = false;
 		UpdateTimeScale();
 		AudioListener.pause = false;

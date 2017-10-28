@@ -51,7 +51,8 @@ public class DeathBehavior : MonoBehaviour {
 		startFadeTime = Time.time;
 		yield return new WaitForSeconds(fadeTime);
 
-		SceneManager.LoadScene("NewShell1", LoadSceneMode.Single);
+		string scene = PlayerPrefs.GetString("Current Scene");
+		SceneManager.LoadScene(scene, LoadSceneMode.Single);
 
 		/*gameObject.transform.position = currentCheckpoint.transform.position;
 		currentCheckpoint.GetComponent<CheckpointBehavior>().RespawnOnCheckpoint();
