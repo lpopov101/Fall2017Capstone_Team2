@@ -11,7 +11,6 @@ public class DodgeScript : MonoBehaviour {
 	private bool gotDodge;
 
     void Start () {
-		hasDodgeAbility = false;
 		gotDodge = true;
 	}
 

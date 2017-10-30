@@ -125,13 +125,13 @@ public class UIManager : MonoBehaviour {
 	}
 
 	void OnTriggerEnter2D(Collider2D coll) {
-		if(coll.gameObject.CompareTag ("FragmentHint")) {
+		if(MemoryHint && coll.gameObject.CompareTag ("FragmentHint")) {
 			MemoryHint.SetBool ("enterHintArea",true);
 		}
 	}
 
 	void OnTriggerExit2D(Collider2D coll) {
-		if(coll.gameObject.CompareTag ("FragmentHint")) {
+		if(MemoryHint && coll.gameObject.CompareTag ("FragmentHint")) {
 			MemoryHint.SetBool ("enterHintArea",false);
 		}
 	}

@@ -33,7 +33,6 @@ public class PowerUpScript : MonoBehaviour {
 			sr.enabled = false;
 			light.enabled = false;
 		}
-
 	}
 
 
