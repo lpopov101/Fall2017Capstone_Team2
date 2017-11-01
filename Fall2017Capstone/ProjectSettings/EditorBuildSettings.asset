@@ -11,7 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/IntroCutscene.unity
     guid: 2cce550760b1fce42948e5ddf8551ab6
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/IntroText.unity
     guid: 61aeda12c092c2f43855cfe1284378c9
   - enabled: 0
@@ -26,9 +26,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Shell2.unity
     guid: a5b131e6044fd284b851f4d222f64ffb
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Shell3.unity
     guid: 1ba2d19944b8d994b8e579c5d5fd4206
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/TheEnd.unity
     guid: d244ae205ee5adb4c8dcc7e16aab24a3

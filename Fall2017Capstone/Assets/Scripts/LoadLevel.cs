@@ -12,8 +12,10 @@ public class LoadLevel : MonoBehaviour {
 	}
 
 	void OnTriggerEnter2D(Collider2D coll) {
-		if(coll.gameObject.CompareTag("Player"))
-			SceneManager.LoadScene(nextLevel,LoadSceneMode.Single);
+		if (coll.gameObject.CompareTag ("Player")) {
+			CutSceneScript.setCount (0,0,0);
+			SceneManager.LoadScene (nextLevel, LoadSceneMode.Single);
+		}
 	}
 
 }

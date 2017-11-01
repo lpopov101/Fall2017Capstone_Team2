@@ -11,8 +11,9 @@ public class MemoryScript : MonoBehaviour {
 				PlayerPrefs.SetInt(memoryName, 1);
 				PlayerPrefs.Save();
 				UIManager.Instance.PauseWithoutOverlay();
-				/*startMovieTime = Time.realtimeSinceStartup;
-				Handheld.PlayFullScreenMovie(memoryName,Color.black, FullScreenMovieControlMode.Hidden);*/
+				//startMovieTime = Time.realtimeSinceStartup;
+				Handheld.PlayFullScreenMovie(memoryName,Color.black, FullScreenMovieControlMode.Hidden);
+				ShutterAfterMovie();
 				count++;
 				Transform fragmentHint = transform.Find ("HintTrigger");
 				if (fragmentHint != null) {
@@ -60,6 +61,18 @@ public class MemoryScript : MonoBehaviour {
 			toast.Toast (count+"/3 Memory Fragments collected",4.0f);
 			Gatorp.SendMessage ("checkCollected");
 		}
+		void Update() {
+			if(startMovieTime != -1f && Time.realtimeSinceStartup > startMovieTime + movie.duration) {
+				ShutterAfterMovie();
+			}
+		}
+
+		void OnGUI() {
+			if (movie != null && movie.isPlaying) {
+				GUI.DrawTexture (new Rect (0, 0, Screen.width, Screen.height), movie, ScaleMode.ScaleToFit, false, 0);
+			}
+		}
+
 	#endif
 
 	public string memoryName;
@@ -85,17 +98,7 @@ public class MemoryScript : MonoBehaviour {
 		startMovieTime = -1f;
 	}
 
-	void Update() {
-		if(startMovieTime != -1f && Time.realtimeSinceStartup > startMovieTime + movie.duration) {
-			ShutterAfterMovie();
-		}
-	}
 
-	void OnGUI() {
-		if (movie != null && movie.isPlaying) {
-			GUI.DrawTexture (new Rect (0, 0, Screen.width, Screen.height), movie, ScaleMode.ScaleToFit, false, 0);
-		}
-	}
 
 	void OnTriggerExit2D(Collider2D coll) {
 	}
