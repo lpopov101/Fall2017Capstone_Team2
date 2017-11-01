@@ -7324,6 +7324,7 @@ MonoBehaviour:
   memory1: {fileID: 557776105}
   memory2: {fileID: 748051072}
   memory3: {fileID: 1373660869}
+  powerup: {fileID: 680045338}
 --- !u!4 &377033221
 Transform:
   m_ObjectHideFlags: 0
@@ -13027,6 +13028,12 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b1eac730587f9c84eb40f4c1dc3642e7, type: 2}
   m_IsPrefabParent: 0
+--- !u!114 &680045338 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114002002318060534, guid: b1eac730587f9c84eb40f4c1dc3642e7,
+    type: 2}
+  m_PrefabInternal: {fileID: 680045337}
+  m_Script: {fileID: 11500000, guid: bdd439527ff0098449fa286028737dfb, type: 3}
 --- !u!1 &680112676
 GameObject:
   m_ObjectHideFlags: 0

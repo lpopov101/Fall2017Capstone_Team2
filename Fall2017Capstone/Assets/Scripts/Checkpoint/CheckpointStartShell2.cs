@@ -26,7 +26,7 @@ public class CheckpointStartShell2 : CheckpointBehavior {
 		DestroyOnCondition(manager.memory1, memory1);
 		DestroyOnCondition(manager.memory2, memory2);
 		DestroyOnCondition(manager.memory3, memory3);
-		//DestroyOnCondition(manager.powerup, powerup);
+		DestroyOnCondition(manager.powerup, powerup);
 
 		dodgeScript.hasDodgeAbility = true;
 		if(powerup != 0)

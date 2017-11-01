@@ -6,11 +6,19 @@ using UnityEngine.SceneManagement;
 
 public class TitleScript : MonoBehaviour {
 
-	public void ButtonNextLevel(string scene) {
+	public GameObject mainMenuPanel;
+	public GameObject levelsPanel;
+
+	public void LoadLevel(string scene) {
 		SceneManager.LoadScene (scene,LoadSceneMode.Single);
 	}
 
-	public void ButtonQuitGame() {
+	public void SwitchToPanel(string panel) {
+		mainMenuPanel.SetActive(panel == "Main Menu");
+		levelsPanel.SetActive(panel == "Levels");
+	}
+
+	public void QuitGame() {
 		Application.Quit();
 	}
 }
