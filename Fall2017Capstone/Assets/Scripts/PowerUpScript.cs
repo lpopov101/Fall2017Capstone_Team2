@@ -5,40 +5,56 @@ using UnityEngine.UI;
 
 public class PowerUpScript : MonoBehaviour {
 
-	// Level is going to be used to determine which bool to set in the powerup scripts.
-	//public string level;
-	public DodgeScript dodgeScript;
-	SpriteRenderer sr;
-	public Text text;
+	public string levelName;
+	public GameObject gatorp;
+	//public Text text;
 	public ToastScript toaster;
 	public Light light;
 
+	private SpriteRenderer sr;
+	private DodgeScript dodgeScript;
+	private HighJumpScript highJumpScript;
 
-	// Use this for initialization
 	void Start () {
 		sr = GetComponent<SpriteRenderer>();
+		dodgeScript = gatorp.GetComponent<DodgeScript>();
+		highJumpScript = gatorp.GetComponent<HighJumpScript>();
 	}
-	
-	// Update is called once per frame
+
 	void Update () {
 		
 	}
 
 	void OnTriggerEnter2D(Collider2D coll) {
-		if (coll.gameObject.CompareTag ("Player") && sr.enabled) {
+		/*if (coll.gameObject.CompareTag ("Player") && sr.enabled) {
 			toaster.ImageToast ("dash", 5.0f);
 			PlayerPrefs.SetInt("Powerup", 1);
 			PlayerPrefs.Save();
 			dodgeScript.hasDodgeAbility = true;
 			sr.enabled = false;
 			light.enabled = false;
+		}*/
+
+		if(coll.gameObject.CompareTag("Player") && sr.enabled) {
+			PlayerPrefs.SetInt("Powerup", 1);
+			PlayerPrefs.Save();
+
+			if(levelName == "Shell1") {
+				toaster.ImageToast("dash", 5.0f);
+				dodgeScript.hasDodgeAbility = true;
+			} else if(levelName == "Shell2") {
+				//toaster.ImageToast("high_jump", 5.0f);
+				highJumpScript.hasHighJumpAbility = true;
+			}
+
+			sr.enabled = false;
+			light.enabled = false;
 		}
 	}
 
-
-	IEnumerator DisplayText() {
+	/*IEnumerator DisplayText() {
 		text.text = "";
 		yield return new WaitForSeconds (5.0f);
 		text.text = "";
-	}
+	}*/
 }

@@ -5,23 +5,21 @@ using UnityEngine;
 public class CheckpointStartShell1 : CheckpointBehavior {
 
 	private GameObject player;
-	//private DimensionHopping dimensionHop;
 	private DodgeScript dodgeScript;
 
 	void Awake() {
 		player = GameObject.FindGameObjectWithTag("Player");
-		//dimensionHop = player.GetComponent<DimensionHopping>();
 		dodgeScript = player.GetComponent<DodgeScript>();
 	}
 
 	void LoadCheckpoint() {
 		int gina = PlayerPrefs.GetInt("Gina");
-		int memory1 = PlayerPrefs.GetInt("Memory_1");
-		int memory2 = PlayerPrefs.GetInt("Memory_2");
-		int memory3 = PlayerPrefs.GetInt("Memory_3");
+		int memory1 = PlayerPrefs.GetInt("Shell1_Mem1");
+		int memory2 = PlayerPrefs.GetInt("Shell1_Mem2");
+		int memory3 = PlayerPrefs.GetInt("Shell1_Mem3");
 		int powerup = PlayerPrefs.GetInt("Powerup");
 
-		MemoryScript.setCount(memory1, memory2, memory3);
+		CutSceneScript.setCount(memory1, memory2, memory3);
 
 		CheckpointManagerShell1 manager = CheckpointManager.GetManager<CheckpointManagerShell1>();
 		DestroyOnCondition(manager.gina, gina);

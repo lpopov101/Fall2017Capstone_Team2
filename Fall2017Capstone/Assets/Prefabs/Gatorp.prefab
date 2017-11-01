@@ -487,7 +487,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de9a69bd698f45b498aaba7caf6ce134, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hasHighJumpAbility: 1
+  hasHighJumpAbility: 0
   cooldownTime: 0
 --- !u!114 &114890127704401782
 MonoBehaviour:

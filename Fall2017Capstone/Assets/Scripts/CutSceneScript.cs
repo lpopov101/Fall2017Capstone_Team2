@@ -8,7 +8,8 @@ public class CutSceneScript : MonoBehaviour {
 	public VideoPlayer videoPlayer;
 	public string memoryName;
 	SpriteRenderer sr;
-	public Light light;
+	public GameObject shardLight;
+	//public Light light;
 	public AudioSource memorySound;
 	static int count = 0;
 	public GameObject gatorp;
@@ -62,7 +63,9 @@ public class CutSceneScript : MonoBehaviour {
 			videoPlayer.Play();
 			audioSource.Play ();
 			sr.enabled = false;
-			light.enabled = false;
+			shardLight.SetActive(false);
+			//light.enabled = false;
+
 			memorySound.mute = true;
 			count++;
 			Transform fragmentHint = transform.Find ("HintTrigger");

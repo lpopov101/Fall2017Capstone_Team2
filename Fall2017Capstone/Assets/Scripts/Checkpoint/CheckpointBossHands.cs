@@ -5,12 +5,10 @@ using UnityEngine;
 public class CheckpointBossHands : CheckpointBehavior {
 
 	private GameObject player;
-	//private DimensionHopping dimensionHop;
 	private DodgeScript dodgeScript;
 
 	void Awake() {
 		player = GameObject.FindGameObjectWithTag("Player");
-		//dimensionHop = player.GetComponent<DimensionHopping>();
 		dodgeScript = player.GetComponent<DodgeScript>();
 	}
 

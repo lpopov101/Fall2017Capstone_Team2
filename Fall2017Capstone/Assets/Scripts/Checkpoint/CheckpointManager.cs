@@ -10,9 +10,6 @@ public class CheckpointManager : MonoBehaviour {
 	private static CheckpointManager Instance = null;
 	private static bool FirstInit = true;
 
-	//protected string currentSceneName = null;
-	//protected string currentCheckpointName = null;
-
 	public static T GetManager<T>() {
 		return (T)(object)Instance;
 	}

@@ -15,12 +15,12 @@ public class CheckpointStartShell2 : CheckpointBehavior {
 	}
 
 	void LoadCheckpoint() {
-		int memory1 = PlayerPrefs.GetInt("Memory_1");
-		int memory2 = PlayerPrefs.GetInt("Memory_2");
-		int memory3 = PlayerPrefs.GetInt("Memory_3");
+		int memory1 = PlayerPrefs.GetInt("Shell2_Mem1");
+		int memory2 = PlayerPrefs.GetInt("Shell2_Mem2");
+		int memory3 = PlayerPrefs.GetInt("Shell2_Mem3");
 		int powerup = PlayerPrefs.GetInt("Powerup");
 
-		MemoryScript.setCount(memory1, memory2, memory3);
+		CutSceneScript.setCount(memory1, memory2, memory3);
 
 		CheckpointManagerShell2 manager = CheckpointManager.GetManager<CheckpointManagerShell2>();
 		DestroyOnCondition(manager.memory1, memory1);
