@@ -12,7 +12,7 @@ public class TouchInput : MonoBehaviour {
 
     private static int leftTouch;
     private static int rightTouch;
-    private static Vector2 leftTouchLastPos;
+    private static Vector2 leftTouchInitPos;
     private static Vector2 rightTouchLastPos; 
     private static bool shiftEntered;
 
@@ -34,7 +34,7 @@ public class TouchInput : MonoBehaviour {
         TapAnywhere = false;
         leftTouch = -1;
         rightTouch = -1;
-        leftTouchLastPos = Vector2.zero;
+        leftTouchInitPos = Vector2.zero;
         rightTouchLastPos = Vector2.zero;
         shiftEntered = false;
 
@@ -72,42 +72,46 @@ public class TouchInput : MonoBehaviour {
                     if(leftTouch == -1)
                     {
                         leftTouch = t.fingerId;
-                        leftTouchLastPos = t.position;
+                        leftTouchInitPos = t.position;
                     }
                 }
             }
             if(t.phase == TouchPhase.Stationary || t.phase == TouchPhase.Moved)
             {
-                if(t.fingerId == rightTouch)
+                if (t.fingerId == leftTouch)
                 {
-                    Horizontal += 1;
+                    Horizontal = (t.position.x - leftTouchInitPos.x) / (Screen.width / 40);
+                    Vertical = -(t.position.y - leftTouchInitPos.y) / (Screen.width / 40);
+                    if(Mathf.Abs(Horizontal) < 0.3F)
+                    {
+                        Horizontal = 0;
+                    }
+                    if(Mathf.Abs(Vertical) < 0.6F)
+                    {
+                        Vertical = 0;
+                    }
+                    Horizontal = Mathf.Clamp(Horizontal, -1, 1);
+                    Vertical = Mathf.Clamp(Vertical, -1, 1);
+                }
+                if (t.fingerId == rightTouch)
+                {
                     if(t.phase == TouchPhase.Moved)
                     {
-                        if(t.position.y - rightTouchLastPos.y > (Screen.height/20))
+                        if(t.position.y - rightTouchLastPos.y > (Screen.height/30))
                         {
                             Jump = true;
                         }
-                        if(t.position.x - rightTouchLastPos.x > (Screen.width/20))
+                        if(t.position.x - rightTouchLastPos.x > (Screen.width/30))
                         {
+                            Horizontal = 1;
+                            Dash = true;
+                        }
+                        else if (rightTouchLastPos.x - t.position.x > (Screen.width /30))
+                        {
+                            Horizontal = -1;
                             Dash = true;
                         }
                         rightTouchLastPos = t.position;
-                    }
-                }
-                if(t.fingerId == leftTouch)
-                {
-                    Horizontal -= 1;
-                    if(t.phase == TouchPhase.Moved)
-                    {
-                        if (t.position.y - leftTouchLastPos.y > (Screen.height/20))
-                        {
-                            Jump = true;
-                        }
-                        if (leftTouchLastPos.x - t.position.x > (Screen.width / 20))
-                        {
-                            Dash = true;
-                        }
-                        leftTouchLastPos = t.position;
                     }
                 }
             }
