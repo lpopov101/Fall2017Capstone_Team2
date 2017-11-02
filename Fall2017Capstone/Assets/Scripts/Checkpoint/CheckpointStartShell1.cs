@@ -5,6 +5,7 @@ using UnityEngine;
 public class CheckpointStartShell1 : CheckpointBehavior {
 
 	private GameObject player;
+	public GameObject gatorp;
 	private DodgeScript dodgeScript;
 
 	void Awake() {
@@ -18,7 +19,6 @@ public class CheckpointStartShell1 : CheckpointBehavior {
 		int memory2 = PlayerPrefs.GetInt("Shell1_Mem2");
 		int memory3 = PlayerPrefs.GetInt("Shell1_Mem3");
 		int powerup = PlayerPrefs.GetInt("Powerup");
-
 		CutSceneScript.setCount(memory1, memory2, memory3);
 
 		CheckpointManagerShell1 manager = CheckpointManager.GetManager<CheckpointManagerShell1>();
@@ -30,5 +30,7 @@ public class CheckpointStartShell1 : CheckpointBehavior {
 
 		if(powerup != 0)
 			dodgeScript.hasDodgeAbility = true;
+
+		gatorp.SendMessage("checkCollected");
 	}
 }

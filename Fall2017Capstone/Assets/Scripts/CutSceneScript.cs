@@ -6,6 +6,7 @@ using UnityEngine.Video;
 public class CutSceneScript : MonoBehaviour {
 
 	public VideoPlayer videoPlayer;
+	public VideoClip cutScene;
 	public string memoryName;
 	SpriteRenderer sr;
 	public GameObject shardLight;
@@ -30,8 +31,6 @@ public class CutSceneScript : MonoBehaviour {
 		videoPlayer.renderMode = UnityEngine.Video.VideoRenderMode.CameraNearPlane;
 
 		videoPlayer.targetCameraAlpha = 1.0F;
-		videoPlayer.source = VideoSource.Url;
-
 		videoPlayer.audioOutputMode = VideoAudioOutputMode.AudioSource;
 		videoPlayer.EnableAudioTrack (0, true);
 		videoPlayer.SetTargetAudioSource (0, audioSource);
@@ -58,10 +57,10 @@ public class CutSceneScript : MonoBehaviour {
 		if (coll.gameObject.CompareTag ("PlayerInteract") && sr.enabled) {
 			PlayerPrefs.SetInt(memoryName, 1);
 			PlayerPrefs.Save();
-			videoPlayer.url = "Assets/StreamingAssets/"+memoryName+".mp4";
+			videoPlayer.clip = cutScene;
 			UIManager.Instance.PauseWithoutOverlay();
-			videoPlayer.Play();
-			audioSource.Play ();
+			videoPlayer.Prepare ();
+			videoPlayer.prepareCompleted += VideoPlayer_prepareCompleted;
 			sr.enabled = false;
 			shardLight.SetActive(false);
 			//light.enabled = false;
@@ -73,6 +72,12 @@ public class CutSceneScript : MonoBehaviour {
 				Destroy (fragmentHint.gameObject);
 			}
 		}
+	}
+
+	void VideoPlayer_prepareCompleted (VideoPlayer source)
+	{
+		videoPlayer.Play();
+		audioSource.Play ();
 	}
 
 	void ShutterAfterMovie() {

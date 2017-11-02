@@ -42,6 +42,7 @@ public class DisplayToastScript : MonoBehaviour {
 	}
 
 	void checkCollected() {
+		Debug.Log ("mem collected: "+ CutSceneScript.getCount() + " dodge: " + gameObject.GetComponent<DodgeScript>().hasDodgeAbility);
 		if (CutSceneScript.getCount() >= 3 && gameObject.GetComponent<DodgeScript>().hasDodgeAbility) {
 			GameObject[] door = GameObject.FindGameObjectsWithTag("memorydoor");
 			foreach (GameObject obj in door) {

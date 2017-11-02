@@ -5458,6 +5458,12 @@ Prefab:
       propertyPath: memoryName
       value: Shell1_Mem3
       objectReference: {fileID: 0}
+    - target: {fileID: 114395781944809606, guid: 88af4c097e904e14588b7d516f3db7c4,
+        type: 2}
+      propertyPath: cutScene
+      value: 
+      objectReference: {fileID: 32900000, guid: 3acd61538ad848947a96abff066a5257,
+        type: 3}
     m_RemovedComponents:
     - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: 88af4c097e904e14588b7d516f3db7c4, type: 2}
@@ -7312,6 +7318,12 @@ Prefab:
       propertyPath: videoPlayer
       value: 
       objectReference: {fileID: 4232019}
+    - target: {fileID: 114395781944809606, guid: 88af4c097e904e14588b7d516f3db7c4,
+        type: 2}
+      propertyPath: cutScene
+      value: 
+      objectReference: {fileID: 32900000, guid: 719721929ae3b404ab04005a62a475f1,
+        type: 3}
     m_RemovedComponents:
     - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: 88af4c097e904e14588b7d516f3db7c4, type: 2}
@@ -8311,6 +8323,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b40296c43beca7428e94849f2099be8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gatorp: {fileID: 361484037}
 --- !u!4 &836449413
 Transform:
   m_ObjectHideFlags: 0
@@ -19036,6 +19049,12 @@ Prefab:
       propertyPath: memoryName
       value: Shell1_Mem1
       objectReference: {fileID: 0}
+    - target: {fileID: 114395781944809606, guid: 88af4c097e904e14588b7d516f3db7c4,
+        type: 2}
+      propertyPath: cutScene
+      value: 
+      objectReference: {fileID: 32900000, guid: ef2ae9a4e8ef8d146a99e59f9b527124,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 88af4c097e904e14588b7d516f3db7c4, type: 2}
   m_IsPrefabParent: 0
