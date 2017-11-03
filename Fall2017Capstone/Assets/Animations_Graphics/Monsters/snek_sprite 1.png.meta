@@ -1,0 +1,848 @@
+fileFormatVersion: 2
+guid: 3bad52520b2f442438b9d149fe38a0dd
+timeCreated: 1509734926
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: snek_sprite 1_0
+    21300002: snek_sprite 1_1
+    21300004: snek_sprite 1_2
+    21300006: snek_sprite 1_3
+    21300008: snek_sprite 1_4
+    21300010: snek_sprite 1_5
+    21300012: snek_sprite 1_6
+    21300014: snek_sprite 1_7
+    21300016: snek_sprite 1_8
+    21300018: snek_sprite 1_9
+    21300020: snek_sprite 1_10
+    21300022: snek_sprite 1_11
+    21300024: snek_sprite 1_12
+    21300026: snek_sprite 1_13
+    21300028: snek_sprite 1_14
+    21300030: snek_sprite 1_15
+    21300032: snek_sprite 1_16
+    21300034: snek_sprite 1_17
+    21300036: snek_sprite 1_18
+    21300038: snek_sprite 1_19
+    21300040: snek_sprite 1_20
+    21300042: snek_sprite 1_21
+    21300044: snek_sprite 1_22
+    21300046: snek_sprite 1_23
+    21300048: snek_sprite 1_24
+    21300050: snek_sprite 1_25
+    21300052: snek_sprite 1_26
+    21300054: snek_sprite 1_27
+    21300056: snek_sprite 1_28
+    21300058: snek_sprite 1_29
+    21300060: snek_sprite 1_30
+    21300062: snek_sprite 1_31
+    21300064: snek_sprite 1_32
+    21300066: snek_sprite 1_33
+    21300068: snek_sprite 1_34
+    21300070: snek_sprite 1_35
+    21300072: snek_sprite 1_36
+    21300074: snek_sprite 1_37
+    21300076: snek_sprite 1_38
+    21300078: snek_sprite 1_39
+    21300080: snek_sprite 1_40
+    21300082: snek_sprite 1_41
+    21300084: snek_sprite 1_42
+    21300086: snek_sprite 1_43
+    21300088: snek_sprite 1_44
+    21300090: snek_sprite 1_45
+    21300092: snek_sprite 1_46
+    21300094: snek_sprite 1_47
+    21300096: snek_sprite 1_48
+    21300098: snek_sprite 1_49
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: iPhone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Android
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: snek_sprite 1_0
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 7195
+        width: 952
+        height: 861
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: snek_sprite 1_1
+      rect:
+        serializedVersion: 2
+        x: 1036
+        y: 7195
+        width: 952
+        height: 861
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: snek_sprite 1_2
+      rect:
+        serializedVersion: 2
+        x: 2056
+        y: 7196
+        width: 956
+        height: 861
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: snek_sprite 1_3
+      rect:
+        serializedVersion: 2
+        x: 3080
+        y: 7196
+        width: 956
+        height: 861
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: snek_sprite 1_4
+      rect:
+        serializedVersion: 2
+        x: 4099
+        y: 7199
+        width: 961
+        height: 862
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: snek_sprite 1_5
+      rect:
+        serializedVersion: 2
+        x: 5123
+        y: 7199
+        width: 961
+        height: 862
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: snek_sprite 1_6
+      rect:
+        serializedVersion: 2
+        x: 6147
+        y: 7199
+        width: 961
+        height: 862
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: snek_sprite 1_7
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 6175
+        width: 961
+        height: 862
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: snek_sprite 1_8
+      rect:
+        serializedVersion: 2
+        x: 1027
+        y: 6172
+        width: 961
+        height: 869
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: snek_sprite 1_9
+      rect:
+        serializedVersion: 2
+        x: 2051
+        y: 6172
+        width: 961
+        height: 869
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: snek_sprite 1_10
+      rect:
+        serializedVersion: 2
+        x: 3071
+        y: 6172
+        width: 962
+        height: 869
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: snek_sprite 1_11
+      rect:
+        serializedVersion: 2
+        x: 4095
+        y: 6172
+        width: 962
+        height: 869
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: snek_sprite 1_12
+      rect:
+        serializedVersion: 2
+        x: 5119
+        y: 6172
+        width: 962
+        height: 872
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: snek_sprite 1_13
+      rect:
+        serializedVersion: 2
+        x: 6143
+        y: 6172
+        width: 962
+        height: 872
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: snek_sprite 1_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5148
+        width: 961
+        height: 872
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: snek_sprite 1_15
+      rect:
+        serializedVersion: 2
+        x: 1023
+        y: 5148
+        width: 962
+        height: 872
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: snek_sprite 1_16
+      rect:
+        serializedVersion: 2
+        x: 2047
+        y: 5148
+        width: 962
+        height: 872
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: snek_sprite 1_17
+      rect:
+        serializedVersion: 2
+        x: 3071
+        y: 5148
+        width: 962
+        height: 876
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: snek_sprite 1_18
+      rect:
+        serializedVersion: 2
+        x: 4095
+        y: 5148
+        width: 962
+        height: 876
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: snek_sprite 1_19
+      rect:
+        serializedVersion: 2
+        x: 5123
+        y: 5148
+        width: 958
+        height: 877
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: snek_sprite 1_20
+      rect:
+        serializedVersion: 2
+        x: 6147
+        y: 5148
+        width: 958
+        height: 877
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: snek_sprite 1_21
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 4127
+        width: 958
+        height: 878
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: snek_sprite 1_22
+      rect:
+        serializedVersion: 2
+        x: 1027
+        y: 4127
+        width: 958
+        height: 878
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: snek_sprite 1_23
+      rect:
+        serializedVersion: 2
+        x: 2051
+        y: 4127
+        width: 958
+        height: 878
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: snek_sprite 1_24
+      rect:
+        serializedVersion: 2
+        x: 3075
+        y: 4127
+        width: 958
+        height: 882
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: snek_sprite 1_25
+      rect:
+        serializedVersion: 2
+        x: 4099
+        y: 4127
+        width: 958
+        height: 882
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: snek_sprite 1_26
+      rect:
+        serializedVersion: 2
+        x: 5128
+        y: 4127
+        width: 953
+        height: 882
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: snek_sprite 1_27
+      rect:
+        serializedVersion: 2
+        x: 6152
+        y: 4127
+        width: 953
+        height: 882
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: snek_sprite 1_28
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 3103
+        width: 952
+        height: 878
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: snek_sprite 1_29
+      rect:
+        serializedVersion: 2
+        x: 1036
+        y: 3103
+        width: 952
+        height: 878
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: snek_sprite 1_30
+      rect:
+        serializedVersion: 2
+        x: 2063
+        y: 3103
+        width: 949
+        height: 878
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: snek_sprite 1_31
+      rect:
+        serializedVersion: 2
+        x: 3087
+        y: 3103
+        width: 949
+        height: 878
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: snek_sprite 1_32
+      rect:
+        serializedVersion: 2
+        x: 4119
+        y: 3103
+        width: 941
+        height: 878
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: snek_sprite 1_33
+      rect:
+        serializedVersion: 2
+        x: 5143
+        y: 3103
+        width: 941
+        height: 878
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: snek_sprite 1_34
+      rect:
+        serializedVersion: 2
+        x: 6159
+        y: 3103
+        width: 949
+        height: 874
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: snek_sprite 1_35
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 2079
+        width: 949
+        height: 874
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: snek_sprite 1_36
+      rect:
+        serializedVersion: 2
+        x: 1036
+        y: 2079
+        width: 952
+        height: 873
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: snek_sprite 1_37
+      rect:
+        serializedVersion: 2
+        x: 2055
+        y: 2079
+        width: 961
+        height: 869
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: snek_sprite 1_38
+      rect:
+        serializedVersion: 2
+        x: 3079
+        y: 2079
+        width: 961
+        height: 869
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: snek_sprite 1_39
+      rect:
+        serializedVersion: 2
+        x: 4099
+        y: 2079
+        width: 965
+        height: 869
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: snek_sprite 1_40
+      rect:
+        serializedVersion: 2
+        x: 5123
+        y: 2079
+        width: 965
+        height: 869
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: snek_sprite 1_41
+      rect:
+        serializedVersion: 2
+        x: 6143
+        y: 2079
+        width: 969
+        height: 866
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: snek_sprite 1_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1055
+        width: 968
+        height: 866
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: snek_sprite 1_43
+      rect:
+        serializedVersion: 2
+        x: 1027
+        y: 1052
+        width: 965
+        height: 869
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: snek_sprite 1_44
+      rect:
+        serializedVersion: 2
+        x: 2051
+        y: 1052
+        width: 965
+        height: 869
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: snek_sprite 1_45
+      rect:
+        serializedVersion: 2
+        x: 3075
+        y: 1052
+        width: 961
+        height: 865
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: snek_sprite 1_46
+      rect:
+        serializedVersion: 2
+        x: 4099
+        y: 1052
+        width: 961
+        height: 865
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: snek_sprite 1_47
+      rect:
+        serializedVersion: 2
+        x: 5128
+        y: 1052
+        width: 956
+        height: 865
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: snek_sprite 1_48
+      rect:
+        serializedVersion: 2
+        x: 6156
+        y: 1051
+        width: 952
+        height: 862
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: snek_sprite 1_49
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 27
+        width: 952
+        height: 862
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
