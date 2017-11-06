@@ -1,0 +1,1028 @@
+fileFormatVersion: 2
+guid: c0d314cd625fd1f44b41f1a1c49f9e60
+timeCreated: 1509940760
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: grass_ani_0
+    21300002: grass_ani_1
+    21300004: grass_ani_2
+    21300006: grass_ani_3
+    21300008: grass_ani_4
+    21300010: grass_ani_5
+    21300012: grass_ani_6
+    21300014: grass_ani_7
+    21300016: grass_ani_8
+    21300018: grass_ani_9
+    21300020: grass_ani_10
+    21300022: grass_ani_11
+    21300024: grass_ani_12
+    21300026: grass_ani_13
+    21300028: grass_ani_14
+    21300030: grass_ani_15
+    21300032: grass_ani_16
+    21300034: grass_ani_17
+    21300036: grass_ani_18
+    21300038: grass_ani_19
+    21300040: grass_ani_20
+    21300042: grass_ani_21
+    21300044: grass_ani_22
+    21300046: grass_ani_23
+    21300048: grass_ani_24
+    21300050: grass_ani_25
+    21300052: grass_ani_26
+    21300054: grass_ani_27
+    21300056: grass_ani_28
+    21300058: grass_ani_29
+    21300060: grass_ani_30
+    21300062: grass_ani_31
+    21300064: grass_ani_32
+    21300066: grass_ani_33
+    21300068: grass_ani_34
+    21300070: grass_ani_35
+    21300072: grass_ani_36
+    21300074: grass_ani_37
+    21300076: grass_ani_38
+    21300078: grass_ani_39
+    21300080: grass_ani_40
+    21300082: grass_ani_41
+    21300084: grass_ani_42
+    21300086: grass_ani_43
+    21300088: grass_ani_44
+    21300090: grass_ani_45
+    21300092: grass_ani_46
+    21300094: grass_ani_47
+    21300096: grass_ani_48
+    21300098: grass_ani_49
+    21300100: grass_ani_50
+    21300102: grass_ani_51
+    21300104: grass_ani_52
+    21300106: grass_ani_53
+    21300108: grass_ani_54
+    21300110: grass_ani_55
+    21300112: grass_ani_56
+    21300114: grass_ani_57
+    21300116: grass_ani_58
+    21300118: grass_ani_59
+    21300120: grass_ani_60
+    21300122: grass_ani_61
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: iPhone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Android
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: grass_ani_0
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 6615
+        width: 1535
+        height: 678
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: grass_ani_1
+      rect:
+        serializedVersion: 2
+        x: 1816
+        y: 6615
+        width: 1526
+        height: 677
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: grass_ani_2
+      rect:
+        serializedVersion: 2
+        x: 3559
+        y: 6615
+        width: 1511
+        height: 677
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: grass_ani_3
+      rect:
+        serializedVersion: 2
+        x: 5282
+        y: 6615
+        width: 1515
+        height: 676
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: grass_ani_4
+      rect:
+        serializedVersion: 2
+        x: 7027
+        y: 6615
+        width: 1507
+        height: 677
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: grass_ani_5
+      rect:
+        serializedVersion: 2
+        x: 8752
+        y: 6612
+        width: 1506
+        height: 674
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: grass_ani_6
+      rect:
+        serializedVersion: 2
+        x: 10486
+        y: 6612
+        width: 1499
+        height: 677
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: grass_ani_7
+      rect:
+        serializedVersion: 2
+        x: 12220
+        y: 6612
+        width: 1499
+        height: 667
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: grass_ani_8
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 5789
+        width: 1493
+        height: 660
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: grass_ani_9
+      rect:
+        serializedVersion: 2
+        x: 1825
+        y: 5789
+        width: 1480
+        height: 649
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: grass_ani_10
+      rect:
+        serializedVersion: 2
+        x: 2391
+        y: 6436
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: grass_ani_11
+      rect:
+        serializedVersion: 2
+        x: 3559
+        y: 5789
+        width: 1480
+        height: 662
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: grass_ani_12
+      rect:
+        serializedVersion: 2
+        x: 5293
+        y: 5789
+        width: 1477
+        height: 667
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: grass_ani_13
+      rect:
+        serializedVersion: 2
+        x: 7027
+        y: 5789
+        width: 1477
+        height: 662
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: grass_ani_14
+      rect:
+        serializedVersion: 2
+        x: 8761
+        y: 5789
+        width: 1480
+        height: 660
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: grass_ani_15
+      rect:
+        serializedVersion: 2
+        x: 10486
+        y: 5789
+        width: 1491
+        height: 656
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: grass_ani_16
+      rect:
+        serializedVersion: 2
+        x: 12218
+        y: 5789
+        width: 1498
+        height: 650
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: grass_ani_17
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 4962
+        width: 1489
+        height: 643
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: grass_ani_18
+      rect:
+        serializedVersion: 2
+        x: 1816
+        y: 4962
+        width: 1499
+        height: 637
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: grass_ani_19
+      rect:
+        serializedVersion: 2
+        x: 3559
+        y: 4962
+        width: 1490
+        height: 640
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: grass_ani_20
+      rect:
+        serializedVersion: 2
+        x: 5293
+        y: 4962
+        width: 1490
+        height: 649
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: grass_ani_21
+      rect:
+        serializedVersion: 2
+        x: 7016
+        y: 4962
+        width: 1501
+        height: 657
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: grass_ani_22
+      rect:
+        serializedVersion: 2
+        x: 8752
+        y: 4962
+        width: 1505
+        height: 664
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: grass_ani_23
+      rect:
+        serializedVersion: 2
+        x: 10495
+        y: 4962
+        width: 1497
+        height: 671
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: grass_ani_24
+      rect:
+        serializedVersion: 2
+        x: 12220
+        y: 4962
+        width: 1506
+        height: 681
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: grass_ani_25
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 4129
+        width: 1497
+        height: 691
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: grass_ani_26
+      rect:
+        serializedVersion: 2
+        x: 1816
+        y: 4129
+        width: 1506
+        height: 701
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: grass_ani_27
+      rect:
+        serializedVersion: 2
+        x: 3550
+        y: 4129
+        width: 1506
+        height: 705
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: grass_ani_28
+      rect:
+        serializedVersion: 2
+        x: 5284
+        y: 4129
+        width: 1506
+        height: 711
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: grass_ani_29
+      rect:
+        serializedVersion: 2
+        x: 7016
+        y: 4129
+        width: 1508
+        height: 723
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: grass_ani_30
+      rect:
+        serializedVersion: 2
+        x: 8749
+        y: 4129
+        width: 1519
+        height: 725
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: grass_ani_31
+      rect:
+        serializedVersion: 2
+        x: 10486
+        y: 4129
+        width: 1519
+        height: 725
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: grass_ani_32
+      rect:
+        serializedVersion: 2
+        x: 12220
+        y: 4129
+        width: 1525
+        height: 731
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: grass_ani_33
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 3310
+        width: 1529
+        height: 734
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: grass_ani_34
+      rect:
+        serializedVersion: 2
+        x: 1807
+        y: 3310
+        width: 1538
+        height: 734
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: grass_ani_35
+      rect:
+        serializedVersion: 2
+        x: 3548
+        y: 3310
+        width: 1542
+        height: 731
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: grass_ani_36
+      rect:
+        serializedVersion: 2
+        x: 5293
+        y: 3317
+        width: 1538
+        height: 731
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: grass_ani_37
+      rect:
+        serializedVersion: 2
+        x: 7039
+        y: 3310
+        width: 1553
+        height: 734
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: grass_ani_38
+      rect:
+        serializedVersion: 2
+        x: 8752
+        y: 3303
+        width: 1560
+        height: 731
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: grass_ani_39
+      rect:
+        serializedVersion: 2
+        x: 10486
+        y: 3303
+        width: 1564
+        height: 731
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: grass_ani_40
+      rect:
+        serializedVersion: 2
+        x: 12220
+        y: 3303
+        width: 1567
+        height: 724
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: grass_ani_41
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 2476
+        width: 1569
+        height: 718
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: grass_ani_42
+      rect:
+        serializedVersion: 2
+        x: 1813
+        y: 2476
+        width: 1577
+        height: 721
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: grass_ani_43
+      rect:
+        serializedVersion: 2
+        x: 3548
+        y: 2476
+        width: 1579
+        height: 711
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: grass_ani_44
+      rect:
+        serializedVersion: 2
+        x: 5284
+        y: 2476
+        width: 1580
+        height: 705
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: grass_ani_45
+      rect:
+        serializedVersion: 2
+        x: 7018
+        y: 2476
+        width: 1580
+        height: 703
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: grass_ani_46
+      rect:
+        serializedVersion: 2
+        x: 8752
+        y: 2476
+        width: 1580
+        height: 697
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: grass_ani_47
+      rect:
+        serializedVersion: 2
+        x: 10491
+        y: 2476
+        width: 1575
+        height: 690
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: grass_ani_48
+      rect:
+        serializedVersion: 2
+        x: 12220
+        y: 2476
+        width: 1579
+        height: 684
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: grass_ani_49
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 1650
+        width: 1571
+        height: 680
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: grass_ani_50
+      rect:
+        serializedVersion: 2
+        x: 1820
+        y: 1650
+        width: 1570
+        height: 670
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: grass_ani_51
+      rect:
+        serializedVersion: 2
+        x: 3561
+        y: 1657
+        width: 1570
+        height: 663
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: grass_ani_52
+      rect:
+        serializedVersion: 2
+        x: 5284
+        y: 1657
+        width: 1567
+        height: 657
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: grass_ani_53
+      rect:
+        serializedVersion: 2
+        x: 7018
+        y: 1657
+        width: 1570
+        height: 653
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: grass_ani_54
+      rect:
+        serializedVersion: 2
+        x: 8761
+        y: 1650
+        width: 1551
+        height: 656
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: grass_ani_55
+      rect:
+        serializedVersion: 2
+        x: 10484
+        y: 1650
+        width: 1562
+        height: 663
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: grass_ani_56
+      rect:
+        serializedVersion: 2
+        x: 12220
+        y: 1650
+        width: 1554
+        height: 663
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: grass_ani_57
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 825
+        width: 1553
+        height: 679
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: grass_ani_58
+      rect:
+        serializedVersion: 2
+        x: 1816
+        y: 825
+        width: 1547
+        height: 681
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: grass_ani_59
+      rect:
+        serializedVersion: 2
+        x: 3550
+        y: 825
+        width: 1546
+        height: 683
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: grass_ani_60
+      rect:
+        serializedVersion: 2
+        x: 5277
+        y: 825
+        width: 1543
+        height: 683
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: grass_ani_61
+      rect:
+        serializedVersion: 2
+        x: 7027
+        y: 825
+        width: 1524
+        height: 683
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
