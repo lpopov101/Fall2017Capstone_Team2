@@ -42,7 +42,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1542085485595408
 GameObject:
   m_ObjectHideFlags: 0
@@ -248,7 +248,7 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_Size: {x: 3.53, y: 8.18}
+  m_Size: {x: 3.18, y: 8.18}
   m_Direction: 0
 --- !u!81 &81814852014550792
 AudioListener:

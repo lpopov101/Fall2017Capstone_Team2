@@ -54,7 +54,7 @@ public class CutSceneScript : MonoBehaviour {
 	}
 
 	void OnTriggerEnter2D(Collider2D coll) {
-		if (coll.gameObject.CompareTag ("PlayerInteract") && sr.enabled) {
+		if (coll.gameObject.CompareTag ("Player") && sr.enabled) {
 			PlayerPrefs.SetInt(memoryName, 1);
 			PlayerPrefs.Save();
 			videoPlayer.clip = cutScene;
