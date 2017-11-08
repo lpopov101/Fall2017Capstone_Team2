@@ -42,10 +42,12 @@ public class PowerUpScript : MonoBehaviour {
 			if(levelName == "Shell1") {
 				toaster.ImageToast("dash", 5.0f);
 				dodgeScript.hasDodgeAbility = true;
-				gatorp.SendMessage ("checkCollected");
+				gatorp.SendMessage("checkCollected");
 			} else if(levelName == "Shell2") {
 				//toaster.ImageToast("high_jump", 5.0f);
 				highJumpScript.hasHighJumpAbility = true;
+			} else if(levelName == "Shell3") {
+
 			}
 
 			sr.enabled = false;

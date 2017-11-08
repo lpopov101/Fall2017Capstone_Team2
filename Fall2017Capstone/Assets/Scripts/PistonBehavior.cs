@@ -30,7 +30,8 @@ public class PistonBehavior : MonoBehaviour {
 		if(!startMovingUp) {
 			movingUp = false;
 			hidingBottom = false;
-			bottomPart.SetActive(true);
+			if(bottomPart)
+				bottomPart.SetActive(true);
 			Vector3 vec = transform.position;
 			vec.y = topHeight;
 			transform.position = vec;
@@ -64,7 +65,8 @@ public class PistonBehavior : MonoBehaviour {
 				// Show the bottom if moved past half the distance
 				if(hidingBottom && value > 0.5f) {
 					hidingBottom = false;
-					bottomPart.SetActive(true);
+					if(bottomPart)
+						bottomPart.SetActive(true);
 				}
 			}
 		} else {
@@ -82,7 +84,8 @@ public class PistonBehavior : MonoBehaviour {
 				// Hide the bottom if moved past half the distance
 				if(!hidingBottom && value > 0.5f) {
 					hidingBottom = true;
-					bottomPart.SetActive(false);
+					if(bottomPart)
+						bottomPart.SetActive(false);
 				}
 			}
 		}

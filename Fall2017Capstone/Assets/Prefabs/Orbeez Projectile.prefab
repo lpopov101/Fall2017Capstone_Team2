@@ -25,7 +25,7 @@ GameObject:
   - component: {fileID: 114163080048606926}
   m_Layer: 10
   m_Name: Orbeez Projectile
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
