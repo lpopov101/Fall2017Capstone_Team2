@@ -16,7 +16,7 @@ public class CheckpointBossHands : CheckpointBehavior {
 		player.transform.position = transform.position;
 
 		CheckpointManagerShell1 manager = CheckpointManager.GetManager<CheckpointManagerShell1>();
-		DestroyIfExists(manager.gina);
+		//DestroyIfExists(manager.gina);
 		DestroyIfExists(manager.memory1);
 		DestroyIfExists(manager.memory2);
 		DestroyIfExists(manager.memory3);
