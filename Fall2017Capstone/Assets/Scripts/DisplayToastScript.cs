@@ -19,20 +19,32 @@ public class DisplayToastScript : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D coll) {
 		//Debug.Log (coll.gameObject.tag);
 		if (coll.gameObject.CompareTag ("DimensionHint")) {
-			toast.ImageToast ("shift", 7.0f);
+#if UNITY_ANDROID
+            toast.AltImageToast("mobileshift", 7.0F);
+#else
+            toast.ImageToast ("shift", 7.0f);
+#endif
 			GameObject DimensionHint = GameObject.FindGameObjectWithTag ("DimensionHint");
 			if( DimensionHint != null)
 				DimensionHint.SetActive (false);
 		} else if (coll.gameObject.CompareTag ("FragmentHint")) {
 			toast.Toast ("Memory Fragment nearby in dissociated dimension.", 4.0f);
 		} else if (coll.gameObject.CompareTag ("MoveHint")) {
-			toast.ImageToast ("move", 7.0f);
+#if UNITY_ANDROID
+            toast.AltImageToast("mobilemove", 7.0F);
+#else
+            toast.ImageToast ("move", 7.0f);
+#endif
 			GameObject MoveHint = GameObject.FindGameObjectWithTag ("MoveHint");
 			if( MoveHint != null)
 				MoveHint.SetActive (false);
 		} else if (coll.gameObject.CompareTag ("JumpHint")) {
-			toast.ImageToast ("jump", 7.0f);
-			GameObject JumpHint = GameObject.FindGameObjectWithTag ("JumpHint");
+#if UNITY_ANDROID
+            toast.AltImageToast("mobilejump", 7.0F);
+#else
+            toast.ImageToast ("jump", 7.0f);
+#endif
+            GameObject JumpHint = GameObject.FindGameObjectWithTag ("JumpHint");
 			if( JumpHint != null)
 				JumpHint.SetActive (false);
 		} else if (coll.gameObject.CompareTag ("memorydoor")) {

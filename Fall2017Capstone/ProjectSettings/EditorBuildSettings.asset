@@ -27,7 +27,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Shell2.unity
     guid: a5b131e6044fd284b851f4d222f64ffb
   - enabled: 0
-    path: Assets/Scenes/Shell3.unity
+    path: Assets/Scenes/Shell3OLD.unity
     guid: 1ba2d19944b8d994b8e579c5d5fd4206
   - enabled: 0
     path: Assets/Scenes/TheEnd.unity

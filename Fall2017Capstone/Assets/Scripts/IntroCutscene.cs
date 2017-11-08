@@ -2,24 +2,19 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Video;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class IntroCutscene : MonoBehaviour {
 
 	public VideoPlayer videoPlayer;
 	public VideoClip cutScene;
+    public RawImage videoImage;
 	AudioSource audioSource;
 
 	void Start()
 	{
 		audioSource = gameObject.AddComponent<AudioSource>();
-		// Will attach a VideoPlayer to the main camera.
-		GameObject camera = GameObject.Find("Main Camera");
-		// By default, VideoPlayers added to a camera will use the far plane.
-		// Let's target the near plane instead.
-		videoPlayer.renderMode = UnityEngine.Video.VideoRenderMode.CameraNearPlane;
-
-		videoPlayer.targetCameraAlpha = 1.0F;
 		videoPlayer.clip = cutScene;
 		videoPlayer.audioOutputMode = VideoAudioOutputMode.AudioSource;
 		videoPlayer.EnableAudioTrack (0, true);
@@ -47,12 +42,15 @@ public class IntroCutscene : MonoBehaviour {
 	void EndReached(UnityEngine.Video.VideoPlayer vp)
 	{
 		vp.Stop ();
+        videoImage.gameObject.SetActive(false);
 		SceneManager.LoadScene (nextScene, LoadSceneMode.Single);
 	}
 
 	void Update () {
-		if (Input.GetButtonDown ("Interact")) {
-			SceneManager.LoadScene (nextScene, LoadSceneMode.Single);
+		if (Input.GetButtonDown ("Interact") || TouchInput.TapAnywhere)
+        {
+            videoImage.gameObject.SetActive(false);
+            SceneManager.LoadScene (nextScene, LoadSceneMode.Single);
 		}
 	}
 

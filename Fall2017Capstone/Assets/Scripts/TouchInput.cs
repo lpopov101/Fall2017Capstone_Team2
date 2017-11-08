@@ -13,16 +13,17 @@ public class TouchInput : MonoBehaviour {
     private static int leftTouch;
     private static int rightTouch;
     private static Vector2 leftTouchInitPos;
+    private static Vector2 leftTouchLastPos;
     private static Vector2 rightTouchLastPos; 
     private static bool shiftEntered;
 
     private static float accelerometerUpdateInterval = 1.0f / 60.0f;
     private static float lowPassKernelWidthInSeconds = 1.0f;
-    private static float shakeDetectionThreshold = 0.9f;
+    private static float shakeDetectionThreshold = 0.9f*0.9f;
     private static float lastShakeTime = 0F;
 
-    float lowPassFilterFactor;
-    Vector3 lowPassValue;
+    private float lowPassFilterFactor;
+    private Vector3 lowPassValue;
     // Use this for initialization
     void Start () {
         Horizontal = 0;
@@ -35,11 +36,11 @@ public class TouchInput : MonoBehaviour {
         leftTouch = -1;
         rightTouch = -1;
         leftTouchInitPos = Vector2.zero;
+        leftTouchLastPos = Vector2.zero;
         rightTouchLastPos = Vector2.zero;
         shiftEntered = false;
 
         lowPassFilterFactor = accelerometerUpdateInterval / lowPassKernelWidthInSeconds;
-        shakeDetectionThreshold *= shakeDetectionThreshold;
         lowPassValue = Input.acceleration;
     }
 	
@@ -73,6 +74,7 @@ public class TouchInput : MonoBehaviour {
                     {
                         leftTouch = t.fingerId;
                         leftTouchInitPos = t.position;
+                        leftTouchLastPos = t.position;
                     }
                 }
             }
@@ -81,17 +83,19 @@ public class TouchInput : MonoBehaviour {
                 if (t.fingerId == leftTouch)
                 {
                     Horizontal = (t.position.x - leftTouchInitPos.x) / (Screen.width / 40);
-                    Vertical = -(t.position.y - leftTouchInitPos.y) / (Screen.width / 40);
-                    if(Mathf.Abs(Horizontal) < 0.3F)
+                    if (Mathf.Abs(Horizontal) < 0.3F)
                     {
                         Horizontal = 0;
                     }
-                    if(Mathf.Abs(Vertical) < 0.6F)
-                    {
-                        Vertical = 0;
-                    }
                     Horizontal = Mathf.Clamp(Horizontal, -1, 1);
-                    Vertical = Mathf.Clamp(Vertical, -1, 1);
+                    if(t.phase == TouchPhase.Moved)
+                    {
+                        if (leftTouchLastPos.y - t.position.y > (Screen.height / 30))
+                        {
+                            Vertical = -1;
+                        }
+                        leftTouchLastPos = t.position;
+                    }
                 }
                 if (t.fingerId == rightTouch)
                 {

@@ -7,6 +7,7 @@ public class ToastScript : MonoBehaviour {
 
 	Text Toaster;
 	public Image ImageUI;
+    public Image AltImageUI;
 
 	// Use this for initialization
 	void Start () {
@@ -22,6 +23,11 @@ public class ToastScript : MonoBehaviour {
 		Sprite img = Resources.Load<Sprite> (imgpath);
 		StartCoroutine(DisplayImage(img, time));
 	}
+    public void AltImageToast(string imgpath, float time)
+    {
+        Sprite img = Resources.Load<Sprite>(imgpath);
+        StartCoroutine(DisplayAltImage(img, time));
+    }
 
 	public void Toast(string text,float time) {
 		StartCoroutine(DisplayText(text,time));
@@ -48,4 +54,12 @@ public class ToastScript : MonoBehaviour {
 		//ImageUI = null;
 	}
 
+    IEnumerator DisplayAltImage(Sprite img, float time)
+    {
+        Debug.Log(img);
+        AltImageUI.sprite = img;
+        AltImageUI.CrossFadeAlpha(1.0f, 0.0f, false);
+        AltImageUI.CrossFadeAlpha(0.0f, time, false);
+        yield return new WaitForSeconds(time);
+    }
 }
