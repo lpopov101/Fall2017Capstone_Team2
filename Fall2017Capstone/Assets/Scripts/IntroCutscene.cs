@@ -42,15 +42,13 @@ public class IntroCutscene : MonoBehaviour {
 	void EndReached(UnityEngine.Video.VideoPlayer vp)
 	{
 		vp.Stop ();
-        videoImage.gameObject.SetActive(false);
-		SceneManager.LoadScene (nextScene, LoadSceneMode.Single);
+        LoadingScreen.loadSceneWithScreen(nextScene);
 	}
 
 	void Update () {
 		if (Input.GetButtonDown ("Interact") || TouchInput.TapAnywhere)
         {
-            videoImage.gameObject.SetActive(false);
-            SceneManager.LoadScene (nextScene, LoadSceneMode.Single);
+            LoadingScreen.loadSceneWithScreen(nextScene);
 		}
 	}
 

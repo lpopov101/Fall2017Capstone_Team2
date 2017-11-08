@@ -47,7 +47,7 @@ VideoClipImporter:
     format: 1
     settings:
       enableTranscoding: 1
-      codec: 1
+      codec: 0
       resizeFormat: 0
       aspectRatio: 0
       customWidth: 1920
@@ -61,7 +61,7 @@ VideoClipImporter:
     streamedResource:
       source: library/metadata/ef/ef2ae9a4e8ef8d146a99e59f9b527124.resource
       offset: 0
-      size: 3632974
+      size: 3632950
   userData: 
   assetBundleName: 
   assetBundleVariant: 

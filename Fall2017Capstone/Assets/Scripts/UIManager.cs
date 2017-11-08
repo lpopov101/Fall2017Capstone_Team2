@@ -4,134 +4,168 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class UIManager : MonoBehaviour {
+public class UIManager : MonoBehaviour
+{
 
-	public static UIManager Instance = null; // Singleton that currently refreshes when a new scene is loaded
+    public static UIManager Instance = null; // Singleton that currently refreshes when a new scene is loaded
 
-	public GameObject pausedOverlay;
-	public Animator MemoryHint;
-	//public GameObject dialogueText;
+    public GameObject pausedOverlay;
+    public Button pauseButton;
+    public Animator MemoryHint;
+    //public GameObject dialogueText;
 
-	bool paused, dialoguePaused;
-	//Text dialogueTextScript;
+    bool paused, dialoguePaused;
+    //Text dialogueTextScript;
 
-	void Awake() {
-		Debug.Log("Setting UI Manager instance.");
-		Instance = this;
-	}
+    void Awake()
+    {
+        Debug.Log("Setting UI Manager instance.");
+        Instance = this;
+    }
 
-	void Start () {
-		pausedOverlay.SetActive(false);
-		//dialogueText.SetActive(false);
+    void Start()
+    {
+#if UNITY_ANDROID
+        pauseButton.onClick.AddListener(() =>
+        {
+            Pause();
+        });
+#else
+        pauseButton.gameObject.setActive(false);
+#endif
+        pausedOverlay.SetActive(false);
+        //dialogueText.SetActive(false);
 
-		paused = dialoguePaused = false;
-		//dialogueTextScript = dialogueText.GetComponent<Text>();
-	}
+        paused = dialoguePaused = false;
+        //dialogueTextScript = dialogueText.GetComponent<Text>();
+    }
 
-	void Update () {
-		// Pause or unpause
-		if(Input.GetKeyDown(KeyCode.Escape)) {
-			if(paused) {
-				Unpause();
-			} else {
-				Pause();
-			}
-		}
+    void Update()
+    {
+        // Pause or unpause
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            if (paused)
+            {
+                Unpause();
+            }
+            else
+            {
+                Pause();
+            }
+        }
 
-		// End a dialogue
-		if(!paused && dialoguePaused && Input.GetKeyDown(KeyCode.Return)) {
-			DialogueUnpause();
-		}
-	}
-
-
-	public bool GetPaused() {
-		return paused;
-	}
-
-	public void Pause() {
-		paused = true;
-		UpdateTimeScale();
-		AudioListener.pause = true;
-		pausedOverlay.SetActive(true);
-	}
-
-	public void PauseWithoutOverlay() {
-		paused = true;
-		UpdateTimeScale();
-	}
-
-	public void Unpause() {
-		paused = false;
-		UpdateTimeScale();
-		AudioListener.pause = false;
-		pausedOverlay.SetActive(false);
-	}
-
-	public void UnpauseWithoutOverlay() {
-		paused = false;
-		UpdateTimeScale();
-	}
+        // End a dialogue
+        if (!paused && dialoguePaused && Input.GetKeyDown(KeyCode.Return))
+        {
+            DialogueUnpause();
+        }
+    }
 
 
-	public bool GetDialoguePaused() {
-		return dialoguePaused;
-	}
+    public bool GetPaused()
+    {
+        return paused;
+    }
 
-	public void DialoguePause() {
-		dialoguePaused = true;
-		UpdateTimeScale();
-		//dialogueText.SetActive(true);
-	}
+    public void Pause()
+    {
+        paused = true;
+        UpdateTimeScale();
+        AudioListener.pause = true;
+        pausedOverlay.SetActive(true);
+    }
 
-	public void DialogueUnpause() {
-		dialoguePaused = false;
-		UpdateTimeScale();
-		//dialogueText.SetActive(false);
-	}
+    public void PauseWithoutOverlay()
+    {
+        paused = true;
+        UpdateTimeScale();
+    }
 
-	/*
+    public void Unpause()
+    {
+        paused = false;
+        UpdateTimeScale();
+        AudioListener.pause = false;
+        pausedOverlay.SetActive(false);
+    }
+
+    public void UnpauseWithoutOverlay()
+    {
+        paused = false;
+        UpdateTimeScale();
+    }
+
+
+    public bool GetDialoguePaused()
+    {
+        return dialoguePaused;
+    }
+
+    public void DialoguePause()
+    {
+        dialoguePaused = true;
+        UpdateTimeScale();
+        //dialogueText.SetActive(true);
+    }
+
+    public void DialogueUnpause()
+    {
+        dialoguePaused = false;
+        UpdateTimeScale();
+        //dialogueText.SetActive(false);
+    }
+
+    /*
 	 * Displays the specified text as an ingame dialogue.
 	 */
-	public void DisplayDialogue(string s) {
-		if(!dialoguePaused)
-			DialoguePause();
-		//dialogueTextScript.text = s;
-	}
+    public void DisplayDialogue(string s)
+    {
+        if (!dialoguePaused)
+            DialoguePause();
+        //dialogueTextScript.text = s;
+    }
 
 
-	/*
+    /*
 	 * Returns true of any of the 'pause booleans' are true. In other words, the gameplay has been
 	 * paused.
 	 */
-	public bool IsGameplayPaused() {
-		return paused || dialoguePaused;
-	}
+    public bool IsGameplayPaused()
+    {
+        return paused || dialoguePaused;
+    }
 
-	/*
+    /*
 	 * Pauses the time scale if any of the 'pause' booleans are true. Otherwise, unpauses the time scale.
 	 */
-	public void UpdateTimeScale() {
-		if(IsGameplayPaused())
-			Time.timeScale = 0;
-		else
-			Time.timeScale = 1;
-	}
+    public void UpdateTimeScale()
+    {
+        if (IsGameplayPaused())
+            Time.timeScale = 0;
+        else
+            Time.timeScale = 1;
+    }
 
-	public void TitleScreen() {
-		Unpause();
-		SceneManager.LoadScene ("TitleScreen",LoadSceneMode.Single);
-	}
+    public void TitleScreen()
+    {
+        Unpause();
+        LoadingScreen.loadSceneWithScreen("TitleScreen");
+    }
 
-	void OnTriggerEnter2D(Collider2D coll) {
-		if(MemoryHint && coll.gameObject.CompareTag ("FragmentHint")) {
-			MemoryHint.SetBool ("enterHintArea",true);
-		}
-	}
+    void OnTriggerEnter2D(Collider2D coll)
+    {
+        if (MemoryHint && coll.gameObject.CompareTag("FragmentHint"))
+        {
+            MemoryHint.SetBool("enterHintArea", true);
+        }
+    }
 
-	void OnTriggerExit2D(Collider2D coll) {
-		if(MemoryHint && coll.gameObject.CompareTag ("FragmentHint")) {
-			MemoryHint.SetBool ("enterHintArea",false);
-		}
-	}
+    void OnTriggerExit2D(Collider2D coll)
+    {
+        if (MemoryHint && coll.gameObject.CompareTag("FragmentHint"))
+        {
+            MemoryHint.SetBool("enterHintArea", false);
+        }
+    }
 }

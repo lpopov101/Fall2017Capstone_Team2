@@ -20,7 +20,7 @@ public class IntroScript : MonoBehaviour {
 			Debug.Log ("Loading");
 			text.color = Color.red;
 			text.text = "Loading...";
-			SceneManager.LoadScene(nextLevel,LoadSceneMode.Single);
+            LoadingScreen.loadSceneWithScreen(nextLevel);
 		}
 			
 	}

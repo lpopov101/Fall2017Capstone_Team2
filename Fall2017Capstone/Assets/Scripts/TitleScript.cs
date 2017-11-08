@@ -10,7 +10,7 @@ public class TitleScript : MonoBehaviour {
 	public GameObject levelsPanel;
 
 	public void LoadLevel(string scene) {
-		SceneManager.LoadScene (scene,LoadSceneMode.Single);
+        LoadingScreen.loadSceneWithScreen(scene);
 	}
 
 	public void SwitchToPanel(string panel) {

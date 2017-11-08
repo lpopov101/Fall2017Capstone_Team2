@@ -38,3 +38,6 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/TheEnd.unity
     guid: d244ae205ee5adb4c8dcc7e16aab24a3
+  - enabled: 1
+    path: Assets/Scenes/LoadingScreen.unity
+    guid: 94b67c3dd6d13664e8ecf268a9e60b37
