@@ -22,6 +22,10 @@ public class WalkPath : MonoBehaviour {
 
 	private enum Facing {NONE, RIGHT, LEFT};
 
+	bool GetFacingRight() {
+		return !pathInverted;
+	}
+
 	void Start() {
 		rigidBody = GetComponent<Rigidbody2D>();
 		animator = GetComponent<Animator>();
@@ -71,7 +75,7 @@ public class WalkPath : MonoBehaviour {
 			return;
 
 		// Pick which direction to look at
-		bool facingRight = !pathInverted;
+		bool facingRight = GetFacingRight();
 		if(overrideFacing == Facing.RIGHT)
 			facingRight = true;
 		else if(overrideFacing == Facing.LEFT)
@@ -110,5 +114,18 @@ public class WalkPath : MonoBehaviour {
 
 	void StartWalking() {
 		freezeWalking = false;
+	}
+
+	// Called by StunScript
+	void StunByPlayer() {
+		StopWalking();
+		overrideFacing = GetFacingRight() ? Facing.RIGHT : Facing.LEFT;
+		FaceDirection();
+	}
+
+	// Called by StunScript
+	void UnStunByPlayer() {
+		StartWalking();
+		ResetFaceDirection();
 	}
 }

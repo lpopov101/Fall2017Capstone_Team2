@@ -19,15 +19,20 @@ public class OrbeezBehavior : MonoBehaviour {
 	private bool attackLock;
 	private bool charging;
 	private float initialEyeScale;
+	private bool stunned;
 
 	void Start () {
 		player = GameObject.FindGameObjectWithTag("Player");
 		attacking = false;
 		attackLock = false;
 		initialEyeScale = eye.transform.localScale.x;
+		stunned = false;
 	}
 
 	void Update () {
+		if(stunned)
+			return;
+
 		float distance = Vector2.Distance(transform.position, player.transform.position);
 		if(distance < attackRange) {
 			if(!attacking) {
@@ -61,6 +66,9 @@ public class OrbeezBehavior : MonoBehaviour {
 			yield return new WaitForSeconds(chargeTime);
 			charging = false;
 
+			if(!attacking)
+				break;
+
 			for(int i = 0; i < attackCount; i++) {
 				CreateProjectile();
 				yield return new WaitForSeconds(attackOffsetTime);
@@ -78,5 +86,16 @@ public class OrbeezBehavior : MonoBehaviour {
 		float roll = Mathf.Atan2(forward.y, forward.x) * Mathf.Rad2Deg;
 		projectile.transform.rotation = Quaternion.Euler(0, 0, roll - 90);
 		projectile.GetComponent<Rigidbody2D>().velocity = forward * projectileSpeed;
+	}
+
+	// Called by StunScript
+	void StunByPlayer() {
+		stunned = true;
+		attacking = false;
+	}
+
+	// Called by StunScript
+	void UnStunByPlayer() {
+		stunned = false;
 	}
 }

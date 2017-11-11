@@ -31,7 +31,7 @@ public class UIManager : MonoBehaviour
             Pause();
         });
 #else
-        pauseButton.gameObject.setActive(false);
+        pauseButton.gameObject.SetActive(false);
 #endif
         pausedOverlay.SetActive(false);
         //dialogueText.SetActive(false);
