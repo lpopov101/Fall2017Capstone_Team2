@@ -15,6 +15,7 @@ TagManager:
   - MoveHint
   - JumpHint
   - memorydoor
+  - Sound
   layers:
   - Default
   - TransparentFX

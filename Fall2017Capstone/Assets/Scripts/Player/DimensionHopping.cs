@@ -27,7 +27,7 @@ public class DimensionHopping : MonoBehaviour {
 		cameraScript = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<CameraScript>();
 		playerController = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerControllerImproved>();
 		realityMode = true;
-		HardToggleDimension = false;
+		HardToggleDimension = true;
     }
 
     void Update () {
@@ -66,6 +66,11 @@ public class DimensionHopping : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D coll) {
 		//Debug.Log (coll.gameObject.tag);
+
+		if (coll.gameObject.CompareTag ("DimensionHint")) {
+			HardToggleDimension = false;
+		}
+
 		if (coll.gameObject.CompareTag ("ToastTrigger") && !HardToggleDimension) {
 			HardToggleDimension = true;
 			if (realityMode) {
