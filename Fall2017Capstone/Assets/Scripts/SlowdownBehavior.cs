@@ -12,7 +12,7 @@ public class SlowdownBehavior : MonoBehaviour {
 		playerRb = null;
 	}
 
-	void Update () {
+	void FixedUpdate () {
 		if(playerRb) {
 			Vector2 velocity = playerRb.velocity;
 			velocity.x *= slowdownMultiplier;

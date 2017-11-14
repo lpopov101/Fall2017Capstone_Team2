@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Video;
+using UnityEngine.UI;
 
 public class CutSceneScript : MonoBehaviour {
 
@@ -17,6 +18,7 @@ public class CutSceneScript : MonoBehaviour {
 	public ToastScript toast;
 	public AudioClip shutterSound;
 	AudioSource audioSource;
+	public UIMemoryFragments memoryFragmentsPanel;
 
 	void Start()
 	{
@@ -43,9 +45,12 @@ public class CutSceneScript : MonoBehaviour {
 
 	void EndReached(UnityEngine.Video.VideoPlayer vp)
 	{
-		vp.Stop ();
-		UIManager.Instance.UnpauseWithoutOverlay();
-		ShutterAfterMovie();
+		if(vp.clip == cutScene) { // Prevent EndReached from being called by all three memory fragments
+			vp.Stop();
+			UIManager.Instance.UnpauseWithoutOverlay();
+			memoryFragmentsPanel.UpdateUIFragments(count);
+			ShutterAfterMovie();
+		}
 	}
 	
 	// Update is called once per frame
@@ -59,6 +64,7 @@ public class CutSceneScript : MonoBehaviour {
 			PlayerPrefs.Save();
 			videoPlayer.clip = cutScene;
 			UIManager.Instance.PauseWithoutOverlay();
+			memoryFragmentsPanel.HideUIFragments();
 			videoPlayer.Prepare ();
 			videoPlayer.prepareCompleted += VideoPlayer_prepareCompleted;
 			sr.enabled = false;
@@ -94,7 +100,5 @@ public class CutSceneScript : MonoBehaviour {
 
 	public static int getCount() {
 		return count;
-
 	}
-
 }
