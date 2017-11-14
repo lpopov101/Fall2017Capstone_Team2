@@ -6404,12 +6404,12 @@ Prefab:
     - target: {fileID: 224141759155288940, guid: dd09d0d2ec1b18144842dd9912b4300a,
         type: 2}
       propertyPath: m_LocalPosition.x
-      value: 546
+      value: 478
       objectReference: {fileID: 0}
     - target: {fileID: 224141759155288940, guid: dd09d0d2ec1b18144842dd9912b4300a,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: 304.5
+      value: 269
       objectReference: {fileID: 0}
     - target: {fileID: 224141759155288940, guid: dd09d0d2ec1b18144842dd9912b4300a,
         type: 2}
@@ -17736,6 +17736,21 @@ Prefab:
         type: 2}
       propertyPath: stunAnimTime
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114643950352511452, guid: c9abbe07283cf6e4a894d45867dd73a4,
+        type: 2}
+      propertyPath: hasHighJumpAbility
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114007977338940302, guid: c9abbe07283cf6e4a894d45867dd73a4,
+        type: 2}
+      propertyPath: hasDodgeAbility
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114888446604172996, guid: c9abbe07283cf6e4a894d45867dd73a4,
+        type: 2}
+      propertyPath: hasStunAbility
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c9abbe07283cf6e4a894d45867dd73a4, type: 2}

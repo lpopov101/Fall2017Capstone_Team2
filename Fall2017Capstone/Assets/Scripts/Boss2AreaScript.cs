@@ -7,14 +7,16 @@ public class Boss2AreaScript : MonoBehaviour {
 	bool isAttack;
 	public GameObject chemical;
 	public float riseSpeed;
-	public AudioSource bossMusic1;
-	public AudioSource bossMusic2;
-	public AudioSource bossMusic3;
-	public AudioSource bossMusic4;
+	public AudioSource bossMusic;
+	private GameObject sound;
 	// Use this for initialization
 	void Start () {
 		isAttack = false;
 		riseSpeed = 0.5f;
+		sound = GameObject.FindGameObjectWithTag ("Sound");
+		if (sound != null) {
+			sound.SetActive(true);
+		}
 	}
 
 
@@ -28,10 +30,10 @@ public class Boss2AreaScript : MonoBehaviour {
 	}
 
 	void OnTriggerEnter2D(Collider2D coll) {
-		if (coll.gameObject.CompareTag ("Player")) {
+		if (coll.gameObject.CompareTag ("Player") && !bossMusic.isPlaying) {
 			Debug.Log ("Enter boss area. Start boss seq.");
-			GameObject sound = GameObject.FindGameObjectWithTag ("Sound");
-			sound.SetActive (false);
+			sound.SetActive(false);
+			bossMusic.Play ();
 			isAttack = true;
 		}
 	}

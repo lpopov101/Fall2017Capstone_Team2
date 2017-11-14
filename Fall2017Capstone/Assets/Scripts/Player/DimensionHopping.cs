@@ -2,11 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class DimensionHopping : MonoBehaviour {
 
     public Vector3 DimensionOffset;
-	
+	public Scene scene ;
 	public AudioSource streetAudio;
 	public AudioSource clubAudio;
 	public ToastScript toast;
@@ -23,11 +24,15 @@ public class DimensionHopping : MonoBehaviour {
 
     void Start()
     {
+		scene = SceneManager.GetActiveScene();
 		dimHopAudio = GetComponent<AudioSource>();
 		cameraScript = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<CameraScript>();
 		playerController = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerControllerImproved>();
 		realityMode = true;
-		HardToggleDimension = true;
+		if (scene.name.Equals ("NewShell1"))
+			HardToggleDimension = true;
+		else
+			HardToggleDimension = false;
     }
 
     void Update () {
