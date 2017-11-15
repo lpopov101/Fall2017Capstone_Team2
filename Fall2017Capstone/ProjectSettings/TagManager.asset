@@ -16,6 +16,7 @@ TagManager:
   - JumpHint
   - memorydoor
   - Sound
+  - powerup
   layers:
   - Default
   - TransparentFX

@@ -7,6 +7,7 @@ public class CheckpointStartShell2 : CheckpointBehavior {
 	private GameObject player;
 	private DodgeScript dodgeScript;
 	private HighJumpScript highJumpScript;
+	public GameObject gatorp;
 
 	void Awake() {
 		player = GameObject.FindGameObjectWithTag("Player");
@@ -31,5 +32,7 @@ public class CheckpointStartShell2 : CheckpointBehavior {
 		dodgeScript.hasDodgeAbility = true;
 		if(powerup != 0)
 			highJumpScript.hasHighJumpAbility = true;
+		gatorp.SendMessage("checkCollected");
+		
 	}
 }

@@ -5,7 +5,7 @@ using UnityEngine;
 public class DisplayToastScript : MonoBehaviour {
 
 	public ToastScript toast;
-
+	public GameObject powerup;
 	// Use this for initialization
 	void Start () {
 
@@ -54,8 +54,10 @@ public class DisplayToastScript : MonoBehaviour {
 	}
 
 	void checkCollected() {
-		Debug.Log ("mem collected: "+ CutSceneScript.getCount() + " dodge: " + gameObject.GetComponent<DodgeScript>().hasDodgeAbility);
-		if (CutSceneScript.getCount() >= 3 && gameObject.GetComponent<DodgeScript>().hasDodgeAbility) {
+		
+		PowerUpScript pws = powerup.GetComponent<PowerUpScript> ();
+		Debug.Log ("mem collected: "+ CutSceneScript.getCount() + " powerup: " + pws.getSpriteRendererStatus());
+		if (CutSceneScript.getCount() >= 3 && !pws.getSpriteRendererStatus()) {
 			GameObject[] door = GameObject.FindGameObjectsWithTag("memorydoor");
 			foreach (GameObject obj in door) {
 				Destroy (obj);

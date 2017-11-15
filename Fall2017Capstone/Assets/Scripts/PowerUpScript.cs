@@ -16,9 +16,13 @@ public class PowerUpScript : MonoBehaviour
     private DodgeScript dodgeScript;
     private HighJumpScript highJumpScript;
 
+	void Awake() {
+		sr = GetComponent<SpriteRenderer>();
+	}
+
     void Start()
     {
-        sr = GetComponent<SpriteRenderer>();
+        //sr = GetComponent<SpriteRenderer>();
         dodgeScript = gatorp.GetComponent<DodgeScript>();
         highJumpScript = gatorp.GetComponent<HighJumpScript>();
     }
@@ -52,7 +56,6 @@ public class PowerUpScript : MonoBehaviour
                 toaster.ImageToast("dash", 5.0f);
 #endif
                 dodgeScript.hasDodgeAbility = true;
-                gatorp.SendMessage("checkCollected");
             }
             else if (levelName == "Shell2")
             {
@@ -62,6 +65,7 @@ public class PowerUpScript : MonoBehaviour
 
             sr.enabled = false;
             light.enabled = false;
+			gatorp.SendMessage("checkCollected");
         }
     }
 
@@ -70,4 +74,7 @@ public class PowerUpScript : MonoBehaviour
 		yield return new WaitForSeconds (5.0f);
 		text.text = "";
 	}*/
+	public bool getSpriteRendererStatus() {
+		return sr.enabled;
+	}
 }
