@@ -55,9 +55,9 @@ public class DisplayToastScript : MonoBehaviour {
 
 	void checkCollected() {
 		
-		PowerUpScript pws = powerup.GetComponent<PowerUpScript> ();
+		PowerUpScript pws = powerup.GetComponent<PowerUpScript>();
 		Debug.Log ("mem collected: "+ CutSceneScript.getCount() + " powerup: " + pws.getSpriteRendererStatus());
-		if (CutSceneScript.getCount() >= 3 && !pws.getSpriteRendererStatus()) {
+		if (CutSceneScript.getCount() >= 3 && (pws == null || !pws.getSpriteRendererStatus())) {
 			GameObject[] door = GameObject.FindGameObjectsWithTag("memorydoor");
 			foreach (GameObject obj in door) {
 				Destroy (obj);

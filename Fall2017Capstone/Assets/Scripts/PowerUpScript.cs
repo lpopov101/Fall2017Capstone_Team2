@@ -77,4 +77,8 @@ public class PowerUpScript : MonoBehaviour
 	public bool getSpriteRendererStatus() {
 		return sr.enabled;
 	}
+
+	public void setSpriteEnabled(bool enb) {
+		sr.enabled = enb;
+	}
 }

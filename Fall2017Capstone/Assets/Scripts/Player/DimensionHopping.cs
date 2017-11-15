@@ -29,10 +29,10 @@ public class DimensionHopping : MonoBehaviour {
 		cameraScript = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<CameraScript>();
 		playerController = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerControllerImproved>();
 		realityMode = true;
-		if (scene.name.Equals ("NewShell1"))
-			HardToggleDimension = true;
-		else
-			HardToggleDimension = false;
+		//if (scene.name.Equals ("NewShell1"))
+		//	HardToggleDimension = true;
+		//else
+		//	HardToggleDimension = false;
     }
 
     void Update () {

@@ -17,7 +17,7 @@ public class CheckpointBoss2 : CheckpointBehavior {
 	void LoadCheckpoint() {
 		player.transform.position = transform.position;
 
-		CheckpointManagerShell1 manager = CheckpointManager.GetManager<CheckpointManagerShell1>();
+		CheckpointManagerShell2 manager = CheckpointManager.GetManager<CheckpointManagerShell2>();
 		DestroyIfExists(manager.memory1);
 		DestroyIfExists(manager.memory2);
 		DestroyIfExists(manager.memory3);

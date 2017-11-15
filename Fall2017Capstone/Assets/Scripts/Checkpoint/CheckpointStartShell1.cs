@@ -6,6 +6,7 @@ public class CheckpointStartShell1 : CheckpointBehavior {
 
 	private GameObject player;
 	public GameObject gatorp;
+	public PowerUpScript pws;
 	private DodgeScript dodgeScript;
 
 	void Awake() {
@@ -26,10 +27,12 @@ public class CheckpointStartShell1 : CheckpointBehavior {
 		DestroyOnCondition(manager.memory1, memory1);
 		DestroyOnCondition(manager.memory2, memory2);
 		DestroyOnCondition(manager.memory3, memory3);
-		DestroyOnCondition(manager.powerup, powerup);
+		//DestroyOnCondition(manager.powerup, powerup);
 
-		if(powerup != 0)
+		if (powerup != 0) {
 			dodgeScript.hasDodgeAbility = true;
+			pws.setSpriteEnabled(false);
+		}
 
 		gatorp.SendMessage("checkCollected");
 	}

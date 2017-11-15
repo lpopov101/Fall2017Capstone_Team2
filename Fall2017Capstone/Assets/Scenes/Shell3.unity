@@ -11390,6 +11390,11 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b1eac730587f9c84eb40f4c1dc3642e7, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &680041014 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1340948535656654, guid: b1eac730587f9c84eb40f4c1dc3642e7,
+    type: 2}
+  m_PrefabInternal: {fileID: 680041013}
 --- !u!1 &683812890
 GameObject:
   m_ObjectHideFlags: 0
@@ -30313,6 +30318,11 @@ Prefab:
       propertyPath: hasStunAbility
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114635290891139902, guid: c9abbe07283cf6e4a894d45867dd73a4,
+        type: 2}
+      propertyPath: powerup
+      value: 
+      objectReference: {fileID: 680041014}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c9abbe07283cf6e4a894d45867dd73a4, type: 2}
   m_IsPrefabParent: 0

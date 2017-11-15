@@ -8,6 +8,7 @@ public class CheckpointStartShell2 : CheckpointBehavior {
 	private DodgeScript dodgeScript;
 	private HighJumpScript highJumpScript;
 	public GameObject gatorp;
+	public PowerUpScript pws;
 
 	void Awake() {
 		player = GameObject.FindGameObjectWithTag("Player");
@@ -27,11 +28,13 @@ public class CheckpointStartShell2 : CheckpointBehavior {
 		DestroyOnCondition(manager.memory1, memory1);
 		DestroyOnCondition(manager.memory2, memory2);
 		DestroyOnCondition(manager.memory3, memory3);
-		DestroyOnCondition(manager.powerup, powerup);
+		//DestroyOnCondition(manager.powerup, powerup);
 
 		dodgeScript.hasDodgeAbility = true;
-		if(powerup != 0)
+		if (powerup != 0) {
 			highJumpScript.hasHighJumpAbility = true;
+			pws.setSpriteEnabled(false);
+		}
 		gatorp.SendMessage("checkCollected");
 		
 	}
