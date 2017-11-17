@@ -15,6 +15,7 @@ public class PowerUpScript : MonoBehaviour
     private SpriteRenderer sr;
     private DodgeScript dodgeScript;
     private HighJumpScript highJumpScript;
+	private StunScript stunScript;
 
 	void Awake() {
 		sr = GetComponent<SpriteRenderer>();
@@ -25,6 +26,7 @@ public class PowerUpScript : MonoBehaviour
         //sr = GetComponent<SpriteRenderer>();
         dodgeScript = gatorp.GetComponent<DodgeScript>();
         highJumpScript = gatorp.GetComponent<HighJumpScript>();
+		stunScript = gatorp.GetComponent<StunScript>();
     }
 
     void Update()
@@ -48,20 +50,28 @@ public class PowerUpScript : MonoBehaviour
             PlayerPrefs.SetInt("Powerup", 1);
             PlayerPrefs.Save();
 
-            if (levelName == "Shell1")
-            {
+			if(levelName == "Shell1") {
 #if UNITY_ANDROID
                 toaster.AltImageToast("mobiledash", 5.0f);
 #else
-                toaster.ImageToast("dash", 5.0f);
+				toaster.ImageToast("dash", 5.0f);
 #endif
-                dodgeScript.hasDodgeAbility = true;
-            }
-            else if (levelName == "Shell2")
-            {
-                //toaster.ImageToast("high_jump", 5.0f);
-                highJumpScript.hasHighJumpAbility = true;
-            }
+				dodgeScript.hasDodgeAbility = true;
+			} else if(levelName == "Shell2") {
+#if UNITY_ANDROID
+				//toaster.AltImageToast("mobiledoublejump", 5.0f);
+#else
+				toaster.ImageToast("doublejump", 5.0f);
+#endif
+				highJumpScript.hasHighJumpAbility = true;
+			} else if(levelName == "Shell3") {
+#if UNITY_ANDROID
+				//toaster.AltImageToast("mobilestun", 5.0f);
+#else
+				//toaster.ImageToast("stun", 5.0f);
+#endif
+				stunScript.hasStunAbility = true;
+			}
 
             sr.enabled = false;
             light.enabled = false;

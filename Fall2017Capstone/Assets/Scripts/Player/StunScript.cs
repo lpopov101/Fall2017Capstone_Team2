@@ -41,7 +41,7 @@ public class StunScript : MonoBehaviour {
 			stunAnimator.SetBool("stun", false);
 		}
 
-		if(hasStunAbility && gotStun && Input.GetKeyDown(KeyCode.J)) {
+		if(hasStunAbility && gotStun && Input.GetButtonDown("Stun")) {
 			Stun();
 
 			gotStun = false;
