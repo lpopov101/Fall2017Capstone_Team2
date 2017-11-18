@@ -10712,12 +10712,12 @@ Prefab:
     - target: {fileID: 224141759155288940, guid: dd09d0d2ec1b18144842dd9912b4300a,
         type: 2}
       propertyPath: m_LocalPosition.x
-      value: 433.5
+      value: 541
       objectReference: {fileID: 0}
     - target: {fileID: 224141759155288940, guid: dd09d0d2ec1b18144842dd9912b4300a,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: 227
+      value: 304.5
       objectReference: {fileID: 0}
     - target: {fileID: 224141759155288940, guid: dd09d0d2ec1b18144842dd9912b4300a,
         type: 2}
@@ -10806,7 +10806,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1350949647936744, guid: dd09d0d2ec1b18144842dd9912b4300a, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: dd09d0d2ec1b18144842dd9912b4300a, type: 2}
@@ -11381,7 +11381,7 @@ Prefab:
         type: 2}
       propertyPath: toaster
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 607277283}
     - target: {fileID: 114002002318060534, guid: b1eac730587f9c84eb40f4c1dc3642e7,
         type: 2}
       propertyPath: levelName

@@ -54,7 +54,7 @@ public class PowerUpScript : MonoBehaviour
 #if UNITY_ANDROID
                 toaster.AltImageToast("mobiledash", 5.0f);
 #else
-				toaster.ImageToast("dash", 5.0f);
+				toaster.ImageToast("dash_z", 5.0f);
 #endif
 				dodgeScript.hasDodgeAbility = true;
 			} else if(levelName == "Shell2") {
@@ -68,7 +68,7 @@ public class PowerUpScript : MonoBehaviour
 #if UNITY_ANDROID
 				//toaster.AltImageToast("mobilestun", 5.0f);
 #else
-				//toaster.ImageToast("stun", 5.0f);
+				toaster.ImageToast("stun", 5.0f);
 #endif
 				stunScript.hasStunAbility = true;
 			}
