@@ -22,6 +22,7 @@ public class CheckpointBossHands : CheckpointBehavior {
 		DestroyIfExists(manager.memory3);
 		DestroyIfExists(manager.powerup);
 
+		player.SendMessage ("SetHardDimension",false);
 		dodgeScript.hasDodgeAbility = true;
 	}
 }

@@ -28,7 +28,7 @@ public class DisplayToastScript : MonoBehaviour {
 			if( DimensionHint != null)
 				DimensionHint.SetActive (false);
 		} else if (coll.gameObject.CompareTag ("FragmentHint")) {
-			toast.Toast ("Memory Fragment nearby in dissociated dimension.", 4.0f);
+			//toast.Toast ("Memory Fragment nearby in dissociated dimension.", 4.0f);
 		} else if (coll.gameObject.CompareTag ("MoveHint")) {
 #if UNITY_ANDROID
             toast.AltImageToast("mobilemove", 7.0F);

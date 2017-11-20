@@ -89,7 +89,6 @@ public class CutSceneScript : MonoBehaviour {
 	void ShutterAfterMovie() {
 		audioSource.clip = shutterSound;
 		audioSource.Play();
-		toast.Toast (count+"/3 Memory Fragments collected",4.0f);
 		gatorp.SendMessage ("checkCollected");
 	}
 

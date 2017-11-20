@@ -10712,12 +10712,12 @@ Prefab:
     - target: {fileID: 224141759155288940, guid: dd09d0d2ec1b18144842dd9912b4300a,
         type: 2}
       propertyPath: m_LocalPosition.x
-      value: 541
+      value: 375
       objectReference: {fileID: 0}
     - target: {fileID: 224141759155288940, guid: dd09d0d2ec1b18144842dd9912b4300a,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: 304.5
+      value: 211
       objectReference: {fileID: 0}
     - target: {fileID: 224141759155288940, guid: dd09d0d2ec1b18144842dd9912b4300a,
         type: 2}
@@ -23320,6 +23320,7 @@ GameObject:
   - component: {fileID: 1404975298}
   - component: {fileID: 1404975302}
   - component: {fileID: 1404975297}
+  - component: {fileID: 1404975303}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -23433,6 +23434,19 @@ MonoBehaviour:
   smoothTime: 0.14
   target: {fileID: 15020818}
   defaultCameraOffset: {x: 0, y: 2}
+--- !u!114 &1404975303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1404975296}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39a134056b8873a4c9adcf2fd4dd54a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraSize: 8
+  cameraOffset: {x: 0, y: 2}
 --- !u!1 &1406919086
 GameObject:
   m_ObjectHideFlags: 0
