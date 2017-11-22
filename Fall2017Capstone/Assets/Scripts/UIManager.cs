@@ -12,6 +12,9 @@ public class UIManager : MonoBehaviour
     public GameObject pausedOverlay;
     public Button pauseButton;
     public Animator MemoryHint;
+	public GameObject pausePanel;
+	public GameObject optionPanel;
+	public AudioSource buttonClick;
     //public GameObject dialogueText;
 
     bool paused, dialoguePaused;
@@ -70,10 +73,13 @@ public class UIManager : MonoBehaviour
 
     public void Pause()
     {
+		buttonClick.Play ();
         paused = true;
         UpdateTimeScale();
         AudioListener.pause = true;
         pausedOverlay.SetActive(true);
+		pausePanel.SetActive(true);
+		optionPanel.SetActive(false);
     }
 
     public void PauseWithoutOverlay()
@@ -84,6 +90,7 @@ public class UIManager : MonoBehaviour
 
     public void Unpause()
     {
+		buttonClick.Play ();
         paused = false;
         UpdateTimeScale();
         AudioListener.pause = false;
@@ -149,9 +156,23 @@ public class UIManager : MonoBehaviour
 
     public void TitleScreen()
     {
+		buttonClick.Play ();
         Unpause();
         LoadingScreen.loadSceneWithScreen("TitleScreen");
     }
+
+	public void SwitchToPanel(string panel) {
+		buttonClick.Play ();
+		if (panel == "option") {
+			optionPanel.SetActive (panel == "option");
+			pausePanel.SetActive (panel == "pause");
+		} else {
+			optionPanel.SetActive (panel == "option");
+			pausePanel.SetActive (panel == "pause");
+		}
+
+
+	}
 
     void OnTriggerEnter2D(Collider2D coll)
     {
