@@ -22,6 +22,9 @@ public class TouchInput : MonoBehaviour {
     private static float shakeDetectionThreshold = 0.9f*0.9f;
     private static float lastShakeTime = 0F;
 
+    private static float tapJumpThreshold = 0.15F;
+    private static float tapJumpTime = 0F;
+
     private float lowPassFilterFactor;
     private Vector3 lowPassValue;
     // Use this for initialization
@@ -66,6 +69,7 @@ public class TouchInput : MonoBehaviour {
                     {
                         rightTouch = t.fingerId;
                         rightTouchLastPos = t.position;
+                        tapJumpTime = Time.time;
                     }
                 }
                 else if (hPos < Screen.width / 2)
@@ -101,10 +105,6 @@ public class TouchInput : MonoBehaviour {
                 {
                     if(t.phase == TouchPhase.Moved)
                     {
-                        if(t.position.y - rightTouchLastPos.y > (Screen.height/30))
-                        {
-                            Jump = true;
-                        }
                         if(t.position.x - rightTouchLastPos.x > (Screen.width/30))
                         {
                             Horizontal = 1;
@@ -124,6 +124,10 @@ public class TouchInput : MonoBehaviour {
                 if (t.fingerId == rightTouch)
                 {
                     rightTouch = -1;
+                    if(Time.time - tapJumpTime <= tapJumpThreshold)
+                    {
+                        Jump = true;
+                    }
                 }
                 if (t.fingerId == leftTouch)
                 {

@@ -19,6 +19,7 @@ public class CutSceneScript : MonoBehaviour {
 	public AudioClip shutterSound;
 	AudioSource audioSource;
 	public UIMemoryFragments memoryFragmentsPanel;
+    private int curCount = count;
 
 	void Start()
 	{
@@ -55,7 +56,7 @@ public class CutSceneScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-
+        
 	}
 
 	void OnTriggerEnter2D(Collider2D coll) {
@@ -95,7 +96,7 @@ public class CutSceneScript : MonoBehaviour {
 	public static void setCount(int mem1, int mem2, int mem3) {
 		//Debug.Log (mem1 + " " + mem2 + " " + mem3);
 		count = mem1+ mem2+ mem3;
-	}
+    }
 
 	public static int getCount() {
 		return count;

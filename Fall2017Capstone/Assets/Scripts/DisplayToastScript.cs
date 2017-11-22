@@ -40,7 +40,7 @@ public class DisplayToastScript : MonoBehaviour {
 				MoveHint.SetActive (false);
 		} else if (coll.gameObject.CompareTag ("JumpHint")) {
 #if UNITY_ANDROID
-            toast.AltImageToast("mobilejump", 7.0F);
+            toast.AltImageToast("mobilejump_tap", 7.0F);
 #else
             toast.ImageToast ("jump", 7.0f);
 #endif
