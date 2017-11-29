@@ -22,6 +22,7 @@ public class GrievousBehavior : MonoBehaviour {
 	private float targetPointX;
 	private float startCooldownTime;
 	private bool stunned;
+	private bool collidingWithGround;
 
 	void Start () {
 		player = GameObject.FindGameObjectWithTag("Player");
@@ -33,6 +34,7 @@ public class GrievousBehavior : MonoBehaviour {
 		startJumpTime = 0;
 		startCooldownTime = 0;
 		stunned = false;
+		collidingWithGround = false;
 	}
 
 	void Update () {
@@ -62,9 +64,13 @@ public class GrievousBehavior : MonoBehaviour {
 				if(Time.time > startCooldownTime + cooldownTime + preJumpTime) {
 					jumping = true;
 					startJumpTime = Time.time;
-					rigidBody.velocity += Vector2.up * jumpYMultiplier;
-					targetPointX = player.transform.position.x;
-					animator.SetBool("jumping", true);
+
+					//animator.SetBool("jumping", true);
+
+					Vector2 velocity = rigidBody.velocity;
+					velocity.x = (player.transform.position.x - transform.position.x) * jumpXMultiplier;
+					velocity.y = jumpYMultiplier;
+					rigidBody.velocity = velocity;
 				}
 			}
 		}
@@ -75,16 +81,28 @@ public class GrievousBehavior : MonoBehaviour {
 				startCooldownTime = Time.time;
 				animator.SetBool("jumping", false);
 			} else {
-				Vector2 velocity = rigidBody.velocity;
-				float target = (targetPointX + player.transform.position.x) / 2f;
-				velocity.x += (target - transform.position.x) * jumpXMultiplier;
-				rigidBody.velocity = velocity;
+//				Vector2 velocity = rigidBody.velocity;
+//				float target = (targetPointX + player.transform.position.x) / 2f;
+//				velocity.x += (target - transform.position.x) * jumpXMultiplier;
+//				rigidBody.velocity = velocity;
 			}
 		}
 	}
 	
 	bool IsGrounded() {
-		return Physics2D.Raycast(groundPoint.position, -Vector2.up, 0.1f, groundLayer);
+		return collidingWithGround || Physics2D.Raycast(groundPoint.position, -Vector2.up, 0.1f, groundLayer);
+	}
+
+	void OnCollisionEnter2D(Collision2D coll) {
+		if(coll.gameObject.layer == LayerMask.NameToLayer("Ground")) {
+			collidingWithGround = true;
+		}
+	}
+
+	void OnCollisionExit2D(Collision2D coll) {
+		if(coll.gameObject.layer == LayerMask.NameToLayer("Ground")) {
+			collidingWithGround = false;
+		}
 	}
 
 	// Called by StunScript

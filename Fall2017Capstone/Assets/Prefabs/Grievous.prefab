@@ -376,7 +376,7 @@ MonoBehaviour:
     m_Bits: 512
   attackRadius: 7
   jumpYMultiplier: 10
-  jumpXMultiplier: 0.4
+  jumpXMultiplier: 1.8
   preJumpTime: 0.5
   maxJumpTime: 1.4
   cooldownTime: 1
@@ -389,6 +389,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -404,6 +405,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
