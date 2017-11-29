@@ -458,6 +458,9 @@ MonoBehaviour:
   pausedOverlay: {fileID: 0}
   pauseButton: {fileID: 0}
   MemoryHint: {fileID: 0}
+  pausePanel: {fileID: 0}
+  optionPanel: {fileID: 0}
+  buttonClick: {fileID: 0}
 --- !u!114 &114336283201915106
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -484,6 +487,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   toast: {fileID: 0}
+  powerup: {fileID: 0}
 --- !u!114 &114641968725632860
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -554,6 +558,7 @@ MonoBehaviour:
   cooldownTime: 2
   stunRadius: 1.5
   stunTime: 4
+  stunAnimTime: 0.5
   stunnableLayer:
     serializedVersion: 2
     m_Bits: 256
@@ -578,6 +583,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -593,6 +599,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -620,6 +627,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -635,6 +643,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
