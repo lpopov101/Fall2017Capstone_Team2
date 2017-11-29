@@ -1,0 +1,853 @@
+fileFormatVersion: 2
+guid: c15c0f33b0ef4f849bdfadc85afe9465
+timeCreated: 1511991083
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: prologue_fan_sprite_0
+    21300002: prologue_fan_sprite_1
+    21300004: prologue_fan_sprite_2
+    21300006: prologue_fan_sprite_3
+    21300008: prologue_fan_sprite_4
+    21300010: prologue_fan_sprite_5
+    21300012: prologue_fan_sprite_6
+    21300014: prologue_fan_sprite_7
+    21300016: prologue_fan_sprite_8
+    21300018: prologue_fan_sprite_9
+    21300020: prologue_fan_sprite_10
+    21300022: prologue_fan_sprite_11
+    21300024: prologue_fan_sprite_12
+    21300026: prologue_fan_sprite_13
+    21300028: prologue_fan_sprite_14
+    21300030: prologue_fan_sprite_15
+    21300032: prologue_fan_sprite_16
+    21300034: prologue_fan_sprite_17
+    21300036: prologue_fan_sprite_18
+    21300038: prologue_fan_sprite_19
+    21300040: prologue_fan_sprite_20
+    21300042: prologue_fan_sprite_21
+    21300044: prologue_fan_sprite_22
+    21300046: prologue_fan_sprite_23
+    21300048: prologue_fan_sprite_24
+    21300050: prologue_fan_sprite_25
+    21300052: prologue_fan_sprite_26
+    21300054: prologue_fan_sprite_27
+    21300056: prologue_fan_sprite_28
+    21300058: prologue_fan_sprite_29
+    21300060: prologue_fan_sprite_30
+    21300062: prologue_fan_sprite_31
+    21300064: prologue_fan_sprite_32
+    21300066: prologue_fan_sprite_33
+    21300068: prologue_fan_sprite_34
+    21300070: prologue_fan_sprite_35
+    21300072: prologue_fan_sprite_36
+    21300074: prologue_fan_sprite_37
+    21300076: prologue_fan_sprite_38
+    21300078: prologue_fan_sprite_39
+    21300080: prologue_fan_sprite_40
+    21300082: prologue_fan_sprite_41
+    21300084: prologue_fan_sprite_42
+    21300086: prologue_fan_sprite_43
+    21300088: prologue_fan_sprite_44
+    21300090: prologue_fan_sprite_45
+    21300092: prologue_fan_sprite_46
+    21300094: prologue_fan_sprite_47
+    21300096: prologue_fan_sprite_48
+    21300098: prologue_fan_sprite_49
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: prologue_fan_sprite_0
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 889
+        width: 385
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_fan_sprite_1
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 889
+        width: 385
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_fan_sprite_2
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 889
+        width: 386
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_fan_sprite_3
+      rect:
+        serializedVersion: 2
+        x: 1307
+        y: 889
+        width: 388
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_fan_sprite_4
+      rect:
+        serializedVersion: 2
+        x: 1735
+        y: 889
+        width: 388
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_fan_sprite_5
+      rect:
+        serializedVersion: 2
+        x: 2164
+        y: 889
+        width: 388
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_fan_sprite_6
+      rect:
+        serializedVersion: 2
+        x: 2592
+        y: 889
+        width: 389
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_fan_sprite_7
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 765
+        width: 388
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_fan_sprite_8
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 765
+        width: 387
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_fan_sprite_9
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 765
+        width: 386
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_fan_sprite_10
+      rect:
+        serializedVersion: 2
+        x: 1309
+        y: 765
+        width: 385
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_fan_sprite_11
+      rect:
+        serializedVersion: 2
+        x: 1738
+        y: 765
+        width: 384
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_fan_sprite_12
+      rect:
+        serializedVersion: 2
+        x: 2169
+        y: 765
+        width: 379
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_fan_sprite_13
+      rect:
+        serializedVersion: 2
+        x: 2598
+        y: 765
+        width: 378
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_fan_sprite_14
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 639
+        width: 374
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_fan_sprite_15
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 639
+        width: 372
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_fan_sprite_16
+      rect:
+        serializedVersion: 2
+        x: 890
+        y: 639
+        width: 366
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_fan_sprite_17
+      rect:
+        serializedVersion: 2
+        x: 1321
+        y: 639
+        width: 361
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_fan_sprite_18
+      rect:
+        serializedVersion: 2
+        x: 1751
+        y: 639
+        width: 359
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_fan_sprite_19
+      rect:
+        serializedVersion: 2
+        x: 2182
+        y: 639
+        width: 354
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_fan_sprite_20
+      rect:
+        serializedVersion: 2
+        x: 2614
+        y: 639
+        width: 347
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_fan_sprite_21
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 515
+        width: 342
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_fan_sprite_22
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 515
+        width: 337
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_fan_sprite_23
+      rect:
+        serializedVersion: 2
+        x: 907
+        y: 515
+        width: 333
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_fan_sprite_24
+      rect:
+        serializedVersion: 2
+        x: 1341
+        y: 515
+        width: 322
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_fan_sprite_25
+      rect:
+        serializedVersion: 2
+        x: 1773
+        y: 515
+        width: 315
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_fan_sprite_26
+      rect:
+        serializedVersion: 2
+        x: 2199
+        y: 515
+        width: 320
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_fan_sprite_27
+      rect:
+        serializedVersion: 2
+        x: 2626
+        y: 515
+        width: 325
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_fan_sprite_28
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 389
+        width: 336
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_fan_sprite_29
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 389
+        width: 340
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_fan_sprite_30
+      rect:
+        serializedVersion: 2
+        x: 902
+        y: 389
+        width: 344
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_fan_sprite_31
+      rect:
+        serializedVersion: 2
+        x: 1328
+        y: 389
+        width: 349
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_fan_sprite_32
+      rect:
+        serializedVersion: 2
+        x: 1753
+        y: 389
+        width: 357
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_fan_sprite_33
+      rect:
+        serializedVersion: 2
+        x: 2179
+        y: 389
+        width: 362
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_fan_sprite_34
+      rect:
+        serializedVersion: 2
+        x: 2607
+        y: 389
+        width: 364
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_fan_sprite_35
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 264
+        width: 368
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_fan_sprite_36
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 264
+        width: 374
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_fan_sprite_37
+      rect:
+        serializedVersion: 2
+        x: 886
+        y: 264
+        width: 377
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_fan_sprite_38
+      rect:
+        serializedVersion: 2
+        x: 1313
+        y: 264
+        width: 380
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_fan_sprite_39
+      rect:
+        serializedVersion: 2
+        x: 1741
+        y: 264
+        width: 381
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_fan_sprite_40
+      rect:
+        serializedVersion: 2
+        x: 2169
+        y: 264
+        width: 383
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_fan_sprite_41
+      rect:
+        serializedVersion: 2
+        x: 2596
+        y: 264
+        width: 386
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_fan_sprite_42
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 140
+        width: 387
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_fan_sprite_43
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 140
+        width: 388
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_fan_sprite_44
+      rect:
+        serializedVersion: 2
+        x: 881
+        y: 140
+        width: 388
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_fan_sprite_45
+      rect:
+        serializedVersion: 2
+        x: 1309
+        y: 140
+        width: 389
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_fan_sprite_46
+      rect:
+        serializedVersion: 2
+        x: 1738
+        y: 140
+        width: 388
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_fan_sprite_47
+      rect:
+        serializedVersion: 2
+        x: 2167
+        y: 140
+        width: 388
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_fan_sprite_48
+      rect:
+        serializedVersion: 2
+        x: 2596
+        y: 140
+        width: 387
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_fan_sprite_49
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 14
+        width: 385
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
