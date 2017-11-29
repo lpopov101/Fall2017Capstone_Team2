@@ -1240,12 +1240,12 @@ Prefab:
     - target: {fileID: 224141759155288940, guid: dd09d0d2ec1b18144842dd9912b4300a,
         type: 2}
       propertyPath: m_LocalPosition.x
-      value: 781.5
+      value: 541
       objectReference: {fileID: 0}
     - target: {fileID: 224141759155288940, guid: dd09d0d2ec1b18144842dd9912b4300a,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: 327
+      value: 303.5
       objectReference: {fileID: 0}
     - target: {fileID: 224141759155288940, guid: dd09d0d2ec1b18144842dd9912b4300a,
         type: 2}
@@ -1574,7 +1574,6 @@ GameObject:
   - component: {fileID: 916122158}
   - component: {fileID: 916122157}
   - component: {fileID: 916122156}
-  - component: {fileID: 916122155}
   - component: {fileID: 916122159}
   - component: {fileID: 916122160}
   - component: {fileID: 916122161}
@@ -1585,13 +1584,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &916122155
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 916122154}
-  m_Enabled: 1
 --- !u!124 &916122156
 Behaviour:
   m_ObjectHideFlags: 0
@@ -3585,12 +3577,12 @@ Prefab:
     - target: {fileID: 224239655808442312, guid: 8537da2eaab6d5243b65725f86031b91,
         type: 2}
       propertyPath: m_LocalPosition.x
-      value: 728.06366
+      value: 487.56366
       objectReference: {fileID: 0}
     - target: {fileID: 224239655808442312, guid: 8537da2eaab6d5243b65725f86031b91,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: 323.7
+      value: 300.2
       objectReference: {fileID: 0}
     - target: {fileID: 1612337174604460, guid: 8537da2eaab6d5243b65725f86031b91, type: 2}
       propertyPath: m_Name
