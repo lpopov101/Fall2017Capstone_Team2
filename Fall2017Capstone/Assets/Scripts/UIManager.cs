@@ -175,10 +175,7 @@ public class UIManager : MonoBehaviour
 
 
 	}
-
-	public void MuteAll (bool isMute) {
 		
-	}
 
     void OnTriggerEnter2D(Collider2D coll)
     {
@@ -187,12 +184,6 @@ public class UIManager : MonoBehaviour
             MemoryHint.SetBool("enterHintArea", true);
         }
     }
-
-	void OnValueChanged(bool ev) {
-		Debug.Log (ev);
-		AudioListener audioListener = Gatorp.GetComponent<AudioListener>();
-		audioListener.enabled = ev;
-	}
 
     void OnTriggerExit2D(Collider2D coll)
     {
