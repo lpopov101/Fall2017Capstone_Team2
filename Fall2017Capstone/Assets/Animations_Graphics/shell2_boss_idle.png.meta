@@ -1,0 +1,418 @@
+fileFormatVersion: 2
+guid: 9db41f74762e53546ad9a7dc3a6fcf9a
+timeCreated: 1511923828
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: shell2_boss_idle_0
+    21300002: shell2_boss_idle_1
+    21300004: shell2_boss_idle_2
+    21300006: shell2_boss_idle_3
+    21300008: shell2_boss_idle_4
+    21300010: shell2_boss_idle_5
+    21300012: shell2_boss_idle_6
+    21300014: shell2_boss_idle_7
+    21300016: shell2_boss_idle_8
+    21300018: shell2_boss_idle_9
+    21300020: shell2_boss_idle_10
+    21300022: shell2_boss_idle_11
+    21300024: shell2_boss_idle_12
+    21300026: shell2_boss_idle_13
+    21300028: shell2_boss_idle_14
+    21300030: shell2_boss_idle_15
+    21300032: shell2_boss_idle_16
+    21300034: shell2_boss_idle_17
+    21300036: shell2_boss_idle_18
+    21300038: shell2_boss_idle_19
+    21300040: shell2_boss_idle_20
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: shell2_boss_idle_0
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 10558
+        width: 1404
+        height: 1510
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: shell2_boss_idle_1
+      rect:
+        serializedVersion: 2
+        x: 2392
+        y: 10539
+        width: 1410
+        height: 1536
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: shell2_boss_idle_2
+      rect:
+        serializedVersion: 2
+        x: 4428
+        y: 10485
+        width: 1426
+        height: 1590
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: shell2_boss_idle_3
+      rect:
+        serializedVersion: 2
+        x: 6473
+        y: 10431
+        width: 1434
+        height: 1638
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: shell2_boss_idle_4
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 8343
+        width: 1446
+        height: 1692
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: shell2_boss_idle_5
+      rect:
+        serializedVersion: 2
+        x: 2368
+        y: 8307
+        width: 1450
+        height: 1738
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: shell2_boss_idle_6
+      rect:
+        serializedVersion: 2
+        x: 4414
+        y: 8277
+        width: 1470
+        height: 1782
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: shell2_boss_idle_7
+      rect:
+        serializedVersion: 2
+        x: 6461
+        y: 8271
+        width: 1464
+        height: 1776
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: shell2_boss_idle_8
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 6213
+        width: 1469
+        height: 1794
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: shell2_boss_idle_9
+      rect:
+        serializedVersion: 2
+        x: 2362
+        y: 6219
+        width: 1482
+        height: 1812
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: shell2_boss_idle_10
+      rect:
+        serializedVersion: 2
+        x: 4408
+        y: 6208
+        width: 1488
+        height: 1823
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: shell2_boss_idle_11
+      rect:
+        serializedVersion: 2
+        x: 6461
+        y: 6207
+        width: 1492
+        height: 1818
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: shell2_boss_idle_12
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 4179
+        width: 1482
+        height: 1806
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: shell2_boss_idle_13
+      rect:
+        serializedVersion: 2
+        x: 2368
+        y: 4197
+        width: 1470
+        height: 1776
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: shell2_boss_idle_14
+      rect:
+        serializedVersion: 2
+        x: 4420
+        y: 4227
+        width: 1458
+        height: 1746
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: shell2_boss_idle_15
+      rect:
+        serializedVersion: 2
+        x: 6479
+        y: 4257
+        width: 1451
+        height: 1710
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: shell2_boss_idle_16
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 2229
+        width: 1440
+        height: 1680
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: shell2_boss_idle_17
+      rect:
+        serializedVersion: 2
+        x: 2392
+        y: 2254
+        width: 1432
+        height: 1649
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: shell2_boss_idle_18
+      rect:
+        serializedVersion: 2
+        x: 4439
+        y: 2287
+        width: 1427
+        height: 1612
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: shell2_boss_idle_19
+      rect:
+        serializedVersion: 2
+        x: 6485
+        y: 2313
+        width: 1416
+        height: 1578
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: shell2_boss_idle_20
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 291
+        width: 1415
+        height: 1542
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -8419,6 +8419,11 @@ Prefab:
       propertyPath: memoryFragmentsPanel
       value: 
       objectReference: {fileID: 157997332}
+    - target: {fileID: 114395781944809606, guid: 88af4c097e904e14588b7d516f3db7c4,
+        type: 2}
+      propertyPath: message
+      value: I shouldn't keep this down anymore.
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 88af4c097e904e14588b7d516f3db7c4, type: 2}
   m_IsPrefabParent: 0
@@ -18959,6 +18964,11 @@ Prefab:
       propertyPath: memoryFragmentsPanel
       value: 
       objectReference: {fileID: 157997332}
+    - target: {fileID: 114395781944809606, guid: 88af4c097e904e14588b7d516f3db7c4,
+        type: 2}
+      propertyPath: message
+      value: I need to rise above it.
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 88af4c097e904e14588b7d516f3db7c4, type: 2}
   m_IsPrefabParent: 0
@@ -22586,6 +22596,11 @@ Prefab:
       propertyPath: memoryFragmentsPanel
       value: 
       objectReference: {fileID: 157997332}
+    - target: {fileID: 114395781944809606, guid: 88af4c097e904e14588b7d516f3db7c4,
+        type: 2}
+      propertyPath: message
+      value: But it's way too much.
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 88af4c097e904e14588b7d516f3db7c4, type: 2}
   m_IsPrefabParent: 0
@@ -26456,6 +26471,16 @@ Prefab:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114092746237446152, guid: 8537da2eaab6d5243b65725f86031b91,
+        type: 2}
+      propertyPath: Gatorp
+      value: 
+      objectReference: {fileID: 933032200}
+    - target: {fileID: 114092746237446152, guid: 8537da2eaab6d5243b65725f86031b91,
+        type: 2}
+      propertyPath: bgm
+      value: 
+      objectReference: {fileID: 1978908530}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8537da2eaab6d5243b65725f86031b91, type: 2}
   m_IsPrefabParent: 0

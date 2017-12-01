@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
@@ -15,6 +16,7 @@ public class UIManager : MonoBehaviour
 	public GameObject pausePanel;
 	public GameObject optionPanel;
 	public AudioSource buttonClick;
+	public GameObject Gatorp;
     //public GameObject dialogueText;
 
     bool paused, dialoguePaused;
@@ -174,6 +176,10 @@ public class UIManager : MonoBehaviour
 
 	}
 
+	public void MuteAll (bool isMute) {
+		
+	}
+
     void OnTriggerEnter2D(Collider2D coll)
     {
         if (MemoryHint && coll.gameObject.CompareTag("FragmentHint"))
@@ -181,6 +187,12 @@ public class UIManager : MonoBehaviour
             MemoryHint.SetBool("enterHintArea", true);
         }
     }
+
+	void OnValueChanged(bool ev) {
+		Debug.Log (ev);
+		AudioListener audioListener = Gatorp.GetComponent<AudioListener>();
+		audioListener.enabled = ev;
+	}
 
     void OnTriggerExit2D(Collider2D coll)
     {

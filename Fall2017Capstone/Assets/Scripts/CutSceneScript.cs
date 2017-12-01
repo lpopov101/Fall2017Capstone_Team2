@@ -20,6 +20,7 @@ public class CutSceneScript : MonoBehaviour {
 	AudioSource audioSource;
 	public UIMemoryFragments memoryFragmentsPanel;
     private int curCount = count;
+	public string message;
 
 	void Start()
 	{
@@ -90,6 +91,7 @@ public class CutSceneScript : MonoBehaviour {
 	void ShutterAfterMovie() {
 		audioSource.clip = shutterSound;
 		audioSource.Play();
+		toast.Toast (message, 8.0f);
 		gatorp.SendMessage ("checkCollected");
 	}
 
