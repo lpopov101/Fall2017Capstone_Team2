@@ -33,7 +33,8 @@ public class Boss2AreaScript : MonoBehaviour {
 		if (coll.gameObject.CompareTag ("Player") && !bossMusic.isPlaying) {
 			Debug.Log ("Enter boss area. Start boss seq.");
 			sound.SetActive(false);
-			bossMusic.Play ();
+			if( bossMusic != null)
+				bossMusic.Play ();
 			isAttack = true;
 		}
 	}

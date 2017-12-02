@@ -10918,12 +10918,12 @@ Prefab:
     - target: {fileID: 224141759155288940, guid: dd09d0d2ec1b18144842dd9912b4300a,
         type: 2}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 361
       objectReference: {fileID: 0}
     - target: {fileID: 224141759155288940, guid: dd09d0d2ec1b18144842dd9912b4300a,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 203
       objectReference: {fileID: 0}
     - target: {fileID: 224141759155288940, guid: dd09d0d2ec1b18144842dd9912b4300a,
         type: 2}
@@ -11012,7 +11012,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1350949647936744, guid: dd09d0d2ec1b18144842dd9912b4300a, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 224607552350914612, guid: dd09d0d2ec1b18144842dd9912b4300a,
         type: 2}
@@ -11029,6 +11029,11 @@ Prefab:
       propertyPath: m_LocalPosition.y
       value: 493.8233
       objectReference: {fileID: 0}
+    - target: {fileID: 114128526654536902, guid: dd09d0d2ec1b18144842dd9912b4300a,
+        type: 2}
+      propertyPath: gatorp
+      value: 
+      objectReference: {fileID: 933032200}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: dd09d0d2ec1b18144842dd9912b4300a, type: 2}
   m_IsPrefabParent: 0
@@ -11044,6 +11049,11 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 607277281}
   m_Script: {fileID: 11500000, guid: e8d432c69e8211d46bcdb8e5fa2f8f7b, type: 3}
+--- !u!1 &607277284 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1881007487241364, guid: dd09d0d2ec1b18144842dd9912b4300a,
+    type: 2}
+  m_PrefabInternal: {fileID: 607277281}
 --- !u!1 &609729470
 GameObject:
   m_ObjectHideFlags: 0
@@ -11608,6 +11618,11 @@ Prefab:
       propertyPath: levelName
       value: Shell3
       objectReference: {fileID: 0}
+    - target: {fileID: 114002002318060534, guid: b1eac730587f9c84eb40f4c1dc3642e7,
+        type: 2}
+      propertyPath: PowerUpUI
+      value: 
+      objectReference: {fileID: 607277284}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b1eac730587f9c84eb40f4c1dc3642e7, type: 2}
   m_IsPrefabParent: 0

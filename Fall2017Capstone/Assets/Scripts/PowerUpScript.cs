@@ -8,6 +8,7 @@ public class PowerUpScript : MonoBehaviour
 
     public string levelName;
     public GameObject gatorp;
+	public GameObject PowerUpUI;
     //public Text text;
     public ToastScript toaster;
     public Light light;
@@ -56,6 +57,7 @@ public class PowerUpScript : MonoBehaviour
 #else
 				toaster.ImageToast("dash_z", 5.0f);
 #endif
+				PowerUpUI.SendMessage("Update");
 				dodgeScript.hasDodgeAbility = true;
 			} else if(levelName == "Shell2") {
 #if UNITY_ANDROID
@@ -63,6 +65,7 @@ public class PowerUpScript : MonoBehaviour
 #else
 				toaster.ImageToast("doublejump", 5.0f);
 #endif
+				PowerUpUI.SendMessage("Update");
 				highJumpScript.hasHighJumpAbility = true;
 			} else if(levelName == "Shell3") {
 #if UNITY_ANDROID
@@ -70,6 +73,7 @@ public class PowerUpScript : MonoBehaviour
 #else
 				toaster.ImageToast("stun", 5.0f);
 #endif
+				PowerUpUI.SendMessage("Update");
 				stunScript.hasStunAbility = true;
 			}
 
