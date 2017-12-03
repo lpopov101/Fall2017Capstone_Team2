@@ -21,9 +21,9 @@ GameObject:
   - component: {fileID: 4152130539783214}
   - component: {fileID: 58380861143932044}
   - component: {fileID: 50549388370156280}
-  - component: {fileID: 114628194919686760}
   - component: {fileID: 212825585676060864}
   - component: {fileID: 95356589275263340}
+  - component: {fileID: 114628194919686760}
   m_Layer: 10
   m_Name: Spitball
   m_TagString: Monster
@@ -121,6 +121,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -136,6 +137,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5

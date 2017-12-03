@@ -10,10 +10,18 @@ public class Shell3BossBehavior : MonoBehaviour {
 	public string nextLevel;
 	public float randomMovementMultiplier;
 	public float idleTime;
-	public float teleportTime;
+	//public float teleportTime;
 	public float attack1Time;
 	public float attack2Time;
 	public float attack3Time;
+	public float disappearDuration;
+	public float reappearDuration;
+	public float attack1SpawnTime;
+	public float attack1ShootTime;
+	public float attack2StartTime;
+	public float attack2ShotOffsetTime;
+	public float attack3SpawnTime;
+	public float attack3ShootTime;
 	public float maxXDistanceFromPlayer;
 	public float teleportMinX;
 	public float teleportMaxX;
@@ -39,16 +47,31 @@ public class Shell3BossBehavior : MonoBehaviour {
 	private bool stunned;
 	private int stunTeleportCount;
 	private int lives;
+	private Animator animator;
+
+	private bool teleported;
+	private bool attack1Spawned, attack1Shot;
+	private GameObject attack1Projectile;
+	private bool attack3Spawned, attack3Shot;
+	private GameObject attack3Projectile;
 
 	void Start () {
 		player = GameObject.FindGameObjectWithTag("Player");
 		currentAction = Action.IDLE;
 		startActionTime = Time.time;
-		actionDurations = new float[] {idleTime, teleportTime, attack1Time, attack2Time, attack3Time};
 		random = new System.Random();
 		facingRight = true;
 		stunned = false;
 		lives = totalLives;
+		animator = GetComponent<Animator>();
+		teleported = false;
+		attack1Spawned = attack1Shot = false;
+		attack1Projectile = null;
+		attack3Spawned = attack3Shot = false;
+		attack3Projectile = null;
+
+		float teleportTime = disappearDuration + reappearDuration;
+		actionDurations = new float[] {idleTime, teleportTime, attack1Time, attack2Time, attack3Time};
 	}
 
 	void Update () {
@@ -70,7 +93,9 @@ public class Shell3BossBehavior : MonoBehaviour {
 				currentAction = Action.TELEPORT;
 				stunTeleportCount--;
 			}
+
 			startActionTime = Time.time;
+			animator.SetInteger("state", (int)currentAction);
 			StartAction();
 		} else {
 			UpdateAction();
@@ -87,39 +112,82 @@ public class Shell3BossBehavior : MonoBehaviour {
 	}
 
 	public Action GetRandomAction() {
+		//return Action.IDLE;
 		return (Action)random.Next((int)Action._LENGTH);
 	}
 
 	void StartAction() {
 		Debug.Log("Current action: " + currentAction);
 		if(currentAction == Action.TELEPORT) {
-			Vector2 position = player.transform.position;
-			Vector2 offset = new Vector2();
-			offset.x = teleportMinX + (float)random.NextDouble() * (teleportMaxX - teleportMinX);
-			offset.x *= random.Next(2) == 0 ? 1 : -1;
-			offset.y = teleportMinY + (float)random.NextDouble() * (teleportMaxY - teleportMinY);
-
-			transform.position = position + offset;
+			teleported = false;
 		} else if(currentAction == Action.ATTACK1) {
-			GameObject projectile = Instantiate(projectile1Prefab);
-			projectile.transform.position = projectile1Spawn.position;
-			Vector2 forward = (player.transform.position - projectile.transform.position).normalized;
-			projectile.GetComponent<Rigidbody2D>().velocity = forward * projectile1Speed;
+			attack1Spawned = false;
+			attack1Shot = false;
+			attack1Projectile = null;
 		} else if(currentAction == Action.ATTACK2) {
 			StartCoroutine(DoAttack2());
 		} else if(currentAction == Action.ATTACK3) {
-			GameObject projectile = Instantiate(projectile3Prefab);
-			projectile.transform.position = projectile3Spawn.position;
-			Vector2 forward = (player.transform.position - projectile.transform.position).normalized;
-			projectile.GetComponent<Rigidbody2D>().velocity = forward * projectile3Speed;
+			attack3Spawned = false;
+			attack3Shot = false;
+			attack3Projectile = null;
 		}
 	}
 
 	void UpdateAction() {
-		
+		if(currentAction == Action.TELEPORT) {
+			if(!teleported && Time.time > startActionTime + disappearDuration) {
+				teleported = true;
+
+				// Teleport
+				Vector2 position = player.transform.position;
+				Vector2 offset = new Vector2();
+				offset.x = teleportMinX + (float)random.NextDouble() * (teleportMaxX - teleportMinX);
+				offset.x *= random.Next(2) == 0 ? 1 : -1;
+				offset.y = teleportMinY + (float)random.NextDouble() * (teleportMaxY - teleportMinY);
+
+				transform.position = position + offset;
+			}
+		} else if(currentAction == Action.ATTACK1) {
+			if(!attack1Spawned && Time.time > startActionTime + attack1SpawnTime) {
+				attack1Spawned = true;
+
+				// Create projectile
+				attack1Projectile = Instantiate(projectile1Prefab);
+				attack1Projectile.transform.position = projectile1Spawn.position;
+			}
+			if(attack1Spawned && Time.time > startActionTime + attack1SpawnTime && Time.time < attack1ShootTime) {
+				// Freeze projectile
+				attack1Projectile.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+			}
+			if(!attack1Shot && attack1Spawned && Time.time > startActionTime + attack1ShootTime) {
+				attack1Shot = true;
+
+				// Shoot projectile
+				Vector2 forward = (player.transform.position - attack1Projectile.transform.position).normalized;
+				attack1Projectile.GetComponent<Rigidbody2D>().velocity = forward * projectile1Speed;
+			}
+		} else if(currentAction == Action.ATTACK3) {
+			if(!attack3Spawned && Time.time > startActionTime + attack3SpawnTime) {
+				attack3Spawned = true;
+
+				attack3Projectile = Instantiate(projectile3Prefab);
+				attack3Projectile.transform.position = projectile3Spawn.position;
+			}
+			if(attack3Spawned && Time.time > startActionTime + attack3SpawnTime && Time.time < attack3ShootTime) {
+				attack3Projectile.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+			}
+			if(!attack3Shot && Time.time > startActionTime + attack3ShootTime) {
+				attack3Shot = true;
+
+				Vector2 forward = (player.transform.position - attack3Projectile.transform.position).normalized;
+				attack3Projectile.GetComponent<Rigidbody2D>().velocity = forward * projectile3Speed;
+			}
+		}
 	}
 
 	IEnumerator DoAttack2() {
+		yield return new WaitForSeconds(attack2StartTime);
+
 		Vector2 forward = (player.transform.position - transform.position).normalized;
 		float roll = Mathf.Atan2(forward.y, forward.x) * Mathf.Rad2Deg;
 		if(facingRight)
@@ -135,8 +203,8 @@ public class Shell3BossBehavior : MonoBehaviour {
 			projectile.transform.rotation = Quaternion.Euler(0, 0, rollP - 90);
 			projectile.GetComponent<Rigidbody2D>().velocity = forwardP * projectile2Speed;
 
-			yield return new WaitForSeconds(0.2f);
-			projectile2Anchor.Rotate(0, 0, 15f);
+			yield return new WaitForSeconds(attack2ShotOffsetTime);
+			projectile2Anchor.Rotate(0, 0, 18f);
 			if(stunned)
 				break;
 		}
@@ -146,13 +214,23 @@ public class Shell3BossBehavior : MonoBehaviour {
 	void StunByPlayer() {
 		Debug.Log("Stunned");
 		stunned = true;
+		stunTeleportCount = 3;
+
+		if(attack1Projectile)
+			Destroy(attack1Projectile);
+		if(attack3Projectile)
+			Destroy(attack3Projectile);
+
+		// Decrement remaining lives
 		lives--;
 		if(lives <= 0)
 			LoadingScreen.loadSceneWithScreen(nextLevel);
-		stunTeleportCount = 4;
+
+		// Teleport away
 		currentAction = Action.TELEPORT;
 		stunTeleportCount--;
 		startActionTime = Time.time;
+		animator.SetInteger("state", (int)currentAction);
 		StartAction();
 	}
 

@@ -116,7 +116,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1931093425769270}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.7, y: 6.8, z: 0}
+  m_LocalPosition: {x: -0.11, y: 13.23, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4649229842245792}
@@ -142,7 +142,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1125004784104562}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.96, y: 0, z: 0}
+  m_LocalPosition: {x: 5.59, y: 1.64, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4649229842245792}
@@ -185,7 +185,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1508302983655164}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.78, z: 0}
+  m_LocalPosition: {x: 0, y: 1.6, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4674118180232690}
@@ -297,10 +297,17 @@ MonoBehaviour:
   nextLevel: Core
   randomMovementMultiplier: 0.02
   idleTime: 2
-  teleportTime: 0.5
-  attack1Time: 2
-  attack2Time: 2
-  attack3Time: 3
+  attack1Time: 2.0835
+  attack2Time: 2.0835
+  attack3Time: 2.7915
+  disappearDuration: 0.6665
+  reappearDuration: 0.625
+  attack1SpawnTime: 0.3
+  attack1ShootTime: 1.1
+  attack2StartTime: 0.4
+  attack2ShotOffsetTime: 0.08
+  attack3SpawnTime: 0.4
+  attack3ShootTime: 1.35
   maxXDistanceFromPlayer: 10
   teleportMinX: 1.5
   teleportMaxX: 8
@@ -309,16 +316,16 @@ MonoBehaviour:
   projectile1Prefab: {fileID: 1684969027958618, guid: 1a86cf713d5458c468224ecd1ae447c7,
     type: 2}
   projectile1Spawn: {fileID: 4513951775525992}
-  projectile1Speed: 8
+  projectile1Speed: 9
   projectile2Prefab: {fileID: 1166935890504262, guid: 821bf8988a24ca442aed4e656323c01d,
     type: 2}
   projectile2Anchor: {fileID: 4786968915786960}
   projectile2Spawn: {fileID: 4674118180232690}
-  projectile2Speed: 5
+  projectile2Speed: 5.5
   projectile3Prefab: {fileID: 1007997052463528, guid: 5b88934e90d072046bd9913685b9903c,
     type: 2}
   projectile3Spawn: {fileID: 4016047820459978}
-  projectile3Speed: 6.5
+  projectile3Speed: 7
 --- !u!212 &212513518410476642
 SpriteRenderer:
   m_ObjectHideFlags: 1

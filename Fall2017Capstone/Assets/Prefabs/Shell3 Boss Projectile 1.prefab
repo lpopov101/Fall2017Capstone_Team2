@@ -88,7 +88,7 @@ Animator:
   m_GameObject: {fileID: 1684969027958618}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 01d3eb308e873674c97d18c0b99826ee, type: 2}
+  m_Controller: {fileID: 9100000, guid: 1259a8e10dbc1c04bb3c3d240d06c8dd, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -107,6 +107,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6d27b0d24fda334cab91df719d76c67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hasDestroyAnimation: 1
+  destroyAnimDuration: 0.917
+  freezeMotion: 1
 --- !u!212 &212833140706618736
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -141,7 +144,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: fe3f47cc5743adf409fca856250611ac, type: 3}
+  m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -149,5 +152,5 @@ SpriteRenderer:
   m_Size: {x: 10.24, y: 10.24}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
