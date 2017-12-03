@@ -415,6 +415,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hasDodgeAbility: 0
+  dodgeForce: 400
+  dodgeTime: 0.18
   cooldownTime: 1
 --- !u!114 &114093170454257394
 MonoBehaviour:
@@ -461,6 +463,7 @@ MonoBehaviour:
   pausePanel: {fileID: 0}
   optionPanel: {fileID: 0}
   buttonClick: {fileID: 0}
+  Gatorp: {fileID: 0}
 --- !u!114 &114336283201915106
 MonoBehaviour:
   m_ObjectHideFlags: 1

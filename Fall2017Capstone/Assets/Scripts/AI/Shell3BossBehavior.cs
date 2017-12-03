@@ -117,7 +117,7 @@ public class Shell3BossBehavior : MonoBehaviour {
 	}
 
 	void StartAction() {
-		Debug.Log("Current action: " + currentAction);
+		//Debug.Log("Current action: " + currentAction);
 		if(currentAction == Action.TELEPORT) {
 			teleported = false;
 		} else if(currentAction == Action.ATTACK1) {

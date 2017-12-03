@@ -19,8 +19,13 @@ public class CutSceneScript : MonoBehaviour {
 	public AudioClip shutterSound;
 	AudioSource audioSource;
 	public UIMemoryFragments memoryFragmentsPanel;
+	private static UIMemoryFragments MEMORY_FRAGMENTS_PANEL = null;
     private int curCount = count;
 	public string message;
+
+	void Awake() {
+		MEMORY_FRAGMENTS_PANEL = memoryFragmentsPanel; // Always update to the most recent panel
+	}
 
 	void Start()
 	{
@@ -98,6 +103,9 @@ public class CutSceneScript : MonoBehaviour {
 	public static void setCount(int mem1, int mem2, int mem3) {
 		//Debug.Log (mem1 + " " + mem2 + " " + mem3);
 		count = mem1+ mem2+ mem3;
+		if(MEMORY_FRAGMENTS_PANEL != null) {
+			MEMORY_FRAGMENTS_PANEL.UpdateUIFragments(count);
+		}
     }
 
 	public static int getCount() {

@@ -17,16 +17,15 @@ public class UIMemoryFragments : MonoBehaviour {
 	private HighJumpScript highJumpScript;
 	private StunScript stunScript;
 
-	void Start () {
+	void Awake() {
 		animator = fragmentsImage.GetComponent<Animator>();
 
 		dodgeScript = gatorp.GetComponent<DodgeScript>();
 		highJumpScript = gatorp.GetComponent<HighJumpScript>();
 		stunScript = gatorp.GetComponent<StunScript>();
+	}
 
-		// Hide all fragments at first, even the gray ones
-		// Let the gray ones appear when the player collects his/her first fragment
-		HideUIFragments();
+	void Start () {
 		HidePowerUps();
 	}
 
