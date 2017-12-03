@@ -2,7 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CheckpointStartShell3Boss : CheckpointBehavior {
+public class CheckpointFightShell3Boss : CheckpointBehavior {
+
+	public GameObject shell3BossPlaceholder;
+	public GameObject background;
+	public GameObject[] removedPlatforms;
 
 	private GameObject player;
 	private DodgeScript dodgeScript;
@@ -16,9 +20,18 @@ public class CheckpointStartShell3Boss : CheckpointBehavior {
 		stunScript = player.GetComponent<StunScript>();
 	}
 
-	void LoadCheckpoint() {
+	void LoadCheckpoint () {
 		dodgeScript.hasDodgeAbility = true;
 		highJumpScript.hasHighJumpAbility = true;
 		stunScript.hasStunAbility = true;
+
+		player.transform.position = new Vector2(66.624f, 8.035f);
+
+		shell3BossPlaceholder.SendMessage("SpawnBoss");
+		Destroy(shell3BossPlaceholder);
+
+		foreach(GameObject obj in removedPlatforms) {
+			Destroy(obj);
+		}
 	}
 }

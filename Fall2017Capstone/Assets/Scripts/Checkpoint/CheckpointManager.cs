@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class CheckpointManager : MonoBehaviour {
 
-	public static string[] GameScenes = {"NewShell1", "Shell2", "Shell3"};
+	public static string[] GameScenes = {"NewShell1", "Shell2", "Shell3", "Shell3Boss"};
 
 	private static CheckpointManager Instance = null;
 	private static bool FirstInit = true;
@@ -46,6 +46,7 @@ public class CheckpointManager : MonoBehaviour {
 
 	protected void LoadCurrentCheckpoint() {
 		string checkpointName = PlayerPrefs.GetString("Current Checkpoint");
+		Debug.Log("Loading Checkpoint: " + checkpointName);
 		GameObject.Find(checkpointName).SendMessage("LoadCheckpoint");
 	}
 

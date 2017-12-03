@@ -34,21 +34,23 @@ public class DeathBehavior : MonoBehaviour {
 	}
 
 	void OnCollisionEnter2D(Collision2D coll) {
-		if (coll.gameObject.CompareTag("Monster") && !isDead) {
+		if (coll.gameObject.CompareTag("Monster")) {
 			SetDead();
 		}
 	}
 
 	//NEWLy ADDED. FOR CHEMICAL BOSS 2
 	void OnTriggerEnter2D(Collider2D coll) {
-		if (coll.gameObject.CompareTag("Monster") && !isDead) {
+		if (coll.gameObject.CompareTag("Monster")) {
 			SetDead();
 		}
 	}
 
 	public void SetDead() {
-        playerController.gameObject.SendMessage("KillPlayer");
+		if(isDead)
+			return;
 		isDead = true;
+        SendMessage("KillPlayer");
 		StartCoroutine(FadeAndRespawn());
 	}
 

@@ -293,15 +293,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2def18f198eb454f9cd9b8b7a04e707, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  totalLives: 2
+  totalLives: 3
   nextLevel: Core
   randomMovementMultiplier: 0.02
   idleTime: 2
   attack1Time: 2.0835
   attack2Time: 2.0835
   attack3Time: 2.7915
-  disappearDuration: 0.6665
-  reappearDuration: 0.625
+  disappearDuration: 0.625
+  reappearDuration: 0.835
   attack1SpawnTime: 0.3
   attack1ShootTime: 1.1
   attack2StartTime: 0.4

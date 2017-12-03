@@ -48,7 +48,7 @@ public class DisplayToastScript : MonoBehaviour {
 			if( JumpHint != null)
 				JumpHint.SetActive (false);
 		} else if (coll.gameObject.CompareTag ("memorydoor")) {
-			string text = CutSceneScript.getCount() + "/3 Memory Shards Collected. Collect all shards and powerup to advance";
+			string text = CutSceneScript.getCount() + "/3 memory shards collected. Collect all shards and powerup to advance.";
 			toast.Toast (text, 7.0f);
 		} else if (coll.gameObject.CompareTag ("dialogue1")) {
 			toast.Toast ("Too many people. I don't want to be here.", 7.0f);
