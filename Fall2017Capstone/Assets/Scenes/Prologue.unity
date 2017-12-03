@@ -1332,7 +1332,7 @@ Prefab:
     - target: {fileID: 224141759155288940, guid: dd09d0d2ec1b18144842dd9912b4300a,
         type: 2}
       propertyPath: m_LocalPosition.x
-      value: 538
+      value: 539
       objectReference: {fileID: 0}
     - target: {fileID: 224141759155288940, guid: dd09d0d2ec1b18144842dd9912b4300a,
         type: 2}
@@ -2557,6 +2557,11 @@ Prefab:
         type: 2}
       propertyPath: ledgeGrabRange
       value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114888446604172996, guid: c9abbe07283cf6e4a894d45867dd73a4,
+        type: 2}
+      propertyPath: hasStunAbility
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c9abbe07283cf6e4a894d45867dd73a4, type: 2}
@@ -3891,7 +3896,7 @@ Prefab:
     - target: {fileID: 224239655808442312, guid: 8537da2eaab6d5243b65725f86031b91,
         type: 2}
       propertyPath: m_LocalPosition.x
-      value: 484.56366
+      value: 485.56366
       objectReference: {fileID: 0}
     - target: {fileID: 224239655808442312, guid: 8537da2eaab6d5243b65725f86031b91,
         type: 2}
@@ -3940,6 +3945,20 @@ Prefab:
     - target: {fileID: 224286849285722968, guid: 8537da2eaab6d5243b65725f86031b91,
         type: 2}
       propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114182201337502852, guid: 8537da2eaab6d5243b65725f86031b91,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1516417725}
+    - target: {fileID: 114182201337502852, guid: 8537da2eaab6d5243b65725f86031b91,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SwitchToPanel
+      objectReference: {fileID: 0}
+    - target: {fileID: 1612337174604460, guid: 8537da2eaab6d5243b65725f86031b91, type: 2}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

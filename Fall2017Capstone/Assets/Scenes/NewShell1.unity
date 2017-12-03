@@ -725,7 +725,7 @@ MeshRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 54286391}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -1303,7 +1303,7 @@ MeshRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 107235003}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -4881,7 +4881,7 @@ Prefab:
     - target: {fileID: 224497103314187788, guid: b347e44329e0ac440afdec721087a4d3,
         type: 2}
       propertyPath: m_LocalPosition.x
-      value: 539.5
+      value: 539
       objectReference: {fileID: 0}
     - target: {fileID: 224497103314187788, guid: b347e44329e0ac440afdec721087a4d3,
         type: 2}
@@ -6801,7 +6801,7 @@ Prefab:
     - target: {fileID: 224141759155288940, guid: dd09d0d2ec1b18144842dd9912b4300a,
         type: 2}
       propertyPath: m_LocalPosition.x
-      value: 539.5
+      value: 539
       objectReference: {fileID: 0}
     - target: {fileID: 224141759155288940, guid: dd09d0d2ec1b18144842dd9912b4300a,
         type: 2}
@@ -12907,7 +12907,7 @@ Transform:
   - {fileID: 635123330}
   - {fileID: 1735434276}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1300952994
 GameObject:
@@ -20652,7 +20652,7 @@ Transform:
   m_Children:
   - {fileID: 1372238604}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2028107620 stripped
 MonoBehaviour:
@@ -21654,36 +21654,6 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 361484038}
-    - target: {fileID: 114589764930011112, guid: 8537da2eaab6d5243b65725f86031b91,
-        type: 2}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 361484038}
-    - target: {fileID: 114875906199014578, guid: 8537da2eaab6d5243b65725f86031b91,
-        type: 2}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 361484038}
-    - target: {fileID: 224239655808442312, guid: 8537da2eaab6d5243b65725f86031b91,
-        type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 306.56366
-      objectReference: {fileID: 0}
-    - target: {fileID: 224239655808442312, guid: 8537da2eaab6d5243b65725f86031b91,
-        type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 199.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 224434588285880574, guid: 8537da2eaab6d5243b65725f86031b91,
-        type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224286849285722968, guid: 8537da2eaab6d5243b65725f86031b91,
-        type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 114092746237446152, guid: 8537da2eaab6d5243b65725f86031b91,
         type: 2}
       propertyPath: Gatorp
@@ -21694,6 +21664,31 @@ Prefab:
       propertyPath: bgm
       value: 
       objectReference: {fileID: 185463241}
+    - target: {fileID: 114182201337502852, guid: 8537da2eaab6d5243b65725f86031b91,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 361484038}
+    - target: {fileID: 224239655808442312, guid: 8537da2eaab6d5243b65725f86031b91,
+        type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 485.56366
+      objectReference: {fileID: 0}
+    - target: {fileID: 224239655808442312, guid: 8537da2eaab6d5243b65725f86031b91,
+        type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 300.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114875906199014578, guid: 8537da2eaab6d5243b65725f86031b91,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 361484038}
+    - target: {fileID: 114589764930011112, guid: 8537da2eaab6d5243b65725f86031b91,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 361484038}
     - target: {fileID: 1612337174604460, guid: 8537da2eaab6d5243b65725f86031b91, type: 2}
       propertyPath: m_IsActive
       value: 0

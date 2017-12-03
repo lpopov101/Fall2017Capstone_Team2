@@ -12,6 +12,7 @@ public class LoadingScreen : MonoBehaviour {
 
     public static void loadSceneWithScreen(string nextScene)
     {
+		Cursor.visible = true; // Always reset cursor before switching scene
         PlayerPrefs.SetString("nextScene", nextScene);
         SceneManager.LoadScene("LoadingScreen", LoadSceneMode.Single);
     }

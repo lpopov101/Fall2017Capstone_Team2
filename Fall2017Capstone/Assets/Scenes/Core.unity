@@ -1636,22 +1636,22 @@ Prefab:
     - target: {fileID: 224414242546889100, guid: 8537da2eaab6d5243b65725f86031b91,
         type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 224547671242627746, guid: 8537da2eaab6d5243b65725f86031b91,
         type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224239655808442312, guid: 8537da2eaab6d5243b65725f86031b91,
         type: 2}
       propertyPath: m_LocalPosition.x
-      value: 306.56366
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224239655808442312, guid: 8537da2eaab6d5243b65725f86031b91,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: 199.2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224434588285880574, guid: 8537da2eaab6d5243b65725f86031b91,
         type: 2}
@@ -1691,6 +1691,16 @@ Prefab:
       propertyPath: bgm
       value: 
       objectReference: {fileID: 2092905804}
+    - target: {fileID: 114182201337502852, guid: 8537da2eaab6d5243b65725f86031b91,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 726438332}
+    - target: {fileID: 114182201337502852, guid: 8537da2eaab6d5243b65725f86031b91,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SwitchToPanel
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8537da2eaab6d5243b65725f86031b91, type: 2}
   m_IsPrefabParent: 0
@@ -2884,7 +2894,7 @@ Prefab:
     - target: {fileID: 224141759155288940, guid: dd09d0d2ec1b18144842dd9912b4300a,
         type: 2}
       propertyPath: m_LocalPosition.x
-      value: 538
+      value: 539
       objectReference: {fileID: 0}
     - target: {fileID: 224141759155288940, guid: dd09d0d2ec1b18144842dd9912b4300a,
         type: 2}
@@ -3478,7 +3488,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1125592682}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 538, y: 303.5, z: 0}
+  m_LocalPosition: {x: 539, y: 303.5, z: 0}
   m_LocalScale: {x: 0.56203705, y: 0.56203705, z: 0.56203705}
   m_Children:
   - {fileID: 916214018}

@@ -17,10 +17,8 @@ public class UIManager : MonoBehaviour
 	public GameObject optionPanel;
 	public AudioSource buttonClick;
 	public GameObject Gatorp;
-    //public GameObject dialogueText;
 
     bool paused, dialoguePaused;
-    //Text dialogueTextScript;
 
     void Awake()
     {
@@ -39,10 +37,10 @@ public class UIManager : MonoBehaviour
         pauseButton.gameObject.SetActive(false);
 #endif
         pausedOverlay.SetActive(false);
-        //dialogueText.SetActive(false);
 
         paused = dialoguePaused = false;
-        //dialogueTextScript = dialogueText.GetComponent<Text>();
+
+		Cursor.visible = false;
     }
 
     void Update()
@@ -75,6 +73,7 @@ public class UIManager : MonoBehaviour
 
     public void Pause()
     {
+		Cursor.visible = true;
 		buttonClick.Play ();
         paused = true;
         UpdateTimeScale();
@@ -92,6 +91,7 @@ public class UIManager : MonoBehaviour
 
     public void Unpause()
     {
+		Cursor.visible = false;
 		buttonClick.Play ();
         paused = false;
         UpdateTimeScale();
@@ -115,14 +115,12 @@ public class UIManager : MonoBehaviour
     {
         dialoguePaused = true;
         UpdateTimeScale();
-        //dialogueText.SetActive(true);
     }
 
     public void DialogueUnpause()
     {
         dialoguePaused = false;
         UpdateTimeScale();
-        //dialogueText.SetActive(false);
     }
 
     /*
@@ -132,7 +130,6 @@ public class UIManager : MonoBehaviour
     {
         if (!dialoguePaused)
             DialoguePause();
-        //dialogueTextScript.text = s;
     }
 
 
@@ -165,15 +162,8 @@ public class UIManager : MonoBehaviour
 
 	public void SwitchToPanel(string panel) {
 		buttonClick.Play ();
-		if (panel == "option") {
-			optionPanel.SetActive (panel == "option");
-			pausePanel.SetActive (panel == "pause");
-		} else {
-			optionPanel.SetActive (panel == "option");
-			pausePanel.SetActive (panel == "pause");
-		}
-
-
+		optionPanel.SetActive (panel == "option");
+		pausePanel.SetActive (panel == "pause");
 	}
 		
 
