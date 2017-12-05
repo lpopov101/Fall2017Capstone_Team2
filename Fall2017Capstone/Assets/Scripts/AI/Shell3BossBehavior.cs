@@ -4,16 +4,23 @@ using UnityEngine;
 
 public class Shell3BossBehavior : MonoBehaviour {
 
-	public enum Action {IDLE, TELEPORT, ATTACK1, ATTACK2, ATTACK3, _LENGTH} // _LENGTH is used to easily access the number of enum values
+	public enum Action {IDLE, TELEPORT, ATTACK1, ATTACK2, ATTACK3, STUN, STUN_DISAPPEAR, DYING, _LENGTH} // _LENGTH is used to easily access the number of enum values
 
 	public int totalLives;
 	public string nextLevel;
 	public float randomMovementMultiplier;
+	public float dyingMovementMultiplier;
+
+	// Animation times
 	public float idleTime;
 	//public float teleportTime;
 	public float attack1Time;
 	public float attack2Time;
 	public float attack3Time;
+	public float stunTime;
+	public float stunDisappearTime;
+
+	// Fine-tuned animation times
 	public float disappearDuration;
 	public float reappearDuration;
 	public float attack1SpawnTime;
@@ -22,6 +29,8 @@ public class Shell3BossBehavior : MonoBehaviour {
 	public float attack2ShotOffsetTime;
 	public float attack3SpawnTime;
 	public float attack3ShootTime;
+	public float dyingStunnedTime;
+
 	public float maxXDistanceFromPlayer;
 	public float teleportMinX;
 	public float teleportMaxX;
@@ -54,6 +63,9 @@ public class Shell3BossBehavior : MonoBehaviour {
 	private GameObject attack1Projectile;
 	private bool attack3Spawned, attack3Shot;
 	private GameObject attack3Projectile;
+	private bool shouldFacePlayer;
+	private CapsuleCollider2D collider;
+	private Vector2 defaultColliderSize;
 
 	void Start () {
 		player = GameObject.FindGameObjectWithTag("Player");
@@ -69,54 +81,75 @@ public class Shell3BossBehavior : MonoBehaviour {
 		attack1Projectile = null;
 		attack3Spawned = attack3Shot = false;
 		attack3Projectile = null;
+		shouldFacePlayer = true;
+		collider = GetComponent<CapsuleCollider2D>();
+		defaultColliderSize = collider.size;
 
 		float teleportTime = disappearDuration + reappearDuration;
-		actionDurations = new float[] {idleTime, teleportTime, attack1Time, attack2Time, attack3Time};
+		actionDurations = new float[] {
+			idleTime, teleportTime, attack1Time, attack2Time, attack3Time, stunTime, stunDisappearTime, -1};
 	}
 
 	void Update () {
-		//if(stunned)
-		//	return;
-
-		// Change facing direction to always face player
-		facingRight = player.transform.position.x > transform.position.x;
-		float scaleX = Mathf.Abs(transform.localScale.x);
-		scaleX *= facingRight ? 1 : -1;
-		transform.localScale = new Vector3(scaleX, transform.localScale.y, 1);
+		if(shouldFacePlayer)
+			FacePlayer();
 
 		// Update current action state
-		if(Time.time > startActionTime + GetActionDuration(currentAction)) {
-			currentAction = GetRandomAction();
+		float actionDuration = GetActionDuration(currentAction);
+		if(actionDuration != -1 && Time.time > startActionTime + actionDuration) {
+			Action action = GetRandomAction();
 			if(Mathf.Abs(player.transform.position.x - transform.position.x) > maxXDistanceFromPlayer)
-				currentAction = Action.TELEPORT;
+				action = Action.TELEPORT;
 			if(stunTeleportCount > 0) {
-				currentAction = Action.TELEPORT;
+				action = Action.TELEPORT;
 				stunTeleportCount--;
 			}
 
-			startActionTime = Time.time;
-			animator.SetInteger("state", (int)currentAction);
-			StartAction();
+			ChangeAction(action);
 		} else {
 			UpdateAction();
 		}
 	}
 
 	void FixedUpdate() {
-		Vector3 vector = Random.insideUnitCircle * randomMovementMultiplier;
+		float multiplier = randomMovementMultiplier;
+		if(currentAction == Action.DYING && teleported) // Dying
+			multiplier = dyingMovementMultiplier;
+		Vector3 vector = Random.insideUnitCircle * multiplier;
 		transform.position += vector;
 	}
 
-	public float GetActionDuration(Action action) {
+	private void FacePlayer() {
+		// Change facing direction to always face player
+		facingRight = player.transform.position.x > transform.position.x;
+		float scaleX = Mathf.Abs(transform.localScale.x);
+		scaleX *= facingRight ? 1 : -1;
+		transform.localScale = new Vector3(scaleX, transform.localScale.y, 1);
+	}
+
+	private float GetActionDuration(Action action) {
 		return actionDurations[(int)action];
 	}
 
-	public Action GetRandomAction() {
-		//return Action.IDLE;
-		return (Action)random.Next((int)Action._LENGTH);
+	private Action GetRandomAction() {
+		//return Action.ATTACK2;
+		return (Action)random.Next((int)Action._LENGTH-3); // Do -3 so stun and death animations are not included
 	}
 
-	void StartAction() {
+	public void ChangeAction(Action action) {
+		// End previous action
+		EndAction();
+
+		FacePlayer(); // Face the player in case the player has moved
+
+		// Start new action
+		currentAction = action;
+		startActionTime = Time.time;
+		animator.SetInteger("state", (int)currentAction);
+		StartAction();
+	}
+
+	private void StartAction() {
 		//Debug.Log("Current action: " + currentAction);
 		if(currentAction == Action.TELEPORT) {
 			teleported = false;
@@ -130,10 +163,31 @@ public class Shell3BossBehavior : MonoBehaviour {
 			attack3Spawned = false;
 			attack3Shot = false;
 			attack3Projectile = null;
+		} else if(currentAction == Action.DYING) {
+			collider.isTrigger = true;
+			gameObject.tag = "Untagged";
+
+			teleported = false; // Borrow teleport boolean from TELEPORT
+		}
+
+		if(currentAction == Action.ATTACK1 || currentAction == Action.ATTACK2 || currentAction == Action.ATTACK3 ||
+		   currentAction == Action.STUN || currentAction == Action.STUN_DISAPPEAR || currentAction == Action.DYING) {
+			shouldFacePlayer = false;
 		}
 	}
 
-	void UpdateAction() {
+	private void EndAction() {
+		if(currentAction == Action.ATTACK1 || currentAction == Action.ATTACK2 || currentAction == Action.ATTACK3 ||
+		   currentAction == Action.STUN || currentAction == Action.STUN_DISAPPEAR || currentAction == Action.DYING) {
+			shouldFacePlayer = true;
+		}
+			
+		if(currentAction == Action.DYING) {
+			StartCoroutine(WaitAndLoadCore());
+		}
+	}
+
+	private void UpdateAction() {
 		if(currentAction == Action.TELEPORT) {
 			if(!teleported && Time.time > startActionTime + disappearDuration) {
 				teleported = true;
@@ -182,6 +236,26 @@ public class Shell3BossBehavior : MonoBehaviour {
 				Vector2 forward = (player.transform.position - attack3Projectile.transform.position).normalized;
 				attack3Projectile.GetComponent<Rigidbody2D>().velocity = forward * projectile3Speed;
 			}
+		} else if(currentAction == Action.DYING) {
+			float targetTime = startActionTime;
+
+			if(Time.time > targetTime + dyingStunnedTime) {
+				animator.SetBool("dying_stunned", false);
+			}
+			targetTime += dyingStunnedTime;
+			if(!teleported && Time.time > targetTime + disappearDuration) {
+				teleported = true;
+
+				// Teleport to the center, or to the right if the player's in the way
+				GameObject deathPosition = GameObject.Find("Boss Death Position");
+				bool hitPlayer = Vector2.Distance(deathPosition.transform.position, player.transform.position) <= 2;
+				Debug.Log("Hit player: " + hitPlayer);
+				if(hitPlayer)
+					deathPosition = GameObject.Find("Boss Death Position Backup");
+				transform.position = deathPosition.transform.position;
+
+				FacePlayer();
+			}
 		}
 	}
 
@@ -212,30 +286,41 @@ public class Shell3BossBehavior : MonoBehaviour {
 
 	// Called by StunScript
 	void StunByPlayer() {
-		Debug.Log("Stunned");
 		stunned = true;
-		stunTeleportCount = 3;
+		stunTeleportCount = 2 + random.Next(2);
 
 		if(attack1Projectile)
 			Destroy(attack1Projectile);
 		if(attack3Projectile)
 			Destroy(attack3Projectile);
 
-		// Decrement remaining lives
+		// Decrement remaining lives and do action
 		lives--;
-		if(lives <= 0)
-			LoadingScreen.loadSceneWithScreen(nextLevel);
-
-		// Teleport away
-		currentAction = Action.TELEPORT;
-		stunTeleportCount--;
-		startActionTime = Time.time;
-		animator.SetInteger("state", (int)currentAction);
-		StartAction();
+		if(lives > 0) {
+			ChangeAction(Action.STUN);
+			StartCoroutine(ShrinkCollisionForSeconds(0.75f));
+		} else {
+			ChangeAction(Action.DYING);
+		}
 	}
 
 	// Called by StunScript
 	void UnStunByPlayer() {
 		stunned = false;
+	}
+
+	IEnumerator ShrinkCollisionForSeconds(float seconds) {
+		// Shrink temporarily to make it easier for player not to accidentally run into boss
+		collider.size = defaultColliderSize * 0.6f;
+
+		yield return new WaitForSeconds(seconds);
+
+		collider.size = defaultColliderSize;
+	}
+
+	IEnumerator WaitAndLoadCore() {
+		yield return new WaitForSeconds(2);
+
+		LoadingScreen.loadSceneWithScreen(nextLevel);
 	}
 }

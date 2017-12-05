@@ -25,7 +25,7 @@ public class CheckpointFightShell3Boss : CheckpointBehavior {
 		highJumpScript.hasHighJumpAbility = true;
 		stunScript.hasStunAbility = true;
 
-		player.transform.position = new Vector2(66.624f, 8.035f);
+		player.transform.position = transform.position;
 
 		shell3BossPlaceholder.SendMessage("SpawnBoss");
 		Destroy(shell3BossPlaceholder);

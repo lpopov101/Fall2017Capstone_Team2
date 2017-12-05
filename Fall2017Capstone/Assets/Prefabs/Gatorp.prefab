@@ -113,7 +113,7 @@ GameObject:
   - component: {fileID: 114635290891139902}
   - component: {fileID: 114336283201915106}
   - component: {fileID: 114890127704401782}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Gatorp
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -416,7 +416,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hasDodgeAbility: 0
   dodgeForce: 400
-  dodgeTime: 0.18
+  dodgeTime: 0.16
   cooldownTime: 1
 --- !u!114 &114093170454257394
 MonoBehaviour:
@@ -533,6 +533,7 @@ MonoBehaviour:
   StepAudio1: {fileID: 8300000, guid: e98445f1aa7a681488c228612e367cf4, type: 3}
   StepAudio2: {fileID: 8300000, guid: 3629f2740eb01164b88701efe4c48627, type: 3}
   LandAudio: {fileID: 8300000, guid: 949e072311f08ef4aa1e554e75524862, type: 3}
+  canJump: 1
 --- !u!114 &114643950352511452
 MonoBehaviour:
   m_ObjectHideFlags: 1

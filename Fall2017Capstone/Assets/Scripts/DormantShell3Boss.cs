@@ -15,12 +15,14 @@ public class DormantShell3Boss : MonoBehaviour {
 	private GameObject player;
 	private bool spawning;
 	private float startSpawnTime;
+	private Animator animator;
 
 	// Use this for initialization
 	void Start () {
 		player = GameObject.FindGameObjectWithTag("Player");
 		spawning = false;
 		startSpawnTime = -1;
+		animator = GetComponent<Animator>();
 	}
 	
 	// Update is called once per frame
@@ -52,6 +54,8 @@ public class DormantShell3Boss : MonoBehaviour {
 
 		// Freeze player movement
 		player.GetComponent<PlayerControllerImproved>().SetCutscenePlaying(true);
+
+		animator.SetInteger("state", 1);
 	}
 
 	void UnStunByPlayer() {}
