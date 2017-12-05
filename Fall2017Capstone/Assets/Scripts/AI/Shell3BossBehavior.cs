@@ -249,7 +249,6 @@ public class Shell3BossBehavior : MonoBehaviour {
 				// Teleport to the center, or to the right if the player's in the way
 				GameObject deathPosition = GameObject.Find("Boss Death Position");
 				bool hitPlayer = Vector2.Distance(deathPosition.transform.position, player.transform.position) <= 2;
-				Debug.Log("Hit player: " + hitPlayer);
 				if(hitPlayer)
 					deathPosition = GameObject.Find("Boss Death Position Backup");
 				transform.position = deathPosition.transform.position;
@@ -279,8 +278,9 @@ public class Shell3BossBehavior : MonoBehaviour {
 
 			yield return new WaitForSeconds(attack2ShotOffsetTime);
 			projectile2Anchor.Rotate(0, 0, 18f);
-			if(stunned)
+			if(currentAction != Action.ATTACK2) {
 				break;
+			}
 		}
 	}
 
