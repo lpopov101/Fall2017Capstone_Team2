@@ -245,7 +245,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2def18f198eb454f9cd9b8b7a04e707, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  totalLives: 3
+  totalLives: 4
   nextLevel: Core
   randomMovementMultiplier: 0.03
   dyingMovementMultiplier: 0.001

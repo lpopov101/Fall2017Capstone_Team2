@@ -558,7 +558,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72ae8b60dca555d47bb06497b070356b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hasStunAbility: 1
+  hasStunAbility: 0
   cooldownTime: 2
   stunRadius: 1.5
   stunTime: 4
