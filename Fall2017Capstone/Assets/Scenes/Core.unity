@@ -1004,6 +1004,16 @@ Prefab:
       propertyPath: canJump
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114278591348600428, guid: c9abbe07283cf6e4a894d45867dd73a4,
+        type: 2}
+      propertyPath: pauseDefaultButton
+      value: 
+      objectReference: {fileID: 532942377}
+    - target: {fileID: 114278591348600428, guid: c9abbe07283cf6e4a894d45867dd73a4,
+        type: 2}
+      propertyPath: optionsDefaultButton
+      value: 
+      objectReference: {fileID: 532942376}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c9abbe07283cf6e4a894d45867dd73a4, type: 2}
   m_IsPrefabParent: 0
@@ -1927,6 +1937,16 @@ Prefab:
 --- !u!1 &532942375 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1612337174604460, guid: 8537da2eaab6d5243b65725f86031b91,
+    type: 2}
+  m_PrefabInternal: {fileID: 532942374}
+--- !u!1 &532942376 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1065685459023984, guid: 8537da2eaab6d5243b65725f86031b91,
+    type: 2}
+  m_PrefabInternal: {fileID: 532942374}
+--- !u!1 &532942377 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1510804982577138, guid: 8537da2eaab6d5243b65725f86031b91,
     type: 2}
   m_PrefabInternal: {fileID: 532942374}
 --- !u!1 &561917339
@@ -3114,12 +3134,12 @@ Prefab:
     - target: {fileID: 224141759155288940, guid: dd09d0d2ec1b18144842dd9912b4300a,
         type: 2}
       propertyPath: m_LocalPosition.x
-      value: 539
+      value: 761
       objectReference: {fileID: 0}
     - target: {fileID: 224141759155288940, guid: dd09d0d2ec1b18144842dd9912b4300a,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: 303.5
+      value: 326.5
       objectReference: {fileID: 0}
     - target: {fileID: 224141759155288940, guid: dd09d0d2ec1b18144842dd9912b4300a,
         type: 2}
@@ -3710,8 +3730,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1125592682}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 539, y: 303.5, z: 0}
-  m_LocalScale: {x: 0.56203705, y: 0.56203705, z: 0.56203705}
+  m_LocalPosition: {x: 761, y: 326.5, z: 0}
+  m_LocalScale: {x: 0.79270834, y: 0.79270834, z: 0.79270834}
   m_Children:
   - {fileID: 916214018}
   - {fileID: 304527956}

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
@@ -17,6 +18,8 @@ public class UIManager : MonoBehaviour
 	public GameObject optionPanel;
 	public AudioSource buttonClick;
 	public GameObject Gatorp;
+    public GameObject pauseDefaultButton;
+    public GameObject optionsDefaultButton;
 
     bool paused, dialoguePaused;
 
@@ -46,7 +49,7 @@ public class UIManager : MonoBehaviour
     void Update()
     {
         // Pause or unpause
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetButtonDown("Pause"))
         {
             if (paused)
             {
@@ -81,6 +84,7 @@ public class UIManager : MonoBehaviour
         pausedOverlay.SetActive(true);
 		pausePanel.SetActive(true);
 		optionPanel.SetActive(false);
+        EventSystem.current.SetSelectedGameObject(pauseDefaultButton);
     }
 
     public void PauseWithoutOverlay()
@@ -164,6 +168,14 @@ public class UIManager : MonoBehaviour
 		buttonClick.Play ();
 		optionPanel.SetActive (panel == "option");
 		pausePanel.SetActive (panel == "pause");
+        if (panel == "pause")
+        {
+            EventSystem.current.SetSelectedGameObject(pauseDefaultButton);
+        }
+        else if (panel == "option")
+        {
+            EventSystem.current.SetSelectedGameObject(optionsDefaultButton);
+        }
 	}
 		
 

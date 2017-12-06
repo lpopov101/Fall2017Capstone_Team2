@@ -273,6 +273,16 @@ GameObject:
   m_PrefabParentObject: {fileID: 1696367214546284, guid: 8537da2eaab6d5243b65725f86031b91,
     type: 2}
   m_PrefabInternal: {fileID: 185613915}
+--- !u!1 &185613919 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1065685459023984, guid: 8537da2eaab6d5243b65725f86031b91,
+    type: 2}
+  m_PrefabInternal: {fileID: 185613915}
+--- !u!1 &185613920 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1510804982577138, guid: 8537da2eaab6d5243b65725f86031b91,
+    type: 2}
+  m_PrefabInternal: {fileID: 185613915}
 --- !u!1 &196912206
 GameObject:
   m_ObjectHideFlags: 0
@@ -1809,6 +1819,16 @@ Prefab:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114278591348600428, guid: c9abbe07283cf6e4a894d45867dd73a4,
+        type: 2}
+      propertyPath: pauseDefaultButton
+      value: 
+      objectReference: {fileID: 185613920}
+    - target: {fileID: 114278591348600428, guid: c9abbe07283cf6e4a894d45867dd73a4,
+        type: 2}
+      propertyPath: optionsDefaultButton
+      value: 
+      objectReference: {fileID: 185613919}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c9abbe07283cf6e4a894d45867dd73a4, type: 2}
   m_IsPrefabParent: 0
@@ -2079,12 +2099,12 @@ Prefab:
     - target: {fileID: 224141759155288940, guid: dd09d0d2ec1b18144842dd9912b4300a,
         type: 2}
       propertyPath: m_LocalPosition.x
-      value: 539
+      value: 761
       objectReference: {fileID: 0}
     - target: {fileID: 224141759155288940, guid: dd09d0d2ec1b18144842dd9912b4300a,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: 303.5
+      value: 326.5
       objectReference: {fileID: 0}
     - target: {fileID: 224141759155288940, guid: dd09d0d2ec1b18144842dd9912b4300a,
         type: 2}

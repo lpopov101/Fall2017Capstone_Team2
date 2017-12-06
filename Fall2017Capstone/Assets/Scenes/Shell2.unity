@@ -1863,12 +1863,12 @@ Prefab:
     - target: {fileID: 224497103314187788, guid: b347e44329e0ac440afdec721087a4d3,
         type: 2}
       propertyPath: m_LocalPosition.x
-      value: 539
+      value: 761
       objectReference: {fileID: 0}
     - target: {fileID: 224497103314187788, guid: b347e44329e0ac440afdec721087a4d3,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: 303.5
+      value: 326.5
       objectReference: {fileID: 0}
     - target: {fileID: 224497103314187788, guid: b347e44329e0ac440afdec721087a4d3,
         type: 2}
@@ -23394,9 +23394,19 @@ GameObject:
   m_PrefabParentObject: {fileID: 1289596895918056, guid: 8537da2eaab6d5243b65725f86031b91,
     type: 2}
   m_PrefabInternal: {fileID: 1163230017}
+--- !u!1 &1163230020 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1065685459023984, guid: 8537da2eaab6d5243b65725f86031b91,
+    type: 2}
+  m_PrefabInternal: {fileID: 1163230017}
 --- !u!1 &1163230021 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1696367214546284, guid: 8537da2eaab6d5243b65725f86031b91,
+    type: 2}
+  m_PrefabInternal: {fileID: 1163230017}
+--- !u!1 &1163230022 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1510804982577138, guid: 8537da2eaab6d5243b65725f86031b91,
     type: 2}
   m_PrefabInternal: {fileID: 1163230017}
 --- !u!1 &1173529812
@@ -35299,6 +35309,16 @@ Prefab:
       propertyPath: DopplerLevel
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114278591348600428, guid: c9abbe07283cf6e4a894d45867dd73a4,
+        type: 2}
+      propertyPath: pauseDefaultButton
+      value: 
+      objectReference: {fileID: 1163230022}
+    - target: {fileID: 114278591348600428, guid: c9abbe07283cf6e4a894d45867dd73a4,
+        type: 2}
+      propertyPath: optionsDefaultButton
+      value: 
+      objectReference: {fileID: 1163230020}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c9abbe07283cf6e4a894d45867dd73a4, type: 2}
   m_IsPrefabParent: 0
@@ -40168,12 +40188,12 @@ Prefab:
     - target: {fileID: 224141759155288940, guid: dd09d0d2ec1b18144842dd9912b4300a,
         type: 2}
       propertyPath: m_LocalPosition.x
-      value: 539
+      value: 761
       objectReference: {fileID: 0}
     - target: {fileID: 224141759155288940, guid: dd09d0d2ec1b18144842dd9912b4300a,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: 303.5
+      value: 326.5
       objectReference: {fileID: 0}
     - target: {fileID: 224141759155288940, guid: dd09d0d2ec1b18144842dd9912b4300a,
         type: 2}

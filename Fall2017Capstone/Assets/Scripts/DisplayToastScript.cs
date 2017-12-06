@@ -22,7 +22,14 @@ public class DisplayToastScript : MonoBehaviour {
 #if UNITY_ANDROID
             toast.AltImageToast("mobileshift", 7.0F);
 #else
-            toast.ImageToast ("shift", 7.0f);
+            if(Input.GetJoystickNames().Length > 0)
+            {
+                toast.ImageToast("xbox_shift", 7.0f);
+            }
+            else
+            {
+                toast.ImageToast("shift", 7.0f);
+            }
 #endif
 			GameObject DimensionHint = GameObject.FindGameObjectWithTag ("DimensionHint");
 			if( DimensionHint != null)
@@ -33,7 +40,14 @@ public class DisplayToastScript : MonoBehaviour {
 #if UNITY_ANDROID
             toast.AltImageToast("mobilemove", 7.0F);
 #else
-            toast.ImageToast ("move", 7.0f);
+            if(Input.GetJoystickNames().Length > 0)
+            {
+                toast.ImageToast("xbox_move", 7.0f);
+            }
+            else
+            {
+                toast.ImageToast("move", 7.0f);
+            }
 #endif
 			GameObject MoveHint = GameObject.FindGameObjectWithTag ("MoveHint");
 			if( MoveHint != null)
@@ -42,7 +56,14 @@ public class DisplayToastScript : MonoBehaviour {
 #if UNITY_ANDROID
             toast.AltImageToast("mobilejump_tap", 7.0F);
 #else
-            toast.ImageToast ("jump", 7.0f);
+            if(Input.GetJoystickNames().Length > 0)
+            {
+                toast.ImageToast("xbox_jump", 7.0f);
+            }
+            else
+            {
+                toast.ImageToast("jump", 7.0f);
+            }
 #endif
             GameObject JumpHint = GameObject.FindGameObjectWithTag ("JumpHint");
 			if( JumpHint != null)
