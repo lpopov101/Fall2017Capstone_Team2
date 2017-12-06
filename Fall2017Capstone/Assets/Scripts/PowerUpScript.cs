@@ -55,23 +55,44 @@ public class PowerUpScript : MonoBehaviour
 #if UNITY_ANDROID
                 toaster.AltImageToast("mobiledash", 5.0f);
 #else
-				toaster.ImageToast("dash_z", 5.0f);
+                if (Input.GetJoystickNames().Length > 0)
+                {
+                    toaster.ImageToast("xbox_dash", 5.0f);
+                }
+                else
+                {
+                    toaster.ImageToast("dash_z", 5.0f);
+                }
 #endif
 				PowerUpUI.SendMessage("Update");
 				dodgeScript.hasDodgeAbility = true;
 			} else if(levelName == "Shell2") {
 #if UNITY_ANDROID
-				//toaster.AltImageToast("mobiledoublejump", 5.0f);
+				toaster.AltImageToast("mobile_doublejump", 5.0f);
 #else
-				toaster.ImageToast("doublejump", 5.0f);
+                if (Input.GetJoystickNames().Length > 0)
+                {
+                    toaster.ImageToast("xbox_doublejump", 5.0f);
+                }
+                else
+                {
+                    toaster.ImageToast("doublejump", 5.0f);
+                }
 #endif
 				PowerUpUI.SendMessage("Update");
 				highJumpScript.hasHighJumpAbility = true;
 			} else if(levelName == "Shell3") {
 #if UNITY_ANDROID
-				//toaster.AltImageToast("mobilestun", 5.0f);
+				toaster.AltImageToast("mobile_stun", 5.0f);
 #else
-				toaster.ImageToast("stun", 5.0f);
+                if (Input.GetJoystickNames().Length > 0)
+                {
+                    toaster.ImageToast("xbox_stun", 5.0f);
+                }
+                else
+                {
+                    toaster.ImageToast("stun", 5.0f);
+                }
 #endif
 				PowerUpUI.SendMessage("Update");
 				stunScript.hasStunAbility = true;
