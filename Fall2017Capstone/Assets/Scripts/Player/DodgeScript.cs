@@ -14,12 +14,14 @@ public class DodgeScript : MonoBehaviour {
 	private PlayerControllerImproved playerController;
 	private bool gotDodge;
 	private Vector2 preDodgeVelocity;
+	private bool dodging;
 
 	void Start () {
 		rigidBody = GetComponent<Rigidbody2D>();
 		playerController = GetComponent<PlayerControllerImproved>();
 		gotDodge = true;
 		preDodgeVelocity = Vector2.zero;
+		dodging = false;
 	}
 
 	void Update () {
@@ -27,6 +29,14 @@ public class DodgeScript : MonoBehaviour {
 			ApplyDodgeForce();
 
 			StartCoroutine (DodgeAndCoolDown());
+		}
+	}
+
+	void FixedUpdate() {
+		if(dodging) {
+			Vector2 vel = rigidBody.velocity;
+			vel.y = 0;
+			rigidBody.velocity = vel;
 		}
 	}
 
@@ -48,11 +58,14 @@ public class DodgeScript : MonoBehaviour {
 	IEnumerator DodgeAndCoolDown() {
 		gotDodge = false;
 
+		dodging = true;
 		yield return new WaitForSeconds(dodgeTime);
+		dodging = false;
+
 		Vector3 vel = preDodgeVelocity;
 		float sign = rigidBody.velocity.x > 0 ? 1 : -1;
 		vel.x = Mathf.Abs(preDodgeVelocity.x) * sign;
-		vel.y = Mathf.Min(vel.y, 0);
+		vel.y = 0;
 		rigidBody.velocity = vel;
 
 		yield return new WaitForSeconds(cooldownTime);

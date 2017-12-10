@@ -25,7 +25,8 @@ public class BossHandBehavior : MonoBehaviour {
 			transform.Translate(Vector3.up * growthSpeed * Time.deltaTime);
 			if(transform.position.y >= initialY + growthAmount) {
 				attackPhase++;
-				anim.SetBool ("isAttack", false);
+				transform.position.Set(transform.position.x, initialY + growthAmount, 0);
+				anim.SetBool("isAttack", false);
 				StartCoroutine(Wait());
 			}
 		} else if(attackPhase == 2) {
@@ -43,8 +44,11 @@ public class BossHandBehavior : MonoBehaviour {
 		}
 
 		yield return new WaitForSeconds(waitTime);
-		if(spikeBase != null)
-			spikeBase.GetHandIndicator().GetComponent<BossHandIndicatorBehavior>().StartFading();
+		if(spikeBase != null) {
+			GameObject handIndicator = spikeBase.GetHandIndicator();
+			if(handIndicator)
+				handIndicator.GetComponent<BossHandIndicatorBehavior>().StartFading();
+		}
 		attackPhase++;
 	}
 

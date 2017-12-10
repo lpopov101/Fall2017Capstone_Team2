@@ -13,44 +13,51 @@ public class SpikeTrigger : MonoBehaviour, ISpike {
 	public float handGrowthAmount;
 	public float handWaitTime;
 	public float idleTime;
+	public bool destroyAfterTriggered;
 
 	private bool attacking;
 	private GameObject handIndicatorObj;
+	private GameObject handObj;
+	private float startAttackTime;
+	private bool didAttack;
 
-	// Use this for initialization
-	void Start () {
+	void Awake () {
 		attacking = false;
 		handIndicatorObj = null;
+		didAttack = false;
 	}
-	
-	// Update is called once per frame
+
 	void Update () {
-		
+		if(attacking) {
+			if(!didAttack && Time.time > startAttackTime + handIndicatorTime) {
+				DoAttack();
+			} else if(didAttack && Time.time > startAttackTime + handIndicatorTime + idleTime) {
+				attacking = false;
+				if(destroyAfterTriggered)
+					Destroy(gameObject);
+			}
+		}
 	}
 
 	void OnTriggerEnter2D(Collider2D coll) {
 		if(coll.gameObject.CompareTag("Player") && !attacking) {
-			StartCoroutine(Attack());
+			Attack();
 		}
 	}
 
-	IEnumerator Attack() {
+	public void Attack() {
+		startAttackTime = Time.time;
 		attacking = true;
+		didAttack = false;
 
-		yield return StartCoroutine(PrepareForAttack());
-		yield return StartCoroutine(DoAttack());
-		yield return StartCoroutine(Idle());
-
-		attacking = false;
-	}
-
-	IEnumerator PrepareForAttack() {
 		handIndicatorObj = Instantiate(handIndicatorPrefab);
-		handIndicatorObj.transform.position = new Vector3(transform.position.x,transform.position.y, handIndicatorObj.transform.position.z);
-		yield return new WaitForSeconds(handIndicatorTime);
+		handIndicatorObj.transform.position = new Vector3(transform.position.x, transform.position.y, 0);
+		handIndicatorObj.transform.parent = transform;
 	}
 
-	IEnumerator DoAttack() {
+	void DoAttack() {
+		didAttack = true;
+
 		GameObject handObj = Instantiate(handPrefab);
 		handObj.transform.position = transform.position;
 		BossHandBehavior handBehavior = handObj.GetComponent<BossHandBehavior>();
@@ -59,11 +66,7 @@ public class SpikeTrigger : MonoBehaviour, ISpike {
 		handBehavior.growthAmount = handGrowthAmount;
 		handBehavior.waitTime = handWaitTime;
 		handBehavior.SetSpikeBase(this);
-		yield return null;
-	}
-
-	IEnumerator Idle() {
-		yield return new WaitForSeconds(idleTime);
+		handBehavior.transform.parent = transform;
 	}
 
 	public GameObject GetHandIndicator() {

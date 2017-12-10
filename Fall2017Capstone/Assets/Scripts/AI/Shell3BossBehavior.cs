@@ -1,10 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Linq;
 
 public class Shell3BossBehavior : MonoBehaviour {
 
-	public enum Action {IDLE, TELEPORT, ATTACK1, ATTACK2, ATTACK3, STUN, STUN_DISAPPEAR, DYING, _LENGTH} // _LENGTH is used to easily access the number of enum values
+	public enum Action {IDLE, TELEPORT, ATTACK1, ATTACK2, ATTACK3, STUN, STUN_DISAPPEAR, DYING, SPIKE_ATTACK, _LENGTH} // _LENGTH is used to easily access the number of enum values
 
 	public int totalLives;
 	public string nextLevel;
@@ -30,6 +31,9 @@ public class Shell3BossBehavior : MonoBehaviour {
 	public float attack3SpawnTime;
 	public float attack3ShootTime;
 	public float dyingStunnedTime;
+	public float spikeIntervalTime;
+	public float spikeStartBufferTime;
+	public float spikeEndBufferTime;
 
 	public float maxXDistanceFromPlayer;
 	public float teleportMinX;
@@ -46,6 +50,7 @@ public class Shell3BossBehavior : MonoBehaviour {
 	public GameObject projectile3Prefab;
 	public Transform projectile3Spawn;
 	public float projectile3Speed;
+	public GameObject spikePrefab;
 
 	private GameObject player;
 	private Action currentAction;
@@ -57,15 +62,19 @@ public class Shell3BossBehavior : MonoBehaviour {
 	private int stunTeleportCount;
 	private int lives;
 	private Animator animator;
-
 	private bool teleported;
-	private bool attack1Spawned, attack1Shot;
-	private GameObject attack1Projectile;
+	private int attack1ProjectileCount;
+	private bool[] attack1Spawned, attack1Shot;
+	private GameObject[] attack1Projectile;
 	private bool attack3Spawned, attack3Shot;
 	private GameObject attack3Projectile;
 	private bool shouldFacePlayer;
 	private CapsuleCollider2D collider;
 	private Vector2 defaultColliderSize;
+	private Action[] possibleRandomActions;
+	public Action[] stopFacingPlayer;
+	private GameObject spikeSpawnPositions;
+	private SpriteRenderer spriteRenderer;
 
 	void Start () {
 		player = GameObject.FindGameObjectWithTag("Player");
@@ -77,17 +86,33 @@ public class Shell3BossBehavior : MonoBehaviour {
 		lives = totalLives;
 		animator = GetComponent<Animator>();
 		teleported = false;
-		attack1Spawned = attack1Shot = false;
-		attack1Projectile = null;
+		attack1ProjectileCount = 3;
+		attack1Spawned = new bool[attack1ProjectileCount];
+		attack1Shot = new bool[attack1ProjectileCount];
+		attack1Projectile = new GameObject[attack1ProjectileCount];
 		attack3Spawned = attack3Shot = false;
 		attack3Projectile = null;
 		shouldFacePlayer = true;
 		collider = GetComponent<CapsuleCollider2D>();
 		defaultColliderSize = collider.size;
+		spikeSpawnPositions = GameObject.Find("Spike Spawn Positions");
+		spriteRenderer = GetComponent<SpriteRenderer>();
 
 		float teleportTime = disappearDuration + reappearDuration;
+		float spikeAttackTime = teleportTime + spikeStartBufferTime + spikeEndBufferTime + spikeIntervalTime * 6;
 		actionDurations = new float[] {
-			idleTime, teleportTime, attack1Time, attack2Time, attack3Time, stunTime, stunDisappearTime, -1};
+			idleTime, teleportTime, attack1Time, attack2Time, attack3Time, stunTime, stunDisappearTime,
+			-1, spikeAttackTime
+		};
+		possibleRandomActions = new Action[] {
+			//Action.IDLE, Action.ATTACK1
+			Action.IDLE, Action.TELEPORT, Action.ATTACK1, Action.ATTACK2, Action.ATTACK3,
+			Action.SPIKE_ATTACK
+		};
+		stopFacingPlayer = new Action[] {
+			Action.ATTACK1, Action.ATTACK2, Action.ATTACK3, Action.STUN, Action.STUN_DISAPPEAR,
+			Action.DYING
+		};
 	}
 
 	void Update () {
@@ -132,8 +157,8 @@ public class Shell3BossBehavior : MonoBehaviour {
 	}
 
 	private Action GetRandomAction() {
-		//return Action.ATTACK2;
-		return (Action)random.Next((int)Action._LENGTH-3); // Do -3 so stun and death animations are not included
+		int index = random.Next(possibleRandomActions.Length);
+		return possibleRandomActions[index];
 	}
 
 	public void ChangeAction(Action action) {
@@ -154,9 +179,11 @@ public class Shell3BossBehavior : MonoBehaviour {
 		if(currentAction == Action.TELEPORT) {
 			teleported = false;
 		} else if(currentAction == Action.ATTACK1) {
-			attack1Spawned = false;
-			attack1Shot = false;
-			attack1Projectile = null;
+			for(int i = 0; i < attack1ProjectileCount; i++) {
+				attack1Spawned[i] = false;
+				attack1Shot[i] = false;
+				attack1Projectile[i] = null;
+			}
 		} else if(currentAction == Action.ATTACK2) {
 			StartCoroutine(DoAttack2());
 		} else if(currentAction == Action.ATTACK3) {
@@ -167,19 +194,20 @@ public class Shell3BossBehavior : MonoBehaviour {
 			collider.isTrigger = true;
 			gameObject.tag = "Untagged";
 
-			teleported = false; // Borrow teleport boolean from TELEPORT
+			teleported = false; // Borrow teleport boolean from TELEPORT action
+		} else if(currentAction == Action.SPIKE_ATTACK) {
+			teleported = false; // Borrow teleport boolean from TELEPORT action
+			StartCoroutine(SpikeAttack());
 		}
 
-		if(currentAction == Action.ATTACK1 || currentAction == Action.ATTACK2 || currentAction == Action.ATTACK3 ||
-		   currentAction == Action.STUN || currentAction == Action.STUN_DISAPPEAR || currentAction == Action.DYING) {
+		if(stopFacingPlayer.Contains(currentAction)) {
 			shouldFacePlayer = false;
 		}
 	}
 
 	private void EndAction() {
-		if(currentAction == Action.ATTACK1 || currentAction == Action.ATTACK2 || currentAction == Action.ATTACK3 ||
-		   currentAction == Action.STUN || currentAction == Action.STUN_DISAPPEAR || currentAction == Action.DYING) {
-			shouldFacePlayer = true;
+		if(stopFacingPlayer.Contains(currentAction)) {
+			shouldFacePlayer = false;
 		}
 			
 		if(currentAction == Action.DYING) {
@@ -202,23 +230,24 @@ public class Shell3BossBehavior : MonoBehaviour {
 				transform.position = position + offset;
 			}
 		} else if(currentAction == Action.ATTACK1) {
-			if(!attack1Spawned && Time.time > startActionTime + attack1SpawnTime) {
-				attack1Spawned = true;
+			for(int i = 0; i < attack1ProjectileCount; i++) {
+				float bufferTime = 0.2f * i;
+				if(!attack1Spawned[i] && Time.time > startActionTime + attack1SpawnTime + bufferTime) {
+					attack1Spawned[i] = true;
 
-				// Create projectile
-				attack1Projectile = Instantiate(projectile1Prefab);
-				attack1Projectile.transform.position = projectile1Spawn.position;
-			}
-			if(attack1Spawned && Time.time > startActionTime + attack1SpawnTime && Time.time < attack1ShootTime) {
-				// Freeze projectile
-				attack1Projectile.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
-			}
-			if(!attack1Shot && attack1Spawned && Time.time > startActionTime + attack1ShootTime) {
-				attack1Shot = true;
+					// Create projectile
+					attack1Projectile[i] = Instantiate(projectile1Prefab);
+					attack1Projectile[i].transform.position = projectile1Spawn.position;
+				} else if(Time.time > startActionTime + attack1SpawnTime && Time.time < attack1ShootTime + bufferTime) {
+					// Freeze projectile
+					attack1Projectile[i].GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+				} else if(!attack1Shot[i] && Time.time > startActionTime + attack1ShootTime + bufferTime) {
+					attack1Shot[i] = true;
 
-				// Shoot projectile
-				Vector2 forward = (player.transform.position - attack1Projectile.transform.position).normalized;
-				attack1Projectile.GetComponent<Rigidbody2D>().velocity = forward * projectile1Speed;
+					// Shoot projectile
+					Vector2 forward = (player.transform.position - attack1Projectile[i].transform.position).normalized;
+					attack1Projectile[i].GetComponent<Rigidbody2D>().velocity = forward * projectile1Speed;
+				}
 			}
 		} else if(currentAction == Action.ATTACK3) {
 			if(!attack3Spawned && Time.time > startActionTime + attack3SpawnTime) {
@@ -255,6 +284,13 @@ public class Shell3BossBehavior : MonoBehaviour {
 
 				FacePlayer();
 			}
+		} else if(currentAction == Action.SPIKE_ATTACK) {
+			if(!teleported && Time.time > startActionTime + disappearDuration) {
+				teleported = true;
+				spriteRenderer.enabled = false;
+			} else if(Time.time > startActionTime + disappearDuration + spikeStartBufferTime + spikeEndBufferTime + spikeIntervalTime * 6) {
+				spriteRenderer.enabled = true;
+			}
 		}
 	}
 
@@ -289,8 +325,10 @@ public class Shell3BossBehavior : MonoBehaviour {
 		stunned = true;
 		stunTeleportCount = 2 + random.Next(2);
 
-		if(attack1Projectile)
-			Destroy(attack1Projectile);
+		for(int i = 0; i < attack1ProjectileCount; i++) {
+			if(attack1Projectile[i])
+				Destroy(attack1Projectile[i]);
+		}
 		if(attack3Projectile)
 			Destroy(attack3Projectile);
 
@@ -322,5 +360,35 @@ public class Shell3BossBehavior : MonoBehaviour {
 		yield return new WaitForSeconds(2);
 
 		LoadingScreen.loadSceneWithScreen(nextLevel);
+	}
+
+	IEnumerator SpikeAttack() {
+		yield return new WaitForSeconds(disappearDuration + spikeStartBufferTime);
+		if(currentAction != Action.SPIKE_ATTACK)
+			yield break;
+
+		for(int i = 0; i < 2; i++) {
+			SpawnSpike(spikeSpawnPositions.transform.GetChild(0));
+			SpawnSpike(spikeSpawnPositions.transform.GetChild(6));
+			yield return new WaitForSeconds(spikeIntervalTime);
+			SpawnSpike(spikeSpawnPositions.transform.GetChild(1));
+			SpawnSpike(spikeSpawnPositions.transform.GetChild(5));
+			yield return new WaitForSeconds(spikeIntervalTime);
+			SpawnSpike(spikeSpawnPositions.transform.GetChild(2));
+			SpawnSpike(spikeSpawnPositions.transform.GetChild(4));
+			yield return new WaitForSeconds(spikeIntervalTime);
+			SpawnSpike(spikeSpawnPositions.transform.GetChild(3));
+			if(i != 1)
+				yield return new WaitForSeconds(spikeIntervalTime);
+		}
+	}
+
+	private void SpawnSpike(Transform transform) {
+		GameObject spike = Instantiate(spikePrefab);
+		spike.transform.position = transform.position;
+
+		SpikeTrigger spikeTrigger = spike.GetComponent<SpikeTrigger>();
+		spikeTrigger.destroyAfterTriggered = true;
+		spikeTrigger.Attack();
 	}
 }

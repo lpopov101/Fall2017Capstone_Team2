@@ -245,9 +245,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2def18f198eb454f9cd9b8b7a04e707, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  totalLives: 4
+  totalLives: 5
   nextLevel: Core
-  randomMovementMultiplier: 0.03
+  randomMovementMultiplier: 0.02
   dyingMovementMultiplier: 0.001
   idleTime: 2
   attack1Time: 2.0835
@@ -258,21 +258,24 @@ MonoBehaviour:
   disappearDuration: 0.625
   reappearDuration: 0.835
   attack1SpawnTime: 0.3
-  attack1ShootTime: 1.1
+  attack1ShootTime: 1
   attack2StartTime: 0.4
   attack2ShotOffsetTime: 0.08
   attack3SpawnTime: 0.4
   attack3ShootTime: 1.35
   dyingStunnedTime: 3
+  spikeIntervalTime: 1.1
+  spikeStartBufferTime: 1.2
+  spikeEndBufferTime: 1.6
   maxXDistanceFromPlayer: 10
   teleportMinX: 1.5
   teleportMaxX: 8
-  teleportMinY: 1.5
+  teleportMinY: 2
   teleportMaxY: 5
   projectile1Prefab: {fileID: 1684969027958618, guid: 1a86cf713d5458c468224ecd1ae447c7,
     type: 2}
   projectile1Spawn: {fileID: 4513951775525992}
-  projectile1Speed: 10
+  projectile1Speed: 13
   projectile2Prefab: {fileID: 1166935890504262, guid: 821bf8988a24ca442aed4e656323c01d,
     type: 2}
   projectile2Anchor: {fileID: 4786968915786960}
@@ -282,6 +285,9 @@ MonoBehaviour:
     type: 2}
   projectile3Spawn: {fileID: 4016047820459978}
   projectile3Speed: 7
+  spikePrefab: {fileID: 1648955547960172, guid: 9196935dd59c7a644a4bad2dc2ed87df,
+    type: 2}
+  stopFacingPlayer: 
 --- !u!212 &212876597537169036
 SpriteRenderer:
   m_ObjectHideFlags: 1
