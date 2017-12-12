@@ -38,15 +38,18 @@ public class CameraScript : MonoBehaviour {
 		cameraOffset.x = Mathf.SmoothDamp(cameraOffset.x, targetX, ref cameraOffsetVelocity.x, smoothTime);
 		cameraOffset.y = Mathf.SmoothDamp(cameraOffset.y, targetY, ref cameraOffsetVelocity.y, smoothTime);
 		transform.position = new Vector3 (cameraOffset.x, cameraOffset.y, -10);
-
-		// Old code
-		//float x = target.position.x + defaultCameraOffset.x;
-		//float y = target.position.y + defaultCameraOffset.y;
-		//transform.position = new Vector3 (x, y, -10);
 	}
 
 	public void SetCameraViewport(float size, Vector2 offset) {
 		targetCameraSize = size;
+		targetCameraOffset = offset;
+	}
+
+	public void SetCameraSize(float size) {
+		targetCameraSize = size;
+	}
+
+	public void SetCameraOffset(Vector2 offset) {
 		targetCameraOffset = offset;
 	}
 
