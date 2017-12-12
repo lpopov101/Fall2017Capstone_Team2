@@ -17,7 +17,6 @@ public class UIManager : MonoBehaviour
 	public GameObject pausePanel;
 	public GameObject optionPanel;
 	public AudioSource buttonClick;
-	public GameObject Gatorp;
     public GameObject pauseDefaultButton;
     public GameObject optionsDefaultButton;
 

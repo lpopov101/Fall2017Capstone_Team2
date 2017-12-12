@@ -36,7 +36,7 @@ public class WalkPath : MonoBehaviour {
 	}
 
 	void FixedUpdate() {
-		if(idle || freezeWalking) {
+		if(idle || freezeWalking || !position1 || !position2) {
 			// Remove inertia from existing velocity if idle, but smoothly
 			// Only noticeable at higher speeds
 			rigidBody.velocity = new Vector2(rigidBody.velocity.x * idleMovementReducer, rigidBody.velocity.y);

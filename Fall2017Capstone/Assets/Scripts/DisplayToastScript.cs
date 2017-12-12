@@ -84,8 +84,8 @@ public class DisplayToastScript : MonoBehaviour {
 			GameObject[] door = GameObject.FindGameObjectsWithTag("memorydoor");
 			foreach (GameObject obj in door) {
 				Destroy (obj);
-				toast.Toast ("Door is open", 7.0f);
 			}
+			toast.Toast ("Door is open", 7.0f);
 		}
 	}
 }

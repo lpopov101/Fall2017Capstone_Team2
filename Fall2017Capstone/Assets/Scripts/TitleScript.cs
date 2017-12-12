@@ -9,9 +9,11 @@ public class TitleScript : MonoBehaviour {
 
 	public GameObject mainMenuPanel;
 	public GameObject levelsPanel;
+	public GameObject creditsPanel;
 	public AudioSource buttonSound;
     public GameObject mainInitButton;
     public GameObject levelsInitButton;
+	public GameObject creditsInitButton;
 
 	public void LoadLevel(string scene) {
 		buttonSound.Play ();
@@ -22,14 +24,14 @@ public class TitleScript : MonoBehaviour {
 		buttonSound.Play ();
 		mainMenuPanel.SetActive(panel == "Main Menu");
 		levelsPanel.SetActive(panel == "Levels");
-        if(panel == "Main Menu")
-        {
-            EventSystem.current.SetSelectedGameObject(mainInitButton);
-        }
-        else if(panel == "Levels")
-        {
-            EventSystem.current.SetSelectedGameObject(levelsInitButton);
-        }
+		creditsPanel.SetActive(panel == "Credits");
+		if(panel == "Main Menu") {
+			EventSystem.current.SetSelectedGameObject(mainInitButton);
+		} else if(panel == "Levels") {
+			EventSystem.current.SetSelectedGameObject(levelsInitButton);
+		} else if(panel == "Credits") {
+			EventSystem.current.SetSelectedGameObject(creditsInitButton);
+		}
 	}
 
 	public void QuitGame() {

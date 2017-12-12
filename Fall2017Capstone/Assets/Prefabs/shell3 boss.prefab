@@ -264,7 +264,7 @@ MonoBehaviour:
   attack3SpawnTime: 0.4
   attack3ShootTime: 1.35
   dyingStunnedTime: 3
-  spikeIntervalTime: 1.1
+  spikeIntervalTime: 0.9
   spikeStartBufferTime: 1.2
   spikeEndBufferTime: 1.6
   maxXDistanceFromPlayer: 10

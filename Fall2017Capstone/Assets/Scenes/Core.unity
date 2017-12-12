@@ -3134,12 +3134,12 @@ Prefab:
     - target: {fileID: 224141759155288940, guid: dd09d0d2ec1b18144842dd9912b4300a,
         type: 2}
       propertyPath: m_LocalPosition.x
-      value: 761
+      value: 538.5
       objectReference: {fileID: 0}
     - target: {fileID: 224141759155288940, guid: dd09d0d2ec1b18144842dd9912b4300a,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: 326.5
+      value: 303.5
       objectReference: {fileID: 0}
     - target: {fileID: 224141759155288940, guid: dd09d0d2ec1b18144842dd9912b4300a,
         type: 2}
@@ -3633,7 +3633,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anim: {fileID: 916214019}
-  creditsDuration: 52.5
+  creditsDuration: 47
   mainMenuButton: {fileID: 304527955}
 --- !u!4 &1094746619
 Transform:
@@ -3730,8 +3730,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1125592682}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 761, y: 326.5, z: 0}
-  m_LocalScale: {x: 0.79270834, y: 0.79270834, z: 0.79270834}
+  m_LocalPosition: {x: 538.5, y: 303.5, z: 0}
+  m_LocalScale: {x: 0.56203705, y: 0.56203705, z: 0.56203705}
   m_Children:
   - {fileID: 916214018}
   - {fileID: 304527956}
