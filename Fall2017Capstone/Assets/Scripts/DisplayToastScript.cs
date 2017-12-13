@@ -85,7 +85,7 @@ public class DisplayToastScript : MonoBehaviour {
 			foreach (GameObject obj in door) {
 				Destroy (obj);
 			}
-			toast.Toast ("Door is open", 7.0f);
+			toast.ImageToast ("dooropen_icon", 7.0f);
 		}
 	}
 }

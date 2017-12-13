@@ -25,4 +25,10 @@ public class FollowScript : MonoBehaviour {
 			transform.position = position;
 		}
 	}
+
+	void followGatorp () {
+		following = true;
+	}
+
+	//unfollowGatorp. don't know if I need it.
 }

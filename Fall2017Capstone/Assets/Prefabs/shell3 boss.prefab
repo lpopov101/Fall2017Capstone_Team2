@@ -291,7 +291,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   totalLives: 5
-  nextLevel: Core
+  nextLevel: OutroCutscene
   randomMovementMultiplier: 0.02
   dyingMovementMultiplier: 0.001
   idleTime: 2

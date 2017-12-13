@@ -8,6 +8,7 @@ public class BossAreaScript : MonoBehaviour {
 	public AudioSource streetAudio;
 	public AudioSource bgm;
 	public AudioSource enterArea;
+	public FollowScript followScript;
 
 	public float cameraSize;
 	public Vector2 cameraOffset;
@@ -16,6 +17,7 @@ public class BossAreaScript : MonoBehaviour {
 	private float initialCameraSize;
 	private Vector2 initialCameraOffset;
 	private bool isEntered;
+
 
 	void Start () {
 		cameraScript = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<CameraScript>();
@@ -33,6 +35,7 @@ public class BossAreaScript : MonoBehaviour {
 				audioReality.mute = true;
 				streetAudio.mute = true;
 				bgm.mute = true;
+				followScript.SendMessage("followGatorp");
 				enterArea.Play ();
 			}
 			cameraScript.SetCameraViewport(cameraSize, cameraOffset);
