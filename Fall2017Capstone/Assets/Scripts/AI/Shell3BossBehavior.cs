@@ -69,7 +69,7 @@ public class Shell3BossBehavior : MonoBehaviour {
 	private bool attack3Spawned, attack3Shot;
 	private GameObject attack3Projectile;
 	private bool shouldFacePlayer;
-	private CapsuleCollider2D collider;
+	//private CapsuleCollider2D collider;
 	private Vector2 defaultColliderSize;
 	private Action[] possibleRandomActions;
 	public Action[] stopFacingPlayer;
@@ -93,8 +93,8 @@ public class Shell3BossBehavior : MonoBehaviour {
 		attack3Spawned = attack3Shot = false;
 		attack3Projectile = null;
 		shouldFacePlayer = true;
-		collider = GetComponent<CapsuleCollider2D>();
-		defaultColliderSize = collider.size;
+		//collider = GetComponent<CapsuleCollider2D>();
+		//defaultColliderSize = collider.size;
 		spikeSpawnPositions = GameObject.Find("Spike Spawn Positions");
 		spriteRenderer = GetComponent<SpriteRenderer>();
 
@@ -191,8 +191,8 @@ public class Shell3BossBehavior : MonoBehaviour {
 			attack3Shot = false;
 			attack3Projectile = null;
 		} else if(currentAction == Action.DYING) {
-			collider.isTrigger = true;
-			gameObject.tag = "Untagged";
+			//collider.isTrigger = true;
+			//gameObject.tag = "Untagged";
 
 			teleported = false; // Borrow teleport boolean from TELEPORT action
 		} else if(currentAction == Action.SPIKE_ATTACK) {
@@ -349,11 +349,11 @@ public class Shell3BossBehavior : MonoBehaviour {
 
 	IEnumerator ShrinkCollisionForSeconds(float seconds) {
 		// Shrink temporarily to make it easier for player not to accidentally run into boss
-		collider.size = defaultColliderSize * 0.6f;
+		//collider.size = defaultColliderSize * 0.6f;
 
 		yield return new WaitForSeconds(seconds);
 
-		collider.size = defaultColliderSize;
+		//collider.size = defaultColliderSize;
 	}
 
 	IEnumerator WaitAndLoadCore() {

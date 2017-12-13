@@ -19,6 +19,7 @@ public class UIManager : MonoBehaviour
 	public AudioSource buttonClick;
     public GameObject pauseDefaultButton;
     public GameObject optionsDefaultButton;
+	public bool hideCursorByDefault = true;
 
     bool paused, dialoguePaused;
 
@@ -42,7 +43,8 @@ public class UIManager : MonoBehaviour
 
         paused = dialoguePaused = false;
 
-		Cursor.visible = false;
+		if(hideCursorByDefault)
+			Cursor.visible = false;
     }
 
     void Update()
@@ -75,7 +77,8 @@ public class UIManager : MonoBehaviour
 
     public void Pause()
     {
-		Cursor.visible = true;
+		if(hideCursorByDefault)
+			Cursor.visible = true;
 		buttonClick.Play ();
         paused = true;
         UpdateTimeScale();
@@ -94,7 +97,8 @@ public class UIManager : MonoBehaviour
 
     public void Unpause()
     {
-		Cursor.visible = false;
+		if(hideCursorByDefault)
+			Cursor.visible = false;
 		buttonClick.Play ();
         paused = false;
         UpdateTimeScale();

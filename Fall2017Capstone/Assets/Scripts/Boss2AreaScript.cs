@@ -10,6 +10,8 @@ public class Boss2AreaScript : MonoBehaviour {
 	public float fastRiseDuration = 1;
 	public float fastRiseOffsetY = -5f;
 	public float minCameraBoundY;
+	public GameObject moveObjUp;
+	public FollowScript bossBg;
 
 	private GameObject sound;
 	private bool isAttack; // Changed to 'private' because it acts as a private variable
@@ -57,6 +59,8 @@ public class Boss2AreaScript : MonoBehaviour {
 				bossMusic.Play ();
 			isAttack = true;
 			camera.GetComponent<CameraScript>().SetCameraOffset(Vector2.zero);
+			bossBg.following = true;
+			StartCoroutine(MoveObjUp());
 		}
 	}
 
@@ -73,7 +77,6 @@ public class Boss2AreaScript : MonoBehaviour {
 			Vector3 chemicalPosition = chemical.transform.position;
 			chemicalPosition.y = camera.transform.position.y - topYOffset - minCameraBoundY;
 			chemical.transform.position = chemicalPosition;
-			//Debug.Break();
 			// Reload topY value
 			topY = chemical.GetComponent<BoxCollider2D>().bounds.max.y;
 		}
@@ -82,5 +85,11 @@ public class Boss2AreaScript : MonoBehaviour {
 		fastRisingStartY = chemical.transform.position.y;
 		fastRisingTargetY = targetY - topYOffset;
 		fastRisingStartTime = Time.time;
+	}
+
+	// Small timer for shell 2 boss workaround; moves one platform higher for easier platforming
+	IEnumerator MoveObjUp() {
+		yield return new WaitForSeconds(1);
+		moveObjUp.transform.position = moveObjUp.transform.position + Vector3.up * 1;
 	}
 }

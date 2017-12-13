@@ -2,13 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PistonBehavior : MonoBehaviour {
+public class PistonBehavior : MonoBehaviour, IDimensionEventListener {
 
 	public float extensionLength;
 	public float movementTime;
 	public float idleTime;
 	public bool startMovingUp = true;
 	public GameObject bottomPart;
+	public bool pauseMovement;
 
 	private float startingHeight;
 	private float topHeight;
@@ -39,6 +40,11 @@ public class PistonBehavior : MonoBehaviour {
 	}
 
 	void Update () {
+		if(pauseMovement) {
+			startMovingTime += Time.deltaTime;
+			return;
+		}
+
 		float time = Time.time;
 
 		if(idle) {
@@ -94,5 +100,9 @@ public class PistonBehavior : MonoBehaviour {
 	private void SetIdle() {
 		idle = true;
 		idleStartTime = Time.time;
+	}
+
+	public void OnDimensionChange(bool reality) {
+		pauseMovement = reality;
 	}
 }

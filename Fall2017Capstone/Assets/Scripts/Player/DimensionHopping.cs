@@ -4,6 +4,10 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
+public interface IDimensionEventListener {
+	void OnDimensionChange(bool reality);
+}
+
 public class DimensionHopping : MonoBehaviour {
 
     public Vector3 DimensionOffset;
@@ -11,12 +15,14 @@ public class DimensionHopping : MonoBehaviour {
 	public AudioSource streetAudio;
 	public AudioSource clubAudio;
 	public ToastScript toast;
+	public MonoBehaviour[] eventListeners;
 
 	private AudioSource dimHopAudio;
 	private CameraScript cameraScript;
 	private PlayerControllerImproved playerController;
 	private bool realityMode;
 	private bool HardToggleDimension;
+	public List<IDimensionEventListener> _eventListeners;
 
 	/* Deprecated */
 	[System.Obsolete("Renamed to realityMode to be a bit more descriptive")]
@@ -33,6 +39,10 @@ public class DimensionHopping : MonoBehaviour {
 			HardToggleDimension = true;
 		else
 			HardToggleDimension = false;
+		_eventListeners = new List<IDimensionEventListener>();
+		foreach(MonoBehaviour mono in eventListeners) {
+			_eventListeners.Add((IDimensionEventListener)mono);
+		}
     }
 
     void Update () {
@@ -67,6 +77,9 @@ public class DimensionHopping : MonoBehaviour {
             gameObject.SendMessage("DimensionShift");
         }
 		realityMode = !realityMode;
+		foreach(IDimensionEventListener listener in _eventListeners) {
+			listener.OnDimensionChange(realityMode);
+		}
 	}
 
 	void OnTriggerEnter2D(Collider2D coll) {
@@ -92,5 +105,4 @@ public class DimensionHopping : MonoBehaviour {
 	void SetHardDimension(bool bHardDimension) {
 		HardToggleDimension = bHardDimension;
 	}
-
 }
