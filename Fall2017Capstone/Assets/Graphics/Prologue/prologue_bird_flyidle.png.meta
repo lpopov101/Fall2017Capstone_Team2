@@ -1,9 +1,38 @@
 fileFormatVersion: 2
 guid: 44793fd6bff433c4e9ad082da549fde0
-timeCreated: 1512542992
+timeCreated: 1513150824
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: prologue_bird_flyidle_0
+    21300002: prologue_bird_flyidle_1
+    21300004: prologue_bird_flyidle_2
+    21300006: prologue_bird_flyidle_3
+    21300008: prologue_bird_flyidle_4
+    21300010: prologue_bird_flyidle_5
+    21300012: prologue_bird_flyidle_6
+    21300014: prologue_bird_flyidle_7
+    21300016: prologue_bird_flyidle_8
+    21300018: prologue_bird_flyidle_9
+    21300020: prologue_bird_flyidle_10
+    21300022: prologue_bird_flyidle_11
+    21300024: prologue_bird_flyidle_12
+    21300026: prologue_bird_flyidle_13
+    21300028: prologue_bird_flyidle_14
+    21300030: prologue_bird_flyidle_15
+    21300032: prologue_bird_flyidle_16
+    21300034: prologue_bird_flyidle_17
+    21300036: prologue_bird_flyidle_18
+    21300038: prologue_bird_flyidle_19
+    21300040: prologue_bird_flyidle_20
+    21300042: prologue_bird_flyidle_21
+    21300044: prologue_bird_flyidle_22
+    21300046: prologue_bird_flyidle_23
+    21300048: prologue_bird_flyidle_24
+    21300050: prologue_bird_flyidle_25
+    21300052: prologue_bird_flyidle_26
+    21300054: prologue_bird_flyidle_27
+    21300056: prologue_bird_flyidle_28
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -40,7 +69,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -65,9 +94,442 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: prologue_bird_flyidle_0
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 5552
+        width: 698
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_flyidle_1
+      rect:
+        serializedVersion: 2
+        x: 1108
+        y: 5552
+        width: 696
+        height: 479
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_flyidle_2
+      rect:
+        serializedVersion: 2
+        x: 2137
+        y: 5552
+        width: 690
+        height: 428
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_flyidle_3
+      rect:
+        serializedVersion: 2
+        x: 3170
+        y: 5552
+        width: 680
+        height: 374
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_flyidle_4
+      rect:
+        serializedVersion: 2
+        x: 4204
+        y: 5552
+        width: 671
+        height: 314
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_flyidle_5
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 4529
+        width: 659
+        height: 268
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_flyidle_6
+      rect:
+        serializedVersion: 2
+        x: 1154
+        y: 4529
+        width: 650
+        height: 268
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_flyidle_7
+      rect:
+        serializedVersion: 2
+        x: 2188
+        y: 4529
+        width: 639
+        height: 268
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_flyidle_8
+      rect:
+        serializedVersion: 2
+        x: 3223
+        y: 4445
+        width: 627
+        height: 352
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_flyidle_9
+      rect:
+        serializedVersion: 2
+        x: 4258
+        y: 4358
+        width: 617
+        height: 439
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_flyidle_10
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 3257
+        width: 609
+        height: 517
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_flyidle_11
+      rect:
+        serializedVersion: 2
+        x: 1201
+        y: 3191
+        width: 603
+        height: 583
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_flyidle_12
+      rect:
+        serializedVersion: 2
+        x: 2230
+        y: 3138
+        width: 597
+        height: 636
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_flyidle_13
+      rect:
+        serializedVersion: 2
+        x: 3259
+        y: 3104
+        width: 591
+        height: 670
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_flyidle_14
+      rect:
+        serializedVersion: 2
+        x: 4282
+        y: 3093
+        width: 593
+        height: 681
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_flyidle_15
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 2099
+        width: 594
+        height: 650
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_flyidle_16
+      rect:
+        serializedVersion: 2
+        x: 1201
+        y: 2159
+        width: 603
+        height: 590
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_flyidle_17
+      rect:
+        serializedVersion: 2
+        x: 2218
+        y: 2225
+        width: 609
+        height: 524
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_flyidle_18
+      rect:
+        serializedVersion: 2
+        x: 3235
+        y: 2300
+        width: 615
+        height: 449
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_flyidle_19
+      rect:
+        serializedVersion: 2
+        x: 4249
+        y: 2375
+        width: 626
+        height: 374
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_flyidle_20
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 1430
+        width: 634
+        height: 295
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_flyidle_21
+      rect:
+        serializedVersion: 2
+        x: 1159
+        y: 1457
+        width: 645
+        height: 268
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_flyidle_22
+      rect:
+        serializedVersion: 2
+        x: 2176
+        y: 1457
+        width: 651
+        height: 268
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_flyidle_23
+      rect:
+        serializedVersion: 2
+        x: 3188
+        y: 1457
+        width: 662
+        height: 268
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_flyidle_24
+      rect:
+        serializedVersion: 2
+        x: 4202
+        y: 1457
+        width: 673
+        height: 323
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_flyidle_25
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 434
+        width: 680
+        height: 377
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_flyidle_26
+      rect:
+        serializedVersion: 2
+        x: 1112
+        y: 434
+        width: 692
+        height: 434
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_flyidle_27
+      rect:
+        serializedVersion: 2
+        x: 2130
+        y: 434
+        width: 697
+        height: 491
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_flyidle_28
+      rect:
+        serializedVersion: 2
+        x: 3151
+        y: 434
+        width: 699
+        height: 521
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
     outline: []
     physicsShape: []
   spritePackingTag: 

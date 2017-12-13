@@ -1,9 +1,69 @@
 fileFormatVersion: 2
 guid: 36c1fe09370f31d4fba064ef905c3dab
-timeCreated: 1512542988
+timeCreated: 1513150864
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: prologue_bird_peck_0
+    21300002: prologue_bird_peck_1
+    21300004: prologue_bird_peck_2
+    21300006: prologue_bird_peck_3
+    21300008: prologue_bird_peck_4
+    21300010: prologue_bird_peck_5
+    21300012: prologue_bird_peck_6
+    21300014: prologue_bird_peck_7
+    21300016: prologue_bird_peck_8
+    21300018: prologue_bird_peck_9
+    21300020: prologue_bird_peck_10
+    21300022: prologue_bird_peck_11
+    21300024: prologue_bird_peck_12
+    21300026: prologue_bird_peck_13
+    21300028: prologue_bird_peck_14
+    21300030: prologue_bird_peck_15
+    21300032: prologue_bird_peck_16
+    21300034: prologue_bird_peck_17
+    21300036: prologue_bird_peck_18
+    21300038: prologue_bird_peck_19
+    21300040: prologue_bird_peck_20
+    21300042: prologue_bird_peck_21
+    21300044: prologue_bird_peck_22
+    21300046: prologue_bird_peck_23
+    21300048: prologue_bird_peck_24
+    21300050: prologue_bird_peck_25
+    21300052: prologue_bird_peck_26
+    21300054: prologue_bird_peck_27
+    21300056: prologue_bird_peck_28
+    21300058: prologue_bird_peck_29
+    21300060: prologue_bird_peck_30
+    21300062: prologue_bird_peck_31
+    21300064: prologue_bird_peck_32
+    21300066: prologue_bird_peck_33
+    21300068: prologue_bird_peck_34
+    21300070: prologue_bird_peck_35
+    21300072: prologue_bird_peck_36
+    21300074: prologue_bird_peck_37
+    21300076: prologue_bird_peck_38
+    21300078: prologue_bird_peck_39
+    21300080: prologue_bird_peck_40
+    21300082: prologue_bird_peck_41
+    21300084: prologue_bird_peck_42
+    21300086: prologue_bird_peck_43
+    21300088: prologue_bird_peck_44
+    21300090: prologue_bird_peck_45
+    21300092: prologue_bird_peck_46
+    21300094: prologue_bird_peck_47
+    21300096: prologue_bird_peck_48
+    21300098: prologue_bird_peck_49
+    21300100: prologue_bird_peck_50
+    21300102: prologue_bird_peck_51
+    21300104: prologue_bird_peck_52
+    21300106: prologue_bird_peck_53
+    21300108: prologue_bird_peck_54
+    21300110: prologue_bird_peck_55
+    21300112: prologue_bird_peck_56
+    21300114: prologue_bird_peck_57
+    21300116: prologue_bird_peck_58
+    21300118: prologue_bird_peck_59
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -40,7 +100,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -65,9 +125,876 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: prologue_bird_peck_0
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 8516
+        width: 563
+        height: 432
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_peck_1
+      rect:
+        serializedVersion: 2
+        x: 1190
+        y: 8516
+        width: 564
+        height: 431
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_peck_2
+      rect:
+        serializedVersion: 2
+        x: 2221
+        y: 8516
+        width: 566
+        height: 423
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_peck_3
+      rect:
+        serializedVersion: 2
+        x: 3256
+        y: 8516
+        width: 566
+        height: 414
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_peck_4
+      rect:
+        serializedVersion: 2
+        x: 4299
+        y: 8516
+        width: 565
+        height: 396
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_peck_5
+      rect:
+        serializedVersion: 2
+        x: 5343
+        y: 8516
+        width: 563
+        height: 374
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_peck_6
+      rect:
+        serializedVersion: 2
+        x: 6392
+        y: 8516
+        width: 558
+        height: 356
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_peck_7
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 7491
+        width: 544
+        height: 377
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_peck_8
+      rect:
+        serializedVersion: 2
+        x: 1321
+        y: 7490
+        width: 526
+        height: 396
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_peck_9
+      rect:
+        serializedVersion: 2
+        x: 2365
+        y: 7491
+        width: 508
+        height: 404
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_peck_10
+      rect:
+        serializedVersion: 2
+        x: 3400
+        y: 7490
+        width: 494
+        height: 414
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_peck_11
+      rect:
+        serializedVersion: 2
+        x: 4425
+        y: 7490
+        width: 491
+        height: 414
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_peck_12
+      rect:
+        serializedVersion: 2
+        x: 5447
+        y: 7490
+        width: 490
+        height: 414
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_peck_13
+      rect:
+        serializedVersion: 2
+        x: 6464
+        y: 7490
+        width: 499
+        height: 410
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_peck_14
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 6467
+        width: 504
+        height: 407
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_peck_15
+      rect:
+        serializedVersion: 2
+        x: 1334
+        y: 6469
+        width: 509
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_peck_16
+      rect:
+        serializedVersion: 2
+        x: 2351
+        y: 6467
+        width: 518
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_peck_17
+      rect:
+        serializedVersion: 2
+        x: 3373
+        y: 6469
+        width: 521
+        height: 396
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_peck_18
+      rect:
+        serializedVersion: 2
+        x: 4403
+        y: 6467
+        width: 513
+        height: 402
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_peck_19
+      rect:
+        serializedVersion: 2
+        x: 5438
+        y: 6467
+        width: 503
+        height: 407
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_peck_20
+      rect:
+        serializedVersion: 2
+        x: 6475
+        y: 6467
+        width: 488
+        height: 415
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_peck_21
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 5443
+        width: 486
+        height: 414
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_peck_22
+      rect:
+        serializedVersion: 2
+        x: 1348
+        y: 5443
+        width: 495
+        height: 409
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_peck_23
+      rect:
+        serializedVersion: 2
+        x: 2360
+        y: 5443
+        width: 509
+        height: 405
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_peck_24
+      rect:
+        serializedVersion: 2
+        x: 3377
+        y: 5443
+        width: 517
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_peck_25
+      rect:
+        serializedVersion: 2
+        x: 4403
+        y: 5443
+        width: 513
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_peck_26
+      rect:
+        serializedVersion: 2
+        x: 5438
+        y: 5443
+        width: 503
+        height: 408
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_peck_27
+      rect:
+        serializedVersion: 2
+        x: 6468
+        y: 5443
+        width: 495
+        height: 409
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_peck_28
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 4418
+        width: 499
+        height: 412
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_peck_29
+      rect:
+        serializedVersion: 2
+        x: 1339
+        y: 4418
+        width: 504
+        height: 407
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_peck_30
+      rect:
+        serializedVersion: 2
+        x: 2356
+        y: 4418
+        width: 513
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_peck_31
+      rect:
+        serializedVersion: 2
+        x: 3377
+        y: 4419
+        width: 517
+        height: 398
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_peck_32
+      rect:
+        serializedVersion: 2
+        x: 4398
+        y: 4418
+        width: 518
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_peck_33
+      rect:
+        serializedVersion: 2
+        x: 5416
+        y: 4419
+        width: 525
+        height: 394
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_peck_34
+      rect:
+        serializedVersion: 2
+        x: 6433
+        y: 4418
+        width: 530
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_peck_35
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 3395
+        width: 536
+        height: 383
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_peck_36
+      rect:
+        serializedVersion: 2
+        x: 1298
+        y: 3395
+        width: 540
+        height: 374
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_peck_37
+      rect:
+        serializedVersion: 2
+        x: 2311
+        y: 3395
+        width: 549
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_peck_38
+      rect:
+        serializedVersion: 2
+        x: 3323
+        y: 3395
+        width: 558
+        height: 347
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_peck_39
+      rect:
+        serializedVersion: 2
+        x: 4334
+        y: 3395
+        width: 564
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_peck_40
+      rect:
+        serializedVersion: 2
+        x: 5344
+        y: 3395
+        width: 575
+        height: 311
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_peck_41
+      rect:
+        serializedVersion: 2
+        x: 6357
+        y: 3395
+        width: 579
+        height: 297
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_peck_42
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 2370
+        width: 580
+        height: 305
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_peck_43
+      rect:
+        serializedVersion: 2
+        x: 1217
+        y: 2370
+        width: 585
+        height: 314
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_peck_44
+      rect:
+        serializedVersion: 2
+        x: 2234
+        y: 2370
+        width: 585
+        height: 323
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_peck_45
+      rect:
+        serializedVersion: 2
+        x: 3251
+        y: 2370
+        width: 585
+        height: 341
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_peck_46
+      rect:
+        serializedVersion: 2
+        x: 4272
+        y: 2370
+        width: 585
+        height: 368
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_peck_47
+      rect:
+        serializedVersion: 2
+        x: 5290
+        y: 2370
+        width: 584
+        height: 391
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_peck_48
+      rect:
+        serializedVersion: 2
+        x: 6311
+        y: 2370
+        width: 576
+        height: 413
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_peck_49
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 1348
+        width: 566
+        height: 427
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_peck_50
+      rect:
+        serializedVersion: 2
+        x: 1190
+        y: 1348
+        width: 563
+        height: 432
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_peck_51
+      rect:
+        serializedVersion: 2
+        x: 2213
+        y: 1348
+        width: 561
+        height: 432
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_peck_52
+      rect:
+        serializedVersion: 2
+        x: 3238
+        y: 1348
+        width: 562
+        height: 432
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_peck_53
+      rect:
+        serializedVersion: 2
+        x: 4263
+        y: 1348
+        width: 562
+        height: 432
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_peck_54
+      rect:
+        serializedVersion: 2
+        x: 5285
+        y: 1348
+        width: 562
+        height: 432
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_peck_55
+      rect:
+        serializedVersion: 2
+        x: 6311
+        y: 1348
+        width: 562
+        height: 432
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_peck_56
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 322
+        width: 562
+        height: 432
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_peck_57
+      rect:
+        serializedVersion: 2
+        x: 1190
+        y: 322
+        width: 562
+        height: 432
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_peck_58
+      rect:
+        serializedVersion: 2
+        x: 2214
+        y: 322
+        width: 560
+        height: 432
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_peck_59
+      rect:
+        serializedVersion: 2
+        x: 3238
+        y: 322
+        width: 562
+        height: 432
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
     outline: []
     physicsShape: []
   spritePackingTag: 

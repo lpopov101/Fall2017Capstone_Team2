@@ -20,6 +20,10 @@ public class TitleScript : MonoBehaviour {
 	public void LoadLevel(string scene) {
 		buttonSound.Play ();
         LoadingScreen.loadSceneWithScreen(scene);
+        if(Input.GetJoystickNames().Length == 0)
+        {
+            EventSystem.current.SetSelectedGameObject(null);
+        }
 	}
 
 	public void SwitchToPanel(string panel) {
@@ -28,15 +32,15 @@ public class TitleScript : MonoBehaviour {
 		levelsPanel.SetActive(panel == "Levels");
 		controlsPanel.SetActive(panel == "Controls");
 		creditsPanel.SetActive(panel == "Credits");
-//		if(panel == "Main Menu") {
-//			EventSystem.current.SetSelectedGameObject(mainInitButton);
-//		} else if(panel == "Levels") {
-//			EventSystem.current.SetSelectedGameObject(levelsInitButton);
-//		} else if(panel == "Controls") {
-//			EventSystem.current.SetSelectedGameObject(controlsInitButton);
-//		} else if(panel == "Credits") {
-//			EventSystem.current.SetSelectedGameObject(creditsInitButton);
-//		}
+  		if(panel == "Main Menu") {
+			EventSystem.current.SetSelectedGameObject(mainInitButton);
+		} else if(panel == "Levels") {
+			EventSystem.current.SetSelectedGameObject(levelsInitButton);
+		} else if(panel == "Controls") {
+			EventSystem.current.SetSelectedGameObject(controlsInitButton);
+		} else if(panel == "Credits") {
+			EventSystem.current.SetSelectedGameObject(creditsInitButton);
+		}
 	}
 
 	public void QuitGame() {

@@ -1,9 +1,69 @@
 fileFormatVersion: 2
 guid: 2d09b2f944948aa4cadf5c979d72b4c8
-timeCreated: 1512542979
+timeCreated: 1513150790
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: prologue_bird_flyaway_0
+    21300002: prologue_bird_flyaway_1
+    21300004: prologue_bird_flyaway_2
+    21300006: prologue_bird_flyaway_3
+    21300008: prologue_bird_flyaway_4
+    21300010: prologue_bird_flyaway_5
+    21300012: prologue_bird_flyaway_6
+    21300014: prologue_bird_flyaway_7
+    21300016: prologue_bird_flyaway_8
+    21300018: prologue_bird_flyaway_9
+    21300020: prologue_bird_flyaway_10
+    21300022: prologue_bird_flyaway_11
+    21300024: prologue_bird_flyaway_12
+    21300026: prologue_bird_flyaway_13
+    21300028: prologue_bird_flyaway_14
+    21300030: prologue_bird_flyaway_15
+    21300032: prologue_bird_flyaway_16
+    21300034: prologue_bird_flyaway_17
+    21300036: prologue_bird_flyaway_18
+    21300038: prologue_bird_flyaway_19
+    21300040: prologue_bird_flyaway_20
+    21300042: prologue_bird_flyaway_21
+    21300044: prologue_bird_flyaway_22
+    21300046: prologue_bird_flyaway_23
+    21300048: prologue_bird_flyaway_24
+    21300050: prologue_bird_flyaway_25
+    21300052: prologue_bird_flyaway_26
+    21300054: prologue_bird_flyaway_27
+    21300056: prologue_bird_flyaway_28
+    21300058: prologue_bird_flyaway_29
+    21300060: prologue_bird_flyaway_30
+    21300062: prologue_bird_flyaway_31
+    21300064: prologue_bird_flyaway_32
+    21300066: prologue_bird_flyaway_33
+    21300068: prologue_bird_flyaway_34
+    21300070: prologue_bird_flyaway_35
+    21300072: prologue_bird_flyaway_36
+    21300074: prologue_bird_flyaway_37
+    21300076: prologue_bird_flyaway_38
+    21300078: prologue_bird_flyaway_39
+    21300080: prologue_bird_flyaway_40
+    21300082: prologue_bird_flyaway_41
+    21300084: prologue_bird_flyaway_42
+    21300086: prologue_bird_flyaway_43
+    21300088: prologue_bird_flyaway_44
+    21300090: prologue_bird_flyaway_45
+    21300092: prologue_bird_flyaway_46
+    21300094: prologue_bird_flyaway_47
+    21300096: prologue_bird_flyaway_48
+    21300098: prologue_bird_flyaway_49
+    21300100: prologue_bird_flyaway_50
+    21300102: prologue_bird_flyaway_51
+    21300104: prologue_bird_flyaway_52
+    21300106: prologue_bird_flyaway_53
+    21300108: prologue_bird_flyaway_54
+    21300110: prologue_bird_flyaway_55
+    21300112: prologue_bird_flyaway_56
+    21300114: prologue_bird_flyaway_57
+    21300116: prologue_bird_flyaway_58
+    21300118: prologue_bird_flyaway_59
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -40,7 +100,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -65,9 +125,876 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: prologue_bird_flyaway_0
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 8516
+        width: 563
+        height: 432
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_flyaway_1
+      rect:
+        serializedVersion: 2
+        x: 1190
+        y: 8516
+        width: 563
+        height: 428
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_flyaway_2
+      rect:
+        serializedVersion: 2
+        x: 2216
+        y: 8516
+        width: 567
+        height: 423
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_flyaway_3
+      rect:
+        serializedVersion: 2
+        x: 3242
+        y: 8516
+        width: 571
+        height: 414
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_flyaway_4
+      rect:
+        serializedVersion: 2
+        x: 4255
+        y: 8516
+        width: 589
+        height: 405
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_flyaway_5
+      rect:
+        serializedVersion: 2
+        x: 5245
+        y: 8516
+        width: 629
+        height: 410
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_flyaway_6
+      rect:
+        serializedVersion: 2
+        x: 6243
+        y: 8516
+        width: 662
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_flyaway_7
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 7491
+        width: 684
+        height: 490
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_flyaway_8
+      rect:
+        serializedVersion: 2
+        x: 1105
+        y: 7490
+        width: 693
+        height: 522
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_flyaway_9
+      rect:
+        serializedVersion: 2
+        x: 2135
+        y: 7491
+        width: 691
+        height: 575
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_flyaway_10
+      rect:
+        serializedVersion: 2
+        x: 3170
+        y: 7490
+        width: 684
+        height: 621
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_flyaway_11
+      rect:
+        serializedVersion: 2
+        x: 4203
+        y: 7490
+        width: 677
+        height: 638
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_flyaway_12
+      rect:
+        serializedVersion: 2
+        x: 5240
+        y: 7490
+        width: 665
+        height: 644
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_flyaway_13
+      rect:
+        serializedVersion: 2
+        x: 6280
+        y: 7490
+        width: 652
+        height: 656
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_flyaway_14
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 6467
+        width: 634
+        height: 666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_flyaway_15
+      rect:
+        serializedVersion: 2
+        x: 1199
+        y: 6469
+        width: 621
+        height: 674
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_flyaway_16
+      rect:
+        serializedVersion: 2
+        x: 2243
+        y: 6467
+        width: 603
+        height: 685
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_flyaway_17
+      rect:
+        serializedVersion: 2
+        x: 3278
+        y: 6469
+        width: 594
+        height: 688
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_flyaway_18
+      rect:
+        serializedVersion: 2
+        x: 4286
+        y: 6467
+        width: 607
+        height: 676
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_flyaway_19
+      rect:
+        serializedVersion: 2
+        x: 5285
+        y: 6467
+        width: 630
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_flyaway_20
+      rect:
+        serializedVersion: 2
+        x: 6284
+        y: 6467
+        width: 652
+        height: 587
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_flyaway_21
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 5443
+        width: 666
+        height: 521
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_flyaway_22
+      rect:
+        serializedVersion: 2
+        x: 1142
+        y: 5443
+        width: 669
+        height: 443
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_flyaway_23
+      rect:
+        serializedVersion: 2
+        x: 2171
+        y: 5447
+        width: 666
+        height: 378
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_flyaway_24
+      rect:
+        serializedVersion: 2
+        x: 3202
+        y: 5465
+        width: 656
+        height: 342
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_flyaway_25
+      rect:
+        serializedVersion: 2
+        x: 4229
+        y: 5497
+        width: 651
+        height: 315
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_flyaway_26
+      rect:
+        serializedVersion: 2
+        x: 5262
+        y: 5528
+        width: 639
+        height: 291
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_flyaway_27
+      rect:
+        serializedVersion: 2
+        x: 6297
+        y: 5443
+        width: 628
+        height: 378
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_flyaway_28
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 4340
+        width: 621
+        height: 459
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_flyaway_29
+      rect:
+        serializedVersion: 2
+        x: 1191
+        y: 4269
+        width: 615
+        height: 530
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_flyaway_30
+      rect:
+        serializedVersion: 2
+        x: 2225
+        y: 4210
+        width: 603
+        height: 589
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_flyaway_31
+      rect:
+        serializedVersion: 2
+        x: 3251
+        y: 4161
+        width: 603
+        height: 638
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_flyaway_32
+      rect:
+        serializedVersion: 2
+        x: 4281
+        y: 4129
+        width: 594
+        height: 670
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_flyaway_33
+      rect:
+        serializedVersion: 2
+        x: 5304
+        y: 4116
+        width: 597
+        height: 683
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_flyaway_34
+      rect:
+        serializedVersion: 2
+        x: 6327
+        y: 4138
+        width: 598
+        height: 661
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_flyaway_35
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 3193
+        width: 608
+        height: 580
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_flyaway_36
+      rect:
+        serializedVersion: 2
+        x: 1186
+        y: 3315
+        width: 620
+        height: 458
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_flyaway_37
+      rect:
+        serializedVersion: 2
+        x: 2194
+        y: 3463
+        width: 634
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_flyaway_38
+      rect:
+        serializedVersion: 2
+        x: 3198
+        y: 3503
+        width: 656
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_flyaway_39
+      rect:
+        serializedVersion: 2
+        x: 4203
+        y: 3503
+        width: 672
+        height: 320
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_flyaway_40
+      rect:
+        serializedVersion: 2
+        x: 5213
+        y: 3503
+        width: 688
+        height: 414
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_flyaway_41
+      rect:
+        serializedVersion: 2
+        x: 6225
+        y: 3503
+        width: 700
+        height: 495
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_flyaway_42
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 2477
+        width: 705
+        height: 530
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_flyaway_43
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 2477
+        width: 706
+        height: 530
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_flyaway_44
+      rect:
+        serializedVersion: 2
+        x: 2126
+        y: 2477
+        width: 702
+        height: 530
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_flyaway_45
+      rect:
+        serializedVersion: 2
+        x: 3148
+        y: 2477
+        width: 706
+        height: 530
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_flyaway_46
+      rect:
+        serializedVersion: 2
+        x: 4174
+        y: 2477
+        width: 701
+        height: 530
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_flyaway_47
+      rect:
+        serializedVersion: 2
+        x: 5195
+        y: 2477
+        width: 706
+        height: 529
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_flyaway_48
+      rect:
+        serializedVersion: 2
+        x: 6221
+        y: 2477
+        width: 704
+        height: 530
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_flyaway_49
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 1456
+        width: 705
+        height: 526
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_flyaway_50
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 1456
+        width: 706
+        height: 526
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_flyaway_51
+      rect:
+        serializedVersion: 2
+        x: 2124
+        y: 1456
+        width: 704
+        height: 526
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_flyaway_52
+      rect:
+        serializedVersion: 2
+        x: 3148
+        y: 1456
+        width: 706
+        height: 526
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_flyaway_53
+      rect:
+        serializedVersion: 2
+        x: 4174
+        y: 1456
+        width: 701
+        height: 526
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_flyaway_54
+      rect:
+        serializedVersion: 2
+        x: 5195
+        y: 1456
+        width: 706
+        height: 526
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_flyaway_55
+      rect:
+        serializedVersion: 2
+        x: 6221
+        y: 1456
+        width: 704
+        height: 526
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_flyaway_56
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 430
+        width: 706
+        height: 528
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_flyaway_57
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 430
+        width: 706
+        height: 528
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_flyaway_58
+      rect:
+        serializedVersion: 2
+        x: 2126
+        y: 430
+        width: 702
+        height: 528
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: prologue_bird_flyaway_59
+      rect:
+        serializedVersion: 2
+        x: 3148
+        y: 430
+        width: 706
+        height: 528
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
     outline: []
     physicsShape: []
   spritePackingTag: 
