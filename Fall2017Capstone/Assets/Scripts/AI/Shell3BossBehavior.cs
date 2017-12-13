@@ -51,6 +51,7 @@ public class Shell3BossBehavior : MonoBehaviour {
 	public Transform projectile3Spawn;
 	public float projectile3Speed;
 	public GameObject spikePrefab;
+	public GameObject cameraShaker;
 
 	private GameObject player;
 	private Action currentAction;
@@ -72,7 +73,7 @@ public class Shell3BossBehavior : MonoBehaviour {
 	//private CapsuleCollider2D collider;
 	private Vector2 defaultColliderSize;
 	private Action[] possibleRandomActions;
-	public Action[] stopFacingPlayer;
+	private Action[] stopFacingPlayer;
 	private GameObject spikeSpawnPositions;
 	private SpriteRenderer spriteRenderer;
 
@@ -283,6 +284,7 @@ public class Shell3BossBehavior : MonoBehaviour {
 				transform.position = deathPosition.transform.position;
 
 				FacePlayer();
+				Destroy(cameraShaker);
 			}
 		} else if(currentAction == Action.SPIKE_ATTACK) {
 			if(!teleported && Time.time > startActionTime + disappearDuration) {

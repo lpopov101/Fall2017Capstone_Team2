@@ -446,6 +446,7 @@ MonoBehaviour:
   streetAudio: {fileID: 0}
   clubAudio: {fileID: 0}
   toast: {fileID: 0}
+  eventListeners: []
 --- !u!114 &114278591348600428
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -463,9 +464,9 @@ MonoBehaviour:
   pausePanel: {fileID: 0}
   optionPanel: {fileID: 0}
   buttonClick: {fileID: 0}
-  Gatorp: {fileID: 0}
   pauseDefaultButton: {fileID: 0}
   optionsDefaultButton: {fileID: 0}
+  hideCursorByDefault: 1
 --- !u!114 &114336283201915106
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -564,7 +565,7 @@ MonoBehaviour:
   cooldownTime: 2
   stunRadius: 1.5
   stunTime: 4
-  stunAnimTime: 0.5
+  stunAnimTime: 0.22925
   stunnableLayer:
     serializedVersion: 2
     m_Bits: 256
