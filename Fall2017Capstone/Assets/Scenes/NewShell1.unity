@@ -5624,7 +5624,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9181ed7e656e4b646bb401067d1c0b65, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingCheckpoint: {fileID: 1172881}
+  startingCheckpoint: {fileID: 836449412}
   memory1: {fileID: 1901935829}
   memory2: {fileID: 679791200}
   memory3: {fileID: 466185199}
