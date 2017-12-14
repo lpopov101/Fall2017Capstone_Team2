@@ -76,9 +76,12 @@ public class Shell3BossBehavior : MonoBehaviour {
 	private Action[] stopFacingPlayer;
 	private GameObject spikeSpawnPositions;
 	private SpriteRenderer spriteRenderer;
+	private MusicScriptBoss3 musicScript;
 
 	void Start () {
 		player = GameObject.FindGameObjectWithTag("Player");
+		musicScript = GameObject.FindGameObjectWithTag ("music").GetComponent<MusicScriptBoss3>();
+		musicScript.SendMessage ("startMain");
 		currentAction = Action.IDLE;
 		startActionTime = Time.time;
 		random = new System.Random();
@@ -336,6 +339,7 @@ public class Shell3BossBehavior : MonoBehaviour {
 
 		// Decrement remaining lives and do action
 		lives--;
+		musicScript.SendMessage ("updateMusic",lives);
 		if(lives > 0) {
 			ChangeAction(Action.STUN);
 			StartCoroutine(ShrinkCollisionForSeconds(0.75f));

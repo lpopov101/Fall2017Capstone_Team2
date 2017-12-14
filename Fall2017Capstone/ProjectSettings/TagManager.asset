@@ -18,6 +18,7 @@ TagManager:
   - Sound
   - powerup
   - dialogue1
+  - music
   layers:
   - Default
   - TransparentFX
