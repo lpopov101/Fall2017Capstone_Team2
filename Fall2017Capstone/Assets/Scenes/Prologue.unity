@@ -565,7 +565,7 @@ Prefab:
   m_IsPrefabParent: 0
 --- !u!114 &196329602 stripped
 MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114108778940479266, guid: dd09d0d2ec1b18144842dd9912b4300a,
+  m_PrefabParentObject: {fileID: 114031236053693700, guid: dd09d0d2ec1b18144842dd9912b4300a,
     type: 2}
   m_PrefabInternal: {fileID: 708064820}
   m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
@@ -1900,12 +1900,12 @@ Prefab:
     - target: {fileID: 224141759155288940, guid: dd09d0d2ec1b18144842dd9912b4300a,
         type: 2}
       propertyPath: m_LocalPosition.x
-      value: 761
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224141759155288940, guid: dd09d0d2ec1b18144842dd9912b4300a,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: 326.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224141759155288940, guid: dd09d0d2ec1b18144842dd9912b4300a,
         type: 2}
@@ -1987,50 +1987,10 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 224794128584621290, guid: dd09d0d2ec1b18144842dd9912b4300a,
+    - target: {fileID: 114108778940479266, guid: dd09d0d2ec1b18144842dd9912b4300a,
         type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 843.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 224794128584621290, guid: dd09d0d2ec1b18144842dd9912b4300a,
-        type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -2214.902
-      objectReference: {fileID: 0}
-    - target: {fileID: 224619728026720490, guid: dd09d0d2ec1b18144842dd9912b4300a,
-        type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 766.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 224619728026720490, guid: dd09d0d2ec1b18144842dd9912b4300a,
-        type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -2214.902
-      objectReference: {fileID: 0}
-    - target: {fileID: 224607552350914612, guid: dd09d0d2ec1b18144842dd9912b4300a,
-        type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 917.19995
-      objectReference: {fileID: 0}
-    - target: {fileID: 224607552350914612, guid: dd09d0d2ec1b18144842dd9912b4300a,
-        type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -2133.602
-      objectReference: {fileID: 0}
-    - target: {fileID: 224492954327735784, guid: dd09d0d2ec1b18144842dd9912b4300a,
-        type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 921.3999
-      objectReference: {fileID: 0}
-    - target: {fileID: 224492954327735784, guid: dd09d0d2ec1b18144842dd9912b4300a,
-        type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -2214.902
-      objectReference: {fileID: 0}
-    - target: {fileID: 224135504319148350, guid: dd09d0d2ec1b18144842dd9912b4300a,
-        type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 2200.152
+      propertyPath: m_Interactable
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: dd09d0d2ec1b18144842dd9912b4300a, type: 2}
@@ -2968,6 +2928,12 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4ed22fd714ecf3c46a2305c91f5a46ce, type: 2}
   m_IsPrefabParent: 0
+--- !u!114 &1063157188 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114108778940479266, guid: dd09d0d2ec1b18144842dd9912b4300a,
+    type: 2}
+  m_PrefabInternal: {fileID: 708064820}
+  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!1 &1085028825
 GameObject:
   m_ObjectHideFlags: 0
@@ -3341,6 +3307,16 @@ Prefab:
       propertyPath: optionsDefaultButton
       value: 
       objectReference: {fileID: 1053438173}
+    - target: {fileID: 114643950352511452, guid: c9abbe07283cf6e4a894d45867dd73a4,
+        type: 2}
+      propertyPath: hasHighJumpAbility
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114888446604172996, guid: c9abbe07283cf6e4a894d45867dd73a4,
+        type: 2}
+      propertyPath: stunTouchButton
+      value: 
+      objectReference: {fileID: 1063157188}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c9abbe07283cf6e4a894d45867dd73a4, type: 2}
   m_IsPrefabParent: 0

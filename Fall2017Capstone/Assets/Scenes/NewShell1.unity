@@ -88,6 +88,7 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaDirect: 0.5
     m_PVRFilteringAtrousPositionSigmaIndirect: 2
     m_PVRFilteringAtrousPositionSigmaAO: 1
+    m_ShowResolutionOverlay: 1
   m_LightingDataAsset: {fileID: 0}
   m_UseShadowmask: 1
 --- !u!196 &4
@@ -7649,6 +7650,12 @@ Prefab:
 --- !u!114 &646292739 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 114108778940479266, guid: dd09d0d2ec1b18144842dd9912b4300a,
+    type: 2}
+  m_PrefabInternal: {fileID: 646292738}
+  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+--- !u!114 &646292740 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114031236053693700, guid: dd09d0d2ec1b18144842dd9912b4300a,
     type: 2}
   m_PrefabInternal: {fileID: 646292738}
   m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
@@ -25601,7 +25608,7 @@ Prefab:
         type: 2}
       propertyPath: pauseButton
       value: 
-      objectReference: {fileID: 646292739}
+      objectReference: {fileID: 646292740}
     - target: {fileID: 114888446604172996, guid: c9abbe07283cf6e4a894d45867dd73a4,
         type: 2}
       propertyPath: hasStunAbility
@@ -25681,6 +25688,11 @@ Prefab:
       propertyPath: optionsDefaultButton
       value: 
       objectReference: {fileID: 2112346185}
+    - target: {fileID: 114888446604172996, guid: c9abbe07283cf6e4a894d45867dd73a4,
+        type: 2}
+      propertyPath: stunTouchButton
+      value: 
+      objectReference: {fileID: 646292739}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c9abbe07283cf6e4a894d45867dd73a4, type: 2}
   m_IsPrefabParent: 0

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class StunScript : MonoBehaviour {
 
@@ -11,6 +12,7 @@ public class StunScript : MonoBehaviour {
 	public float stunAnimTime;
 	public LayerMask stunnableLayer;
 	public Animator stunAnimator;
+    public Button stunTouchButton;
 
 	private bool gotStun;
 	private float startCooldownTime;
@@ -24,11 +26,30 @@ public class StunScript : MonoBehaviour {
 		stunning = false;
 		startStunTime = 0;
 		stunnedColliders = null;
+        stunTouchButton.onClick.AddListener(() => {
+            if (hasStunAbility)
+            {
+                Stun();
+
+                gotStun = false;
+                startCooldownTime = Time.time;
+            }
+        });
 	}
 
 	void Update () {
-		// Check if the cooldown timer is up
-		if(!gotStun && Time.time > startCooldownTime + cooldownTime) {
+#if UNITY_ANDROID
+        if(!hasStunAbility)
+        {
+            stunTouchButton.interactable = false;
+        }
+        else
+        {
+            stunTouchButton.interactable = true;
+        }
+#endif
+        // Check if the cooldown timer is up
+        if(!gotStun && Time.time > startCooldownTime + cooldownTime) {
 			gotStun = true;
 		}
 
