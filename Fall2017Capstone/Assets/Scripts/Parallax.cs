@@ -22,7 +22,8 @@ public class Parallax : MonoBehaviour {
 		foreach (ParallaxGroup group in parallaxGroups) {
 			Transform[] transforms = group.parallaxTransforms;
 			foreach (Transform t in transforms) {
-				t.position += Vector3.right * (deltaX * group.parallaxSpeedMultiplier);
+				if(t)
+					t.position += Vector3.right * (deltaX * group.parallaxSpeedMultiplier);
 			}
 		}
 		lastCameraX = cameraTransform.position.x;

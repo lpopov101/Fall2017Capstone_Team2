@@ -26,7 +26,7 @@ public class UIMemoryFragments : MonoBehaviour {
 	}
 
 	void Start () {
-		HidePowerUps();
+		ShowPowerUps();
 	}
 
 	public void UpdateUIFragments(int memoryCount) {
@@ -39,6 +39,12 @@ public class UIMemoryFragments : MonoBehaviour {
 	}
 
 	public void HidePowerUps() {
+		PowerUp1.SetActive(false);
+		PowerUp2.SetActive(false);
+		PowerUp3.SetActive(false);
+	}
+
+	public void ShowPowerUps() {
 		Scene scene = SceneManager.GetActiveScene();
 		if (scene.name.Equals ("NewShell1")) {
 			PowerUp1.SetActive (true);

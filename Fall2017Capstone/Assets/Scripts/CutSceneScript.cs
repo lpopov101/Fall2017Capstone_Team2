@@ -20,7 +20,7 @@ public class CutSceneScript : MonoBehaviour {
 	AudioSource audioSource;
 	public UIMemoryFragments memoryFragmentsPanel;
 	private static UIMemoryFragments MEMORY_FRAGMENTS_PANEL = null;
-    private int curCount = count;
+	private int curCount = count;
 	public string message;
 
 	void Awake() {
@@ -59,10 +59,10 @@ public class CutSceneScript : MonoBehaviour {
 			ShutterAfterMovie();
 		}
 	}
-	
+
 	// Update is called once per frame
 	void Update () {
-        
+
 	}
 
 	void OnTriggerEnter2D(Collider2D coll) {
@@ -72,6 +72,7 @@ public class CutSceneScript : MonoBehaviour {
 			videoPlayer.clip = cutScene;
 			UIManager.Instance.PauseWithoutOverlay();
 			memoryFragmentsPanel.HideUIFragments();
+			memoryFragmentsPanel.HidePowerUps();
 			videoPlayer.Prepare ();
 			videoPlayer.prepareCompleted += VideoPlayer_prepareCompleted;
 			sr.enabled = false;
@@ -98,6 +99,7 @@ public class CutSceneScript : MonoBehaviour {
 		audioSource.Play();
 		toast.Toast (message, 8.0f);
 		gatorp.SendMessage ("checkCollected");
+		memoryFragmentsPanel.ShowPowerUps();
 	}
 
 	public static void setCount(int mem1, int mem2, int mem3) {
@@ -106,7 +108,7 @@ public class CutSceneScript : MonoBehaviour {
 		if(MEMORY_FRAGMENTS_PANEL != null) {
 			MEMORY_FRAGMENTS_PANEL.UpdateUIFragments(count);
 		}
-    }
+	}
 
 	public static int getCount() {
 		return count;
