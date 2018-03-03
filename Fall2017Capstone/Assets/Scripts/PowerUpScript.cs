@@ -12,11 +12,15 @@ public class PowerUpScript : MonoBehaviour
     //public Text text;
     public ToastScript toaster;
     public Light light;
+	public AudioClip pickupAudio;
+	public AudioSource gatorpAudioSource;
 
     private SpriteRenderer sr;
     private DodgeScript dodgeScript;
     private HighJumpScript highJumpScript;
 	private StunScript stunScript;
+	private AudioSource powerupAudio;
+
 
 	void Awake() {
 		sr = GetComponent<SpriteRenderer>();
@@ -28,6 +32,7 @@ public class PowerUpScript : MonoBehaviour
         dodgeScript = gatorp.GetComponent<DodgeScript>();
         highJumpScript = gatorp.GetComponent<HighJumpScript>();
 		stunScript = gatorp.GetComponent<StunScript>();
+		powerupAudio = GetComponent<AudioSource> ();
     }
 
     void Update()
@@ -66,6 +71,9 @@ public class PowerUpScript : MonoBehaviour
 #endif
 				PowerUpUI.SendMessage("Update");
 				dodgeScript.hasDodgeAbility = true;
+				gatorpAudioSource.clip = pickupAudio;
+				gatorpAudioSource.Play ();
+
 			} else if(levelName == "Shell2") {
 #if UNITY_ANDROID
 				toaster.AltImageToast("mobile_doublejump", 5.0f);
@@ -100,6 +108,7 @@ public class PowerUpScript : MonoBehaviour
 
             sr.enabled = false;
             light.enabled = false;
+			powerupAudio.mute = true;
 			gatorp.SendMessage("checkCollected");
         }
     }
