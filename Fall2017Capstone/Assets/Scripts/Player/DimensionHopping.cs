@@ -16,6 +16,10 @@ public class DimensionHopping : MonoBehaviour {
 	public AudioSource clubAudio;
 	public ToastScript toast;
 	public MonoBehaviour[] eventListeners;
+    public int MaxStackSize;
+    public float DistanceToStackUpdate;
+    public Transform PositionCheckPoint;
+    public float PositionCheckRadius;
 
 	private AudioSource dimHopAudio;
 	private CameraScript cameraScript;
@@ -23,6 +27,8 @@ public class DimensionHopping : MonoBehaviour {
 	private bool realityMode;
 	private bool HardToggleDimension;
 	public List<IDimensionEventListener> _eventListeners;
+    private Stack<Vector3> positionStack;
+    private bool shiftNextPhysicsUpdate;
 
 	/* Deprecated */
 	[System.Obsolete("Renamed to realityMode to be a bit more descriptive")]
@@ -43,17 +49,29 @@ public class DimensionHopping : MonoBehaviour {
 		foreach(MonoBehaviour mono in eventListeners) {
 			_eventListeners.Add((IDimensionEventListener)mono);
 		}
+        positionStack = new Stack<Vector3>();
+        positionStack.Push(transform.position);
+        shiftNextPhysicsUpdate = false;
     }
 
     void Update () {
 		if((Input.GetButtonDown("DimensionShift") || TouchInput.Shift) && !HardToggleDimension && !playerController.FreezeMovement())
         {
-			ChangeDimension();
+            shiftNextPhysicsUpdate = true;
         }
-	}
+        if (Vector3.Distance(transform.position, positionStack.Peek()) >= DistanceToStackUpdate)
+        {
+            positionStack.Push(transform.position);
+            if (positionStack.Count > MaxStackSize)
+            {
+                positionStack.Pop();
+            }
+        }
+    }
 
 	void ChangeDimension() {
 		dimHopAudio.Play();
+        Vector3 mostRecentPosition = transform.position;
 		if(realityMode) // Switching from reality to dissociative
 		{
 			if(streetAudio != null)
@@ -80,9 +98,37 @@ public class DimensionHopping : MonoBehaviour {
 		foreach(IDimensionEventListener listener in _eventListeners) {
 			listener.OnDimensionChange(realityMode);
 		}
+        bool notColliding = false;
+        while(!notColliding && positionStack.Count > 0)
+        {
+            if (Physics2D.OverlapCircle(PositionCheckPoint.position, PositionCheckRadius, LayerMask.GetMask("Ground")))
+            {
+                Debug.Log("ayyyyy");
+                Vector3 queueHead = positionStack.Pop();
+                Vector3 distance = queueHead - mostRecentPosition;
+                transform.Translate(distance);
+                Debug.Log("translating by " + distance);
+                mostRecentPosition = queueHead;
+            }
+            else
+            {
+                notColliding = true;
+            }
+        }
+        positionStack.Clear();
+        positionStack.Push(transform.position);
 	}
 
-	void OnTriggerEnter2D(Collider2D coll) {
+    private void FixedUpdate()
+    {
+        if(shiftNextPhysicsUpdate)
+        {
+            ChangeDimension();
+            shiftNextPhysicsUpdate = false;
+        }
+    }
+
+    void OnTriggerEnter2D(Collider2D coll) {
 		//Debug.Log (coll.gameObject.tag);
 
 		if (coll.gameObject.CompareTag ("DimensionHint")) {
