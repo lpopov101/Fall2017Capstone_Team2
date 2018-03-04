@@ -81,8 +81,9 @@ MonoBehaviour:
     type: 2}
   handPrefab: {fileID: 1366023901142550, guid: 412ccbdc4f34f69489fd93d1eee465b5, type: 2}
   handIndicatorTime: 0.4
-  handGrowthSpeed: 75
-  handShrinkSpeed: 65
+  handGrowthTime: 0.25
+  handShrinkTime: 0.35
   handGrowthAmount: 17
   handWaitTime: 0.3
   idleTime: 1.8
+  destroyAfterTriggered: 0

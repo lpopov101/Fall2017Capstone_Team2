@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class BossHandBehavior : MonoBehaviour {
 
-	public float growthSpeed = 1.0f;
-	public float shrinkSpeed = 1.0f;
+//	public float growthSpeed = 1.0f;
+//	public float shrinkSpeed = 1.0f;
 	public float growthTime = 1.0f;
 	public float shrinkTime = 1.0f;
 	public float growthAmount = 1.0f;
@@ -27,39 +27,39 @@ public class BossHandBehavior : MonoBehaviour {
 
 	void Update() {
 		if(attackPhase == 0) {
-			transform.Translate(Vector3.up * growthSpeed * Time.deltaTime);
-			if(transform.position.y >= initialY + growthAmount) {
-				attackPhase++;
-				transform.position.Set(transform.position.x, initialY + growthAmount, 0);
-				anim.SetBool("isAttack", false);
-				StartCoroutine(Wait());
-			}
-
-//			Vector2 vec = transform.position;
-//			float t = (Time.time - startTime) / growthTime;
-//			vec.y = Mathf.Lerp(initialY, initialY + growthAmount, t);
-//			transform.position = vec;
-//
-//			if(Time.time > startTime + growthTime) {
+//			transform.Translate(Vector3.up * growthSpeed * Time.deltaTime);
+//			if(transform.position.y >= initialY + growthAmount) {
 //				attackPhase++;
-//				//transform.position.Set(transform.position.x, initialY + growthAmount, 0);
+//				transform.position.Set(transform.position.x, initialY + growthAmount, 0);
 //				anim.SetBool("isAttack", false);
 //				StartCoroutine(Wait());
 //			}
-		} else if(attackPhase == 2) {
-			transform.Translate(Vector3.down * shrinkSpeed * Time.deltaTime);
-			if(transform.position.y < initialY) {
-				Destroy(gameObject);
-			}
 
-//			Vector2 vec = transform.position;
-//			float t = (Time.time - startShrinkTime) / growthTime;
-//			vec.y = Mathf.Lerp(initialY + growthAmount, initialY, t);
-//			transform.position = vec;
-//
-//			if(Time.time > startShrinkTime + growthTime) {
+			Vector2 vec = transform.position;
+			float t = (Time.time - startTime) / growthTime;
+			vec.y = Mathf.Lerp(initialY, initialY + growthAmount, t);
+			transform.position = vec;
+
+			if(Time.time > startTime + growthTime) {
+				attackPhase++;
+				//transform.position.Set(transform.position.x, initialY + growthAmount, 0);
+				anim.SetBool("isAttack", false);
+				StartCoroutine(Wait());
+			}
+		} else if(attackPhase == 2) {
+//			transform.Translate(Vector3.down * shrinkSpeed * Time.deltaTime);
+//			if(transform.position.y < initialY) {
 //				Destroy(gameObject);
 //			}
+
+			Vector2 vec = transform.position;
+			float t = (Time.time - startShrinkTime) / growthTime;
+			vec.y = Mathf.Lerp(initialY + growthAmount, initialY, t);
+			transform.position = vec;
+
+			if(Time.time > startShrinkTime + growthTime) {
+				Destroy(gameObject);
+			}
 		}
 	}
 

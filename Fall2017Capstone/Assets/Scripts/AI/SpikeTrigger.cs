@@ -8,8 +8,10 @@ public class SpikeTrigger : MonoBehaviour, ISpike {
 	public GameObject handPrefab;
 
 	public float handIndicatorTime;
-	public float handGrowthSpeed;
-	public float handShrinkSpeed;
+	//	public float handGrowthSpeed;
+	//	public float handShrinkSpeed;
+	public float handGrowthTime;
+	public float handShrinkTime;
 	public float handGrowthAmount;
 	public float handWaitTime;
 	public float idleTime;
@@ -61,8 +63,8 @@ public class SpikeTrigger : MonoBehaviour, ISpike {
 		GameObject handObj = Instantiate(handPrefab);
 		handObj.transform.position = transform.position;
 		BossHandBehavior handBehavior = handObj.GetComponent<BossHandBehavior>();
-		handBehavior.growthSpeed = handGrowthSpeed;
-		handBehavior.shrinkSpeed = handShrinkSpeed;
+		handBehavior.growthTime = handGrowthTime;
+		handBehavior.shrinkTime = handShrinkTime;
 		handBehavior.growthAmount = handGrowthAmount;
 		handBehavior.waitTime = handWaitTime;
 		handBehavior.SetSpikeBase(this);

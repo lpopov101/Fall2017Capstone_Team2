@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BossHandsBehavior : MonoBehaviour, ISpike {
+public class Shell1BossBehavior : MonoBehaviour, ISpike {
 
 	public GameObject target;
 	public GameObject handIndicatorPrefab;
@@ -12,8 +12,10 @@ public class BossHandsBehavior : MonoBehaviour, ISpike {
 	public float idleTimeRandomizer;
 
 	public float handIndicatorTime;
-	public float handGrowthSpeed;
-	public float handShrinkSpeed;
+//	public float handGrowthSpeed;
+//	public float handShrinkSpeed;
+	public float handGrowthTime;
+	public float handShrinkTime;
 	public float handGrowthAmount;
 	public float handWaitTime;
 
@@ -51,8 +53,8 @@ public class BossHandsBehavior : MonoBehaviour, ISpike {
 			GameObject handObj = Instantiate(handPrefab);
 			handObj.transform.position = pos;
 			BossHandBehavior handBehavior = handObj.GetComponent<BossHandBehavior>();
-			handBehavior.growthSpeed = handGrowthSpeed;
-			handBehavior.shrinkSpeed = handShrinkSpeed;
+			handBehavior.growthTime = handGrowthTime;
+			handBehavior.shrinkTime = handShrinkTime;
 			handBehavior.growthAmount = handGrowthAmount;
 			handBehavior.waitTime = handWaitTime;
 			handBehavior.SetSpikeBase(this);
