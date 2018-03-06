@@ -24,6 +24,9 @@ EditorBuildSettings:
     path: Assets/Scenes/NewShell1.unity
     guid: 8bfb7aeaee669954686daef767c9b3ae
   - enabled: 1
+    path: Assets/Scenes/NewerShell1.unity
+    guid: 11989aa1132b1f241b5611458a68f650
+  - enabled: 1
     path: Assets/Scenes/Shell2.unity
     guid: a5b131e6044fd284b851f4d222f64ffb
   - enabled: 0
