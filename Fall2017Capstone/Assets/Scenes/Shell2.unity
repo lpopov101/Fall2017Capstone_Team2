@@ -88,6 +88,7 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaDirect: 0.5
     m_PVRFilteringAtrousPositionSigmaIndirect: 2
     m_PVRFilteringAtrousPositionSigmaAO: 1
+    m_ShowResolutionOverlay: 1
   m_LightingDataAsset: {fileID: 112000002, guid: b52b0ab74bac12343845867a7aa0d7d3,
     type: 2}
   m_UseShadowmask: 1
@@ -23183,7 +23184,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1035542942}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 68.12, y: 11.54, z: 0}
+  m_LocalPosition: {x: 69, y: 11.54, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -29284,7 +29285,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1348402054}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 68.12, y: -988.62, z: 0}
+  m_LocalPosition: {x: 69, y: -988.62, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -30750,6 +30751,7 @@ GameObject:
   - component: {fileID: 1404975298}
   - component: {fileID: 1404975302}
   - component: {fileID: 1404975297}
+  - component: {fileID: 1404975303}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -30766,6 +30768,7 @@ VideoPlayer:
   m_Enabled: 1
   m_VideoClip: {fileID: 0}
   m_TargetCameraAlpha: 1
+  m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 1404975300}
   m_TargetTexture: {fileID: 0}
   m_TimeReference: 0
@@ -30832,6 +30835,7 @@ Camera:
   m_TargetEye: 3
   m_HDR: 1
   m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
   m_ForceIntoRT: 0
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
@@ -30863,6 +30867,25 @@ MonoBehaviour:
   smoothTime: 0.14
   target: {fileID: 15020818}
   defaultCameraOffset: {x: 0, y: 2}
+--- !u!114 &1404975303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1404975296}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a6d97d1dbfce9f4282fd225a9dfa445, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parallaxGroups:
+  - parallaxSpeedMultiplier: 0.03
+    parallaxTransforms:
+    - {fileID: 1389593480}
+    - {fileID: 992590508}
+    - {fileID: 1493986858}
+    - {fileID: 594603139}
+    - {fileID: 443682635}
 --- !u!1 &1406227325
 GameObject:
   m_ObjectHideFlags: 0

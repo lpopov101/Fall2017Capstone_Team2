@@ -288,6 +288,21 @@ Prefab:
       propertyPath: m_Name
       value: Bird (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 212657259531221052, guid: 4ed22fd714ecf3c46a2305c91f5a46ce,
+        type: 2}
+      propertyPath: m_SortingLayerID
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 212657259531221052, guid: 4ed22fd714ecf3c46a2305c91f5a46ce,
+        type: 2}
+      propertyPath: m_SortingLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 212657259531221052, guid: 4ed22fd714ecf3c46a2305c91f5a46ce,
+        type: 2}
+      propertyPath: m_SortingOrder
+      value: -1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4ed22fd714ecf3c46a2305c91f5a46ce, type: 2}
   m_IsPrefabParent: 0
@@ -329,6 +344,21 @@ Prefab:
     - target: {fileID: 4555836834582746, guid: 4ed22fd714ecf3c46a2305c91f5a46ce, type: 2}
       propertyPath: m_RootOrder
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 212657259531221052, guid: 4ed22fd714ecf3c46a2305c91f5a46ce,
+        type: 2}
+      propertyPath: m_SortingLayerID
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 212657259531221052, guid: 4ed22fd714ecf3c46a2305c91f5a46ce,
+        type: 2}
+      propertyPath: m_SortingLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 212657259531221052, guid: 4ed22fd714ecf3c46a2305c91f5a46ce,
+        type: 2}
+      propertyPath: m_SortingOrder
+      value: -1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4ed22fd714ecf3c46a2305c91f5a46ce, type: 2}
@@ -514,6 +544,21 @@ Prefab:
       propertyPath: m_Name
       value: Bird (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 212657259531221052, guid: 4ed22fd714ecf3c46a2305c91f5a46ce,
+        type: 2}
+      propertyPath: m_SortingLayerID
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 212657259531221052, guid: 4ed22fd714ecf3c46a2305c91f5a46ce,
+        type: 2}
+      propertyPath: m_SortingLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 212657259531221052, guid: 4ed22fd714ecf3c46a2305c91f5a46ce,
+        type: 2}
+      propertyPath: m_SortingOrder
+      value: -1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4ed22fd714ecf3c46a2305c91f5a46ce, type: 2}
   m_IsPrefabParent: 0
@@ -559,6 +604,21 @@ Prefab:
     - target: {fileID: 1690752704169882, guid: 4ed22fd714ecf3c46a2305c91f5a46ce, type: 2}
       propertyPath: m_Name
       value: Bird (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 212657259531221052, guid: 4ed22fd714ecf3c46a2305c91f5a46ce,
+        type: 2}
+      propertyPath: m_SortingLayerID
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 212657259531221052, guid: 4ed22fd714ecf3c46a2305c91f5a46ce,
+        type: 2}
+      propertyPath: m_SortingLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 212657259531221052, guid: 4ed22fd714ecf3c46a2305c91f5a46ce,
+        type: 2}
+      propertyPath: m_SortingOrder
+      value: -1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4ed22fd714ecf3c46a2305c91f5a46ce, type: 2}
@@ -611,6 +671,21 @@ Prefab:
     - target: {fileID: 1690752704169882, guid: 4ed22fd714ecf3c46a2305c91f5a46ce, type: 2}
       propertyPath: m_Name
       value: Bird (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 212657259531221052, guid: 4ed22fd714ecf3c46a2305c91f5a46ce,
+        type: 2}
+      propertyPath: m_SortingLayerID
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 212657259531221052, guid: 4ed22fd714ecf3c46a2305c91f5a46ce,
+        type: 2}
+      propertyPath: m_SortingLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 212657259531221052, guid: 4ed22fd714ecf3c46a2305c91f5a46ce,
+        type: 2}
+      propertyPath: m_SortingOrder
+      value: -1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4ed22fd714ecf3c46a2305c91f5a46ce, type: 2}
@@ -930,6 +1005,21 @@ Prefab:
       propertyPath: m_Name
       value: Bird (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 212657259531221052, guid: 4ed22fd714ecf3c46a2305c91f5a46ce,
+        type: 2}
+      propertyPath: m_SortingLayerID
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 212657259531221052, guid: 4ed22fd714ecf3c46a2305c91f5a46ce,
+        type: 2}
+      propertyPath: m_SortingLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 212657259531221052, guid: 4ed22fd714ecf3c46a2305c91f5a46ce,
+        type: 2}
+      propertyPath: m_SortingOrder
+      value: -1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4ed22fd714ecf3c46a2305c91f5a46ce, type: 2}
   m_IsPrefabParent: 0
@@ -975,6 +1065,21 @@ Prefab:
     - target: {fileID: 1690752704169882, guid: 4ed22fd714ecf3c46a2305c91f5a46ce, type: 2}
       propertyPath: m_Name
       value: Bird (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 212657259531221052, guid: 4ed22fd714ecf3c46a2305c91f5a46ce,
+        type: 2}
+      propertyPath: m_SortingLayerID
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 212657259531221052, guid: 4ed22fd714ecf3c46a2305c91f5a46ce,
+        type: 2}
+      propertyPath: m_SortingLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 212657259531221052, guid: 4ed22fd714ecf3c46a2305c91f5a46ce,
+        type: 2}
+      propertyPath: m_SortingOrder
+      value: -1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4ed22fd714ecf3c46a2305c91f5a46ce, type: 2}
@@ -1028,7 +1133,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1000
   m_Sprite: {fileID: 21300000, guid: 8f7e7058efc565346a4ed070cba5346e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1288,6 +1393,21 @@ Prefab:
     - target: {fileID: 1690752704169882, guid: 4ed22fd714ecf3c46a2305c91f5a46ce, type: 2}
       propertyPath: m_Name
       value: Bird (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 212657259531221052, guid: 4ed22fd714ecf3c46a2305c91f5a46ce,
+        type: 2}
+      propertyPath: m_SortingLayerID
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 212657259531221052, guid: 4ed22fd714ecf3c46a2305c91f5a46ce,
+        type: 2}
+      propertyPath: m_SortingLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 212657259531221052, guid: 4ed22fd714ecf3c46a2305c91f5a46ce,
+        type: 2}
+      propertyPath: m_SortingOrder
+      value: -1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4ed22fd714ecf3c46a2305c91f5a46ce, type: 2}
@@ -1658,6 +1778,21 @@ Prefab:
       propertyPath: m_Name
       value: Bird (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 212657259531221052, guid: 4ed22fd714ecf3c46a2305c91f5a46ce,
+        type: 2}
+      propertyPath: m_SortingLayerID
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 212657259531221052, guid: 4ed22fd714ecf3c46a2305c91f5a46ce,
+        type: 2}
+      propertyPath: m_SortingLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 212657259531221052, guid: 4ed22fd714ecf3c46a2305c91f5a46ce,
+        type: 2}
+      propertyPath: m_SortingOrder
+      value: -1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4ed22fd714ecf3c46a2305c91f5a46ce, type: 2}
   m_IsPrefabParent: 0
@@ -1886,6 +2021,21 @@ Prefab:
     - target: {fileID: 1690752704169882, guid: 4ed22fd714ecf3c46a2305c91f5a46ce, type: 2}
       propertyPath: m_Name
       value: Bird (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 212657259531221052, guid: 4ed22fd714ecf3c46a2305c91f5a46ce,
+        type: 2}
+      propertyPath: m_SortingLayerID
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 212657259531221052, guid: 4ed22fd714ecf3c46a2305c91f5a46ce,
+        type: 2}
+      propertyPath: m_SortingLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 212657259531221052, guid: 4ed22fd714ecf3c46a2305c91f5a46ce,
+        type: 2}
+      propertyPath: m_SortingOrder
+      value: -1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4ed22fd714ecf3c46a2305c91f5a46ce, type: 2}
@@ -2231,6 +2381,21 @@ Prefab:
       propertyPath: m_Name
       value: Bird (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 212657259531221052, guid: 4ed22fd714ecf3c46a2305c91f5a46ce,
+        type: 2}
+      propertyPath: m_SortingLayerID
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 212657259531221052, guid: 4ed22fd714ecf3c46a2305c91f5a46ce,
+        type: 2}
+      propertyPath: m_SortingLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 212657259531221052, guid: 4ed22fd714ecf3c46a2305c91f5a46ce,
+        type: 2}
+      propertyPath: m_SortingOrder
+      value: -1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4ed22fd714ecf3c46a2305c91f5a46ce, type: 2}
   m_IsPrefabParent: 0
@@ -2349,6 +2514,21 @@ Prefab:
     - target: {fileID: 1690752704169882, guid: 4ed22fd714ecf3c46a2305c91f5a46ce, type: 2}
       propertyPath: m_Name
       value: Bird (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 212657259531221052, guid: 4ed22fd714ecf3c46a2305c91f5a46ce,
+        type: 2}
+      propertyPath: m_SortingLayerID
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 212657259531221052, guid: 4ed22fd714ecf3c46a2305c91f5a46ce,
+        type: 2}
+      propertyPath: m_SortingLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 212657259531221052, guid: 4ed22fd714ecf3c46a2305c91f5a46ce,
+        type: 2}
+      propertyPath: m_SortingOrder
+      value: -1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4ed22fd714ecf3c46a2305c91f5a46ce, type: 2}
@@ -2532,7 +2712,7 @@ MonoBehaviour:
     parallaxTransforms:
     - {fileID: 1666798972}
     - {fileID: 879345890}
-  - parallaxSpeedMultiplier: 0.05
+  - parallaxSpeedMultiplier: 0.09
     parallaxTransforms:
     - {fileID: 390021966}
 --- !u!82 &916122161
@@ -2806,6 +2986,21 @@ Prefab:
       propertyPath: m_Name
       value: Bird (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 212657259531221052, guid: 4ed22fd714ecf3c46a2305c91f5a46ce,
+        type: 2}
+      propertyPath: m_SortingLayerID
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 212657259531221052, guid: 4ed22fd714ecf3c46a2305c91f5a46ce,
+        type: 2}
+      propertyPath: m_SortingLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 212657259531221052, guid: 4ed22fd714ecf3c46a2305c91f5a46ce,
+        type: 2}
+      propertyPath: m_SortingOrder
+      value: -1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4ed22fd714ecf3c46a2305c91f5a46ce, type: 2}
   m_IsPrefabParent: 0
@@ -2929,6 +3124,21 @@ Prefab:
     - target: {fileID: 1690752704169882, guid: 4ed22fd714ecf3c46a2305c91f5a46ce, type: 2}
       propertyPath: m_Name
       value: Bird (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 212657259531221052, guid: 4ed22fd714ecf3c46a2305c91f5a46ce,
+        type: 2}
+      propertyPath: m_SortingLayerID
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 212657259531221052, guid: 4ed22fd714ecf3c46a2305c91f5a46ce,
+        type: 2}
+      propertyPath: m_SortingLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 212657259531221052, guid: 4ed22fd714ecf3c46a2305c91f5a46ce,
+        type: 2}
+      propertyPath: m_SortingOrder
+      value: -1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4ed22fd714ecf3c46a2305c91f5a46ce, type: 2}
@@ -3367,6 +3577,21 @@ Prefab:
     - target: {fileID: 1690752704169882, guid: 4ed22fd714ecf3c46a2305c91f5a46ce, type: 2}
       propertyPath: m_Name
       value: Bird (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 212657259531221052, guid: 4ed22fd714ecf3c46a2305c91f5a46ce,
+        type: 2}
+      propertyPath: m_SortingLayerID
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 212657259531221052, guid: 4ed22fd714ecf3c46a2305c91f5a46ce,
+        type: 2}
+      propertyPath: m_SortingLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 212657259531221052, guid: 4ed22fd714ecf3c46a2305c91f5a46ce,
+        type: 2}
+      propertyPath: m_SortingOrder
+      value: -1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4ed22fd714ecf3c46a2305c91f5a46ce, type: 2}
@@ -3863,7 +4088,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1864752125
   m_SortingLayer: 1
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: 35db9515db74ef949bd939a5d0bdc960, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -4007,6 +4232,21 @@ Prefab:
     - target: {fileID: 1690752704169882, guid: 4ed22fd714ecf3c46a2305c91f5a46ce, type: 2}
       propertyPath: m_Name
       value: Bird (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 212657259531221052, guid: 4ed22fd714ecf3c46a2305c91f5a46ce,
+        type: 2}
+      propertyPath: m_SortingLayerID
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 212657259531221052, guid: 4ed22fd714ecf3c46a2305c91f5a46ce,
+        type: 2}
+      propertyPath: m_SortingLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 212657259531221052, guid: 4ed22fd714ecf3c46a2305c91f5a46ce,
+        type: 2}
+      propertyPath: m_SortingOrder
+      value: -1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4ed22fd714ecf3c46a2305c91f5a46ce, type: 2}
@@ -4199,6 +4439,21 @@ Prefab:
     - target: {fileID: 1690752704169882, guid: 4ed22fd714ecf3c46a2305c91f5a46ce, type: 2}
       propertyPath: m_Name
       value: Bird (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 212657259531221052, guid: 4ed22fd714ecf3c46a2305c91f5a46ce,
+        type: 2}
+      propertyPath: m_SortingLayerID
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 212657259531221052, guid: 4ed22fd714ecf3c46a2305c91f5a46ce,
+        type: 2}
+      propertyPath: m_SortingLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 212657259531221052, guid: 4ed22fd714ecf3c46a2305c91f5a46ce,
+        type: 2}
+      propertyPath: m_SortingOrder
+      value: -1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4ed22fd714ecf3c46a2305c91f5a46ce, type: 2}
@@ -4538,6 +4793,21 @@ Prefab:
       propertyPath: m_Name
       value: Bird (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 212657259531221052, guid: 4ed22fd714ecf3c46a2305c91f5a46ce,
+        type: 2}
+      propertyPath: m_SortingLayerID
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 212657259531221052, guid: 4ed22fd714ecf3c46a2305c91f5a46ce,
+        type: 2}
+      propertyPath: m_SortingLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 212657259531221052, guid: 4ed22fd714ecf3c46a2305c91f5a46ce,
+        type: 2}
+      propertyPath: m_SortingOrder
+      value: -1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4ed22fd714ecf3c46a2305c91f5a46ce, type: 2}
   m_IsPrefabParent: 0
@@ -4710,6 +4980,21 @@ Prefab:
     - target: {fileID: 1690752704169882, guid: 4ed22fd714ecf3c46a2305c91f5a46ce, type: 2}
       propertyPath: m_Name
       value: Bird (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 212657259531221052, guid: 4ed22fd714ecf3c46a2305c91f5a46ce,
+        type: 2}
+      propertyPath: m_SortingLayerID
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 212657259531221052, guid: 4ed22fd714ecf3c46a2305c91f5a46ce,
+        type: 2}
+      propertyPath: m_SortingLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 212657259531221052, guid: 4ed22fd714ecf3c46a2305c91f5a46ce,
+        type: 2}
+      propertyPath: m_SortingOrder
+      value: -1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4ed22fd714ecf3c46a2305c91f5a46ce, type: 2}
@@ -5289,6 +5574,21 @@ Prefab:
     - target: {fileID: 1690752704169882, guid: 4ed22fd714ecf3c46a2305c91f5a46ce, type: 2}
       propertyPath: m_Name
       value: Bird (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 212657259531221052, guid: 4ed22fd714ecf3c46a2305c91f5a46ce,
+        type: 2}
+      propertyPath: m_SortingLayerID
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 212657259531221052, guid: 4ed22fd714ecf3c46a2305c91f5a46ce,
+        type: 2}
+      propertyPath: m_SortingLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 212657259531221052, guid: 4ed22fd714ecf3c46a2305c91f5a46ce,
+        type: 2}
+      propertyPath: m_SortingOrder
+      value: -1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4ed22fd714ecf3c46a2305c91f5a46ce, type: 2}
@@ -5915,6 +6215,21 @@ Prefab:
     - target: {fileID: 1690752704169882, guid: 4ed22fd714ecf3c46a2305c91f5a46ce, type: 2}
       propertyPath: m_Name
       value: Bird (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 212657259531221052, guid: 4ed22fd714ecf3c46a2305c91f5a46ce,
+        type: 2}
+      propertyPath: m_SortingLayerID
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 212657259531221052, guid: 4ed22fd714ecf3c46a2305c91f5a46ce,
+        type: 2}
+      propertyPath: m_SortingLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 212657259531221052, guid: 4ed22fd714ecf3c46a2305c91f5a46ce,
+        type: 2}
+      propertyPath: m_SortingOrder
+      value: -1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4ed22fd714ecf3c46a2305c91f5a46ce, type: 2}

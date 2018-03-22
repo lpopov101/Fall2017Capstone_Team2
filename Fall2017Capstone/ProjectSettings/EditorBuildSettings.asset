@@ -20,7 +20,7 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/NewShell1.unity
     guid: 8bfb7aeaee669954686daef767c9b3ae
   - enabled: 1
