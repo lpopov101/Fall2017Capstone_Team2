@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class CheckpointManager : MonoBehaviour {
 
-	public static string[] GameScenes = {"NewShell1", "Shell2", "Shell3", "Shell3Boss"};
+	public static string[] GameScenes = {"NewShell1", "NewerShell1", "Shell2", "Shell3", "Shell3Boss"};
 
 	private static CheckpointManager Instance = null;
 	private static bool FirstInit = true;

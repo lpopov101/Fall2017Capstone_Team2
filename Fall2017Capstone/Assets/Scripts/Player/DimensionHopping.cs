@@ -136,6 +136,7 @@ public class DimensionHopping : MonoBehaviour {
 		}
 
 		if (coll.gameObject.CompareTag ("ToastTrigger") && !HardToggleDimension) {
+			Debug.Log("HELLO TOAST TRIGGER");
 			HardToggleDimension = true;
 			if (realityMode) {
 				//toast.Toast ("Something is not right. I can't seem to switch back...",4.0f);
